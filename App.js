@@ -29,9 +29,9 @@ function App() {
         break;
     }
 
-    if (title) {
-      document.title = title;
-    }
+    // if (title) {
+    //   document.title = title;
+    // }
 
     if (metaDescription) {
       const metaDescriptionTag = document.querySelector(
