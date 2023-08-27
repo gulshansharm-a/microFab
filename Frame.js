@@ -17,14 +17,7 @@ const Frame = () => {
                 <div className="about-us">About us</div>
                 <div className="about-child" />
               </div>
-              <div className="technology">
-                <div className="about-us">Technology</div>
-                <img
-                  className="iconlytwo-tonearrow-down-22"
-                  alt=""
-                  src="/iconlytwotonearrow--down-22.svg"
-                />
-              </div>
+              
               <div className="technology">
                 <div className="about-us">Applications</div>
                 <img
