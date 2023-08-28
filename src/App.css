@@ -1,10 +1,5 @@
-*{
-    margin:0;
-    
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400&display=swap');
+
+.custom-font {
+    font-family: 'Roboto Mono', monospace;
 }
-  body {
-      margin: 0;
-    padding: 0;
-    
-    
-  }
