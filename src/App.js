@@ -40,7 +40,7 @@ export default function App() {
 
       <OptionsButtons />
 
-      <div className="md:flex md:justify-center hidden w-full">
+      <div className="md:flex md:justify-center w-full">
         <WaterTS />
       </div>
 
