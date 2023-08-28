@@ -1,4 +1,4 @@
-import React from 'react'
+79import React from 'react'
 import NavBar from './component/NavBar';
 import "./App.css";
 import Main from './component/Main';
@@ -6,8 +6,8 @@ import Main from './component/Main';
 function App() {
   return (
   <>
-    <div><NavBar /></div>
-    <Main/>
+    <div><NavBar>
+    
     
   </>
   )
