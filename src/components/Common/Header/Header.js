@@ -71,7 +71,7 @@ const Header = () => {
                 }`}
                 onClick={toggleTechnologyDropdown}
               >
-                Technology
+                <a href="/Technology">Technology</a>
                 {isTechnologyDropdownOpen ? (
                   <img
                     src={ExpandLess}
@@ -129,7 +129,7 @@ const Header = () => {
                 }`}
                 onClick={toggleApplicationDropdown}
               >
-                Applications
+                <a href="/Applications">Applications</a>
                 {isApplicationDropdownOpen ? (
                   <img
                     src={ExpandLess}

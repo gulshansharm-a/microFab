@@ -24,7 +24,7 @@ export default function Home() {
           <div className=" md:m-0 m-4 flex justify-center place-items-center flex-col md:mt-[75px] mt-[5px]">
             <Why_Microfab />
 
-            <div className="border-2 w-[100%] flex flex-row justify-normal md:justify-between">
+            <div className="w-[100%] flex flex-row justify-normal md:justify-between">
               <div className="flex flex-col justify-between">
                 <BFS content="BFS" />
                 <BFS content="FFS" />
