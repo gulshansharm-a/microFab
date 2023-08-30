@@ -11,6 +11,7 @@ import Footer from "./components/Footer/Footer";
 import Who_are_we from "./components/Who_are_we/Who_are_we";
 import ContactForm from "./components/Contact_form/Contact_form";
 import GetinTouchWithUs from "./components/GetinTouchWithUs/GetinTouchWithUs";
+import HomeArticle from "./components/Home_articles/HomeArticles";
 
 export default function Home() {
   return (
@@ -48,6 +49,8 @@ export default function Home() {
       </div>
 
       <Who_are_we/>
+
+      <HomeArticle/>
       
     </div>
   );
