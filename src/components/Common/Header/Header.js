@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import { Link } from 'react-router-dom';
+
+
 import ExpandMore from "../../../assets/Icons/Header_Icons/Down.svg";
 import ExpandLess from "../../../assets/Icons/Header_Icons/Up.svg";
 import Card from "./Card";
@@ -59,10 +62,10 @@ const Header = () => {
         <div className="font-light relative">
           <ul className="hidden md:flex md:gap-14 md:text-[18px] md:text[16px] z-20">
             <li>
-              <a href="/">Home</a>
+              < Link to="/">Home</Link>
             </li>
             <li>
-              <a href="/about">About Us</a>
+              < Link to="/about">About Us</Link>
             </li>
             <li className="relative cursor-pointer">
               <div
@@ -71,7 +74,7 @@ const Header = () => {
                 }`}
                 onClick={toggleTechnologyDropdown}
               >
-                <a href="/Technology">Technology</a>
+                < Link to="/Technology">Technology</Link>
                 {isTechnologyDropdownOpen ? (
                   <img
                     src={ExpandLess}
@@ -129,7 +132,7 @@ const Header = () => {
                 }`}
                 onClick={toggleApplicationDropdown}
               >
-                <a href="/Applications">Applications</a>
+                < Link to="/Applications">Applications</Link>
                 {isApplicationDropdownOpen ? (
                   <img
                     src={ExpandLess}
@@ -190,13 +193,13 @@ const Header = () => {
               )}
             </li>
             <li>
-              <a href="/articles">Articles</a>
+              < Link to="/articles">Articles</Link>
             </li>
             <li>
-              <a href="/blogs">Blogs</a>
+              < Link to="/blogs">Blogs</Link>
             </li>
             <li>
-              <a href="/TP">Terms & policies</a>
+              < Link to="/TP">Terms & policies</Link>
             </li>
           </ul>
         </div>
@@ -204,7 +207,7 @@ const Header = () => {
           <ul className="flex flex-col justify-center items-center">
             <img src={contact} alt="Contact" className="w-4 h-4 mr-2" />
             <li>
-              <a href="/contact">Contact</a>
+              < Link to="/contact">Contact</Link>
             </li>
           </ul>
         </div>
@@ -228,10 +231,10 @@ const Header = () => {
         <div className="relative z-50 md:hidden h-screen w-screen bg-[#8AA6AA] text-white text-[28px] p-4 mt-4 shadow-md">
           <ul className="flex flex-col gap-4 gap-y-6">
             <li>
-              <a href="/">Home</a>
+              < Link to="/">Home</Link>
             </li>
             <li>
-              <a href="/about">About Us</a>
+              < Link to="/about">About Us</Link>
             </li>
             <li className="relative cursor-pointer">
               <div
@@ -366,16 +369,16 @@ const Header = () => {
               )}
             </li>
             <li>
-              <a href="/articles">Articles</a>
+              < Link to="/articles">Articles</Link>
             </li>
             <li>
-              <a href="/blogs">Blogs</a>
+              < Link to="/blogs">Blogs</Link>
             </li>
             <li>
-              <a href="/TP">Terms & policies</a>
+              < Link to="/TP">Terms & policies</Link>
             </li>
             <li>
-              <a href="/contact">CONTACT</a>
+              < Link to="/contact">CONTACT</Link>
             </li>
           </ul>
         </div>

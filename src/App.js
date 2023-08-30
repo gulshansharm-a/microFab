@@ -1,5 +1,6 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Route, Routes } from "react-router-dom";
 import { useLocation } from "react-router-dom"; // Import useLocation
 import Header from "./components/Common/Header/Header";
 import Footer from "./components/Common/Footer/Footer";
@@ -14,9 +15,9 @@ import Home from "./components/Home/Home";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <AppContent /> {/* Wrap your content in a separate component */}
-    </BrowserRouter>
+    </Router>
   );
 }
 
