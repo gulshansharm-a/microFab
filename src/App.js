@@ -6,6 +6,8 @@ import ContactForm from "./components/Contact/Contact_form/Contact_form";
 import Contact from './components/Contact/Contact'
 import AboutUs from "./components/AboutUs/AboutUs";
 import Applications from './components/Applications/Applications'
+import Article from './components/Articles/Article'
+import TP from './components/TP/TP'
 
 // import Contact from "./components/Contact/Contact";
 // import About from "./components/About"; // Import other components as needed
@@ -32,11 +34,8 @@ export default function App() {
       {/* Render different components based on the URL path */}
       {page === "/about" && <AboutUs />}
       {page === "/Applications" && <Applications />}
-      {/* {page === "/blogs" && <Blogs />} */}
-      {/* {page === "/Technology" && <Technology />} */}
-      {/* {page === "/Applications" && <Applications />} */}
-      {/* {page === "/Applications" && <Applications />} */}
-      {/* {page === "/Articles" && <Articles />} */}
+      {page === "/TP" && <TP />}
+      {page === "/articles" && <Article />}
       {page === "/" && <Home />}
       {page === "/contact" && <Contact/>}
       

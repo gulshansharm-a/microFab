@@ -195,6 +195,9 @@ const Header = () => {
             <li>
               <a href="/blogs">Blogs</a>
             </li>
+            <li>
+              <a href="/TP">Terms & policies</a>
+            </li>
           </ul>
         </div>
         <div className="hidden md:flex md:text-[18px] md:font-light md:text[16px]">
@@ -367,6 +370,9 @@ const Header = () => {
             </li>
             <li>
               <a href="/blogs">Blogs</a>
+            </li>
+            <li>
+              <a href="/TP">Terms & policies</a>
             </li>
             <li>
               <a href="/contact">CONTACT</a>
