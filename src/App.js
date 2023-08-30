@@ -25,7 +25,7 @@ function AppContent() {
   const location = useLocation(); // Now using useLocation within a Router context
 
   return (
-    <div className="w-[100%] border-2 overflow-x-hidden">
+    <div className="w-screen border-2 overflow-x-hidden">
       <Header />
 
       <Routes>
