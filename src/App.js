@@ -4,7 +4,7 @@ import Footer from "./components/Common/Footer/Footer";
 import GetinTouchWithUs from "./components/Contact/GetinTouchWithUs/GetinTouchWithUs";
 import ContactForm from "./components/Contact/Contact_form/Contact_form";
 import Contact from './components/Contact/Contact'
-
+import AboutUs from "./components/AboutUs/AboutUs";
 
 // import Contact from "./components/Contact/Contact";
 // import About from "./components/About"; // Import other components as needed
@@ -29,7 +29,7 @@ export default function App() {
       <Header />
 
       {/* Render different components based on the URL path */}
-      {/* {page === "/about" && <About />} */}
+      {page === "/about" && <AboutUs />}
       {/* {page === "/blogs" && <Blogs />} */}
       {/* {page === "/Technology" && <Technology />} */}
       {/* {page === "/Applications" && <Applications />} */}
