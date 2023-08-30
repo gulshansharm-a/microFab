@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom"; // Import BrowserRouter and Route
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { useLocation } from "react-router-dom"; // Import useLocation
 import Header from "./components/Common/Header/Header";
 import Footer from "./components/Common/Footer/Footer";
 import GetinTouchWithUs from "./components/Contact/GetinTouchWithUs/GetinTouchWithUs";
@@ -12,35 +13,35 @@ import TP from './components/TP/TP'
 import Home from "./components/Home/Home";
 
 export default function App() {
-  const [page, setPage] = useState("/");
-
-  useEffect(() => {
-    const path = window.location.pathname;
-    setPage(path);
-  }, []);
-  
   return (
     <BrowserRouter>
-      <div>
-        <Header />
-
-        {/* Use Switch to match only one route */}
-        <Switch>
-          <Route path="/about" component={AboutUs} />
-          <Route path="/applications" component={Applications} />
-          <Route path="/tp" component={TP} />
-          <Route path="/articles" component={Article} />
-          <Route exact path="/" component={Home} />
-          <Route path="/contact" component={Contact} />
-        </Switch>
-
-        <div className="md:w-full md:flex md:justify-between md:flex-row w-full">
-          <GetinTouchWithUs />
-          <ContactForm />
-        </div>
-
-        <Footer />
-      </div>
+      <AppContent /> {/* Wrap your content in a separate component */}
     </BrowserRouter>
+  );
+}
+
+function AppContent() {
+  const location = useLocation(); // Now using useLocation within a Router context
+
+  return (
+    <div>
+      <Header />
+
+      <Routes>
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/applications" element={<Applications />} />
+        <Route path="/tp" element={<TP />} />
+        <Route path="/articles" element={<Article />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+
+      <div className="md:w-full md:flex md:justify-between md:flex-row w-full">
+        <GetinTouchWithUs />
+        <ContactForm />
+      </div>
+
+      <Footer />
+    </div>
   );
 }
