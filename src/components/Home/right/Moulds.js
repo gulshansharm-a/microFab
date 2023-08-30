@@ -1,4 +1,4 @@
-import bot from "../../assets/Icons/bot.svg";
+import bot from "../../../assets/Icons/bot.svg";
 
 export default function Moulds() {
   return (

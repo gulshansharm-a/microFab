@@ -1,8 +1,8 @@
 import Points from "./Points";
-import dot from "../../assets/Footer/dot.svg";
-import insta from "../../assets/Footer/instagram.svg";
-import tikTok from "../../assets/Footer/tik-tok.svg";
-import facebook from "../../assets/Footer/facebook.svg";
+import dot from "../../../assets/Footer/dot.svg";
+import insta from "../../../assets/Footer/instagram.svg";
+import tikTok from "../../../assets/Footer/tik-tok.svg";
+import facebook from "../../../assets/Footer/facebook.svg";
 
 export default function Footer() {
   return (

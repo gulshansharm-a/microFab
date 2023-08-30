@@ -1,15 +1,19 @@
 import React, { useState, useEffect } from "react";
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
-import GetinTouchWithUs from "./components/GetinTouchWithUs/GetinTouchWithUs";
-import ContactForm from "./components/Contact_form/Contact_form";
-import Contact from "./components/contact/Contact";
+import Header from "./components/Common/Header/Header";
+import Footer from "./components/Common/Footer/Footer";
+import GetinTouchWithUs from "./components/Contact/GetinTouchWithUs/GetinTouchWithUs";
+import ContactForm from "./components/Contact/Contact_form/Contact_form";
+import Contact from './components/Contact/Contact'
+
+// import Contact from "./components/Contact/Contact";
 // import About from "./components/About"; // Import other components as needed
 // import Blogs from "./components/Blogs";
 // import Technology from "./components/Technology";
 // import Applications from "./components/Applications";
 // import Articles from "./components/Articles";
-import Home from "./Home";
+
+
+import Home from "./components/Home/Home";
 
 export default function App() {
   const [page, setPage] = useState("/");

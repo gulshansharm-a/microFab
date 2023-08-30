@@ -1,6 +1,6 @@
 import React from "react";
-import Question from "../../assets/Icons/Question.svg";
-import Case from "../../assets/Icons/Case.svg";
+import Question from "../../../assets/Icons/Question.svg";
+import Case from "../../../assets/Icons/Case.svg";
 
 const WhyMicrofab = () => {
   return (

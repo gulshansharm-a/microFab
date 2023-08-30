@@ -1,7 +1,7 @@
-import "../../App.css";
-import business from "../../assets/GetinTouchWithUs/business.svg";
-import contact from "../../assets/GetinTouchWithUs/contact.svg";
-import office from "../../assets/GetinTouchWithUs/office.svg";
+import "../../../App.css";
+import business from "../../../assets/GetinTouchWithUs/business.svg";
+import contact from "../../../assets/GetinTouchWithUs/contact.svg";
+import office from "../../../assets/GetinTouchWithUs/office.svg";
 
 export default function GetinTouchWithUs() {
   return (

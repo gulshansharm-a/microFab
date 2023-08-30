@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import "../../App.css";
-import blow from "../../assets/Options/blow.svg";
-import arrow from "../../assets/Icons/arrow.svg";
-import img1 from "../../assets/Icons/air.svg";
-import seal from "../../assets/Options/seal.svg";
-import fill from "../../assets/Options/fill.svg";
+import "../../../App.css";
+import blow from "../../../assets/Options/blow.svg";
+import arrow from "../../../assets/Icons/arrow.svg";
+import img1 from "../../../assets/Icons/air.svg";
+import seal from "../../../assets/Options/seal.svg";
+import fill from "../../../assets/Options/fill.svg";
 
 // the data are fetched from a json file
 import contents from "./content.json"; // Adjust the path accordingly

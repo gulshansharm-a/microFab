@@ -1,5 +1,5 @@
-import world from "../../assets/Who_are_we/world.svg";
-import "../../App.css";
+import world from "../../../assets/Who_are_we/world.svg";
+import "../../../App.css";
 
 export default function Who_are_we() {
   return (

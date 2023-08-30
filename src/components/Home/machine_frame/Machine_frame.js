@@ -1,6 +1,6 @@
 import React from "react";
-import Machine from "../../assets/Machine_Frame_Images/Machine.svg";
-import "../../App.css";
+import Machine from "../../../assets/Machine_Frame_Images/Machine.svg";
+import "../../../App.css";
 import WFS_Card from "./WFS_Card";
 
 const Machine_Frame = () => {

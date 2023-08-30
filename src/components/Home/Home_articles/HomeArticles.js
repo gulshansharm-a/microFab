@@ -1,9 +1,9 @@
 import React from "react";
 import ArticleCard from "./ArticleCard";
-import img1 from "../../assets/Home_article/article1.svg";
-import img2 from "../../assets/Home_article/article2.svg";
-import img3 from "../../assets/Home_article/article3.svg";
-import arrow_right from "../../assets/Home_article/ArrowRight.svg";
+import img1 from "../../../assets/Home_article/article1.svg";
+import img2 from "../../../assets/Home_article/article2.svg";
+import img3 from "../../../assets/Home_article/article3.svg";
+import arrow_right from "../../../assets/Home_article/ArrowRight.svg";
 
 export default function HomeArticle() {
   const articles = [

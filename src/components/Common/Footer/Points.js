@@ -1,4 +1,4 @@
-import arrow from "../../assets/Icons/arrow.svg";
+import arrow from "../../../assets/Icons/arrow.svg";
 
 export default function Points({ last }) {
   return (

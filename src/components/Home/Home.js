@@ -1,17 +1,18 @@
-import Header from "./components/Header/Header";
-import Machine_Frame from "./components/machine_frame/Machine_frame";
-import Why_Microfab from "./components/right/Why_MicroFab";
-import BFS from "./components/right/BFS_FFS";
-import Moulds from "./components/right/Moulds";
-import sold_img from "./assets/Machinary_sold_over.svg";
-import Analytics from "./components/Analytics/Analytics";
-import OptionsButtons from "./components/Options/OptionButtons";
-import WaterTS from "./components/water_treatment_system/water_TS";
-import Footer from "./components/Footer/Footer";
-import Who_are_we from "./components/Who_are_we/Who_are_we";
-import ContactForm from "./components/Contact_form/Contact_form";
-import GetinTouchWithUs from "./components/GetinTouchWithUs/GetinTouchWithUs";
-import HomeArticle from "./components/Home_articles/HomeArticles";
+import Header from "../Common/Header/Header";
+import Machine_Frame from "./machine_frame/Machine_frame";
+import Why_Microfab from "./right/Why_MicroFab";
+import BFS from "./right/BFS_FFS";
+import Moulds from "./right/Moulds";
+import sold_img from "../../assets/Machinary_sold_over.svg";
+import Analytics from "./Analytics/Analytics";
+import OptionsButtons from "./Options/OptionButtons";
+import WaterTS from "./water_treatment_system/water_TS";
+import Footer from "../Common/Footer/Footer";
+import Who_are_we from "./Who_are_we/Who_are_we";
+import ContactForm from "../Contact/Contact_form/Contact_form";
+import GetinTouchWithUs from "../Contact/GetinTouchWithUs/GetinTouchWithUs";
+import HomeArticle from "./Home_articles/HomeArticles";
+
 
 export default function Home() {
   return (

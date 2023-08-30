@@ -1,7 +1,7 @@
-import img1 from "../../assets/Icons/air.svg";
-import img2 from "../../assets/Icons/bottle.svg"; // Assuming img2 is the path to your second image
-import arrow from "../../assets/Icons/arrow.svg";
-import "../../App.css";
+import img1 from "../../../assets/Icons/air.svg";
+import img2 from "../../../assets/Icons/bottle.svg"; // Assuming img2 is the path to your second image
+import arrow from "../../../assets/Icons/arrow.svg";
+import "../../../App.css";
 
 export default function BFS({ content }) {
   const imageToShow = content === "BFS" ? img1 : content === "FFS" ? img2 : null;

@@ -1,11 +1,11 @@
 import React from "react";
-import "../../App.css";
-import machine from "../../assets/water_TS/machine.svg";
-import WTS from "../../assets/water_TS/water_treatment_system.svg";
-import WCO from "../../assets/water_TS/water_check_outline.svg";
-import water_polo from "../../assets/water_TS/water_polo.svg";
-import sync from "../../assets/water_TS/sync.svg";
-import STO from "../../assets/water_TS/storage_tank-outline.svg";
+import "../../../App.css";
+import machine from "../../../assets/water_TS/machine.svg";
+import WTS from "../../../assets/water_TS/water_treatment_system.svg";
+import WCO from "../../../assets/water_TS/water_check_outline.svg";
+import water_polo from "../../../assets/water_TS/water_polo.svg";
+import sync from "../../../assets/water_TS/sync.svg";
+import STO from "../../../assets/water_TS/storage_tank-outline.svg";
 
 const WaterTS = () => {
   return (

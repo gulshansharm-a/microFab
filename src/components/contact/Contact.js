@@ -1,5 +1,5 @@
-import ContactForm from "../Contact_form/Contact_form";
-import GetinTouchWithUs from "../GetinTouchWithUs/GetinTouchWithUs";
+import ContactForm from "./Contact_form/Contact_form";
+import GetinTouchWithUs from "./GetinTouchWithUs/GetinTouchWithUs";
 import StoryPeek from "../../assets/contact/StoryPeek.svg";
 import location from "../../assets/contact/location.svg";
 import call from "../../assets/contact/call.svg";

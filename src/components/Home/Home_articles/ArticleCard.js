@@ -1,4 +1,4 @@
-import arrow_right from "../../assets/Home_article/ArrowRight.svg";
+import arrow_right from "../../../assets/Home_article/ArrowRight.svg";
 
 export default function ArticleCard({ content, sub, img }) {
   return (
