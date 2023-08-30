@@ -174,7 +174,7 @@ class App extends React.Component {
     const { isMobile, activeToken } = this.state;
 
     return (
-      <div className ="App">
+      <div className ="App md:mt-[100px] mt-[100px]">
         <div className="qa"><center>
       <h3
           className="mb-2 text-5xl leading-tight text-black">

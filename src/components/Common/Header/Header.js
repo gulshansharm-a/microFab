@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { Link } from 'react-router-dom';
-
+import { Link } from "react-router-dom";
 
 import ExpandMore from "../../../assets/Icons/Header_Icons/Down.svg";
 import ExpandLess from "../../../assets/Icons/Header_Icons/Up.svg";
@@ -42,6 +41,9 @@ const Header = () => {
 
   const handleTechnologyCardClick = (content) => {
     setSelectedTechnologyCard(content);
+    if (window.innerWidth < 768) {
+      toggleMenu(); // Close the menu by calling the toggleMenu function
+    }
   };
 
   const handleApplicationCardClick = (content) => {
@@ -50,7 +52,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 md:w-full py-4 z-10 ${
+      className={`border-2 fixed top-0 left-0 right-0 md:w-full py-4 z-10 ${
         isMenuOpen ? "bg-white" : "bg-gradient-to-r from-[#e1e1e1] to-[#8ca7ab]"
       } w-screen`}
       style={
@@ -62,19 +64,25 @@ const Header = () => {
         <div className="font-light relative">
           <ul className="hidden md:flex md:gap-14 md:text-[18px] md:text[16px] z-20">
             <li>
-              < Link to="/">Home</Link>
+              <Link to="/" onClick={toggleMenu}>
+                Home
+              </Link>
             </li>
             <li>
-              < Link to="/about">About Us</Link>
+              <Link to="/about" onClick={toggleMenu}>
+                About Us
+              </Link>
             </li>
             <li className="relative cursor-pointer">
               <div
                 className={`flex items-center cursor-pointer ${
                   isTechnologyDropdownOpen ? "font-bold" : ""
                 }`}
-                onClick={toggleTechnologyDropdown}
+                onClick={toggleTechnologyDropdown && toggleMenu}
               >
-                < Link to="/Technology">Technology</Link>
+                <Link to="/Technology" onClick={toggleMenu}>
+                  Technology
+                </Link>
                 {isTechnologyDropdownOpen ? (
                   <img
                     src={ExpandLess}
@@ -132,7 +140,9 @@ const Header = () => {
                 }`}
                 onClick={toggleApplicationDropdown}
               >
-                < Link to="/Applications">Applications</Link>
+                <Link to="/Applications" onClick={toggleMenu}>
+                  Applications
+                </Link>
                 {isApplicationDropdownOpen ? (
                   <img
                     src={ExpandLess}
@@ -193,13 +203,19 @@ const Header = () => {
               )}
             </li>
             <li>
-              < Link to="/articles">Articles</Link>
+              <Link to="/articles" onClick={toggleMenu}>
+                Articles
+              </Link>
             </li>
             <li>
-              < Link to="/blogs">Blogs</Link>
+              <Link to="/blogs" onClick={toggleMenu}>
+                Blogs
+              </Link>
             </li>
             <li>
-              < Link to="/TP">Terms & policies</Link>
+              <Link to="/TP" onClick={toggleMenu}>
+                Terms & policies
+              </Link>
             </li>
           </ul>
         </div>
@@ -207,7 +223,9 @@ const Header = () => {
           <ul className="flex flex-col justify-center items-center">
             <img src={contact} alt="Contact" className="w-4 h-4 mr-2" />
             <li>
-              < Link to="/contact">Contact</Link>
+              <Link to="/contact" onClick={toggleMenu}>
+                Contact
+              </Link>
             </li>
           </ul>
         </div>
@@ -231,10 +249,14 @@ const Header = () => {
         <div className="relative z-50 md:hidden h-screen w-screen bg-[#8AA6AA] text-white text-[28px] p-4 mt-4 shadow-md">
           <ul className="flex flex-col gap-4 gap-y-6">
             <li>
-              < Link to="/">Home</Link>
+              <Link to="/" onClick={toggleMenu}>
+                Home
+              </Link>
             </li>
             <li>
-              < Link to="/about">About Us</Link>
+              <Link to="/about" onClick={toggleMenu}>
+                About Us
+              </Link>
             </li>
             <li className="relative cursor-pointer">
               <div
@@ -369,16 +391,24 @@ const Header = () => {
               )}
             </li>
             <li>
-              < Link to="/articles">Articles</Link>
+              <Link to="/articles" onClick={toggleMenu}>
+                Articles
+              </Link>
             </li>
             <li>
-              < Link to="/blogs">Blogs</Link>
+              <Link to="/blogs" onClick={toggleMenu}>
+                Blogs
+              </Link>
             </li>
             <li>
-              < Link to="/TP">Terms & policies</Link>
+              <Link to="/TP" onClick={toggleMenu}>
+                Terms & policies
+              </Link>
             </li>
             <li>
-              < Link to="/contact">CONTACT</Link>
+              <Link to="/contact" onClick={toggleMenu}>
+                CONTACT
+              </Link>
             </li>
           </ul>
         </div>
