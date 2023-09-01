@@ -13,6 +13,7 @@ import ContactForm from "../Contact/Contact_form/Contact_form";
 import GetinTouchWithUs from "../Contact/GetinTouchWithUs/GetinTouchWithUs";
 import HomeArticle from "./Home_articles/HomeArticles";
 import HomeBlog from "./Home_blogs/HomeBlog";
+import HappyCustomers from "./Happy_customers/HappyCutomers";
 
 
 export default function Home() {
@@ -55,6 +56,8 @@ export default function Home() {
       <HomeArticle/>
 
       <HomeBlog/>
+
+      {/* <HappyCustomers/> */}
 
       <Footer />
       
