@@ -12,11 +12,12 @@ import Who_are_we from "./Who_are_we/Who_are_we";
 import ContactForm from "../Contact/Contact_form/Contact_form";
 import GetinTouchWithUs from "../Contact/GetinTouchWithUs/GetinTouchWithUs";
 import HomeArticle from "./Home_articles/HomeArticles";
+import HomeBlog from "./Home_blogs/HomeBlog";
 
 
 export default function Home() {
   return (
-    <div className="md:h-screen h-screen overflow-x-hidden md:overflow-x-hidden">
+    <div className="md:h-screen w-screen h-screen overflow-x-hidden md:overflow-x-hidden">
       {/* <Header /> */}
       <div className="flex flex-col">
         <div className="md:h-screen md:w-screen h-[1400px] w-[100%] md:flex md:flex-row flex flex-col">
@@ -45,13 +46,15 @@ export default function Home() {
 
       <OptionsButtons />
 
-      <div className="flex justify-center w-full">
+      <div className="flex justify-center w-screen">
         <WaterTS />
       </div>
 
       <Who_are_we/>
 
       <HomeArticle/>
+
+      <HomeBlog/>
 
       <Footer />
       
