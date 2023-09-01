@@ -1,5 +1,6 @@
 import React from 'react';
 import './Style4.css';
+import Footer from '../Common/Footer/Footer';
 
 class App extends React.Component {
   constructor(props) {
@@ -216,6 +217,8 @@ class App extends React.Component {
           {this.state.content}
         </div>
       </div>
+
+      <Footer/>
 
       </div>
     );

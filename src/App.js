@@ -35,14 +35,11 @@ function AppContent() {
         <Route path="/articles" element={<Article />} />
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<Home />} />
+        <Route path="/technology" element={<Home />} />
       </Routes>
-
-      <div className="md:w-full md:flex md:justify-between md:flex-row w-full">
-        <GetinTouchWithUs />
-        <ContactForm />
-      </div>
-
-      <Footer />
+      
+     
     </div>
   );
 }

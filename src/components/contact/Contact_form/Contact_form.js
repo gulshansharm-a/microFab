@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../../../App.css";
+import Footer from "../../Common/Footer/Footer";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -133,6 +134,8 @@ const ContactForm = () => {
           Submit
         </button>
       </form>
+
+      {/* <Footer/> */}
     </div>
   );
 };

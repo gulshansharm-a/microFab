@@ -1,12 +1,3 @@
-// export default function AboutUs()
-// {
-//     return(
-//         <div className="mt-[100px]">
-//             About us
-//         </div>
-//     )
-// }
-
 import logo from './logo.svg';
 import './Style.css';
 import { NavbarDefault } from "./Navbar";
@@ -15,6 +6,7 @@ import we from "./qw.png"
 import tasto from "./testicards.json"
 import Slider from "./slider";
 import TestimonialCard from "./testicard";
+import Footer from '../Common/Footer/Footer';
 
 function AboutUs() {
   return (
@@ -221,12 +213,8 @@ culpa qui officia deserunt mollit anim id est laborum.If you are a Hookah busine
 
         </p>
       </div>
+      <Footer/>
     </div>
-    // </div>
-    
-    
-      
-     
   );
 }
 

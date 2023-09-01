@@ -56,7 +56,7 @@ export default function OptionsButtons() {
         </div>
 
         <div className="flex flex-col md:flex-row md:justify-between md:place-items-center text-left">
-          <div className="flex flex-col md:flex-col md:w-[600px] md:h-[300px]">
+          <div className=" flex flex-col md:flex-col md:w-[600px] md:h-[300px]">
 
 
             {/* flow chart for mobile*/}
@@ -80,7 +80,7 @@ export default function OptionsButtons() {
 
             <div className="font-bold">{selectedContent?.sub}</div>
             <div className="">{selectedContent?.sub_content}</div>
-            <div className="ml-[25%] mt-[20px] rounded-lg md:mt-[7%] gap-4 text-white justify-center place-items-center md:rounded-md bg-[#8AA6AA] border-[#8AA6AA] flex md:flex-row md:h-[15%] md:w-[35%] h-[50px] w-[50%]">
+            <div className="mt-[20px] rounded-lg md:mt-[7%] md:mb-[5%] gap-4 text-white justify-center place-items-center md:rounded-md bg-[#8AA6AA] border-[#8AA6AA] flex md:flex-row md:h-[15%] md:w-[35%] h-[50px] w-[50%]">
               <button>Know More</button>
               <img src={arrow} alt="arrow" className="md:h-[20px]"></img>
             </div>

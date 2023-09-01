@@ -5,6 +5,7 @@ import location from "../../assets/contact/location.svg";
 import call from "../../assets/contact/call.svg";
 import mail from "../../assets/contact/mail.svg";
 import bg from "../../assets/contact/bg.svg";
+import Footer from "../Common/Footer/Footer";
 
 export default function Contact() {
   return (
@@ -68,6 +69,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }

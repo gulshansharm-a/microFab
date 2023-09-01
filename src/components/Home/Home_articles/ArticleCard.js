@@ -5,7 +5,7 @@ export default function ArticleCard({ content, sub, img }) {
     <div className="font-mono flex flex-col rounded-lg shadow-md">
       <div>
         <img src={img} alt="Article Thumbnail" />
-        <p className="text-[#8AA6AA]">{content}</p>
+        <p className="text-black">{content}</p>
         <p className="text-gray-500">{sub}</p>
       </div>
       <div className="flex flex-row place-items-center gap-3">

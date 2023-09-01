@@ -33,15 +33,15 @@ export default function HomeArticle() {
         <p className="md:block hidden text-[#8AA6AA]">View all</p>
       </div>
 
-      <div className="w-full md:h-[300px] flex flex-col md:flex-row md:flex-wrap">
-        <div className="md:w-1/2 w-full p-2">
+      <div className="w-full md:h-[350px] flex flex-col md:flex-row md:flex-wrap">
+        <div className="md:w-1/2 md:h-full w-full p-2">
           <ArticleCard
             content={articles[0].content}
             sub={articles[0].sub}
             img={articles[0].img}
           />
         </div>
-        <div className="w-full md:w-1/2 flex flex-col md:flex-row">
+        <div className="w-full md:w-1/2 md:h-full flex flex-col md:flex-row">
           <div className="md:w-full w-full p-2">
             <ArticleCard
               content={articles[1].content}

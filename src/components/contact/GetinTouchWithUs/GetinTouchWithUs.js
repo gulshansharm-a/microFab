@@ -11,7 +11,7 @@ export default function GetinTouchWithUs() {
           <p className="md:text-[30px] text-[25px] font-bold">Get in Touch</p>
           <p className="md:text-[30px] text-[25px] text-[#8AA6AA] ml-2 md:ml-2.5"> With Us</p>
         </div>
-        <p className="w-[80%]">
+        <p className="w-[80%] text-left">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum
           dolor sit amet, consectetur adipiscing elit.
         </p>
