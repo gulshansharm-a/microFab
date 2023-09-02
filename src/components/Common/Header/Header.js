@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { useLocation } from "react-router-dom"; 
+import { useLocation } from "react-router-dom";
 
 import ExpandMore from "../../../assets/Icons/Header_Icons/Down.svg";
 import ExpandLess from "../../../assets/Icons/Header_Icons/Up.svg";
@@ -53,13 +53,22 @@ const Header = () => {
 
   const location = useLocation();
 
+  console.log(location.pathname);
+
   return (
     <header
-      className={`border-2 fixed top-0 left-0 right-0 md:w-full py-4 z-10 ${
+      className={`fixed top-0 left-0 p-0 m-0 right-0 md:w-full py-4 z-10 ${
         isMenuOpen ? "bg-white" : "bg-gradient-to-r from-[#e1e1e1] to-[#8ca7ab]"
       } w-screen`}
       style={
-        !isMenuOpen && window.innerWidth && location.pathname !== "/"  >= 768 ? { background: "#FFFFFF" } : {}
+        (!isMenuOpen &&
+          window.innerWidth >= 768 &&
+          location.pathname !== "/") ||
+        (!isMenuOpen && 
+          window.innerWidth < 768 && 
+          location.pathname !== "/")
+          ? { background: "#FFFFFF" }
+          : {}
       }
     >
       <nav className="relative mx-4 md:mx-20 xl:mx-32 2xl:mx-40 flex flex-row items-center justify-between">
@@ -348,52 +357,52 @@ const Header = () => {
               {/* application in mobile */}
               {isApplicationDropdownOpen && (
                 <Link to="/applications" onClick={toggleMenu}>
-                <div className="md:absolute mt-2 bg-white border border-gray-300 p-4 rounded-lg shadow-md h-[250px] w-[350px] md:w-[739px] mx-auto md:left-1/2 md:transform md:-translate-x-1/2">
-                  <div className="flex flex-row gap-[16px]">
-                    <Card
-                      content="Pharmaceutical Industry"
-                      img={img4}
-                      isSelected={
-                        selectedApplicationCard === "Pharmaceutical Industry"
-                      }
-                      onClick={() =>
-                        toggleMenu && 
-                        handleApplicationCardClick("Pharmaceutical Industry")
-                      }
-                    />
-                    <Card
-                      content="Cosmetic Industry"
-                      img={img5}
-                      isSelected={
-                        selectedApplicationCard === "Cosmetic Industry"
-                      }
-                      onClick={() =>
-                        handleApplicationCardClick("Cosmetic Industry")
-                      }
-                    />
+                  <div className="md:absolute mt-2 bg-white border border-gray-300 p-4 rounded-lg shadow-md h-[250px] w-[350px] md:w-[739px] mx-auto md:left-1/2 md:transform md:-translate-x-1/2">
+                    <div className="flex flex-row gap-[16px]">
+                      <Card
+                        content="Pharmaceutical Industry"
+                        img={img4}
+                        isSelected={
+                          selectedApplicationCard === "Pharmaceutical Industry"
+                        }
+                        onClick={() =>
+                          toggleMenu &&
+                          handleApplicationCardClick("Pharmaceutical Industry")
+                        }
+                      />
+                      <Card
+                        content="Cosmetic Industry"
+                        img={img5}
+                        isSelected={
+                          selectedApplicationCard === "Cosmetic Industry"
+                        }
+                        onClick={() =>
+                          handleApplicationCardClick("Cosmetic Industry")
+                        }
+                      />
+                    </div>
+                    <div className="flex flex-row gap-[16px]">
+                      <Card
+                        content="Food Industry"
+                        img={img6}
+                        isSelected={selectedApplicationCard === "Food Industry"}
+                        onClick={() =>
+                          handleApplicationCardClick("Food Industry")
+                        }
+                      />
+                      <Card
+                        content="Chemical Industry"
+                        img={img7}
+                        isSelected={
+                          selectedApplicationCard === "Chemical Industry"
+                        }
+                        onClick={() =>
+                          handleApplicationCardClick("Chemical Industry")
+                        }
+                      />
+                    </div>
                   </div>
-                  <div className="flex flex-row gap-[16px]">
-                    <Card
-                      content="Food Industry"
-                      img={img6}
-                      isSelected={selectedApplicationCard === "Food Industry"}
-                      onClick={() =>
-                        handleApplicationCardClick("Food Industry")
-                      }
-                    />
-                    <Card
-                      content="Chemical Industry"
-                      img={img7}
-                      isSelected={
-                        selectedApplicationCard === "Chemical Industry"
-                      }
-                      onClick={() =>
-                        handleApplicationCardClick("Chemical Industry")
-                      }
-                    />
-                  </div>
-                </div>
-              </Link>
+                </Link>
               )}
             </li>
             <li>
