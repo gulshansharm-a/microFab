@@ -45,7 +45,6 @@ function AppContent() {
         <Route path="/technology" element={<Home />} />
       </Routes>
 
-      <Footer />
     </div>
   );
 }

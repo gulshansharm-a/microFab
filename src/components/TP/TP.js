@@ -3,6 +3,7 @@ import up_img from "../../assets/TP/up.svg";
 import down_img from "../../assets/TP/down.svg";
 import Terms_conditions from "./Terms_conditions";
 import Policy from "./Policy"; // Import your Policy component
+import Footer from "../Common/Footer/Footer";
 
 export default function TP() {
   const date = "August 14th, 2023";
@@ -91,6 +92,7 @@ export default function TP() {
           {selectedComponent} {/* Render the selected component */}
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }

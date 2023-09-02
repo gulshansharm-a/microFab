@@ -1,3 +1,4 @@
+import Footer from "../Common/Footer/Footer";
 import ArticleCardScroll from "./ArticleComponents/ArticleCardScroll";
 import Article_Heading from "./ArticleComponents/Article_Heading";
 
@@ -12,6 +13,7 @@ export default function Articles() {
             <Article_Heading/>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }
