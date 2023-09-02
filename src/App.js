@@ -4,14 +4,16 @@ import { Route, Routes } from "react-router-dom";
 import { useLocation } from "react-router-dom"; // Import useLocation
 import Header from "./components/Common/Header/Header";
 import Footer from "./components/Common/Footer/Footer";
-import GetinTouchWithUs from "./components/Contact/GetinTouchWithUs/GetinTouchWithUs";
-import ContactForm from "./components/Contact/Contact_form/Contact_form";
-import Contact from './components/Contact/Contact'
-import AboutUs from "./components/AboutUs/AboutUs";
-import Applications from './components/Applications/Applications'
+import GetinTouchWithUs from "./components/contact/GetinTouchWithUs/GetinTouchWithUs";
+import ContactForm from "./components/contact/Contact";
+import Contact from './components/contact/Contact'
+import AboutUs from "./about";
+import Applications from './Application'
 import Article from './components/Articles/Article'
 import TP from './components/TP/TP'
 import Home from "./components/Home/Home";
+import "./Style.css";
+import "./Styles12.css";
 
 export default function App() {
   return (

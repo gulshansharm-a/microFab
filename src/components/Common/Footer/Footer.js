@@ -3,8 +3,8 @@ import dot from "../../../assets/Footer/dot.svg";
 import insta from "../../../assets/Footer/instagram.svg";
 import tikTok from "../../../assets/Footer/tik-tok.svg";
 import facebook from "../../../assets/Footer/facebook.svg";
-import GetinTouchWithUs from "../../Contact/GetinTouchWithUs/GetinTouchWithUs";
-import ContactForm from "../../Contact/Contact_form/Contact_form";
+import GetinTouchWithUs from "../../contact/GetinTouchWithUs/GetinTouchWithUs";
+import ContactForm from "../../contact/Contact_form/Contact_form";
 
 export default function Footer() {
   return (
