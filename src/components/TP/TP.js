@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import up from "../../assets/TP/up.svg";
-import down from "../../assets/TP/down.svg";
+import up_img from "../../assets/TP/up.svg";
+import down_img from "../../assets/TP/down.svg";
 import Terms_conditions from "./Terms_conditions";
 import Policy from "./Policy"; // Import your Policy component
 
@@ -57,7 +57,7 @@ export default function TP() {
         </div>
 
         {/* Custom Mobile Dropdown */}
-        <div className="md:hidden relative p-7">
+        <div className="md:hidden relative mb-6">
           <div
             className="w-full p-2 border rounded text-[#8AA6AA] bg-white cursor-pointer flex justify-between items-center"
             onClick={() => setShowDropdown(!showDropdown)}
@@ -66,7 +66,7 @@ export default function TP() {
               {selected}
             </span>
             <img
-              src={showDropdown ? up : down}
+              src={showDropdown ? up_img : down_img}
               alt="Dropdown Icon"
               className="w-4 h-4"
             />

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom"; 
 
 import ExpandMore from "../../../assets/Icons/Header_Icons/Down.svg";
 import ExpandLess from "../../../assets/Icons/Header_Icons/Up.svg";
@@ -50,13 +51,15 @@ const Header = () => {
     setSelectedApplicationCard(content);
   };
 
+  const location = useLocation();
+
   return (
     <header
       className={`border-2 fixed top-0 left-0 right-0 md:w-full py-4 z-10 ${
         isMenuOpen ? "bg-white" : "bg-gradient-to-r from-[#e1e1e1] to-[#8ca7ab]"
       } w-screen`}
       style={
-        !isMenuOpen && window.innerWidth >= 768 ? { background: "#FFFFFF" } : {}
+        !isMenuOpen && window.innerWidth && location.pathname !== "/"  >= 768 ? { background: "#FFFFFF" } : {}
       }
     >
       <nav className="relative mx-4 md:mx-20 xl:mx-32 2xl:mx-40 flex flex-row items-center justify-between">

@@ -8,11 +8,11 @@ import ContactForm from "./components/contact/Contact";
 import Contact from './components/contact/Contact'
 import AboutUs from "./about";
 import Applications from './Application'
-import Article from './components/Articles/Article'
 import TP from './components/TP/TP'
 import Home from "./components/Home/Home";
 import "./Style.css";
 import "./Styles12.css";
+import Articles from "./components/Articles/Articles";
 
 export default function App() {
   return (
@@ -38,7 +38,7 @@ function AppContent() {
         <Route path="/about" element={<AboutUs />} />
         <Route path="/applications" element={<Applications />} />
         <Route path="/tp" element={<TP />} />
-        <Route path="/articles" element={<Article />} />
+        <Route path="/articles" element={<Articles />} />
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Home />} />

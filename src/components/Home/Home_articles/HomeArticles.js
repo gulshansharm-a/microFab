@@ -123,7 +123,7 @@ export default function HomeArticle() {
 
         {/* View All Button */}
         <button className="mt-4 text-white bg-[#8AA6AA] w-full p-4 rounded-lg flex flex-row justify-center place-items-center">
-          <Link to={'/articles'}>
+          <Link to={"/articles"}>
             <p className="">View all</p>
           </Link>
           <img
