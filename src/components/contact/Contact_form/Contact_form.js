@@ -43,7 +43,7 @@ const ContactForm = () => {
 
   return (
     <div className="md:ml-0 ml-[20%] md:w-[50%] w-[100%] md:ml-0 max-w-lg mx-auto w-full flex justify-center place-items-center custom-font md:m-10 m-10 md:rounded-[33px] md:border md:p-10 md:border-[#8AA6AA] md:my-4 md:mt-10 md:mb-10 p-4 rounded-md">
-      <form onSubmit={handleSubmit} className="space-y-4">
+      <form onSubmit={handleSubmit} className="space-y-4 text-left">
         <div className="md:flex md:space-x-4">
           <div className="md:w-1/2 w-3/5">
             <label htmlFor="firstName">First Name</label>
@@ -96,8 +96,8 @@ const ContactForm = () => {
             />
           </div>
         </div>
-        <div>
-          <label htmlFor="serviceInterestedIn">Service Interested In</label>
+        <div className="flex flex-col justify-start">
+          <label htmlFor="serviceInterestedIn" className="text-left">Service Interested In</label>
           <select
             id="serviceInterestedIn"
             name="serviceInterestedIn"
@@ -116,7 +116,7 @@ const ContactForm = () => {
           </select>
         </div>
         <div className="flex flex-col">
-          <label htmlFor="message">Message</label>
+          <label htmlFor="message" className="text-left">Message</label>
           <textarea
             id="message"
             name="message"
