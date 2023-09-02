@@ -14,6 +14,9 @@ import Slider from "./slider";
 import TestimonialCard from "./tasticard";
 import testimonials from "./testimonials.json";
 import { useState } from 'react';
+import Footer from './components/Common/Footer/Footer';
+
+
 function Application() {
   
   const [selectedImage, setSelectedImage] = useState(null);
@@ -23,7 +26,6 @@ function Application() {
   };
     return (
       <>
-      
        
           {/* <div> */}
             <div>
@@ -136,7 +138,9 @@ pharmaceutical industry</h3>
         <br></br>
         </div>
    
-    
+        <div>
+          <Footer/>
+        </div>
     
       </>
     );
