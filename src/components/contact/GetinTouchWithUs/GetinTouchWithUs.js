@@ -17,15 +17,15 @@ export default function GetinTouchWithUs() {
         </p>
       </div>
 
-      <div className="w-full flex flex-col md:gap-6 gap-10 md:mb-10">
+      <div className="w-full flex flex-col md:gap-8 gap-10 md:mb-10">
         <div className="md:gap-0 gap-6 w-full flex md:flex-row flex-col md:justify-start justify-center md:place-items-start">
           {/* office */}
-          <div className="md:w-[50%] w-[70%] ">
+          <div className="md:w-[50%] w-[70%] mr-5">
             <div className="flex flex-row gap-2">
               <img src={office} alt="office" className=""></img>
               <p className="md:text-[26px] text-[#8AA6AA]">Office</p>
             </div>
-            <p className="md:text-[14px]">
+            <p className="md:text-[14px] text-left">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem
               ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
@@ -37,19 +37,19 @@ export default function GetinTouchWithUs() {
               <img src={business} alt="office" className=""></img>
               <p className="md:text-[26px] text-[#8AA6AA]">Open Hours</p>
             </div>
-            <p className="md:text-[14px]">Monday - Friday</p>
-            <p className="md:text-[14px]">9AM - 6 PM</p>
+            <p className="md:text-[14px] text-left">Monday - Friday</p>
+            <p className="md:text-[14px] text-left">9AM - 6 PM</p>
           </div>
         </div>
         <div className="flex md:flex-row flex-col">
           {/* contact */}
-          <div className="md:w-[50%] w-[70%] ">
+          <div className="md:w-[50%] w-[70%] mr-5 justify-start">
             <div className="flex flex-row gap-2">
               <img src={contact} alt="office" className=""></img>
               <p className="md:text-[26px] text-[#8AA6AA]">Contact</p>
             </div>
-            <p className="md:text-[14px]">+91 676 787 68 78</p>
-            <p className="md:text-[14px]">+91 676 787 68 78</p>
+            <p className="md:text-[14px] text-left">+91 676 787 68 78</p>
+            <p className="md:text-[14px] text-left">+91 676 787 68 78</p>
           </div>
 
           {/* email */}
@@ -58,8 +58,8 @@ export default function GetinTouchWithUs() {
               <img src={contact} alt="office" className=""></img>
               <p className="md:text-[26px] text-[#8AA6AA]">Email</p>
             </div>
-            <p className="md:text-[14px]">+services@microfab.com</p>
-            <p className="md:text-[14px]">sales@microfab.com</p>
+            <p className="md:text-[14px] text-left">+services@microfab.com</p>
+            <p className="md:text-[14px] text-left">sales@microfab.com</p>
           </div>
         </div>
       </div>
