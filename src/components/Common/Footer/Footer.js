@@ -11,10 +11,13 @@ export default function Footer() {
     <div className="w-full">
 
       {/* the contact page above every footer */}
-      <div className="w-full">
-        <div className="md:w-full md:flex md:justify-between md:flex-row w-full flex-grow">
+      <div className="w-full flex flex-">
+        <div className="md:w-full md:flex md:justify-center gap-4 md:flex-row w-full flex-grow">
           <GetinTouchWithUs />
           <ContactForm />
+        </div>
+        <div>
+
         </div>
       </div>
 

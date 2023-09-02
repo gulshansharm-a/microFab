@@ -344,6 +344,7 @@ const Header = () => {
 
               {/* application in mobile */}
               {isApplicationDropdownOpen && (
+                <Link to="/applications" onClick={toggleMenu}>
                 <div className="md:absolute mt-2 bg-white border border-gray-300 p-4 rounded-lg shadow-md h-[250px] w-[350px] md:w-[739px] mx-auto md:left-1/2 md:transform md:-translate-x-1/2">
                   <div className="flex flex-row gap-[16px]">
                     <Card
@@ -353,6 +354,7 @@ const Header = () => {
                         selectedApplicationCard === "Pharmaceutical Industry"
                       }
                       onClick={() =>
+                        toggleMenu && 
                         handleApplicationCardClick("Pharmaceutical Industry")
                       }
                     />
@@ -388,6 +390,7 @@ const Header = () => {
                     />
                   </div>
                 </div>
+              </Link>
               )}
             </li>
             <li>

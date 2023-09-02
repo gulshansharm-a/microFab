@@ -1,7 +1,6 @@
-import React from "react";
-import { BrowserRouter as Router } from 'react-router-dom';
+import React, { useEffect } from "react";
+import { BrowserRouter as Router, useLocation } from "react-router-dom";
 import { Route, Routes } from "react-router-dom";
-import { useLocation } from "react-router-dom"; // Import useLocation
 import Header from "./components/Common/Header/Header";
 import Footer from "./components/Common/Footer/Footer";
 import GetinTouchWithUs from "./components/contact/GetinTouchWithUs/GetinTouchWithUs";
@@ -18,13 +17,18 @@ import "./Styles12.css";
 export default function App() {
   return (
     <Router>
-      <AppContent /> {/* Wrap your content in a separate component */}
+      <AppContent />
     </Router>
   );
 }
 
 function AppContent() {
-  const location = useLocation(); // Now using useLocation within a Router context
+  const location = useLocation();
+
+  useEffect(() => {
+    // Scroll to the top of the page on route change
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   return (
     <div className="w-screen border-2 overflow-x-hidden">
@@ -40,8 +44,8 @@ function AppContent() {
         <Route path="*" element={<Home />} />
         <Route path="/technology" element={<Home />} />
       </Routes>
-      
-     
+
+      <Footer />
     </div>
   );
 }

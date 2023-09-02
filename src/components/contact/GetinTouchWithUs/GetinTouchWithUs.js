@@ -7,11 +7,11 @@ export default function GetinTouchWithUs() {
   return (
     <div className="font-mono md:w-[50%] md:p-10 p-10 md:gap-0 gap-4 flex flex-col justify-between">
       <div className="flex md:flex-col flex-col md:justify-start">
-        <div className="flex flex-row">
+        <div className="flex flex-row mb-3">
           <p className="md:text-[30px] text-[25px] font-bold">Get in Touch</p>
           <p className="md:text-[30px] text-[25px] text-[#8AA6AA] ml-2 md:ml-2.5"> With Us</p>
         </div>
-        <p className="w-[80%] text-left">
+        <p className="w-[90%] text-left">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum
           dolor sit amet, consectetur adipiscing elit.
         </p>
@@ -20,7 +20,7 @@ export default function GetinTouchWithUs() {
       <div className="w-full flex flex-col md:gap-8 gap-10 md:mb-10">
         <div className="md:gap-0 gap-6 w-full flex md:flex-row flex-col md:justify-start justify-center md:place-items-start">
           {/* office */}
-          <div className="md:w-[50%] w-[70%] mr-5">
+          <div className="md:w-[50%] w-[90%] mr-5">
             <div className="flex flex-row gap-2">
               <img src={office} alt="office" className=""></img>
               <p className="md:text-[26px] text-[#8AA6AA]">Office</p>
@@ -43,7 +43,7 @@ export default function GetinTouchWithUs() {
         </div>
         <div className="flex md:flex-row flex-col">
           {/* contact */}
-          <div className="md:w-[50%] w-[70%] mr-5 justify-start">
+          <div className="md:w-[50%] w-[90%] mr-5 justify-start">
             <div className="flex flex-row gap-2">
               <img src={contact} alt="office" className=""></img>
               <p className="md:text-[26px] text-[#8AA6AA]">Contact</p>

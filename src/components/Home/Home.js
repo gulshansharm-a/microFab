@@ -57,7 +57,7 @@ export default function Home() {
 
       <HomeBlog/>
 
-      {/* <HappyCustomers/> */}
+      <HappyCustomers/>
 
       <Footer />
       

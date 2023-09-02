@@ -1,10 +1,7 @@
-import ContactForm from "./Contact_form/Contact_form";
-import GetinTouchWithUs from "./GetinTouchWithUs/GetinTouchWithUs";
 import StoryPeek from "../../assets/contact/StoryPeek.svg";
 import location from "../../assets/contact/location.svg";
 import call from "../../assets/contact/call.svg";
 import mail from "../../assets/contact/mail.svg";
-import bg from "../../assets/contact/bg.svg";
 import Footer from "../Common/Footer/Footer";
 
 export default function Contact() {

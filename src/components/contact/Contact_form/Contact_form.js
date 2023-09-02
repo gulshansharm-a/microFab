@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "../../../App.css";
-import Footer from "../../Common/Footer/Footer";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -42,10 +41,13 @@ const ContactForm = () => {
   ];
 
   return (
-    <div className="md:ml-0 ml-[20%] md:w-[50%] w-[100%] md:ml-0 max-w-lg mx-auto w-full flex justify-center place-items-center custom-font md:m-10 m-10 md:rounded-[33px] md:border md:p-10 md:border-[#8AA6AA] md:my-4 md:mt-10 md:mb-10 p-4 rounded-md">
-      <form onSubmit={handleSubmit} className="space-y-4 text-left">
+    <div className="md:ml-0 md:w-[60%] max-w-lg mx-auto w-full flex justify-center place-items-center custom-font md:m-10 m-10 md:rounded-[33px] md:border md:p-10 md:border-[#8AA6AA] md:my-4 md:mt-10 md:mb-10 p-4 rounded-md">
+      <form
+        onSubmit={handleSubmit}
+        className="border-2 space-y-4 text-left md:w-[100%] w-[90%] md:rounded-none rounded-[30px] p-6"
+      >
         <div className="md:flex md:space-x-4">
-          <div className="md:w-1/2 w-3/5">
+          <div className="md:w-1/2 w-full">
             <label htmlFor="firstName">First Name</label>
             <input
               type="text"
@@ -57,7 +59,7 @@ const ContactForm = () => {
               className="w-full border border-black rounded-md p-2"
             />
           </div>
-          <div className="md:w-1/2 w-3/5">
+          <div className="md:w-1/2 w-full">
             <label htmlFor="lastName">Last Name</label>
             <input
               type="text"
@@ -71,7 +73,7 @@ const ContactForm = () => {
           </div>
         </div>
         <div className="md:flex md:space-x-4">
-          <div className="md:w-1/2 w-3/5">
+          <div className="md:w-1/2 w-full">
             <label htmlFor="phoneNumber">Phone Number</label>
             <input
               type="tel"
@@ -83,8 +85,10 @@ const ContactForm = () => {
               className="w-full border border-black rounded-md p-2"
             />
           </div>
-          <div className="md:w-1/2 w-3/5">
-            <label htmlFor="email">Email</label>
+          <div className="md:w-1/2 w-full">
+            <label htmlFor="email" className="md:block hidden">
+              Email
+            </label>
             <input
               type="email"
               id="email"
@@ -92,18 +96,20 @@ const ContactForm = () => {
               placeholder="Email Address"
               value={formData.email}
               onChange={handleInputChange}
-              className="w-full border border-black rounded-md p-2"
+              className="w-full md:block hidden border border-black rounded-md p-2"
             />
           </div>
         </div>
         <div className="flex flex-col justify-start">
-          <label htmlFor="serviceInterestedIn" className="text-left">Service Interested In</label>
+          <label htmlFor="serviceInterestedIn" className="text-left">
+            Service Interested In
+          </label>
           <select
             id="serviceInterestedIn"
             name="serviceInterestedIn"
             value={formData.serviceInterestedIn}
             onChange={handleInputChange}
-            className="md:w-full w-3/5 border border-black rounded-md p-2"
+            className="md:w-full w-full border border-black rounded-md p-2"
           >
             <option value="" disabled>
               Select a service
@@ -116,7 +122,9 @@ const ContactForm = () => {
           </select>
         </div>
         <div className="flex flex-col">
-          <label htmlFor="message" className="text-left">Message</label>
+          <label htmlFor="message" className="text-left">
+            Message
+          </label>
           <textarea
             id="message"
             name="message"
@@ -124,12 +132,27 @@ const ContactForm = () => {
             value={formData.message}
             onChange={handleInputChange}
             rows="5"
-            className="md:w-full w-3/5 border border-black rounded-md p-2"
+            className="md:w-full w-full border border-black rounded-md p-2"
           ></textarea>
+        </div>
+
+        <div className="md:w-1/2 w-full">
+          <label htmlFor="email" className="md:hidden">
+            Email
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email Address"
+            value={formData.email}
+            onChange={handleInputChange}
+            className="w-full md:hidden border border-black rounded-md p-2"
+          />
         </div>
         <button
           type="submit"
-          className="bg-[#8AA6AA] text-white px-4 py-2 w-3/5 md:w-full rounded-md"
+          className="bg-[#8AA6AA] text-white px-4 py-2 w-full md:w-full rounded-md"
         >
           Submit
         </button>
