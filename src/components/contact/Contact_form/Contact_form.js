@@ -44,7 +44,7 @@ const ContactForm = () => {
     <div className="md:ml-0 md:w-[60%] max-w-lg mx-auto w-full flex justify-center place-items-center custom-font md:m-10 m-10 md:rounded-[33px] md:border md:p-10 md:border-[#8AA6AA] md:my-4 md:mt-10 md:mb-10 p-4 rounded-md">
       <form
         onSubmit={handleSubmit}
-        className="border-2 space-y-4 text-left md:w-[100%] w-[90%] md:rounded-none rounded-[30px] p-6"
+        className="border-2 md:border-0 space-y-4 text-left md:w-[100%] w-[90%] md:rounded-none rounded-[30px] p-6"
       >
         <div className="md:flex md:space-x-4">
           <div className="md:w-1/2 w-full">

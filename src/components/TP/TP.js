@@ -1,228 +1,96 @@
-import React from 'react';
-import './Style4.css';
-import Footer from '../Common/Footer/Footer';
+import React, { useState } from "react";
+import up from "../../assets/TP/up.svg";
+import down from "../../assets/TP/down.svg";
+import Terms_conditions from "./Terms_conditions";
+import Policy from "./Policy"; // Import your Policy component
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      content: 'Welcome Terms and Policy Page!',
-      activeToken: '', // Initialize activeToken state
-      isMobile: window.innerWidth <= 800, // Check if screen is mobile-sized initially
-    };
-  }
+export default function TP() {
+  const date = "August 14th, 2023";
+  const [selected, setSelected] = useState("Terms & Conditions");
+  const [showDropdown, setShowDropdown] = useState(false);
 
-  componentDidMount() {
-    window.addEventListener('resize', this.handleResize);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.handleResize);
-  }
-
-  handleResize = () => {
-    this.setState({
-      isMobile: window.innerWidth <= 800, // Update the isMobile state based on screen width
-    });
+  const toggleSelected = (option) => {
+    setSelected(option);
+    setShowDropdown(false);
   };
 
-  showContent = (token) => {
-    this.setState({
-      activeToken: token, // Set the active token
-    });
+  const options = ["Terms & Conditions", "Privacy Policy"];
 
-    if (token === 'terms') {
-      this.setState({
-        content: (
-          <div className="flex flex-col p-6">
-          {/* <p className="mb-4 text-xs leading-tight text-black">
-              WHO WE ARE
-            </p> */}
-            <h5
-              className="mb-2 text-5xl leading-tight text-black">
-              About Us
-            </h5>
-            <p className="mb-4 text-xs leading-tight text-black">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-    
-    culpa qui officia deserunt mollit anim id est laborum.If you are a Hookah business, please join us and help us defend and protect your business, our culture and community.
-    
-            </p>
-            <br></br>
-            <h3
-              className="mb-2 text-3xl leading-tight text-black">
-              About Us
-            </h3>
-            <p className="mb-4 text-xs leading-tight text-black">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-    
-    culpa qui officia deserunt mollit anim id est laborum.If you are a Hookah business, please join us and help us defend and protect your business, our culture and community.
-    
-            </p><br></br>
-            <h3
-              className="mb-2 text-2xl leading-tight text-black">
-              About Us
-            </h3>
-            <li className="mb-4 text-xs leading-tight text-black">
-            Lorem ipsum dolor sit amet
-    
-            </li>
-            <li className="mb-4 text-xs leading-tight text-black">
-            Lorem ipsum dolor sit amet
-    
-            </li>
-            <li className="mb-4 text-xs leading-tight text-black">
-            Lorem ipsum dolor sit amet
-    
-            </li>
-            <li className="mb-4 text-xs leading-tight text-black">
-            Lorem ipsum dolor sit amet
-    
-            </li>
-            <br></br>
-            <h5
-              className="mb-2 text-3xl leading-tight text-black">
-              About Us
-            </h5>
-            <p className="mb-4 text-xl leading-tight text-black">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-    
-    culpa qui officia deserunt mollit anim id est laborum.If you are a Hookah business, please join us and help us defend and protect your business, our culture and community.
-    
-            </p>
-            <p className="mb-4 text-xs leading-tight text-black">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-    
-    culpa qui officia deserunt mollit anim id est laborum.If you are a Hookah business, please join us and help us defend and protect your business, our culture and community.
-    
-            </p>
-          </div>
-        ),
-      });
-    } else if (token === 'policy') {
-      this.setState({
-        content:(
-          <div className="flex flex-col p-6">
-            <h3
-              className="mb-2 text-2xl leading-tight text-black">
-              About Us
-            </h3>
-            <li className="mb-4 text-xs leading-tight text-black">
-            Lorem ipsum dolor sit amet
-    
-            </li>
-            <li className="mb-4 text-xs leading-tight text-black">
-            Lorem ipsum dolor sit amet
-    
-            </li>
-            <li className="mb-4 text-xs leading-tight text-black">
-            Lorem ipsum dolor sit amet
-    
-            </li>
-            <li className="mb-4 text-xs leading-tight text-black">
-            Lorem ipsum dolor sit amet
-    
-            </li>
-            <br></br>
-          {/* <p className="mb-4 text-xs leading-tight text-black">
-              WHO WE ARE
-            </p> */}
-            <h5
-              className="mb-2 text-5xl leading-tight text-black">
-              About Us
-            </h5>
-            <p className="mb-4 text-xs leading-tight text-black">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-    
-    culpa qui officia deserunt mollit anim id est laborum.If you are a Hookah business, please join us and help us defend and protect your business, our culture and community.
-    
-            </p>
-            <br></br>
-            <h3
-              className="mb-2 text-3xl leading-tight text-black">
-              About Us
-            </h3>
-            <p className="mb-4 text-xs leading-tight text-black">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-    
-    culpa qui officia deserunt mollit anim id est laborum.If you are a Hookah business, please join us and help us defend and protect your business, our culture and community.
-    
-            </p><br></br>
-            
-            <h5
-              className="mb-2 text-3xl leading-tight text-black">
-              About Us
-            </h5>
-            <p className="mb-4 text-xl leading-tight text-black">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-    
-    culpa qui officia deserunt mollit anim id est laborum.If you are a Hookah business, please join us and help us defend and protect your business, our culture and community.
-    
-            </p>
-            <p className="mb-4 text-xs leading-tight text-black">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-    
-    culpa qui officia deserunt mollit anim id est laborum.If you are a Hookah business, please join us and help us defend and protect your business, our culture and community.
-    
-            </p>
-          </div>
-        ),
-      });
-    }
-  };
+  // Filter out the selected option from the dropdown list
+  const availableOptions = options.filter((option) => option !== selected);
 
-  render() {
-    const { isMobile, activeToken } = this.state;
+  // Define which component to render based on the selected option
+  let selectedComponent;
+  if (selected === "Terms & Conditions") {
+    selectedComponent = <Terms_conditions />;
+  } else if (selected === "Privacy Policy") {
+    selectedComponent = <Policy />;
+  }
 
-    return (
-      <div className ="App md:mt-[100px] mt-[100px]">
-        <div className="qa"><center>
-      <h3
-          className="mb-2 text-5xl leading-tight text-black">
-          Terms & Policy
-        </h3><br></br>
-        <center><p className="mb-4 text-xl leading-tight text-black">
-        Lorem ipsum dolor sit 
-
-        </p></center></center>
+  return (
+    <div className="md:mt-[80px] mt-[80px] md:h-full h-full flex flex-col justify-center place-items-center">
+      <div className="font-sans flex flex-col justify-center place-items-center">
+        <p className="text-[40px] md:px-0 px-[120px] text-center">
+          Terms & Policies
+        </p>
+        <p>Last updated: {date}</p>
       </div>
-      <div className="dashboard">
-        
-        <div className="sidebar">
-          {isMobile ? (
-            <select className="mobile-dropdown" value={activeToken} onChange={(e) => this.showContent(e.target.value)}>
-              <option value="">Select an option</option>
-              <option value="terms">Terms</option>
-              <option value="policy">Policy</option>
-            </select>
-          ) : (
-            <>
+
+      <div className="w-[95%] px-10 bg-[#F3F2EE] p-10 md:p-12 flex md:flex-row flex-col mt-10">
+        {/* option part */}
+        <div className="hidden md:flex flex-col w-4/12 gap-6">
+          {/* Terms & Conditions */}
+          {options.map((option) => (
+            <div
+              key={option}
+              className={`flex flex-row gap-4 cursor-pointer ${
+                selected === option ? "text-[#8AA6AA]" : "text-black"
+              }`}
+              onClick={() => toggleSelected(option)}
+            >
               <div
-                className={`sidebar-token desktop-dropdown ${activeToken === 'terms' ? 'active' : ''}`}
-                onClick={() => this.showContent('terms')}
-              >
-                Terms
-              </div>
-              <div
-                className={`sidebar-token desktop-dropdown ${activeToken === 'policy' ? 'active' : ''}`}
-                onClick={() => this.showContent('policy')}
-              >
-                Policy
-              </div>
-            </>
+                className={`${selected === option ? "bg-[#8AA6AA]" : ""} w-1`}
+              ></div>
+              <p>{option}</p>
+            </div>
+          ))}
+        </div>
+
+        {/* Custom Mobile Dropdown */}
+        <div className="md:hidden relative p-7">
+          <div
+            className="w-full p-2 border rounded text-[#8AA6AA] bg-white cursor-pointer flex justify-between items-center"
+            onClick={() => setShowDropdown(!showDropdown)}
+          >
+            <span className={showDropdown ? "text-[#8AA6AA]" : "text-black"}>
+              {selected}
+            </span>
+            <img
+              src={showDropdown ? up : down}
+              alt="Dropdown Icon"
+              className="w-4 h-4"
+            />
+          </div>
+          {showDropdown && (
+            <ul className="absolute left-0 w-full border rounded mt-2 py-1 bg-white z-10">
+              {availableOptions.map((option) => (
+                <li
+                  key={option}
+                  className="cursor-pointer px-4 py-2 hover:bg-[#8AA6AA] hover:text-white"
+                  onClick={() => toggleSelected(option)}
+                >
+                  {option}
+                </li>
+              ))}
+            </ul>
           )}
         </div>
-        <div className="divider"></div>
-        <div className="content" id="content">
-          {this.state.content}
+
+        {/* content part */}
+        <div className="w-full h-full md:ml-[100px]">
+          {selectedComponent} {/* Render the selected component */}
         </div>
       </div>
-
-      <Footer/>
-
-      </div>
-    );
-  }
+    </div>
+  );
 }
-
-export default App;
