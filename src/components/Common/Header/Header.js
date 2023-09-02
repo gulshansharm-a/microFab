@@ -61,9 +61,7 @@ const Header = () => {
         isMenuOpen ? "bg-white" : "bg-gradient-to-r from-[#e1e1e1] to-[#8ca7ab]"
       } w-screen`}
       style={
-        (!isMenuOpen &&
-          window.innerWidth >= 768 &&
-          location.pathname !== "/") ||
+        ( window.innerWidth >= 768 ) ||
         (!isMenuOpen && 
           window.innerWidth < 768 && 
           location.pathname !== "/")
