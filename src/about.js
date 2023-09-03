@@ -1,11 +1,11 @@
 import logo from "./logo.svg";
-import "./App.css";
+import "./Stylesq.css";
 import { NavbarDefault } from "./Navbar";
 import { Button } from "@material-tailwind/react";
 import we from "./qw.png";
 import tasto from "./testicards.json";
 import Slider from "./slider";
-import TestimonialCard from "./testicard";
+import TestimonialCard from "./tasticard";
 import Footer from './components/Common/Footer/Footer'
 
 function AboutUs() {
@@ -14,7 +14,8 @@ function AboutUs() {
       <div className="App">
         {/* <div><NavbarDefault /></div><br></br><br></br> */}
         <div>
-          <div className="bg-[url('./opp.png')] jk">
+          <div className="ui">
+          <div className="bg-[url('./opp.png')] nn">
             <br></br>
             <br></br>
             <br></br>
@@ -51,7 +52,7 @@ function AboutUs() {
               </div>
             </center>
             {/* <br></br><br></br> */}
-          </div>
+          
           {/* </center> */}
 
           <div className="flex flex-col p-6 text-white bg-[#8AA6AA] kmk">
@@ -120,6 +121,8 @@ function AboutUs() {
               </div>
             </div>
           </div>
+          </div>
+          </div>
           <br></br>
           <br></br>
           <div className="w-screen as h-160px">
@@ -135,15 +138,16 @@ function AboutUs() {
           </div>
           <br></br>
           <center>
-            <div className="flex flex-col rounded-lg bg-white md:max-w-4xl md:flex-row mm">
+            <br></br><br></br>
+            <div className="flex flex-col rounded-lg bg-white md:max-w-8xl md:flex-row mm">
               <div className="flex flex-col p-6">
-                <p className="mb-4 text-2xl leading-tight text-[#8AA6AA]">
-                  WHO WE ARE
+                <p className="mb-4 text-xl leading-tight ">
+                  Lorem ipsum
                 </p>
-                <h5 className="mb-2 text-4xl leading-tight text-[#8AA6AA]">
-                  About Us
+                <h5 className="mb-2 text-4xl leading-tight ">
+                  Lorem ipsum
                 </h5>
-                <p className="mb-4 text-xs leading-tight text-[#8AA6AA]">
+                <p className="mb-4 text-xs leading-tight  ll">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -233,11 +237,11 @@ function AboutUs() {
           </div>
           <br></br>
           <div className="io">
-            <img src={we} alt="./qw.png"></img>
-          </div>
+           <img src={we}  alt="loading failed" width="100%" ></img>
+          </div><br></br>
           <div className="flex flex-col p-6">
             <p>
-              <h5 className="mb-2 text-3xl leading-tight text-black">FAQ</h5>
+              <h5 className="mb-2 text-3xl leading-tight text-black vb">FAQ</h5>
             </p>
             <br></br>
             <p className="mb-4 text-sm leading-tight text-black lm">
