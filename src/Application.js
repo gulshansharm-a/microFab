@@ -120,7 +120,7 @@ function Application() {
         id="image3"
         style={{ display: selectedImage === "image3" ? "block" : "none" }}
       >
-        <img src={hand} alt="Image 3" />
+        <img src={drop} alt="Image 3" />
       </div>
       <div
         className="image-container"

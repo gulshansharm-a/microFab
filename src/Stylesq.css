@@ -1,28 +1,141 @@
 .jk{
-     background-image:cover;
-    background-repeat:repeat-x; 
-    background-color:#8AA6AA;
+    background-image:cover;
+   background-repeat:repeat-x; 
+   background-color:#8AA6AA;
 }
 .mm{
-    width:90%;
-    color: var(--text, #111);
-    font-family: Clash Display;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 135.2%; /* 24.336px */
+   width:90%;
+   color: var(--text, #111);
+   font-family: Clash Display;
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 135.2%; /* 24.336px */
 }
 .vb{
-    text-align:center;
+   text-align:center;
 }
 .ui{
-    background-image:url('./ws.png');
+   background-image:url('./ws.png');
 }
 .nn{
-    background:cover;
-    background-repeat:repeat-x; 
+   background:cover;
+   background-repeat:repeat-x; 
 }
+@media (max-width: 800px) {
+   .nn {
+   background:white ;
+   }
+ }.
 .ll{
-    margin-right:8%;
+   margin-right:8%;
 }
+.io{
+  width:120%;
+  /* margin:auto; */
+  /* margin-left:0%; */
+  align-items:left;
+  justify-content:left;
+  image:cover;
+  margin-left:-10%;
+ 
+}
+/* src/ResponsiveColumnsToRows.css */
 
+.container {
+   display: flex;
+   flex-wrap: wrap;
+ }
+ 
+ .column {
+   flex: 1;
+   padding: 10px;
+   text-align: center;
+   margin: 5px;
+   box-sizing: border-box;
+ }
+ 
+ @media (max-width: 768px) {
+   .container {
+     flex-direction: column;
+   }
+ 
+   .column {
+     flex: none;
+     width: 100%;
+   }
+ }
+ .faq-container {
+   max-width: 800px;
+   margin: 0 auto;
+   padding: 20px;
+   background-color: #fff;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+ }
+ 
+ .faq-item {
+   margin-bottom: 15px;
+   cursor: pointer;
+ }
+ 
+ .question {
+   position: relative;
+   padding-left: 30px;
+   font-weight: bold;
+ }
+ 
+  .vertical-bar {
+   position: absolute;
+   left: 0;
+   top: 0;
+   bottom: 0;
+   width: 2px;
+   background-color: #333;
+   transition: background-color 0.3s; 
+  } 
+ 
+  .question {
+   position: relative;
+   padding-left: 30px;
+   font-weight: bold;
+ }
+ 
+ .vertical-bar-container {
+   position: absolute;
+   left: 0;
+   top: 0;
+   bottom: 0;
+   width: 2px;
+   background-color: #333;
+   transition: background-color 0.3s;
+  
+ }
+ 
+ .question.active .vertical-bar {
+   
+   background-color: #8AA6AA; /* Change the background color of the vertical bar to blue when active */
+ }
+ 
+
+
+ 
+ 
+ 
+ .question.active + .answer {
+   /* display: block; */
+   padding-left: 30px; /* Adjust the padding to match the vertical bar */
+ }
+ 
+ 
+ .answer {
+   
+   padding-left: 20px;
+ }
+ 
+ /* .answer.show {
+   display: block;
+ } */
+
+ 
+ 
+ 

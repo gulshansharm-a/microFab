@@ -7,7 +7,58 @@ import tasto from "./testicards.json";
 import Slider from "./slider";
 import TestimonialCard from "./tasticard";
 import Footer from './components/Common/Footer/Footer'
+import React, { useState, useRef, useEffect } from 'react';
+// import './App.css';
 
+function FaqItem({ question, answers, initiallyOpen }) {
+  const [isOpen, setIsOpen] = useState(initiallyOpen);
+  const [barHeight, setBarHeight] = useState(0);
+  const answerRef = useRef(null);
+
+  const toggleAnswer = () => {
+    setIsOpen(!isOpen);
+    Document.bgColor = '#282c34';
+  };
+  useEffect(() => {
+    if (isOpen && answerRef.current) {
+      setBarHeight(answerRef.current.clientHeight + 'px'); // Set the height when answer is open
+    } else {
+      setBarHeight('auto'); // Set back to 'auto' when answer is closed
+    }
+ 
+  }, [isOpen]);
+  return (
+    // <center>
+    // <div className="faq-item mb-4 text-xs leading-tight text-black container lm" onClick={toggleAnswer}>
+    //   <div className={`question ${isOpen ? 'active' : ''}mb-4 text-xs leading-tight text-black question mb-4 text-sm leading-tight text-black `}>
+    //   <span className="vertical-bar"></span> {/* Add a vertical bar element */}
+    //     {question}
+    //   </div>
+    //   {isOpen && (
+    //     <div className="answer">
+    //       {answers.map((paragraph, index) => (
+    //         <p key={index}>{paragraph}</p>
+    //       ))}
+    //     </div>
+    //   )}
+    // </div>
+    // </center>
+    <div className="faq-item">
+      <div className={`question ${isOpen ? 'active' : ''}`} onClick={toggleAnswer}>
+      <div className="vertical-bar" style={{ height: barHeight }}></div>
+        {question}
+      </div><br></br>
+      {isOpen && (
+        <div ref={answerRef} className={`answer ${isOpen ? 'show' : ''}`}>
+        {answers.map((paragraph, index) => (
+          <p key={index}>{paragraph}</p>
+        ))}
+      </div>
+      )}
+    </div>
+  
+  );
+}
 function AboutUs() {
   return (
     <div>
@@ -66,13 +117,13 @@ function AboutUs() {
             <br></br>
             <br></br>
             {/* <div class="lg:grid-grid-cols-3 md:grid-cols-3 gap-8 gh bg-[#8AA6AA]"> */}
-            <div class="grid grid-rows-3 grid-flow-col gap-10">
+            <div class="grid grid-col-3 grid-flow-row gap-10 container">
               {/* <div><span className="text-7xl h-full">1</span><spacer></spacer>
         <span>
         <span className="text-3xl n"> Lorem ipsum tgrtg rgtg referfrgf</span>
         </span>
         </div> */}
-              <div className="row-span-3 gap-10">
+              <div className="row-span-3 gap-10 md:flex-row column">
                 <span className="text-7xl">1</span>
 
                 <span className="text-3xl m"> Lorem epsum tgrtg rgtg</span>
@@ -88,7 +139,7 @@ function AboutUs() {
                   cupidatat non proident, sunt in .
                 </p>
               </div>
-              <div className="row-span-3 gap-10">
+              <div className="row-span-3 gap-10 column">
                 <span className="text-7xl">2</span>
 
                 <span className="text-3xl m"> Lorem ipsum tgrtg rgtg</span>
@@ -104,7 +155,7 @@ function AboutUs() {
                   cupidatat non proident, sunt in .
                 </p>
               </div>
-              <div className="row-span-3 gap-10">
+              <div className="row-span-3 gap-10 column">
                 <span className="text-7xl">3</span>
                 <span className="text-3xl o"> Lorem ipsum tgrtg rgtg</span>
                 <br></br>
@@ -123,6 +174,7 @@ function AboutUs() {
           </div>
           </div>
           </div>
+          
           <br></br>
           <br></br>
           <div className="w-screen as h-160px">
@@ -236,15 +288,25 @@ function AboutUs() {
             </center>
           </div>
           <br></br>
-          <div className="io">
+          </div>
+        
+          <div className="io" >
            <img src={we}  alt="loading failed" width="100%" ></img>
           </div><br></br>
-          <div className="flex flex-col p-6">
-            <p>
+         
+       
+    {/* </div> */}
+          <div className="flex flex-col p-6 container">
+          <h5 className="mb-2 text-3xl leading-tight text-black vb">FAQ</h5><br></br>
+            {/* <p>
               <h5 className="mb-2 text-3xl leading-tight text-black vb">FAQ</h5>
             </p>
             <br></br>
-            <p className="mb-4 text-sm leading-tight text-black lm">
+            <FaqItem
+          question="What is Lorem Ipsum?"
+          answer="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+        />
+            <p className="mb-4 text-sm leading-tight text-black lm faq-container">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit?
             </p>
             <p className="mb-4 text-sm leading-tight text-black lm">
@@ -265,10 +327,38 @@ function AboutUs() {
             <br></br>
             <p className="mb-4 text-sm leading-tight text-black lm">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit?
-            </p>
+            </p> */}
+            <FaqItem
+          question="Lorem ipsum dolor sit amet, consectetur adipiscing elit ? "
+          answers={["Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",]}
+          initiallyOpen={true}
+        />
+        <FaqItem
+          question="Why do we use it?"
+          answers={[
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
+            "nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ",
+          ]}
+        />
+        <FaqItem
+          question="Lorem ipsum dolor sit amet, consectetur adipiscing elit ? "
+          answers={[" "]}
+        />
+        <FaqItem
+          question="Lorem ipsum dolor sit amet, consectetur adipiscing elit ? "
+          answers={[" "]}
+        />
+        <FaqItem
+          question="Lorem ipsum dolor sit amet, consectetur adipiscing elit ? "
+          answers={[" "]}
+        />
+        <FaqItem
+          question="Lorem ipsum dolor sit amet, consectetur adipiscing elit ? "
+          answers={[" "]}
+        />
           </div>
-        </div>
-      </div>
+          </div>
       <Footer/>
     </div>
   );
