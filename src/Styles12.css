@@ -68,7 +68,7 @@
     display: flex;
     background-color: #E8E8E9;
     margin-left:4%;
-    width:30%;
+    width:350px;
     /* font-size:35%; */
   }
   
@@ -93,17 +93,31 @@
   }
   .sd{
     text-align:left;
-    margin-left:65%;
+    margin-left:70%;
     position:absolute;
-    margin-top:-10%;
+    margin-top:-150px;
   
   } 
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 900px) {
     .sd {
         display: none;
     }
 }
-   /* .qaz{
-    position:absolute;
-    top:0px;
+.kp{
+  width:500px;
+  align:center;
+  margin:auto;
+  background:cover;
+  background-repeat:no-repeat;
+}
+   .qaz{
+   
+    margin-top:-15px;
+  }
+  .asdf{
+    display: flex;
+    align-items: center;
+  }
+  /* .kkk{
+    font-
   } */

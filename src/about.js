@@ -130,7 +130,7 @@ function AboutUs() {
               {tasto.map((tasto, i) => (
                 // 3. flex-[0_0_50%] set the width of each card to 50% of the viewport
                 // for mobile devices we use 90% width
-                <div key={i} className="flex-[0_0_90%] md:flex-[0_0_25%]">
+                <div key={i} className="flex-[0_0_90%] md:flex-[0_0_23%]">
                   <TestimonialCard {...tasto} />
                 </div>
               ))}

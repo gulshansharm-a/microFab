@@ -1,8 +1,10 @@
-import logo from "./logo.svg";
+import logo from "./appli.png";
+import pharma from "./pill.svg"
 import drop from "./drops.png";
 import drop1 from "./drop1.svg";
 import hand from "./hand.png";
 import "./Styles12.css";
+import arrow_right from "../src/assets/Home_article/ArrowRight.svg"
 import React from "react";
 import { firsto } from "./first";
 import { NavbarDefault } from "./Navbar";
@@ -11,7 +13,7 @@ import { NavbarWithMegaMenu } from "./packnav";
 import { Card3Presentation } from "./cards";
 import { HorizontalCard } from "./one-stop";
 import Slider from "./slider";
-import TestimonialCard from "./tasticard";
+// import { AppliCard } from "./testicard"
 import testimonials from "./testimonials.json";
 import { useState } from "react";
 import Footer from "./components/Common/Footer/Footer";
@@ -44,12 +46,13 @@ function Application() {
             <br></br>
           </span>
 
-          <br></br>
-          <br></br>
+          {/* <br></br>
+          <br></br> */}
           <div>
             <img
-              className="h-96 w-full object-cover object-center"
+              className="h-106 w-full object-cover object-center"
               src={logo}
+              
               alt="nature image"
             />
           </div>
@@ -58,10 +61,10 @@ function Application() {
       <br></br>
 
       <br></br>
+      {/* <br></br>
       <br></br>
       <br></br>
-      <br></br>
-      <br></br>
+      <br></br> */}
       {/* </div> */}
 
       {/* <div> <img
@@ -164,8 +167,43 @@ function Application() {
           {testimonials.map((testimonial, i) => (
             // 3. flex-[0_0_50%] set the width of each card to 50% of the viewport
             // for mobile devices we use 90% width
-            <div key={i} className="flex-[0_0_90%] md:flex-[0_0_50%]">
-              <TestimonialCard {...testimonial} />
+            <div key={i} className="flex-[0_0_90%] md:flex-[0_0_23%]">
+              <div className="py-4 px-4 bg-white shadow-lg rounded-lg my-20">
+      <div className="flex justify-center md:justify-end -mt-16">
+        {/* <Image> */}
+          
+         {/* <img className="w-150 h-30 object-cover  border-2 border-indigo-500" src={{...testimonial}.imgSrc} alt={{...testimonial}.imgSrc}></img>  */}
+           {/* height={80}
+           width={80}
+           src={props.imgSrc} 
+           </Image> */}
+      </div>
+      
+        {/* <h2 className="text-[#8AA6AA] text-3xl font-semibold">{props.title}</h2> */}
+        <div>
+          <div  className="asdf">
+        <h3 className="mb-4 border-b pb-4 text-3xl leading-tight text-[#8AA6AA] df asdf"><img className="w-150 h-30 object-cover  border-2 border-indigo-500" src={pharma} alt={pharma}></img> &nbsp;Pharma</h3>
+        {/* <spacer></spacer> */}
+        
+        </div>
+        
+        <h5 className="mt-2 text-gray-600 text-md kkk"><strong>{{...testimonial}.content}</strong></h5>
+        <h5 className="mt-2 text-gray-600 kkk" >{{...testimonial}.author}</h5>
+      </div>
+      {/* <div className ="mt-2 text-gray-600flex justify-end mt-4 pyu text-[#8AA6AA]">Blow-Fill-Seal, Technology </div>
+      <div className="flex justify-end mt-4 mt-2">
+      <div className="flex flex-row place-items-center gap-3">
+                    <a className="text-[#8AA6AA] font-extrabold">Read more</a>
+                    <img
+                      src={arrow_right}
+                      className="bg-[#8AA6AA] h-6 p-0.5 rounded-full"
+                      alt="Read more"
+                    />
+        
+        </div>
+        
+      </div> */}
+    </div>
             </div>
           ))}
         </Slider>

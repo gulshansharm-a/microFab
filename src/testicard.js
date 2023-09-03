@@ -1,8 +1,8 @@
 import Image from "./1.jpeg"
 // import Link from "next/link"
-import './App.css';
+import './Styles12.css';
 import bn from"./zx.svg"
-const TestimonialCard = props => {
+export default function AppliCard (props){
   return (
     <div className="py-4 px-4 bg-white shadow-lg rounded-lg my-20">
       <div className="flex justify-center md:justify-end -mt-16">
@@ -28,6 +28,6 @@ const TestimonialCard = props => {
         </a> 
       </div>
     </div>
-  )
+  );
 }
-export default TestimonialCard
+
