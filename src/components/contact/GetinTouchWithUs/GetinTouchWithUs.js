@@ -32,7 +32,7 @@ export default function GetinTouchWithUs() {
           </div>
 
           {/* open hours */}
-          <div className="md:w-[50%] w-[70%]">
+          <div className="md:w-[50%] w-[70%] ">
             <div className="flex flex-row gap-2">
               <img src={business} alt="office" className=""></img>
               <p className="md:text-[26px] text-[#8AA6AA]">Open Hours</p>
@@ -41,9 +41,9 @@ export default function GetinTouchWithUs() {
             <p className="md:text-[14px] text-left">9AM - 6 PM</p>
           </div>
         </div>
-        <div className="flex md:flex-row flex-col gap-6">
+        <div className="flex md:flex-row md:justify-start flex-col gap-6">
           {/* contact */}
-          <div className="md:w-[50%] w-[90%] mr-5 justify-start">
+          <div className="md:w-[50%] w-[90%] justify-start border-2">
             <div className="flex flex-row gap-2">
               <img src={contact} alt="office" className=""></img>
               <p className="md:text-[26px] text-[#8AA6AA]">Contact</p>
