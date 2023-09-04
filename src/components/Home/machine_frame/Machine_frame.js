@@ -27,6 +27,12 @@ const Machine_Frame = () => {
         />
         <div className="hidden md:block absolute md:top-[54px] md:left-[33px] w-[260px] h-[260px] rounded-full bg-gradient-to-tr from-[#dcdede] to-[#cbd2d3]"></div>
 
+        
+        <p className="font-extrabold md:hidden w-[350px] h-[316px] absolute left-[12px] top-[52px] text-white text-[30px] md:leading-[79px] tracking-tight text-left">
+          <span className="highlight-text">
+            Providing <br></br>Industry Solutions from the<br /> Start
+          </span>
+        </p>
         <p className="hidden md:block w-[554px] h-[316px] absolute left-[52px] top-[52px] text-white font-bold md:text-[64px] md:leading-[79px] tracking-tight text-left">
           <span className="highlight-text ">
             Providing Industry Solutions <br /> from the Start
