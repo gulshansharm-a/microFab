@@ -298,6 +298,7 @@ function AboutUs() {
     {/* </div> */}
           <div className="flex flex-col p-6 container">
           <h5 className="mb-2 text-3xl leading-tight text-black vb">FAQ</h5><br></br>
+         
             {/* <p>
               <h5 className="mb-2 text-3xl leading-tight text-black vb">FAQ</h5>
             </p>
@@ -328,6 +329,7 @@ function AboutUs() {
             <p className="mb-4 text-sm leading-tight text-black lm">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit?
             </p> */}
+            <div className="cv">
             <FaqItem
           question="Lorem ipsum dolor sit amet, consectetur adipiscing elit ? "
           answers={["Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",]}
@@ -357,7 +359,8 @@ function AboutUs() {
           question="Lorem ipsum dolor sit amet, consectetur adipiscing elit ? "
           answers={[" "]}
         />
-          </div>
+        </div>
+         </div>
           </div>
       <Footer/>
     </div>
