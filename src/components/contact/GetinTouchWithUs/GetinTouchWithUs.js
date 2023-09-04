@@ -43,7 +43,7 @@ export default function GetinTouchWithUs() {
         </div>
         <div className="flex md:flex-row md:justify-start flex-col gap-6">
           {/* contact */}
-          <div className="md:w-[50%] w-[90%] justify-start border-2">
+          <div className="md:w-[50%] w-[90%] justify-start">
             <div className="flex flex-row gap-2">
               <img src={contact} alt="office" className=""></img>
               <p className="md:text-[26px] text-[#8AA6AA]">Contact</p>
