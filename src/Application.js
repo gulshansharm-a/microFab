@@ -28,13 +28,13 @@ function Application() {
       {/* <div> */}
       <div>
         <span className="qaz">
-          <h3 className="mb-4 border-b pb-4 text-5xl leading-tight text-[#8AA6AA] df">
+        <h3 className="mb-4 pb-4 text-5xl leading-tight text-[#8AA6AA] df">
             Blow-Fill-Seal & Form-Fill-Seal Solutions for Pharmaceuticals
           </h3>
 
-          <button class="bg-[#8AA6AA] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full opl">
-            Explore
-          </button>
+          <button class="bg-[#8AA6AA] hover:bg-blue-700 text-white font-bold py-2 px-20 rounded m-2">
+  Explore
+</button>
           <span>
             <h6
               className="text-1xl leading-tight text-[#8AA6AA] sd"

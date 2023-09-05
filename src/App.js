@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { BrowserRouter as Router, useLocation } from "react-router-dom";
 import { Route, Routes } from "react-router-dom";
 import Header from "./components/Common/Header/Header";
+import Technology from "./Technology";
 import Footer from "./components/Common/Footer/Footer";
 import GetinTouchWithUs from "./components/contact/GetinTouchWithUs/GetinTouchWithUs";
 import ContactForm from "./components/contact/Contact";
@@ -11,6 +12,7 @@ import Applications from './Application'
 import TP from './components/TP/TP'
 import Home from "./components/Home/Home";
 import "./Style.css";
+import "./Style_tech.css"
 import "./Styles12.css";
 import Articles from "./components/Articles/Articles";
 
@@ -42,7 +44,7 @@ function AppContent() {
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Home />} />
-        <Route path="/technology" element={<Home />} />
+        <Route path="/technology" element={<Technology />} />
       </Routes>
 
     </div>
