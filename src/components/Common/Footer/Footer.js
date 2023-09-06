@@ -52,7 +52,10 @@ export default function Footer() {
               </div>
             </div>
             {/* vertical line */}
-            <div className="md:w-[1px] md:h-[w-[30%]] w-[h-[90%]] h-[2px] bg-white md:mt-0 md:mb-0 mt-[22px] mb-[15px]"></div>
+            {/* for mobile */}
+            <div className="hidden md:block md:w-[1px] md:h-[w-[30%]] h-[w-[30%]] w-[h-[90%]] bg-white md:mt-0 md:mb-0 mt-[22px] mb-[15px]"></div>
+            
+            <div className="md:hidden md:w-[1px] md:h-[w-[30%]] w-[h-[90%]] h-[2px] bg-white md:mt-0 md:mb-0 mt-[22px] mb-[15px]"></div>
             <div className="w-[100%] md:w-[30%] flex flex-col justify-between">
               <div className="flex flex-row mb-2">
                 <img src={dot} className=""></img>
