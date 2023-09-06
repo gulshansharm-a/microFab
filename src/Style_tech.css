@@ -172,14 +172,16 @@
       width:100%;
   } */
   .image-box{
-    position:absolute;
+    position:relative;
       margin-left:auto;
-      margin-top:45%;
+      margin-top:15%;
+      margin-bottom:5%;
   }
     .container {
         flex-direction: column;
         align-items: center;
         height:900px;
+        margin-bottom:5%;
     }
 
     .large-image {
