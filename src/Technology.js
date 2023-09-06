@@ -1,4 +1,3 @@
-
 import logo from "./appli.png";
 // import back1 from"../../back1.png";
 // import bac1 from "./bac1.svg"
@@ -164,9 +163,3 @@ PG10 Process & Applications
     </div>
   );
 }
-/* Rectangle 1 */
-
-/* Rectangle 1 */
-
-
-// flex justify-center sm:px-12 p-8 h-screen object-scale-down max-h-full drop-shadow-md rounded-md m-auto bg-[url('https://s3-alpha-sig.figma.com/img/a73d/bc52/9c53df8cca3e3c182b3ffd363dceeecc?Expires=1694995200&Signature=Wny0-AluigDBgJd2YpZM9WBFBeUbsJpylmLIu~4gifJTkpnRVTNf3qMAYp9oalptXXTXYXlYhafcRDFpjI~oflaUINoeeRX~rQSpep-laGd9ygH0SN4BlO~sWTMaN4SKtm6Sfa6XmYQOl~pNPgdzfEtM0BxGJG6PMvGQkYDZSbz29C7k1SzJtkE7-Z1-7F5N8TyRvAjuoEUfuRZszd~d70U2kM0kErkJVv3I6T3D4X0xzDT62CRq70s0-b2fVbkDoJGpoG8S94hDIVvEbNi97syVBabNP48wM5eZK3Spc0jnzyiPItxA6oYre6JRpNPOHpU6ycnud7phHE8MmwHqBw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4')]
