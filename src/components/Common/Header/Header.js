@@ -74,17 +74,17 @@ const Header = () => {
         <div className="font-light relative">
           <ul className="hidden md:flex md:gap-14 md:text-[18px] md:text[16px] z-20
           ">
-            <li>
+            <li className={`${location.pathname === "/" ? "font-extrabold border-b-2 border-black " : ""}`}>
               <Link to="/" onClick={toggleMenu}>
                 Home
               </Link>
             </li>
-            <li>
+            <li className={`${location.pathname === "/about" ? "font-extrabold border-b-2 border-black " : ""}`}>
               <Link to="/about" onClick={toggleMenu}>
                 About Us
               </Link>
             </li>
-            <li className="relative cursor-pointer">
+            <li className={`relative cursor-pointer ${location.pathname === "/Technology" ? "font-extrabold " : ""}`}>
               <div
                 className={`flex items-center cursor-pointer ${
                   isTechnologyDropdownOpen ? "font-bold" : ""
@@ -144,7 +144,7 @@ const Header = () => {
                 </div>
               )}
             </li>
-            <li className="relative cursor-pointer">
+            <li className={`relative cursor-pointer ${location.pathname === "/Applications" ? "font-extrabold " : ""}`}>
               <div
                 className={`flex items-center cursor-pointer ${
                   isApplicationDropdownOpen ? "font-bold" : ""
@@ -214,17 +214,17 @@ const Header = () => {
               )}
             </li>
             <li>
-              <Link to="/articles" onClick={toggleMenu}>
+              <Link to="/articles" onClick={toggleMenu} className={`${location.pathname === "/articles" ? "font-extrabold border-b-2 border-black " : ""}`}>
                 Articles
               </Link>
             </li>
             <li>
-              <Link to="/blogs" onClick={toggleMenu}>
+              <Link to="/blogs" onClick={toggleMenu} className={`${location.pathname === "/blogs" ? "font-extrabold border-b-2 border-black " : ""}`}>
                 Blogs
               </Link>
             </li>
             <li>
-              <Link to="/TP" onClick={toggleMenu}>
+              <Link to="/TP" onClick={toggleMenu} className={`${location.pathname === "/TP" ? "font-extrabold border-b-2 border-black " : ""}`}>
                 Terms & policies
               </Link>
             </li>
@@ -234,7 +234,7 @@ const Header = () => {
           <ul className="flex flex-col justify-center items-center">
             <img src={contact} alt="Contact" className="w-4 h-4 mr-2" />
             <li>
-              <Link to="/contact" onClick={toggleMenu}>
+              <Link to="/contact" onClick={toggleMenu} className={`${location.pathname === "/contact" ? "font-extrabold border-b-2 border-black " : ""}`}>
                 Contact
               </Link>
             </li>
