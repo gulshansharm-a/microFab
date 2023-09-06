@@ -15,6 +15,8 @@ import "./Style.css";
 import "./Style_tech.css"
 import "./Styles12.css";
 import Articles from "./components/Articles/Articles";
+import Blogs from "./components/Blogs/Blogs";
+import SingleBlogPage from "./components/Blogs/SingleBlogPage.js/SingleBlogPage";
 
 export default function App() {
   return (
@@ -41,6 +43,8 @@ function AppContent() {
         <Route path="/applications" element={<Applications />} />
         <Route path="/tp" element={<TP />} />
         <Route path="/articles" element={<Articles />} />
+        <Route path="/Blogs" element={<Blogs />} />
+        <Route path="/Blogs/Blog1" element={<SingleBlogPage />} />
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Home />} />

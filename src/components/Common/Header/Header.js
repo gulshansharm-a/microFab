@@ -33,11 +33,13 @@ const Header = () => {
   const toggleTechnologyDropdown = () => {
     setTechnologyDropdownOpen(!isTechnologyDropdownOpen);
     setApplicationDropdownOpen(false);
+    console.log("triggered");
   };
 
   const toggleApplicationDropdown = () => {
     setApplicationDropdownOpen(!isApplicationDropdownOpen);
     setTechnologyDropdownOpen(false);
+    console.log("triggered");
   };
 
   const handleTechnologyCardClick = (content) => {
@@ -52,8 +54,6 @@ const Header = () => {
   };
 
   const location = useLocation();
-
-  console.log(location.pathname);
 
   return (
     <header
@@ -72,7 +72,8 @@ const Header = () => {
       <nav className="relative mx-4 md:mx-20 xl:mx-32 2xl:mx-40 flex flex-row items-center justify-between">
         <div className="font-bold md:text-[22px] text-[18px]">Logo</div>
         <div className="font-light relative">
-          <ul className="hidden md:flex md:gap-14 md:text-[18px] md:text[16px] z-20">
+          <ul className="hidden md:flex md:gap-14 md:text-[18px] md:text[16px] z-20
+          ">
             <li>
               <Link to="/" onClick={toggleMenu}>
                 Home
@@ -88,7 +89,7 @@ const Header = () => {
                 className={`flex items-center cursor-pointer ${
                   isTechnologyDropdownOpen ? "font-bold" : ""
                 }`}
-                onClick={toggleTechnologyDropdown && toggleMenu}
+                onClick={toggleTechnologyDropdown}
               >
                 <Link to="/Technology" onClick={toggleMenu}>
                   Technology
