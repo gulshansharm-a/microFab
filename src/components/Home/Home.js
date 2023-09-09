@@ -14,31 +14,36 @@ import GetinTouchWithUs from "../contact/GetinTouchWithUs/GetinTouchWithUs";
 import HomeArticle from "./Home_articles/HomeArticles";
 import HomeBlog from "./Home_blogs/HomeBlog";
 import HappyCustomers from "./Happy_customers/HappyCutomers";
-
+import SoldGraph from "./right/SoldGraph";
 
 export default function Home() {
   return (
     <div className="md:h-screen w-screen h-screen overflow-x-hidden md:overflow-x-hidden">
-      {/* <Header /> */}
-      <div className="flex flex-col">
-        <div className="md:h-screen md:w-screen h-[1400px] w-[100%] md:flex md:flex-row flex flex-col">
+      <div className="md:w-full md:h-full w-full h-[1500px] flex md:flex-row flex-col">
+        {/* left */}
+        <div className="md:w-9/12 md:h-full w-full">
           <Machine_Frame />
-          <div className=" md:m-0 m-4 flex justify-center place-items-center flex-col md:mt-[75px] mt-[5px]">
+        </div>
+
+        {/* right */}
+        <div className="md:w-3/12 w-full md:mt-[75px]">
+          <div className="flex justify-center">
             <Why_Microfab />
+          </div>
 
-            <div className="w-[100%] flex flex-row justify-normal md:justify-between">
-              <div className="flex flex-col justify-between">
-                <BFS content="BFS" />
-                <BFS content="FFS" />
-              </div>
-              <div className="">
-                <Moulds />
-              </div>
+          <div className="w-full md:h-[40%] h-[200px] md:m-0 m-4 mt-0 flex flex-row gap-3">
+            <div className="w-[50%]">
+              <BFS content="BFS" />
+              <BFS content="FFS" />
             </div>
+            <div className="w-[50%] h-[100%] md:mr-0 mr-3">
+              <Moulds />
+            </div>
+          </div>
 
-            <div>
-              <img src={sold_img} className="h-[250px] w-[250px] mt-4"></img>
-            </div>
+          <div draggable="false" className="flex justify-center place-items-center w-full h-[40%] mt-2 relative">
+            {/* <img src={sold_img} className="md:object-cover h-full" alt="Sold"/> */}
+            <SoldGraph/>
           </div>
         </div>
       </div>
@@ -51,16 +56,15 @@ export default function Home() {
         <WaterTS />
       </div>
 
-      <Who_are_we/>
+      <Who_are_we />
 
-      <HomeArticle/>
+      <HomeArticle />
 
-      <HomeBlog/>
+      <HomeBlog />
 
-      <HappyCustomers/>
+      <HappyCustomers />
 
       <Footer />
-      
     </div>
   );
 }

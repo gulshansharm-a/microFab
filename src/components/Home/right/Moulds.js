@@ -2,50 +2,30 @@ import bot from "../../../assets/Icons/bot.svg";
 
 export default function Moulds() {
   return (
-    <div>
-      <div className="custom-font w-[280%] h-[246px] md:w-[190px] md:h-[226px] mr-0 md:mr-6 bg-[#cdd7d8] rounded-[16px] mt-[8px] flex flex-col overflow-hidden">
-        {/* top */}
-        <div className="flex flex-row w-[100%] justify-between">
-          <div className="h-[100%] w-[49%] bg-[#8aa6aa] rounded-r-[20px]"></div>
-          <div className="h-[90px] w-[49%] bg-[#b9c7c9] rounded-l-[20px]"></div>
-        </div>
+    <div className="w-[90%] h-[94%] flex flex-col justify-between rounded-[20px] bg-[#E9E9E9] md:mr-2 mr-14 mt-[8px]">
+      {/* top */}
+      <div className="flex h-[35%] w-full flex-row justify-between">
+        <div className="bg-[#8AA6AA] h-full w-[47%] rounded-r-[20px] rounded-t-[20px]"></div>
+        <div className="bg-[#b9c7c9] h-full w-[47%] rounded-l-[20px] rounded-t-[20px]"></div>
+      </div>
 
-        {/* middle */}
-        <div className="flex flex-row w-[100%] justify-between">
-          <div className="h-[70px] w-[16%] bg-[#8aa6aa] rounded-r-[20px]"></div>
-          <div className="h-[70px] w-[69%] bg-white rounded-[20px] flex flex-col justify-center place-items-center font-bold">
+      {/* middle */}
+      <div className="flex flex-row h-[30%] w-full justify-between">
+        <div className="bg-[#8AA6AA] w-[10%] h-full rounded-r-[20px]"></div>
+        <div className="w-[80%]">
+          <div className="leading-5 h-full w-full bg-white rounded-[20px] flex flex-col justify-center place-items-center font-bold">
             <img src={bot} alt="bot" className="h-[20px] w-[60px]"></img>
-            <p>150+</p>
-            <p>Moulds</p>
+            <p className="text-[22px]">150+</p>
+            <p className="text-[12px]">Moulds</p>
           </div>
-          <div className="h-[70px] w-[16%] bg-[#b9c7c9] rounded-l-[20px]"></div>
         </div>
+        <div className="bg-[#8AA6AA] w-[10%] h-full rounded-l-[20px]"></div>
+      </div>
 
-        {/* bottom */}
-        <div className="flex flex-row w-[100%] justify-between">
-          <div className="h-[100%] w-[49%] bg-[#b9c7c9] rounded-r-[20px]"></div>
-          <div className="h-[90px] w-[49%] bg-[#8aa6aa] rounded-l-[20px]"></div>
-        </div>
-        {/* <div className="flex flex-col justify-between gap-1">
-                    <div className="flex flex-row">
-                        <div className="h-[130px] w-[150px] bg-[#8aa6aa] rounded-r-[20px]"></div>
-                        <div className="h-[130px] w-[150px] bg-[#b9c7c9] rounded-l-[20px] ml-[2px]"></div>
-                    </div>
-                    <div className="flex flex-row justify-center">
-                        <div className="h-[100px] w-[80px] bg-[#8aa6aa] rounded-r-[20px]"></div>
-                        <div className="h-[100px] w-[180px] bg-white rounded-[20px] ml-[2px] font-bold text-[20px] flex flex-col justify-center items-center">
-                            <img src={bot} className='h-[30px] w-[60px]'></img>
-                            <p>150+</p>
-                            <p>Moulds</p>
-                        </div>
-                        <div className="h-[100px] w-[80px] bg-[#b9c7c9] rounded-l-[20px] ml-[2px]"></div>
-                    </div>
-                    <div className="flex flex-row">
-                        <div className="h-[130px] w-[150px] bg-[#b9c7c9] rounded-r-[20px]"></div>
-                        <div className="h-[130px] w-[150px] bg-[#8aa6aa] rounded-l-[20px] ml-[2px]"></div>
-                    </div>
-
-                </div> */}
+      {/* bottom */}
+      <div className="flex h-[35%] w-full flex-row justify-between">
+        <div className="bg-[#b9c7c9] h-full w-[47%] rounded-r-[20px] rounded-b-[20px]"></div>
+        <div className="bg-[#8AA6AA] h-full w-[47%] rounded-l-[20px] rounded-b-[20px]"></div>
       </div>
     </div>
   );
