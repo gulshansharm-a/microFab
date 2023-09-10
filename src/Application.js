@@ -28,16 +28,13 @@ function Application() {
       {/* <div> */}
       <div>
         <span className="qaz">
-        <h3 className="mb-4 pb-4 text-5xl leading-tight text-[#8AA6AA] df">
-            Blow-Fill-Seal & Form-Fill-Seal Solutions for Pharmaceuticals
+        <div className="qa">
+          <h3 className="mb-4 pb-4 text-7xl leading-tight text-[#8AA6AA] df"><strong>
+            Blow-Fill-Seal & Form-Fill-Seal Solutions for Pharmaceuticals</strong>
           </h3>
-
-          <button class="bg-[#8AA6AA] hover:bg-blue-700 text-white font-bold py-2 px-20 rounded m-2">
-  Explore
-</button>
           <span>
             <h6
-              className="text-1xl leading-tight text-[#8AA6AA] sd"
+              className="text-3xl leading-tight text-[#8AA6AA] sd"
               color="blue"
             >
               "Unleashing the Power of BFS Technology: Aseptic Filling, Sterile
@@ -45,6 +42,11 @@ function Application() {
             </h6>{" "}
             <br></br>
           </span>
+          </div>
+          <button class="bg-[#8AA6AA] hover:bg-blue-700 text-white font-bold py-2 px-20 rounded m-2">
+  Explore
+</button>
+          
 
           {/* <br></br>
           <br></br> */}
@@ -73,7 +75,11 @@ function Application() {
       alt="nature image"
     />
     </div> */}
+     <h3 className="mb-4 pb-4 text-5xl ml-8 leading-tight text-black"><strong>
+            Types of Packaging</strong>
+          </h3>
       <div className="navbar">
+        <spacer></spacer><spacer></spacer>{ }
         <button
           onClick={() => showImage("image1")}
           style={{ marginRight: "4%" }}
@@ -147,16 +153,16 @@ function Application() {
           alt="nature image"
         />
       </div>
-      <div>
-        <h3 className="mb-4 border-b pb-4 text-2xl leading-tight text-[#8AA6AA] dc">
+      <div><center>
+        <h3 className="mb-4 pb-4 text-4xl ml-8 leading-tight text-[#8AA6AA]">
           From the industry leader: Exemplary BFS solutions for the
           pharmaceutical industry
         </h3>
-        <h6 className="text-1xl leading-tight text-[#8AA6AA] dc" color="blue">
+        <h6 className="mb-4 pb-4 text-2xl ml-8 leading-tight text-[#8AA6AA]" color="blue">
           "Our concepts are as individual as your requirements. See for
           yourself!"
         </h6>
-        <br></br>
+        <br></br></center>
         {/* <Card3Presentation/> */}
       </div>
       {/* className={`flex min-h-screen flex-col items-center justify-between py-24`} */}
@@ -182,7 +188,7 @@ function Application() {
         {/* <h2 className="text-[#8AA6AA] text-3xl font-semibold">{props.title}</h2> */}
         <div>
           <div  className="asdf">
-        <h3 className="mb-4 border-b pb-4 text-3xl leading-tight text-[#8AA6AA] df asdf"><img className="w-150 h-30 object-cover  border-2 border-indigo-500" src={pharma} alt={pharma}></img> &nbsp;Pharma</h3>
+        <h3 className="mb-4 border-b pb-4 text-3xl leading-tight text-[#8AA6AA] df asdf"><img className="w-150 h-30 object-cover " src={pharma} alt={pharma}></img> &nbsp;Pharma</h3>
         {/* <spacer></spacer> */}
         
         </div>
@@ -214,8 +220,9 @@ function Application() {
       <div class="h-150 bg-[url('https://s3-alpha-sig.figma.com/img/adef/1933/3c4aec3165561e0e66507d1a5f04c828?Expires=1694390400&Signature=kUA16-811h509lNqndeJGtd88RFyAdXz0N8v8D~vaQLsOn6-mCgp4wgOKRKiWQ2C3taSrmoJJqYhovyrQ-SihL9U3KeUiTaVEDh-VmPN5yCw3XmsHP-C8ohD85dUTVdQBtEj-rU4~IycgnN-W6W2a-wA8CVQd~NkzXp~HEzbhCXdzCP8zL2hAvDd7-x~DEM22czyTYjSb5ndeF-kxuoT7Uci~3NgRx1x4ty7IGj4jFhWTs-ifNhdUmhKwRVtqW9zwb5hu~N7vL8arx1syFJM9dRYF1-m22rr0rJ7u3DVc~pRCgJSV1t~k1DMk9AU80fcUthKdqtXZonVQT8HAMtCEQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4')]">
         <br></br>
         <br></br>
-        <div class="mb-4 p-b  leading-tight m-2 bg-[#8AA6AA] kp">
-          <h1 class="text-3xl leading-tight mb-4 font-bold text-white kl">
+        <center>
+        <div class=" leading-tight bg-[#8AA6AA] kl"><center>
+          <h1 class="text-3xl leading-tight font-bold text-white kl">
             One-stop partners have more to offer
           </h1>
           <br></br>
@@ -223,8 +230,18 @@ function Application() {
             No matter what point you are at: With our experience and range of
             services, we are sure to get you ahead. Maybe so with these offers:
           </h5>
+          </center><br></br>
+          <a class="text-xs  leading-tight mb-4   text-white  tt" href="https://google.com">CONTRACT FILLING -></a><br></br>
+          <a class="text-xs  leading-tight mb-4 text-white  tt" href="https://google.com">PHARMA-SUITE-SERVICE -></a><br></br>
+          <a class="text-xs  leading-tight mb-4  text-white  tt" href="https://google.com">FACTORY PLANNING -></a><br></br>
           <br></br>
-        </div>
+          
+          </div>
+          </center>
+          
+         
+      
+        
         <br></br><br></br>
       </div>
 

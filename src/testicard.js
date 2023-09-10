@@ -8,7 +8,7 @@ export default function AppliCard (props){
       <div className="flex justify-center md:justify-end -mt-16">
         {/* <Image> */}
           
-         <img className="w-150 h-30 object-cover  border-2 border-indigo-500" src={props.imgSrc} alt={props.imgSrc}></img> 
+         <img className="w-150 h-30 object-cover" src={props.imgSrc} alt={props.imgSrc}></img> 
            {/* height={80}
            width={80}
            src={props.imgSrc} 

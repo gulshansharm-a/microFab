@@ -12,6 +12,48 @@
  font-weight: 400;
  line-height: 135.2%; /* 24.336px */
 }
+.se{
+  position:relative;
+  /* margin-top:280%; */
+  top:73%;
+  left:3%; 
+  /* display:flex; */
+}
+.sse{
+  position:absolute;
+  /* margin-top:280%; */
+  top:73%;
+  left:28%; 
+}
+.ssse{
+  position:absolute;
+  /* margin-top:280%; */
+  top:73%;
+  left:52%; 
+}
+.wer{
+  color: rgba(234, 234, 234, 0.50);
+font-family: Clash Display;
+font-size: 120px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+/* @media (max-width: 1068px) {
+  .se{
+    position:absolute;
+    /* margin-top:280%; */
+    /* top:73%;
+    left:17%;  */
+    /* display:flex; */
+  /* }
+  .sse{
+    position:absolute;
+    /* margin-top:280%; */
+ 
+
+    
+
 .vb{
  text-align:center;
 }
@@ -28,7 +70,8 @@
  }
 }.
 .ll{
- margin-right:8%;
+ margin-right:175%;
+ 
 }
 .io{
 width:120%;
@@ -39,6 +82,9 @@ justify-content:left;
 image:cover;
 margin-left:-10%;
 
+}
+.uuu{
+  width:110%;
 }
 /* src/ResponsiveColumnsToRows.css */
 
@@ -73,7 +119,9 @@ margin-left:-10%;
  background-color: #fff;
  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-
+.okl{
+  margin:0 2%;
+}
 .faq-item {
  margin-bottom: 15px;
  cursor: pointer;
@@ -140,6 +188,27 @@ margin:0 20%;
 /* .answer.show {
  display: block;
 } */
+.sd{
+  text-align:left;
+  margin-left:-60%;
+  /* position:fixed; */
+  /* margin-top:-90%; */
+  /* top:-30%;
+  bottom:80%; */
+  /* left:60%; */
+  /* right:10%;
+  left:60%; */
+  vertical-align: top;
+  display:inline-block;
 
+} 
+.df{
+  display:inline-block;
+  margin-right:80%;
+}
+.qa{
+  display: flex; 
+   justify-content: space-between;
+}
 
 
