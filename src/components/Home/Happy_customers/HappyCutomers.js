@@ -79,7 +79,7 @@ export default function HappyCustomers() {
           {customerData.map((customer, index) => (
             <div
               key={index}
-              className="bg-white shadow-md p-4 m-4 rounded-lg w-[80%] md:w-[40%] text-center"
+              className="md:block hidden bg-white shadow-md p-4 m-4 rounded-lg w-[80%] md:w-[40%] text-center"
             >
               <div className="flex justify-center">
                 <img src={quotes} className=""></img>
@@ -90,6 +90,16 @@ export default function HappyCustomers() {
             </div>
           ))}
         </div>
+        <div
+              className="md:hidden block bg-white shadow-md p-4 m-4 rounded-lg w-[80%] md:w-[40%] text-center"
+            >
+              <div className="flex justify-center">
+                <img src={quotes} className=""></img>
+              </div>
+              <p className="text-[17px]">{customerData[0].content}</p>
+              <p className="text-[15px] mt-2 font-bold">{customerData[0].author}</p>
+              <p className="text-[13px]">{customerData[0].company}</p>
+            </div>
       </div>
     </div>
   );

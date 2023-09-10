@@ -12,8 +12,11 @@ export default function SoldGraph() {
         <div className="w-[13%] h-[40%] rounded-[30px] bg-white text-[#8AA6AA] text-[12px] flex justify-center place-items-end pb-2">
           <p>2019</p>
         </div>
-        <div className="w-[13%] h-[70%] rounded-[30px] bg-[#8AA6AA] text-white text-[12px] flex justify-center place-items-end pb-2">
-          <p>2020</p>
+        <div className="flex flex-col justify-center gap-2 place-items-center w-[13%] h-[90%] ">
+          <p className="text-center text-white bg-[#414141] w-[90%] px-2 rounded-[10px]">64</p>
+          <div className="w-full h-[80%] rounded-[30px] bg-[#8AA6AA] text-white text-[12px] flex justify-center place-items-end pb-2">
+            <p>2020</p>
+          </div>
         </div>
         <div className="w-[13%] h-[76%] rounded-[30px] bg-white text-[#8AA6AA] text-[12px] flex justify-center place-items-end pb-2">
           <p>2021</p>
@@ -24,7 +27,6 @@ export default function SoldGraph() {
         <div className="w-[13%] h-[88%] rounded-[30px] bg-white text-[#8AA6AA] text-[12px] flex justify-center place-items-end pb-2">
           <p>2023</p>
         </div>
-        
       </div>
       <div className="bg-white rounded-[15px] m-1 flex flex-row justify-between p-2 pl-5">
         <p className="font-extrabold text-[18px]">

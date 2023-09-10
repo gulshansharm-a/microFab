@@ -5,7 +5,7 @@ import office from "../../../assets/GetinTouchWithUs/office.svg";
 
 export default function GetinTouchWithUs() {
   return (
-    <div className="font-mono md:w-[50%] md:p-10 p-10 md:gap-0 gap-4 flex flex-col justify-between">
+    <div className="custom-font md:w-[50%] md:p-10 p-10 md:gap-0 gap-4 flex flex-col justify-between">
       <div className="flex md:flex-col flex-col md:justify-start">
         <div className="flex flex-row mb-3">
           <p className="md:text-[30px] text-[25px] font-bold">Get in Touch</p>
