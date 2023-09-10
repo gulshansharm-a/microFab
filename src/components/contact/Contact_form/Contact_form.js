@@ -152,13 +152,12 @@ const ContactForm = () => {
         </div>
         <button
           type="submit"
-          className="bg-[#8AA6AA] text-white px-4 py-2 w-full md:w-full rounded-md"
+          className="bg-[#8AA6AA] text-white px-4 py-2 w-full md:w-full rounded-md hover:bg-[#8AA6AA]"
         >
           Submit
         </button>
       </form>
 
-      {/* <Footer/> */}
     </div>
   );
 };

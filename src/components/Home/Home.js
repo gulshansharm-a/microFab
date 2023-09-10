@@ -41,7 +41,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div draggable="false" className="flex justify-center place-items-center w-full h-[40%] mt-2 relative">
+          <div draggable="false" className="flex justify-center place-items-center w-full md:h-[40%] h-[65%] mt-2 relative">
             {/* <img src={sold_img} className="md:object-cover h-full" alt="Sold"/> */}
             <SoldGraph/>
           </div>

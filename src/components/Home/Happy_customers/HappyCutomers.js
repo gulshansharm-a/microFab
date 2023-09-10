@@ -79,14 +79,14 @@ export default function HappyCustomers() {
           {customerData.map((customer, index) => (
             <div
               key={index}
-              className="bg-white shadow-md p-4 m-4 rounded-lg w-[80%] md:w-[37%] text-center"
+              className="bg-white shadow-md p-4 m-4 rounded-lg w-[80%] md:w-[40%] text-center"
             >
               <div className="flex justify-center">
                 <img src={quotes} className=""></img>
               </div>
-              <p className="text-[16px]">{customer.content}</p>
-              <p className="text-[14px] mt-2 font-bold">{customer.author}</p>
-              <p className="text-[12px]">{customer.company}</p>
+              <p className="text-[17px]">{customer.content}</p>
+              <p className="text-[15px] mt-2 font-bold">{customer.author}</p>
+              <p className="text-[13px]">{customer.company}</p>
             </div>
           ))}
         </div>
