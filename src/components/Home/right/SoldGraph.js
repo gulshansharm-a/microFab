@@ -3,8 +3,8 @@ import "../../../App.css";
 
 export default function SoldGraph() {
   return (
-    <div className="custom-font w-full h-full flex flex-col justify-between bg-black rounded-[20px] md:mr-4 ml-4 md:ml-0 mr-4">
-      <div className="flex flex-row gap-2 w-full h-full place-items-end pb-3">
+    <div className="font-['ClashDisplay'] w-full h-full flex flex-col justify-between bg-black rounded-[20px] md:mr-4 ml-4 md:ml-0 mr-4">
+      <div className="flex flex-row md:gap-2 gap-4 w-full h-full place-items-end pb-3">
         <div className="w-[6%] h-[30%] rounded-r-[30px] bg-white"></div>
         <div className="w-[13%] h-[50%] rounded-[30px] bg-white text-[#8AA6AA] text-[12px] flex justify-center place-items-end pb-2">
           <p>2018</p>

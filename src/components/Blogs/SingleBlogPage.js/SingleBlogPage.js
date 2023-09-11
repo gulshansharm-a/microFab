@@ -4,7 +4,7 @@ import Blogs_bottom_side from './Blogs_bottom_side'
 
 export default function SingleBlogPage() {
   return (
-    <div className="flex flex-col md:mt-[85px] mt-[65px]">
+    <div className="font-['ClashDisplay'] flex flex-col md:mt-[85px] mt-[65px]">
       <div className="w-full flex md:flex-row flex-col">
         <div className="md:w-9/12 w-full">
           <div>

@@ -33,10 +33,10 @@ const blogs = [
 
 export default function HomeBlog() {
   return (
-    <div>
+    <div className="font-['ClashDisplay']">
       {/* desktop view */}
 
-      <div className="custom-font p-10 md:block hidden">
+      <div className="font-['ClashDisplay'] p-10 md:block hidden">
         {/* Add a div at the top */}
         <div className="flex flex-row justify-between pb-10">
           <p className="md:text-[25px] font-extrabold">Blogs</p>
@@ -167,7 +167,7 @@ export default function HomeBlog() {
 
       {/* mobile view */}
 
-      <div className="custom-font p-10 md:hidden">
+      <div className="font-['ClashDisplay'] p-10 md:hidden">
         <div className="flex flex-row justify-between pb-10">
           <p className="md:text-[25px] font-extrabold">Blogs</p>
           <Link to="/blogs">

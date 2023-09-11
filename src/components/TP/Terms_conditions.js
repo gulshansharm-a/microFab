@@ -10,7 +10,7 @@ export default function Terms_conditions() {
     },
   ];
   return (
-    <div>
+    <div className="font-['ClashDisplay']">
       <div className="md:w-full w-full text-left flex flex-col gap-3 md:pr-[10px]">
         {/* 1 */}
         <div>

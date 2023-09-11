@@ -36,7 +36,7 @@ export default function BlogsCardScroll() {
     <div>
       {/* desktop view */}
 
-      <div className="custom-font p-10 md:block hidden">
+      <div className="font-['ClashDisplay'] p-10 md:block hidden">
         <div className="flex gap-5 ">
           <div className="flex-1">
             <Link to="/blogs/blog1">

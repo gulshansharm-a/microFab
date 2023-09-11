@@ -2,7 +2,7 @@ import bot from "../../../assets/Icons/bot.svg";
 
 export default function Moulds() {
   return (
-    <div className="w-[90%] h-[94%] flex flex-col justify-between rounded-[20px] bg-[#E9E9E9] md:mr-2 mr-14 mt-[8px]">
+    <div className="font-['ClashDisplay'] w-[90%] h-[94%] flex flex-col justify-between rounded-[20px] bg-[#E9E9E9] md:mr-2 mr-14 mt-[8px]">
       {/* top */}
       <div className="flex h-[35%] w-full flex-row justify-between">
         <div className="bg-[#8AA6AA] h-full w-[47%] rounded-r-[20px] rounded-t-[20px]"></div>

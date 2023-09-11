@@ -20,14 +20,14 @@ export default function OptionsButtons() {
   const selectedContent = contents[options.indexOf(currentOption)];
 
   return (
-    <div className="custom-font">
+    <div className="font-['ClashDisplay']">
       <div className="text-center md:mt-[60px] mt-6 gap-6 w-full flex justify-center place-items-center space-x-2 flex-col md:flex-row">
         {options.map((option) => (
           <button
             key={option}
             className={`border rounded-md py-2 px-4 text-[20px] font-[800] h-[50px] w-[90%] md:w-[15%] ${
               currentOption === option
-                ? "bg-[#8AA6AA] text-white border-[#8AA6AA]"
+                ? "bg-[#8AA6AA] text-white border-[#8AA6AA] hover:bg-[#8AA6AA]"
                 : "bg-white text-[#8AA6AA] border-[#8AA6AA]"
             }`}
             onClick={() => handleOptionClick(option)}
@@ -80,8 +80,8 @@ export default function OptionsButtons() {
 
             <div className="font-bold">{selectedContent?.sub}</div>
             <div className="">{selectedContent?.sub_content}</div>
-            <div className="mt-[20px] rounded-lg md:mt-[7%] md:mb-[5%] gap-4 text-white justify-center place-items-center md:rounded-md bg-[#8AA6AA] border-[#8AA6AA] flex md:flex-row md:h-[15%] md:w-[35%] h-[50px] w-[50%]">
-              <button>Know More</button>
+            <div className="hover:bg-[#8AA6AA] mt-[20px] rounded-lg md:mt-[7%] md:mb-[5%] gap-4 text-white justify-center place-items-center md:rounded-md bg-[#8AA6AA] border-[#8AA6AA] flex md:flex-row md:h-[15%] md:w-[35%] h-[50px] w-[50%]">
+              <button className="hover:bg-[#8AA6AA]">Know More</button>
               <img src={arrow} alt="arrow" className="md:h-[20px]"></img>
             </div>
 

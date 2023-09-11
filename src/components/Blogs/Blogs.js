@@ -6,7 +6,7 @@ import SingleBlog from "./BlogsComponents/SingleBlog";
 export default function Blogs()
 {
     return(
-        <div className="flex flex-col md:mt-[80px] mt-[40px]">
+        <div className="font-['ClashDisplay'] flex flex-col md:mt-[80px] mt-[40px]">
       <div className="flex flex-col">
         <div>
           <BlogsCardScroll/>

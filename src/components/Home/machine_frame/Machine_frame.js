@@ -5,7 +5,7 @@ import WFS_Card from "./WFS_Card";
 
 const Machine_Frame = () => {
   return (
-    <div className="w-full h-[700px] md:w-[97%] md:h-[90%] md:mt-[75px] mt-[50px] md:rounded-[20px] bg-gradient-to-r from-[#e1e1e1] to-[#8ca7ab] md:m-4 mb-0 overflow-clip">
+    <div className="font-['ClashDisplay'] w-full h-[700px] md:w-[97%] md:h-full md:mt-[75px] mt-[50px] md:rounded-[20px] bg-gradient-to-r from-[#e1e1e1] to-[#8ca7ab] md:m-4 mb-0 overflow-clip">
       <div className="relative w-full h-full z-0">
         <div className="absolute md:top-[30%] md:left-[65%] z-10 top-[28%] left-[45%]">
           <WFS_Card />

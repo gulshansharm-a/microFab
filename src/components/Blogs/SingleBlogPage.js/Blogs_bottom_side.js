@@ -37,15 +37,15 @@ export default function blogs_bottom_side() {
   ];
 
   return (
-    <div>
+    <div className="font-['ClashDisplay']">
       {/* You may also like section */}
       <div>
         <div>
-          <p className="m-3 custom-font text-[18px] py-2 font-bold md:pl-0 pl-3">
+          <p className="m-3 text-[18px] py-2 font-bold md:pl-0 pl-3">
             You may also like
           </p>
         </div>
-        <div className="custom-font">
+        <div className="">
           <div className="m-3 flex flex-col gap-5 justify-center md:place-items-start place-items-center">
             {blogs.map((blog, index) => (
               <div key={index} className="blog-card">
@@ -84,11 +84,11 @@ export default function blogs_bottom_side() {
       {/* Recommended posts section */}
       <div>
         <div>
-          <p className="m-3 custom-font text-[18px] py-2 font-bold md:pl-0 pl-3">
+          <p className="m-3 text-[18px] py-2 font-bold md:pl-0 pl-3">
             Recommended posts
           </p>
         </div>
-        <div className="custom-font">
+        <div className="">
           <div className="m-3 flex flex-col gap-5 justify-center md:place-items-start place-items-center">
             {posts.map((blog, index) => (
               <div key={index} className="blog-card">

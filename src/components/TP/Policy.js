@@ -17,7 +17,7 @@ export default function Policy() {
 
   return (
     <div>
-      <div className="md:w-full w-full text-left flex flex-col gap-3 md:pl-[10px]">
+      <div className="font-['ClashDisplay'] md:w-full w-full text-left flex flex-col gap-3 md:pl-[10px]">
         {/* Title */}
         <div className="text-[26px]">{contents[0].heading}</div>
         <div className="text-[16px]">{contents[0].subheading}</div>

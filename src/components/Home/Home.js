@@ -18,7 +18,7 @@ import SoldGraph from "./right/SoldGraph";
 
 export default function Home() {
   return (
-    <div className="md:h-screen w-screen h-screen overflow-x-hidden md:overflow-x-hidden">
+    <div className="font-['ClashDisplay'] md:h-screen w-screen h-screen overflow-x-hidden md:overflow-x-hidden">
       <div className="md:w-full md:h-full w-full h-[1500px] flex md:flex-row flex-col">
         {/* left */}
         <div className="md:w-9/12 md:h-full w-full">
@@ -26,8 +26,8 @@ export default function Home() {
         </div>
 
         {/* right */}
-        <div className="md:w-3/12 w-full md:mt-[75px]">
-          <div className="flex justify-center">
+        <div className="md:w-3/12 w-full md:mt-[75px] md:h-full">
+          <div className="flex justify-center md:h-[20%]">
             <Why_Microfab />
           </div>
 

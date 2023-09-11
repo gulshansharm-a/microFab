@@ -6,7 +6,7 @@ import Footer from "../Common/Footer/Footer";
 
 export default function Contact() {
   return (
-    <div className="relative ">
+    <div className="relative font-['ClashDisplay']">
       <div className="bg-[#8AA6AA] z-20 md:mt-[80px] mt-[40px] md:pt-0 pt-[30px] md:h-[600px] flex md:flex-col w-full justify-center place-items-center border-2">
         <div className="md:w-[70%] w-[90%] flex md:flex-row flex-col-reverse border-2 rounded-lg bg-white">
           <div className="w-[100%] md:w-[50%] p-10">

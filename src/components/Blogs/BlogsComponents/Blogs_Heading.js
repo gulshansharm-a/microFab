@@ -69,14 +69,14 @@ export default function Article_Heading() {
   ];
 
   return (
-    <div>
+    <div className="font-['ClashDisplay']">
       {/* set of headings */}
       <div>
         <p className="md:text-[25px] text-[30px] md:block hidden font-bold pl-10">
           Heading
         </p>
         {/* desktop view */}
-        <div className="font-mono w-full p-10 hidden md:block">
+        <div className="w-full p-10 hidden md:block">
           {/* 3 cards */}
           <div className="w-full md:h-[380px] flex flex-row overflow-x-auto md:flex-row md:gap-3">
             {/* <div className="w-1 h-1 md:w-1/2 md:h-full flex flex-row md:flex-row md:gap-3 overflow-x-auto"> */}
@@ -116,7 +116,7 @@ export default function Article_Heading() {
       </div>
 
       {/* mobile */}
-      <div className="custom-font p-10 md:hidden ">
+      <div className="font-['ClashDisplay'] p-10 md:hidden ">
         <p className="md:text-[25px] text-[30px] font-bold mb-4">Heading</p>
 
         <div

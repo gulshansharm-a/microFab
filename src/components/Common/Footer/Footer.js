@@ -8,7 +8,7 @@ import ContactForm from "../../contact/Contact_form/Contact_form";
 
 export default function Footer() {
   return (
-    <div className="w-full">
+    <div className="w-full font-['ClashDisplay']">
 
       {/* the contact page above every footer */}
       <div className="w-full flex flex-">

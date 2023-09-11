@@ -29,8 +29,8 @@ export default function TP() {
   }
 
   return (
-    <div className="md:mt-[80px] mt-[80px] md:h-full h-full flex flex-col justify-center place-items-center">
-      <div className="font-sans flex flex-col justify-center place-items-center">
+    <div className="font-['ClashDisplay'] md:mt-[80px] mt-[80px] md:h-full h-full flex flex-col justify-center place-items-center">
+      <div className="flex flex-col justify-center place-items-center">
         <p className="text-[40px] md:px-0 px-[120px] text-center">
           Terms & Policies
         </p>

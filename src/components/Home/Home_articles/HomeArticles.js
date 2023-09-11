@@ -30,7 +30,7 @@ export default function HomeArticle() {
   return (
     <div>
       {/* desktop view */}
-      <div className="font-mono w-full p-10 hidden md:block">
+      <div className="font-['ClashDisplay'] w-full p-10 hidden md:block">
         <div className="flex flex-row justify-between pb-10 ">
           <p className="md:text-[25px] font-extrabold">Articles</p>
           <Link to="/articles">
@@ -75,7 +75,7 @@ export default function HomeArticle() {
       </div>
 
       {/* mobile view */}
-      <div className="custom-font p-10 md:hidden">
+      <div className="font-['ClashDisplay'] p-10 md:hidden">
         {/* Header */}
         <div className="flex flex-row justify-between pb-10">
           <p className="md:text-[25px] font-extrabold">Articles</p>

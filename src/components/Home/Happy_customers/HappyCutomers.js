@@ -38,7 +38,7 @@ export default function HappyCustomers() {
   ];
 
   return (
-    <div className="flex flex-col md:flex-row justify-between p-10">
+    <div className="font-['ClashDisplay'] flex flex-col md:flex-row justify-between p-10">
       {/* left */}
       <div className="gap-8 flex flex-row justify-center place-items-center items-center md:w-1/2 relative z-1">
         {/* images */}
@@ -61,7 +61,7 @@ export default function HappyCustomers() {
               <img src={ONEMILL} className="md:hidden h-8"></img>
             </div>
             <img src={arrow1} className="h-[40px] w-auto mt-2 "></img>
-            <p className="font-sans text-[40px] font-black leading-10">
+            <p className="text-[40px] font-black leading-10">
               Happy <br></br>Customers
             </p>
           </div>

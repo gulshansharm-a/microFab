@@ -13,13 +13,13 @@ export default function SingleBlog() {
   ];
 
   return (
-    <div className="">
+    <div className="font-['ClashDisplay']">
       <div
         className="w-full md:h-[53vh] h-[45hv] flex overflow-x-scroll gap-4 "
         style={{ scrollSnapType: "x mandatory" }}
       >
         {/* one blog individual desktop */}
-        <div className="font-mono w-full pl-10 pb-10 pr-10 hidden md:block">
+        <div className="w-full pl-10 pb-10 pr-10 hidden md:block">
           <div className="w-full md:h-full md:w-full rounded-lg shadow-md">
             <Article4
               content={blogs[0].content}

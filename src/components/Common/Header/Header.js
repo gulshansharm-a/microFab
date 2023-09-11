@@ -57,7 +57,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 p-0 m-0 right-0 md:w-full py-4 z-10 ${
+      className={`font-['ClashDisplay'] fixed top-0 left-0 p-0 m-0 right-0 md:w-full py-4 z-10 ${
         isMenuOpen ? "bg-white" : "bg-gradient-to-r from-[#e1e1e1] to-[#8ca7ab]"
       } w-screen`}
       style={
@@ -67,7 +67,7 @@ const Header = () => {
           : {}
       }
     >
-      <nav className="relative mx-4 md:mx-20 xl:mx-32 2xl:mx-40 flex flex-row items-center justify-between">
+      <nav className="relative mx-4 md:mx-20 xl:mx-22 2xl:mx-40 flex flex-row items-center justify-between">
         <div className="font-bold md:text-[22px] text-[18px]">Logo</div>
         <div className="font-light relative">
           <ul
