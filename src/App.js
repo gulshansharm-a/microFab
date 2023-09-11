@@ -16,7 +16,7 @@ import "./Style_tech.css"
 import "./Styles12.css";
 import Articles from "./components/Articles/Articles";
 import Blogs from "./components/Blogs/Blogs";
-import SingleBlogPage from "./components/Blogs/SingleBlogPage.js/SingleBlogPage";
+import SingleBlogPage from "./components/Blogs/SingleBlogPage/SingleBlogPage";
 
 export default function App() {
   return (
