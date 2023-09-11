@@ -53,7 +53,7 @@ export default function HappyCustomers() {
           <div className="flex flex-col justify-center place-items-start">
             <div>
               <p
-                className="font-black border-blue text-[50px] hidden md:block"
+                className="font-['ClashDisplayBold'] border-blue text-[50px] hidden md:block"
                 style={{ WebkitTextStroke: "2px blue" }}
               >
                 + 1M
