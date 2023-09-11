@@ -83,28 +83,28 @@ export default function HomeArticle() {
 
         {/* Carousel */}
         <div
-          className="w-full h-[45vh] flex overflow-x-scroll gap-4 "
+          className="w-full h-[40vh] flex overflow-x-scroll gap-4 "
           style={{ scrollSnapType: "x mandatory" }}
         >
           {articles.map((article, index) => (
             <div
               key={index}
-              className="w-full flex-shrink-0 scroll-snap-align-start rounded-lg shadow-md"
+              className="w-full flex-shrink-0 scroll-snap-align-start"
             >
-              <div className="border-2 w-full h-[40vh] flex flex-col place-items-center rounded-lg shadow-md">
+              <div className="border-2 w-full h-[35vh] flex flex-col place-items-center rounded-lg shadow-md">
                 <img
                   src={article.img}
                   alt="Blog Thumbnail"
                   className="w-full h-[50%] object-cover"
                 />
-                <div className="p-2 flex flex-col gap-4">
+                <div className="p-2 flex flex-col gap-4 justify-between h-full py-4">
                   <div className="flex flex-row place-items-center">
                     <div className="w-[3px] mr-2 h-[18px] bg-[#8AA6AA]"></div>
                     <p className="text-left text-gray-500 text-[14px]">
                       {article.sub}
                     </p>
                   </div>
-                  <p className="text-left text-black text-[18px] font-black">
+                  <p className="text-left w-[70%] text-black text-[18px] font-black">
                     {article.content}
                   </p>
                   <div className="flex flex-row place-items-center gap-3">

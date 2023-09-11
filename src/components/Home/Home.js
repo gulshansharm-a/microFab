@@ -1,16 +1,12 @@
-import Header from "../Common/Header/Header";
 import Machine_Frame from "./machine_frame/Machine_frame";
 import Why_Microfab from "./right/Why_MicroFab";
 import BFS from "./right/BFS_FFS";
 import Moulds from "./right/Moulds";
-import sold_img from "../../assets/Machinary_sold_over.svg";
 import Analytics from "./Analytics/Analytics";
 import OptionsButtons from "./Options/OptionButtons";
 import WaterTS from "./water_treatment_system/water_TS";
 import Footer from "../Common/Footer/Footer";
 import Who_are_we from "./Who_are_we/Who_are_we";
-import ContactForm from "../contact/Contact_form/Contact_form";
-import GetinTouchWithUs from "../contact/GetinTouchWithUs/GetinTouchWithUs";
 import HomeArticle from "./Home_articles/HomeArticles";
 import HomeBlog from "./Home_blogs/HomeBlog";
 import HappyCustomers from "./Happy_customers/HappyCutomers";
@@ -19,7 +15,7 @@ import SoldGraph from "./right/SoldGraph";
 export default function Home() {
   return (
     <div className="font-['ClashDisplay'] md:h-screen w-screen h-screen overflow-x-hidden md:overflow-x-hidden">
-      <div className="md:w-full md:h-full w-full h-[1500px] flex md:flex-row flex-col">
+      <div className="md:w-full md:h-full w-full h-[1600px] flex md:flex-row flex-col">
         {/* left */}
         <div className="md:w-9/12 md:h-full w-full">
           <Machine_Frame />
