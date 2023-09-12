@@ -2,6 +2,8 @@ import logo from "./appli.png";
 // import back1 from"../../back1.png";
 // import bac1 from "./bac1.svg"
 import "./Style_tech.css"
+import intr from "./Introducing.png"
+import logos from "./logos2.svg";
 import pharma from "./pill.svg"
 import { Button } from "@material-tailwind/react";
 import { NavbarWithMegaMenu } from "./packnav";
@@ -16,13 +18,13 @@ export default function Technology() {
   return (
     <div>
      <span className="qaz">
-      <div className="qa">
-          <h3 className="mb-4 pb-4 text-7xl leading-tight text-[#8AA6AA] df"><strong>
-            Blow-Fill-Seal & Form-Fill-Seal Solutions for Pharmaceuticals</strong>
+        <div className="qa">
+        <h3 className="mb-6 w-full pb-8 lg:text-7xl md: text-5xl sm:text-3xl leading-tight text-[#8AA6AA]  df"><strong>
+          Lorem ipsum dolor sit  consectetur adipiscing elit sed do eiusmod</strong>
           </h3>
           <span>
             <h6
-              className="text-3xl leading-tight text-[#8AA6AA] sd"
+              className="lg:text-3xl md:text-2xl sm:text-xl leading-tight text-[#8AA6AA]  sd"
               color="blue"
             >
               "Unleashing the Power of BFS Technology: Aseptic Filling, Sterile
@@ -31,37 +33,39 @@ export default function Technology() {
             <br></br>
           </span>
           </div>
+         
           <button class="bg-[#8AA6AA] hover:bg-blue-700 text-white font-bold py-2 px-20 rounded m-2">
   Explore
 </button>
-          
 
-          {/* <br></br>
-          <br></br> */}
-          <div>
+<div>
             <img
-              className="h-106 w-full object-cover object-center"
-              src={logo}
+              className="h-106 w-full object-cover object-center poi"
+              src={logos}
               
               alt="nature image"
             />
           </div>
+
+          {/* <br></br>
+          <br></br> */}
+          
         </span><br></br>
          {/* <div className="flex justify-center sm:px-12 p-8 "> */}
-         <center> <img className="object-scale-up  rounded-md m-auto h-full w-full  dc"  src="https://s3-alpha-sig.figma.com/img/049b/b5ae/76c59824d5ca5b9e19d5e820f6a945af?Expires=1694995200&Signature=ZXC6URTArvrGzkOxgfRGVWAuRrpxudo4FvuSjFuXfmPg76sK4Z2t70-VgHciDi15PTmhGJFVQH5EvqckE71QiSBi7qAPo4tFoE4qBThAYtWJ4TZlKXwID89oP78DoU264Q7FoCUtTqv9nN8rQfiPRkMNncJ09W8CeQCUMCenEvVmMktjl5XI6LrqKqmqdl3ARi2xF38RvOw2FNNxgoKfnCeQt7W591Sfqy-sCgJPXfcUxtFCjYY5M0rd~DhPjKuzv9ljsxy1LMM7MaVCZbFRepA6qt3XVrOMm5Xl1Yf11UdKlBQIY9nUVw2ND6ldR5ys3~YKODa770VgV5eBIGLyPQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" al="yu"></img>
+         <center> <img className="object-scale-up  rounded-md m-auto h-full w-full  dc"  src={intr} al="yu"></img>
          {/* </div> */}
          </center>
      <div><center>
-     <div className="flex flex-col rounded-lg bg-white md:max-w-7xl md:flex-row mm">
-                <div className="flex flex-col p-6">
+     <div className="flex flex-col rounded-lg bg-white md:max-w-9xl md:flex-row mm">
+                <div className="flex flex-col p-10">
        <img className="object-scale-down  rounded-md m-auto max-h-full  w-screen"  src="https://s3-alpha-sig.figma.com/img/4c40/73e4/0198a1aa6f81883b00365baa37650449?Expires=1694995200&Signature=dz2Kw3tjvn1ealbkagEc2rWKfujTTK9IVOs0sC-vCNFdP~nafhBDJeq7ff2pvx~MWtAMnH~pGk2U6TdG6CCP8mKqvc6vdRWk~hs7JWeJUHOBTkdWC~71VSQD7gPUzuVxZ52bIDYO6R3v9lN-K7N3WqQbposxGP77GhyJFI9mLX3vf0yGXu8y4z6koDqZljxqsMX6b-eincBLJ3dlG48QlZslUNuMUC2NIhH1CKhw48wyHzspmLahuC~nWch9lY0dNTVVAXtS~geihH8XhfSbPc2gDYjAJcNlInlaKUvE5Dhr1~jo3WDpMBAuWe4mJHPXv9E4uzHQtGLxNOuNWaEmKQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" al="yu"></img>
-       <br></br><br></br><h6 className="mb-4 pb-4 text-xl leading-tight text-black kl">
+       <br></br><br></br><h6 className="mb-8  pb-2 w-120 text-xl leading-tight text-black kl">
        <strong>Blow: </strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit .
           </h6>
-          <br></br><h6 className="mb-4  pb-4 text-xl leading-tight text-black kl">
+          <br></br><h6 className="mb-6  pb-2 text-xl leading-tight text-black kl">
        <strong>Flow: </strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit .
           </h6>
-          <br></br><h6 className="mb-4  pb-4 text-xl leading-tight text-black kl">
+          <br></br><h6 className="mb-4  pb-2 text-xl leading-tight text-black kl">
        <strong>Seal: </strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit .
           </h6>
           </div></div>
@@ -135,7 +139,7 @@ PG10 Process & Applications
         
         <h5 className="mt-2 text-gray-600 text-md kkk"><strong>{{...testimonial}.content}</strong></h5>
         <h5 className="mt-2 text-gray-600 kkk" >{{...testimonial}.author}</h5><br></br>
-        <button class="bg-[#8AA6AA] hover:bg-blue-700 text-black font-bold py-2 px-28 rounded">
+        <button class="bg-[#8AA6AA] text-black font-bold py-2 px-28 rounded">
   Button
 </button>
 {/* <button class="btn btn-blue">

@@ -3,6 +3,9 @@ import "./Stylesq.css";
 import { NavbarDefault } from "./Navbar";
 import { Button } from "@material-tailwind/react";
 import we from "./qw.png";
+import hj from "./Union1.jpg"
+import "./Styles_abt2.css"
+import pic from "./List.png"
 import tasto from "./testicards.json";
 import Slider from "./slider";
 import TestimonialCard from "./tasticard";
@@ -297,8 +300,9 @@ function AboutUs() {
           </div>
         
           <div className="io" >
+            <center><img src={hj} alt="Loading"></img></center>
            {/* <img src="https://s3-alpha-sig.figma.com/img/688c/1dfa/e642076d55e4e4759eb7174f0f65f42b?Expires=1694995200&Signature=BReTl6LL1sOswmno5ryCVGBYZCGZS0LWSY4~xTYD7ZmyY4G9Gy4oAf4rIFVhpOAnoGihJ63ywqQ~v83fR5Cf9f70ie0L~qlLFPJEgELtXApAGUm4I7KLbNNTqZORhlkU3McxPKhBIZOWzkqHBVy~A3yXAGRpcsgC1gHH-JXbekHgvYtAO9od1cFQ~xqxFaoz8vp81N0UvLNuMlmABLwg~oSQvXUcn0j3-oHwMr4G6p4RiEF8IzuYhTdh-rNY9Ccjq~SmicZeLfoWZmETMe8qHUc6pJcOdJZaTuf5y-CwvHa6kE3ELQ02Ned20Dv~DNLWZfsN2IzN-RXdHTHkq2ZNrw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"  alt="loading failed" width="100%" ></img> */}
-           <img src={we}  alt="loading failed" width="100%" ></img>
+           <img className= "aws" src={pic}  alt="loading failed" width="100%" ></img>
           </div><br></br>
          <br></br>
           <h5 className="mb-2 text-3xl leading-tight text-black"><center>FAQ</center></h5><br></br>

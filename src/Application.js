@@ -1,5 +1,6 @@
 import logo from "./appli.png";
 import pharma from "./pill.svg"
+import logos from "./logos.svg";
 import drop from "./drops.png";
 import drop1 from "./drop1.svg";
 import hand from "./hand.png";
@@ -29,12 +30,12 @@ function Application() {
       <div>
         <span className="qaz">
         <div className="qa">
-          <h3 className="mb-4 pb-4 text-7xl leading-tight text-[#8AA6AA] df"><strong>
-            Blow-Fill-Seal & Form-Fill-Seal Solutions for Pharmaceuticals</strong>
+          <h3 className="mb-6 w-full pb-8 lg:text-7xl md: text-5xl sm:text-3xl leading-tight text-[#8AA6AA]  df"><strong>
+          Lorem ipsum dolor sit  consectetur adipiscing elit sed do eiusmod</strong>
           </h3>
           <span>
             <h6
-              className="text-3xl leading-tight text-[#8AA6AA] sd"
+              className="lg:text-3xl md:text-2xl sm:text-xl leading-tight text-[#8AA6AA]  sd"
               color="blue"
             >
               "Unleashing the Power of BFS Technology: Aseptic Filling, Sterile
@@ -43,21 +44,23 @@ function Application() {
             <br></br>
           </span>
           </div>
+         
           <button class="bg-[#8AA6AA] hover:bg-blue-700 text-white font-bold py-2 px-20 rounded m-2">
   Explore
 </button>
-          
 
-          {/* <br></br>
-          <br></br> */}
-          <div>
+<div>
             <img
-              className="h-106 w-full object-cover object-center"
-              src={logo}
+              className="h-106 w-full object-cover object-center poi"
+              src={logos}
               
               alt="nature image"
             />
           </div>
+
+          {/* <br></br>
+          <br></br> */}
+          
         </span>
       </div>
       <br></br>
@@ -126,7 +129,7 @@ function Application() {
         id="image3"
         style={{ display: selectedImage === "image3" ? "block" : "none" }}
       >
-        <img src={drop} alt="Image 3" />
+        {/* <img src={drop} alt="Image 3" /> */}
       </div>
       <div
         className="image-container"
@@ -145,14 +148,43 @@ function Application() {
       alt="nature image"
     />
     </div> */}
-      <div>
+      {/* <div>
         {" "}
         <img
           className="h-70 w-full object-cover object-center "
           src={hand}
           alt="nature image"
         />
-      </div>
+      </div> */}
+<br></br><br></br>
+
+<p className="mb-6 w-full pb-8 text-5xl leading-tight text-[#8AA6AA] kkk">
+                
+<strong>Unlocking Optimal Results: Blow-Fill-Seal for Various Applications</strong></p>
+<div className="flex flex-col rounded-lg bg-white md:max-w-10xl md:flex-row mm">
+
+              <div className="flex flex-col p-6 vbn">
+               
+                          <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">ear drops</li>     
+                          <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">nose drops</li> 
+                          <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">contact lens cleaners and rinses</li> 
+                          <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Gels for vaginal or rectal use</li>
+                          <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">drinking solutions</li>
+                          <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Wound care preparations, wound gels and rinses</li>
+                          <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">disinfectant</li>
+                          <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">diagnostics</li>
+                          <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">biotechnological products</li> 
+                          <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">vaccines</li> 
+                          <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Stability Test Kits</li> 
+                          <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">biotechnological products</li> 
+                          </div> <br></br><br></br><br></br>
+              {/* <br></br><br></br><br></br><br></br><br></br> */}
+              <img className="h-96 w-48 rounded-lg rounded-md uuu" src="https://s3-alpha-sig.figma.com/img/4f3d/619c/61df89bd22062ce2d6a4d886511827c3?Expires=1695600000&Signature=P2HLZEi2LECgWkllcouuYxd4iiE4CEVZrUEAZYuflYGLriVX3Xxj1ONaOnDiRpstNxrhAojKEgBKlp8QIxGpFq4mXdEwOeSL0ugrjp~jg-Dcy7MLWvDsWAYQ7TrYKliyDrjD6G2pER-F6Bd2G4rX5rIYrgXdNOr2cdcsXbScfqrHx0GphzyM-g5v7H8c28HZLOPj3bcVmAc1HLi-LYQpyppBdJA~SCz-Zu97qqgzhvMA7q-dXMvbA1hPaRRG34Jle4wIlcVFPvcPjys9SDPxZkxBCZBZH0OraYdRo1328bbPdfQ9PTdF9tUb1mYprC7weU6aXgAGwGI3lPe5BqGhNw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="NO image">
+                
+               
+              </img>
+            </div> 
+<br></br>
       <div><center>
         <h3 className="mb-4 pb-4 text-4xl ml-8 leading-tight text-[#8AA6AA]">
           From the industry leader: Exemplary BFS solutions for the
@@ -221,12 +253,12 @@ function Application() {
         <br></br>
         <br></br>
         <center>
-        <div class=" leading-tight bg-[#8AA6AA] kl"><center>
-          <h1 class="text-3xl leading-tight font-bold text-white kl">
+        <div class=" leading-tight bg-[#8AA6AA] kll"><center>
+          <h1 class="text-3xl leading-tight font-bold text-white kll">
             One-stop partners have more to offer
           </h1>
           <br></br>
-          <h5 class="text-xl  leading-tight mb-4 font-bold text-white kl">
+          <h5 class="text-xl  leading-tight mb-4 font-bold text-white kll">
             No matter what point you are at: With our experience and range of
             services, we are sure to get you ahead. Maybe so with these offers:
           </h5>
