@@ -16,7 +16,7 @@ module.exports = {
         },
       },
       animation: {
-        fall: 'fall 1s ease-in-out forwards',
+        fall: 'fall 3s ease-in-out forwards infinite',
       },
     },
   },
