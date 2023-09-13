@@ -1,21 +1,23 @@
 [
-    {
-      "topic": "What is Blow-Fill-Seal?",
-      "content": "Blow-Fill-Seal is the better alternative to conventional packaging like glass. That is because Blow-Fill-Seal lets you produce, fill and seal unbreakable plastic packaging fully automatically in a single operation. 100% aseptic and with the greatest possible flexibility in container design. Compact, environmentally friendly and without any complex processes.",
-      "sub": "Blow",
-      "sub_content": "A tube is extruded from pure plastic granules. A container is blown into shape using sterile air."
-    },
-    {
-      "topic": "What is Blow-Fill-Seal?2",
-      "content": "Blow-Fill-Seal is the better alternative to conventional packaging like glass. That is because Blow-Fill-Seal lets you produce, fill and seal unbreakable plastic packaging fully automatically in a single operation. 100% aseptic and with the greatest possible flexibility in container design. Compact, environmentally friendly and without any complex processes.",
-      "sub": "Blow",
-      "sub_content": "A tube is extruded from pure plastic granules. A container is blown into shape using sterile air."
-    },
-    {
-      "topic": "What is Blow-Fill-Seal?3",
-      "content": "Blow-Fill-Seal is the better alternative to conventional packaging like glass. That is because Blow-Fill-Seal lets you produce, fill and seal unbreakable plastic packaging fully automatically in a single operation. 100% aseptic and with the greatest possible flexibility in container design. Compact, environmentally friendly and without any complex processes.",
-      "sub": "Blow",
-      "sub_content": "A tube is extruded from pure plastic granules. A container is blown into shape using sterile air."
-    }
-  ]
-  
+  {
+    "topic": "What is Blow-Fill-Seal?",
+    "content": "Blow-Fill-Seal is the better alternative to conventional packaging like glass. That is because Blow-Fill-Seal lets you produce, fill and seal unbreakable plastic packaging fully automatically in a single operation. 100% aseptic and with the greatest possible flexibility in container design. Compact, environmentally friendly and without any complex processes.",
+    "sub": "Blow",
+    "sub_content": "A tube is extruded from pure plastic granules. A container is blown into shape using sterile air.",
+    "sequence": ["blow", "fill", "seal"]
+  },
+  {
+    "topic": "What is Form-Fill-Seal?",
+    "content": "In the initial stage of the process, the creation of the intended shape or structure takes place. This step involves the shaping or molding of raw materials into the desired configuration, setting the foundation for subsequent stages.",
+    "sub": "Form",
+    "sub_content": "A tube is extruded from pure plastic granules. A container is Form into shape using sterile air.",
+    "sequence": ["Form", "fill", "seal"]
+  },
+  {
+    "topic": "What is Injection Stretch Blow Molding",
+    "content": "Injection stretch blow molding is a process for manufacturing predominantly hollow objects with rotational symmetry using polymers. In this multilevel process, a preform is first produced using an injection molding process.",
+    "sub": "Injection",
+    "sub_content": "A tube is extruded from pure plastic granules. A container is blown into shape using sterile air.",
+    "sequence": ["Injection", "Stretch", "Blow", "Molding"]
+  }
+]
