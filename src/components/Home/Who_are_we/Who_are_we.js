@@ -1,4 +1,5 @@
 import world from "../../../assets/Who_are_we/world.svg";
+import world_line1 from '../../../assets/Who_are_we/world_line1.svg'
 import world_mobile from "../../../assets/Who_are_we/world_mobile.svg";
 import "../../../App.css";
 
@@ -17,8 +18,9 @@ export default function Who_are_we() {
       </div>
 
       <div className="relative md:h-[90%] justify-center place-items-center md:text-[16px] text-[16px]">
-        <img src={world} className="hidden md:block"></img>
-        <img src={world_mobile} className="md:hidden block"></img>
+        <img src={world} className="hidden md:block" alt="world"></img>
+        <img src={world_mobile} className="md:hidden block" alt="world_mobile"></img>
+        <img src={world_line1} alt="world_line" className="absolute top-[10%] animate-star-fall"></img>
         <p className="absolute md:top-[30%] top-[35%] font-bold md:right-[40%] right-[30%] bg-white rounded-[20px] px-4 border-black border-2 p-2">india</p>
         <p className="absolute md:top-[15%] top-[22%] font-bold md:right-[60%] right-[45%] bg-white rounded-[20px] px-4 border-black border-2 p-2">Ghana</p>
         <p className="absolute md:top-[14%] top-[22%] font-bold md:right-[20%] right-[20%] bg-white rounded-[20px] px-4 border-black border-2 p-2">Algeria</p>

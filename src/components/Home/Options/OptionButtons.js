@@ -117,7 +117,7 @@ export default function OptionsButtons() {
             <div>
               <div className="font-bold ">{selectedContent?.sub}</div>
               <div className="]">{selectedContent?.sub_content}</div>
-              <div className="hover:bg-[#8AA6AA] mt-[20px] rounded-lg md:mt-[7%] md:mb-[5%] gap-4 text-white justify-center place-items-center md:rounded-md bg-[#8AA6AA] border-[#8AA6AA] flex md:flex-row md:h-[15%] md:w-[35%] h-[50px] w-[50%]">
+              <div className="hover:bg-[#8AA6AA] mt-[20px] rounded-lg md:mt-[7%] md:mb-[5%] gap-4 text-white justify-center place-items-center md:rounded-md bg-[#8AA6AA] border-[#8AA6AA] flex md:flex-row md:h-[25%] md:w-[35%] h-[50px] w-[100%]">
                 <button className="hover:bg-[#8AA6AA]">Know More</button>
                 <img src={arrow} alt="arrow" className="md:h-[20px]"></img>
               </div>
