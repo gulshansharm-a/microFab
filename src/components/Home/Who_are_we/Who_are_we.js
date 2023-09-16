@@ -17,7 +17,7 @@ export default function Who_are_we() {
         </p>
       </div>
 
-      <div className="relative md:h-[90%] justify-center place-items-center md:text-[16px] text-[16px]">
+      {/* <div className="relative md:h-[90%] justify-center place-items-center md:text-[16px] text-[16px]">
         <img src={world} className="hidden md:block" alt="world"></img>
         <img src={world_mobile} className="md:hidden block" alt="world_mobile"></img>
         <img src={world_line1} alt="world_line" className="absolute top-[10%] animate-star-fall"></img>
@@ -28,7 +28,7 @@ export default function Who_are_we() {
         <p className="absolute md:top-[47%] top-[50%] font-bold md:right-[6%] right-[15%] bg-white rounded-[20px] px-4 border-black border-2 p-2">Indonesia</p>
         <p className="absolute md:top-[67%] top-[68%] font-bold md:right-[36%] right-[30%] bg-white rounded-[20px] px-4 border-black border-2 p-2">Philippines</p>
 
-      </div>
+      </div> */}
 
       <div className="w-full flex md:flex-col p-10 flex-col">
         {/* for desktop view */}
