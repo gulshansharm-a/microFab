@@ -24,7 +24,7 @@ module.exports = {
         },
       },
       animation: {
-        fall: "fall 3s ease-in-out forwards infinite",
+        fall: "fall 1s ease-in-out forwards infinite",
         "star-fall": "star-fall 3s ease-in-out forwards infinite", // New animation "star-fall"
       },
     },
