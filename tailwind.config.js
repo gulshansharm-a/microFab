@@ -12,7 +12,7 @@ module.exports = {
             transform: "translateY(0)",
           },
         },
-        "star-fall": { // New keyframes animation named "star-fall"
+        "star-fall": {
           "0%": {
             transform: "scale(0)",
             opacity: 0,
@@ -25,7 +25,11 @@ module.exports = {
       },
       animation: {
         fall: "fall 1s ease-in-out forwards infinite",
-        "star-fall": "star-fall 3s ease-in-out forwards infinite", // New animation "star-fall"
+        "star-fall": "star-fall 3s ease-in-out forwards infinite",
+      },
+      transition: {
+        // Define your new transition with a different name
+        'custom-transition': 'all 0.3s ease-in-out',
       },
     },
   },
