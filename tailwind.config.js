@@ -27,10 +27,6 @@ module.exports = {
         fall: "fall 1s ease-in-out forwards infinite",
         "star-fall": "star-fall 3s ease-in-out forwards infinite",
       },
-      transition: {
-        // Define your new transition with a different name
-        'custom-transition': 'all 0.3s ease-in-out',
-      },
     },
   },
   plugins: [],

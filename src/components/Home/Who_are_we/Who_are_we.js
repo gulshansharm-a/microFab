@@ -1,5 +1,5 @@
 import world from "../../../assets/Who_are_we/world.svg";
-import world_line1 from '../../../assets/Who_are_we/world_line1.svg'
+import world_line1 from "../../../assets/Who_are_we/world_line1.svg";
 import world_mobile from "../../../assets/Who_are_we/world_mobile.svg";
 import "../../../App.css";
 
@@ -19,17 +19,47 @@ export default function Who_are_we() {
 
       <div className="relative md:h-[90%] justify-center place-items-center md:text-[16px] text-[16px]">
         <img src={world} className="hidden md:block" alt="world"></img>
-        <img src={world_mobile} className="md:hidden block" alt="world_mobile"></img>
+        <img
+          src={world_mobile}
+          className="md:hidden block"
+          alt="world_mobile"
+        ></img>
 
-        <div class="absolute inset-0 animate-border h-4 w-full"></div>
-        
-        <p className="absolute md:top-[30%] top-[35%] font-bold md:right-[40%] right-[30%] bg-white rounded-[20px] px-4 border-black border-2 p-2">india</p>
-        <p className="absolute md:top-[15%] top-[22%] font-bold md:right-[60%] right-[45%] bg-white rounded-[20px] px-4 border-black border-2 p-2">Ghana</p>
-        <p className="absolute md:top-[14%] top-[22%] font-bold md:right-[20%] right-[20%] bg-white rounded-[20px] px-4 border-black border-2 p-2">Algeria</p>
-        <p className="absolute md:top-[45%] top-[52%] font-bold md:right-[60%] right-[45%] bg-white rounded-[20px] px-4 border-black border-2 p-2">Africa</p>
-        <p className="absolute md:top-[47%] top-[50%] font-bold md:right-[6%] right-[15%] bg-white rounded-[20px] px-4 border-black border-2 p-2">Indonesia</p>
-        <p className="absolute md:top-[67%] top-[68%] font-bold md:right-[36%] right-[30%] bg-white rounded-[20px] px-4 border-black border-2 p-2">Philippines</p>
+        {/* <div class="absolute inset-0 animate-border h-4 w-full"></div> */}
+        <div className="absolute top-0 flex justify-center items-center h-screen">
+      <svg
+        width="200"
+        height="200"
+        xmlns="http://www.w3.org/2000/svg"
+        className="text-indigo-500"
+      >
+        <path
+          d="M10 80 C 40 10, 65 10, 95 80 S 150 150, 180 80"
+          fill="transparent"
+          stroke="#22DAE5" 
+          strokeWidth="5"
+        />
+      </svg>
+    </div>
 
+        <p className="absolute md:top-[30%] top-[35%] font-bold md:right-[40%] right-[30%] bg-white rounded-[20px] px-4 border-black border-2 p-2">
+          india
+        </p>
+        <p className="absolute md:top-[15%] top-[22%] font-bold md:right-[60%] right-[45%] bg-white rounded-[20px] px-4 border-black border-2 p-2">
+          Ghana
+        </p>
+        <p className="absolute md:top-[14%] top-[22%] font-bold md:right-[20%] right-[20%] bg-white rounded-[20px] px-4 border-black border-2 p-2">
+          Algeria
+        </p>
+        <p className="absolute md:top-[45%] top-[52%] font-bold md:right-[60%] right-[45%] bg-white rounded-[20px] px-4 border-black border-2 p-2">
+          Africa
+        </p>
+        <p className="absolute md:top-[47%] top-[50%] font-bold md:right-[6%] right-[15%] bg-white rounded-[20px] px-4 border-black border-2 p-2">
+          Indonesia
+        </p>
+        <p className="absolute md:top-[67%] top-[68%] font-bold md:right-[36%] right-[30%] bg-white rounded-[20px] px-4 border-black border-2 p-2">
+          Philippines
+        </p>
       </div>
 
       <div className="w-full flex md:flex-col p-10 flex-col">
@@ -58,7 +88,7 @@ export default function Who_are_we() {
               </div>
             </div>
 
-           <div className="flex flex-row w-full gap-4">
+            <div className="flex flex-row w-full gap-4">
               {/* line */}
               <div className="hidden md:block md:w-[5px] w-[10px] h-[170px] md:h-[80px] bg-[#8AA6AA] gap-4"></div>
               <div className="md:w-[75%] md:text-[16px] w-full">
