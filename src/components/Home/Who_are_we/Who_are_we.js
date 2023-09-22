@@ -1,5 +1,4 @@
 import world from "../../../assets/Who_are_we/world.svg";
-import world_line1 from "../../../assets/Who_are_we/world_line1.svg";
 import world_mobile from "../../../assets/Who_are_we/world_mobile.svg";
 import "../../../App.css";
 
