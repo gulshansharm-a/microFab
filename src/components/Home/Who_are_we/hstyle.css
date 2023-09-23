@@ -56,11 +56,7 @@
          /* border:2px solid #ccc;  */
         border-radius:50%;
         height:300px;
-<<<<<<< HEAD
         width:100px;
-=======
-        width:300px;
->>>>>>> 7c71a88ed511a77c6867dea88d2833d167429f32
         transform-style:preserve-3d;
         perspective:10000px;
         transform:translate(-50%, -50%);
