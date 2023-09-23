@@ -1,7 +1,7 @@
 import world from "../../../assets/Who_are_we/world.svg";
 import world_mobile from "../../../assets/Who_are_we/world_mobile.svg";
 // import "../../../App.css";
-import "./hstyle.css";
+import "./hstyle.css"
 export default function Who_are_we() {
   return (
     <div className="custom-font flex md:flex-row flex-col md:justify-between">
@@ -15,31 +15,21 @@ export default function Who_are_we() {
           lectus.
         </p>
       </div>
-
+      
       <div className="relative md:h-[90%] justify-center place-items-center md:text-[16px] text-[16px] atom">
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <img src={world} className="hidden md:block" alt="world"></img>
+      <br></br><br></br><br></br><br></br><br></br><br></br>
+      <img src={world} className="hidden md:block" alt="world"></img>
         <img
           src={world_mobile}
           className="md:hidden block"
           alt="world_mobile"
         ></img>
-        <div className="atom ">
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-        </div>
-        <div className="electron"></div>
-        <div className="electron"></div>
-        <div className="electron"></div>
+         <div className='atom '>
+         <br></br><br></br><br></br><br></br><br></br><br></br>
+</div>
+<div className='electron'></div>
+       <div className='electron'></div>
+       <div className='electron'></div>
         {/* <div class="absolute inset-0 animate-border h-4 w-full"></div> */}
         {/* <div className="absolute top-0 flex justify-center items-center h-screen">
       <svg
@@ -56,26 +46,26 @@ export default function Who_are_we() {
         />
       </svg>
     </div> */}
-        <div className="ty">
-          <p className="absolute md:top-[90%] top-[95%]  font-bold md:right-[45%] right-[45%] bg-white rounded-[20px] px-4 border-black border-2 p-2">
-            india
-          </p>
-          <p className="absolute md:top-[75%] top-[82%] font-bold md:right-[60%] right-[45%] bg-white rounded-[20px] px-4 border-black border-2 p-1">
-            Ghana
-          </p>
-          <p className="absolute md:top-[74%] top-[82%] font-bold md:right-[20%] right-[20%] bg-white rounded-[20px] px-4 border-black border-2 p-2">
-            Algeria
-          </p>
-          <p className="absolute md:top-[105%] top-[112%]  font-bold md:right-[60%] right-[45%] bg-white rounded-[20px] px-4 border-black border-2 p-2">
-            Africa
-          </p>
-          <p className="absolute md:top-[107%] top-[110%] font-bold md:right-[6%] right-[15%] bg-white rounded-[20px] px-4 border-black border-2 p-2">
-            Indonesia
-          </p>
-          <p className="absolute md:top-[127%] top-[128%] font-bold md:right-[36%] right-[30%] bg-white rounded-[20px] px-4 border-black border-2 p-0.5">
-            Philippines
-          </p>
-        </div>
+     <div className="ty">
+        <p className="absolute md:top-[90%] top-[95%]  font-bold md:right-[45%] right-[45%] bg-white rounded-[20px] px-4 border-black border-2 p-2">
+          india
+        </p>
+        <p className="absolute md:top-[75%] top-[82%] font-bold md:right-[60%] right-[45%] bg-white rounded-[20px] px-4 border-black border-2 p-1">
+          Ghana
+        </p>
+        <p className="absolute md:top-[74%] top-[82%] font-bold md:right-[20%] right-[20%] bg-white rounded-[20px] px-4 border-black border-2 p-2">
+          Algeria
+        </p>
+        <p className="absolute md:top-[105%] top-[112%]  font-bold md:right-[60%] right-[45%] bg-white rounded-[20px] px-4 border-black border-2 p-2">
+          Africa
+        </p>
+        <p className="absolute md:top-[107%] top-[110%] font-bold md:right-[6%] right-[15%] bg-white rounded-[20px] px-4 border-black border-2 p-2">
+          Indonesia
+        </p>
+        <p className="absolute md:top-[127%] top-[128%] font-bold md:right-[36%] right-[30%] bg-white rounded-[20px] px-4 border-black border-2 p-0.5">
+          Philippines
+        </p>
+      </div>
       </div>
       <div className="w-full flex md:flex-col p-10 flex-col">
         {/* for desktop view */}
