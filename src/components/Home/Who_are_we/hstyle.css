@@ -42,7 +42,7 @@
           left:50%;
           animation:rotateWithOrbit 6s ;
           /* z-index:-1 */
-          //background-image:radial-gradient(circle at top left, #94ffaf, darken(#94ffaf, 25%) 75%); 
+          /* //background-image:radial-gradient(circle at top left, #94ffaf, darken(#94ffaf, 25%) 75%);  */
         }
        }
     
