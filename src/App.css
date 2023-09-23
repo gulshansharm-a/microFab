@@ -79,7 +79,7 @@
       left:50%;
       animation:rotateWithOrbit 6s ;
       /* z-index:-1 */
-      //background-image:radial-gradient(circle at top left, #94ffaf, darken(#94ffaf, 25%) 75%); 
+      /* //background-image:radial-gradient(circle at top left, #94ffaf, darken(#94ffaf, 25%) 75%);  */
     }
    }
        
@@ -139,7 +139,7 @@
     }
   }
   
-  //orbit is rotated 40deg, so rotate ball -40deg to keep it inline
+  /* //orbit is rotated 40deg, so rotate ball -40deg to keep it inline */
   @keyframes rotateWithOrbit {
     0% {transform:translate(-50%, -50%) rotateZ(0deg) rotateX(30deg)  rotateY(-40deg) scale(.80);}
   25% {transform:translate(-50%, -50%) rotateZ(-90deg) rotateX(30deg) rotateY(-40deg) scale(.60);}
@@ -159,7 +159,7 @@
     }
   }
   
-  //orbit is rotated 40deg, so rotate ball -40deg to keep it inline
+  /* //orbit is rotated 40deg, so rotate ball -40deg to keep it inline */
   @keyframes rotateWithOrbit2 {
     0% {transform:translate(-50%, -50%) rotateZ(-180deg) rotateX(-30deg)  rotateY(-40deg) scale(.80);}
   25% {transform:translate(-50%, -50%) rotateZ(-270deg) rotateX(-30deg) rotateY(-40deg) scale(1);}
