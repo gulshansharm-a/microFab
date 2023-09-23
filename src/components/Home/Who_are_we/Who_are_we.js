@@ -40,39 +40,24 @@ export default function Who_are_we() {
         <div className="electron"></div>
         <div className="electron"></div>
         <div className="electron"></div>
-        {/* <div class="absolute inset-0 animate-border h-4 w-full"></div> */}
-        {/* <div className="absolute top-0 flex justify-center items-center h-screen">
-      <svg
-        width="200"
-        height="200"
-        xmlns="http://www.w3.org/2000/svg"
-        className="text-indigo-500"
-      >
-        <path
-          d="M10 80 C 40 10, 65 10, 95 80 S 150 150, 180 80"
-          fill="transparent"
-          stroke="#22DAE5" 
-          strokeWidth="5"
-        />
-      </svg>
-    </div> */}
+      
         <div className="ty">
-          <p className="absolute md:top-[90%] top-[95%]  font-bold md:right-[45%] right-[45%] bg-white rounded-[20px] px-4 border-black border-2 p-2">
+          <p className="absolute text-[12px] md:text-[16px] md:top-[100%] top-[95%]  font-bold md:right-[45%] right-[35%] bg-white rounded-[20px] px-4 border-black border-2 md:p-2">
             india
           </p>
-          <p className="absolute md:top-[75%] top-[82%] font-bold md:right-[60%] right-[45%] bg-white rounded-[20px] px-4 border-black border-2 p-1">
+          <p className="absolute text-[12px] md:text-[16px] md:top-[75%] top-[82%] font-bold md:right-[60%] right-[45%] bg-white rounded-[20px] px-4 border-black border-2 md:p-2">
             Ghana
           </p>
-          <p className="absolute md:top-[74%] top-[82%] font-bold md:right-[20%] right-[20%] bg-white rounded-[20px] px-4 border-black border-2 p-2">
+          <p className="absolute text-[12px] md:text-[16px] md:top-[74%] top-[72%] font-bold md:right-[20%] right-[20%] bg-white rounded-[20px] px-4 border-black border-2 md:p-2">
             Algeria
           </p>
-          <p className="absolute md:top-[105%] top-[112%]  font-bold md:right-[60%] right-[45%] bg-white rounded-[20px] px-4 border-black border-2 p-2">
+          <p className="absolute text-[12px] md:text-[16px] md:top-[135%] top-[112%]  font-bold md:right-[60%] right-[45%] bg-white rounded-[20px] px-4 border-black border-2 md:p-2">
             Africa
           </p>
-          <p className="absolute md:top-[107%] top-[110%] font-bold md:right-[6%] right-[15%] bg-white rounded-[20px] px-4 border-black border-2 p-2">
+          <p className="absolute text-[12px] md:text-[16px] md:top-[127%] top-[110%] font-bold md:right-[6%] right-[15%] bg-white rounded-[20px] px-4 border-black border-2 md:p-2">
             Indonesia
           </p>
-          <p className="absolute md:top-[127%] top-[128%] font-bold md:right-[36%] right-[30%] bg-white rounded-[20px] px-4 border-black border-2 p-0.5">
+          <p className="absolute text-[12px] md:text-[16px] md:top-[157%] top-[128%] font-bold md:right-[36%] right-[30%] bg-white rounded-[20px] px-4 border-black border-2 md:p-2">
             Philippines
           </p>
         </div>
