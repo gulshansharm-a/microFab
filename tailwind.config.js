@@ -3,6 +3,10 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      "postcss-import": {},
+      "tailwindcss/nesting": "postcss-nesting",
+      tailwindcss: {},
+      autoprefixer: {},
       keyframes: {
         fall: {
           "0%": {
