@@ -10,10 +10,10 @@ import molding from "../../../assets/Options/molding.svg";
 import stretch from "../../../assets/Options/stretch.svg";
 import form from "../../../assets/Options/form.svg";
 import blow_small from "../../../assets/Options/blow_small.svg";
+import Animation from "./Animation";
 
 // the data are fetched from a json file
 import contents from "./content.json"; // Adjust the path accordingly
-import Moulds from "../right/Moulds";
 
 export default function OptionsButtons() {
   const options = ["B-F-S", "F-F-S", "I-S-B-M"];
@@ -53,12 +53,9 @@ export default function OptionsButtons() {
           </div>
         </div>
 
+        {/* mobile machine images */}
         <div className="md:hidden flex justify-center">
-          <img
-            src={blow}
-            alt="blow"
-            className="md:mr-[150px] h-[350px] m-[20px]"
-          ></img>
+          <Animation />
         </div>
 
         <div className="flex flex-col md:flex-row md:justify-between md:place-items-center text-left">
@@ -175,8 +172,11 @@ export default function OptionsButtons() {
               ))}
             </div>
           </div>
+
+          {/* desktop machine images */}
+
           <div className="hidden md:block ">
-            <img src={blow} className="md:mr-[150px]"></img>
+            <Animation />
           </div>
         </div>
       </div>
