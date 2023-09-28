@@ -8,6 +8,8 @@ import homeArticles from "../../../assets/Articles/Heading.svg";
 import ArticleCard from "../../Home/Home_articles/ArticleCard";
 import Article4 from "../../Home/Home_articles/Article4";
 
+import article_heading from '../../Articles/Article_heading.json'
+
 export default function Article_Heading() {
   const articles1 = [
     {

@@ -5,27 +5,9 @@ import img2 from "../../../assets/Home_article/article2.svg";
 import img3 from "../../../assets/Home_article/article3.svg";
 import arrow_right from "../../../assets/Home_article/ArrowRight.svg";
 import { Link } from "react-router-dom";
+import articles from '../../Articles/Article_content.json'
 
 export default function HomeArticle() {
-  const articles = [
-    {
-      content: "Blow-Fill-Seal Expands in Aseptic Filling, Vaccines",
-      sub: "Blow-Fill-Seal, Technology ",
-      img: img1,
-    },
-    {
-      content: "Investing in Form-Fill-Seal Technology",
-      sub: "Blow-Fill-Seal, Technology ",
-      img: img2,
-      date: "April 12, 2023 PAP-Q1-2023",
-    },
-    {
-      content: "Investing in Form-Fill-Seal Technology ",
-      sub: "Blow-Fill-Seal, Technology ",
-      img: img3,
-      date: "April 12, 2023 PAP-Q1-2023",
-    },
-  ];
 
   return (
     <div>
