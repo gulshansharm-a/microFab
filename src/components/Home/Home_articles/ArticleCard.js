@@ -5,7 +5,7 @@ export default function   ArticleCard({ content, sub, img, date, num }) {
   const contentClass = num ? "font-black md:text-[18px]" : "";
 
   return (
-    <div className="md:h-full h-full font-['ClashDisplay'] flex flex-col mb-5">
+    <div className="md:h-full h-full font-['ClashDisplay'] flex flex-col mb-5 overflow-clip">
       <div>
         <img src={img} alt="Article Thumbnail" className="md:w-full md:h-[200px] object-cover " />
         <div className="p-2">

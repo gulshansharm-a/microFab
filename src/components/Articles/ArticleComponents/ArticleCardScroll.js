@@ -18,8 +18,8 @@ export default function ArticleCardScrollMobile() {
       {/* desktop view */}
       <div className="font-mono w-full p-10 hidden md:block">
         {/* 3 cards */}
-        <div className="w-full md:h-[330px] flex flex-row overflow-x-auto md:flex-row md:gap-3">
-          <div className="w-full md:h-[330px] flex flex-row overflow-x-auto md:flex-row md:gap-3">
+        <div className="w-full md:h-[350px] flex flex-row overflow-x-auto md:flex-row md:gap-3">
+          <div className="w-full md:h-[350px] flex flex-row overflow-x-auto md:flex-row md:gap-3">
             <div className="md:w-1/2 md:h-full w-full rounded-lg shadow-md">
               <ArticleCard
                 content={Article_content[0].content}
@@ -29,7 +29,7 @@ export default function ArticleCardScrollMobile() {
                 num={true}
               />
             </div>
-            <div className="w-1 h-1 md:w-1/2 md:h-full flex flex-row md:flex-row md:gap-3 overflow-x-auto">
+            <div className="md:w-1/2 md:h-full flex flex-row md:flex-row md:gap-3 overflow-x-auto">
               <div className="md:w-full w-full h-full  md:h-full rounded-lg shadow-md">
                 <ArticleCard
                   content={Article_content[1].content}
@@ -69,20 +69,22 @@ export default function ArticleCardScrollMobile() {
       {/* mobile */}
       <div className="custom-font p-10 md:hidden">
         {/* Carousel */}
+
+        {/* mobile scroll 1 */}
         <div
-          className="w-full h-[45vh] flex overflow-x-scroll gap-4 "
+          className="w-[300px] h-[400px] flex overflow-x-scroll gap-4 mb-4"
           style={{ scrollSnapType: "x mandatory" }}
         >
           {Article_content.map((article, index) => (
             <div
               key={index}
-              className="w-full flex-shrink-0 scroll-snap-align-start rounded-lg shadow-md"
+              className="w-full h-full flex-shrink-0 scroll-snap-align-start border-2 rounded-xl shadow-md"
             >
-              <div className="w-[300px] h-[500px] md:h-[480px]  border-2 flex flex-col place-items-center rounded-lg shadow-md">
+              <div className="w-full h-full md:h-[480px] flex flex-col place-items-center">
                 <img
-                  src={img2}
+                  src={article.img}
                   alt="Blog Thumbnail"
-                  className="w-[100%] h-[40%] object-cover"
+                  className="w-full h-[50%] object-cover"
                 />
                 <div className="p-2 flex flex-col gap-4">
                   <div className="flex flex-row place-items-center">
@@ -91,7 +93,7 @@ export default function ArticleCardScrollMobile() {
                       {article.sub}
                     </p>
                   </div>
-                  <p className="text-left text-black text-[18px] font-black line-clamp-3">
+                  <p className="text-left w-full text-black text-[18px] font-bold line-clamp-3">
                     {article.content}
                   </p>
                   <div className="flex flex-row place-items-center gap-3">
@@ -107,17 +109,17 @@ export default function ArticleCardScrollMobile() {
             </div>
           ))}
         </div>
-
+          {/* mobile scroll 2 */}
         <div
-          className="w-full h-[45vh] flex overflow-x-scroll gap-4 "
+          className="w-[300px] h-[400px] flex overflow-x-scroll gap-4 "
           style={{ scrollSnapType: "x mandatory" }}
         >
           {Article_heading.map((article, index) => (
             <div
               key={index}
-              className="w-full flex-shrink-0 scroll-snap-align-start rounded-lg shadow-md"
+              className="w-full h-full flex-shrink-0 scroll-snap-align-start border-2 rounded-xl shadow-md"
             >
-              <div className="border-2 w-full h-[40vh] flex flex-col place-items-center rounded-lg shadow-md">
+              <div className="w-[300px] h-full md:h-[480px] flex flex-col place-items-center">
                 <img
                   src={article.img}
                   alt="Blog Thumbnail"
