@@ -19,34 +19,36 @@ export default function ArticleCardScrollMobile() {
       <div className="font-mono w-full p-10 hidden md:block">
         {/* 3 cards */}
         <div className="w-full md:h-[330px] flex flex-row overflow-x-auto md:flex-row md:gap-3">
-        <div className="w-full md:h-[330px] flex flex-row overflow-x-auto md:flex-row md:gap-3">
-          <div className="md:w-1/2 md:h-full w-full rounded-lg shadow-md">
-            <ArticleCard
-              content={Article_content[0].content}
-              sub={Article_content[0].sub}
-              img={Article_content[0].img}
-              num={true}
-            />
-          </div>
-          <div className="w-1 h-1 md:w-1/2 md:h-full flex flex-row md:flex-row md:gap-3 overflow-x-auto">
-            <div className="md:w-full w-full h-full  md:h-full rounded-lg shadow-md">
+          <div className="w-full md:h-[330px] flex flex-row overflow-x-auto md:flex-row md:gap-3">
+            <div className="md:w-1/2 md:h-full w-full rounded-lg shadow-md">
               <ArticleCard
-                content={Article_content[1].content}
-                sub={Article_content[1].sub}
-                img={Article_content[1].img}
-                date={Article_content[1].date}
+                content={Article_content[0].content}
+                sub={Article_content[0].sub}
+                // img={Article_content[0].img}
+                img={img1}
+                num={true}
               />
             </div>
-            <div className="w-full md:h-full md:w-full rounded-lg shadow-md">
-              <ArticleCard
-                content={Article_content[2].content}
-                sub={Article_content[2].sub}
-                img={Article_content[2].img}
-                date={Article_content[2].date}
-              />
+            <div className="w-1 h-1 md:w-1/2 md:h-full flex flex-row md:flex-row md:gap-3 overflow-x-auto">
+              <div className="md:w-full w-full h-full  md:h-full rounded-lg shadow-md">
+                <ArticleCard
+                  content={Article_content[1].content}
+                  sub={Article_content[1].sub}
+                  // img={Article_content[1].img}
+                  img={img3}
+                  date={Article_content[1].date}
+                />
+              </div>
+              <div className="w-full md:h-full md:w-full rounded-lg shadow-md">
+                <ArticleCard
+                  content={Article_content[2].content}
+                  sub={Article_content[2].sub}
+                  img={Article_content[2].img}
+                  date={Article_content[2].date}
+                />
+              </div>
             </div>
           </div>
-        </div>
         </div>
 
         {/* article 4 */}
@@ -76,11 +78,11 @@ export default function ArticleCardScrollMobile() {
               key={index}
               className="w-full flex-shrink-0 scroll-snap-align-start rounded-lg shadow-md"
             >
-              <div className="border-2 w-full h-[40vh] flex flex-col place-items-center rounded-lg shadow-md">
+              <div className="w-[300px] h-[500px] md:h-[480px]  border-2 flex flex-col place-items-center rounded-lg shadow-md">
                 <img
-                  src={article.img}
+                  src={img2}
                   alt="Blog Thumbnail"
-                  className="w-full h-[50%] object-cover"
+                  className="w-[100%] h-[40%] object-cover"
                 />
                 <div className="p-2 flex flex-col gap-4">
                   <div className="flex flex-row place-items-center">
