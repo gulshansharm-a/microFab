@@ -32,7 +32,7 @@ export default function HomeBlog() {
               <img
                 src={blogs[0].img}
                 alt="Article Thumbnail"
-                className="w-full h-[60%]"
+                className="w-full h-[60%] object-cover rounded-lg"
               />
               <div className="p-2 rounded-lg shadow-md flex flex-col gap-8">
                 <div className="flex flex-row place-items-center md:mt-0.5">
@@ -59,11 +59,11 @@ export default function HomeBlog() {
             {/* Right div with three other blogs */}
             <div className="flex flex-col md:h-full">
               {/* Top blog */}
-              <div className="mb-4 md:h-[50%] border-2 border-black flex flex-row rounded-lg shadow-md">
+              <div className="mb-4 md:h-[50%] flex flex-row rounded-lg shadow-md">
                 <img
                   src={blogs[1].img}
                   alt="Article Thumbnail"
-                  className="w-[50%] h-[70%]"
+                  className="w-[47%] h-full object-cover rounded-lg"
                 />
                 <div className="p-2 flex flex-col justify-between my-6">
                   <p className="text-left text-black font-bold">
@@ -86,12 +86,12 @@ export default function HomeBlog() {
                 </div>
               </div>
               {/* Bottom two blogs side by side */}
-              <div className="flex h-[50%]">
+              <div className="flex h-[50%] gap-2">
                 <div className="flex-1 mr-2 h-full">
                   <img
                     src={blogs[2].img}
                     alt="Article Thumbnail"
-                    className="w-[100%] h-[60%]"
+                    className="w-[100%] h-[60%] object-cover rounded-lg"
                   />
                   <div className="p-2 rounded-lg shadow-md  flex flex-col gap-2">
                     <p className="text-left text-black">{blogs[2].sub}</p>
@@ -116,7 +116,7 @@ export default function HomeBlog() {
                   <img
                     src={blogs[3].img}
                     alt="Article Thumbnail"
-                    className="w-[100%] h-[60%]"
+                    className="w-[100%] h-[60%] object-cover rounded-lg"
                   />
                   <div className="p-2 rounded-lg shadow-md  flex flex-col gap-2">
                     <p className="text-left text-black">{blogs[3].sub}</p>
