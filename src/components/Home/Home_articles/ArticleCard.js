@@ -1,7 +1,7 @@
 import React from "react";
 import arrow_right from "../../../assets/Home_article/ArrowRight.svg";
 
-export default function   ArticleCard({ content, sub, img, date, num }) {
+export default function ArticleCard({ content, sub, img, date, num }) {
   const contentClass = num ? "font-black md:text-[18px]" : "";
 
   return (

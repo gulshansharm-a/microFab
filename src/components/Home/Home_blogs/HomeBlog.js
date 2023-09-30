@@ -28,13 +28,13 @@ export default function HomeBlog() {
         <div className="flex gap-5 ">
           <div className="flex-1">
             {/* Left div with the first blog covering the entire width and height */}
-            <div className="md:h-[480px] w-full">
+            <div className="md:h-[490px] w-full rounded-lg shadow-md">
               <img
                 src={blogs[0].img}
                 alt="Article Thumbnail"
                 className="w-full h-[60%] object-cover rounded-lg"
               />
-              <div className="p-2 rounded-lg shadow-md flex flex-col gap-8">
+              <div className="p-2 flex flex-col gap-8">
                 <div className="flex flex-row place-items-center md:mt-0.5">
                   <div className="md:w-[3px] md:mr-2 md:h-[18px] h-[10px] bg-[#8AA6AA] md:mt-0 md:mb-0 mt-[22px] mb-[15px]"></div>
                   <p className="text-left text-gray-500 text-[14px]">
@@ -122,7 +122,7 @@ export default function HomeBlog() {
                     <p className="text-left text-black">{blogs[3].sub}</p>
                     <div className="flex flex-row place-items-center md:mt-0.5">
                       <div className="md:w-[3px] md:mr-2 md:h-[18px] h-[10px] bg-[#8AA6AA] md:mt-0 md:mb-0 mt-[22px] mb-[15px]"></div>
-                      <p className="text-left text-gray-500 text-[14px]">
+                      <p className="text-left text-gray-500 text-[14px] line-clamp-1">
                         {blogs[3].content}
                       </p>
                     </div>
