@@ -26,7 +26,7 @@ export default function SingleBlog() {
 
         {/* mobile version */}
         <div className="md:hidden pl-10 pr-10">
-          {Blogs_content.map((article, index) => (
+          {Blogs_content.slice(0,1).map((article, index) => (
             <div
               key={index}
               className="w-full md:hidden flex-shrink-0 scroll-snap-align-start rounded-lg shadow-md"
