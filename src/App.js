@@ -17,6 +17,7 @@ import "./Styles12.css";
 import Articles from "./components/Articles/Articles";
 import Blogs from "./components/Blogs/Blogs";
 import SingleBlogPage from "./components/Blogs/SingleBlogPage/SingleBlogPage";
+import TurnKeySolutions from "./components/TurnKeySolutions/TurnKeySolutions";
 
 export default function App() {
   return (
@@ -35,7 +36,7 @@ function AppContent() {
   }, [location.pathname]);
 
   return (
-    <div className="w-screen border-2 overflow-x-hidden">
+    <div className="w-screen border-2 overflow-x-hidden font-['ClashDisplay']">
       <Header />
 
       <Routes>
@@ -49,6 +50,7 @@ function AppContent() {
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Home />} />
         <Route path="/technology" element={<Technology />} />
+        <Route path="/turnKeySolutions" element={<TurnKeySolutions />} />
       </Routes>
 
     </div>
