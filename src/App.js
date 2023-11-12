@@ -18,6 +18,7 @@ import Articles from "./components/Articles/Articles";
 import Blogs from "./components/Blogs/Blogs";
 import SingleBlogPage from "./components/Blogs/SingleBlogPage/SingleBlogPage";
 import TurnKeySolutions from "./components/TurnKeySolutions/TurnKeySolutions";
+import MedicalDevices from "./components/MedicalDevices/MedicalDevices";
 
 export default function App() {
   return (
@@ -43,12 +44,13 @@ function AppContent() {
         <Route path="/about" element={<AboutUs />} />
         <Route path="/applications" element={<Applications />} />
         <Route path="/tp" element={<TP />} />
+        <Route path="/medicalDevices" element={<MedicalDevices />} />
         <Route path="/articles" element={<Articles />} />
         <Route path="/Blogs" element={<Blogs />} />
         <Route path="/Blogs/Blog1" element={<SingleBlogPage />} />
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<Home />} />
+        <Route path="*" element={<Home />} /> 
         <Route path="/technology" element={<Technology />} />
         <Route path="/turnKeySolutions" element={<TurnKeySolutions />} />
       </Routes>

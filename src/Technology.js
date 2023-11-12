@@ -1,10 +1,10 @@
 import logo from "./appli.png";
 // import back1 from"../../back1.png";
 // import bac1 from "./bac1.svg"
-import "./Style_tech.css"
-import intr from "./Introducing.png"
+import "./Style_tech.css";
+import intr from "./Introducing.png";
 import logos from "./logos2.svg";
-import pharma from "./pill.svg"
+import pharma from "./pill.svg";
 import { Button } from "@material-tailwind/react";
 import { NavbarWithMegaMenu } from "./packnav";
 import { Card3Presentation } from "./cards";
@@ -17,10 +17,12 @@ import Footer from "./components/Common/Footer/Footer";
 export default function Technology() {
   return (
     <div>
-     <span className="qaz">
+      <span className="qaz">
         <div className="qa">
-        <h3 className="mb-6 w-full pb-8 lg:text-7xl md: text-5xl sm:text-3xl leading-tight text-[#8AA6AA]  df"><strong>
-          Lorem ipsum dolor sit  consectetur adipiscing elit sed do eiusmod</strong>
+          <h3 className="mb-6 w-full pb-8 lg:text-7xl md: text-5xl sm:text-3xl leading-tight text-[#8AA6AA]  df">
+            <strong>
+              Lorem ipsum dolor sit consectetur adipiscing elit sed do eiusmod
+            </strong>
           </h3>
           <span>
             <h6
@@ -32,121 +34,196 @@ export default function Technology() {
             </h6>{" "}
             <br></br>
           </span>
-          </div>
-         
-          <button class="bg-[#8AA6AA] hover:bg-blue-700 text-white font-bold py-2 px-20 rounded m-2">
-  Explore
-</button>
+        </div>
 
-<div>
-            <img
-              className="h-106 w-full object-cover object-center poi"
-              src={logos}
-              
-              alt="nature image"
-            />
-          </div>
+        <button class="bg-[#8AA6AA] hover:bg-blue-700 text-white font-bold py-2 px-20 rounded m-2">
+          Explore
+        </button>
 
-          {/* <br></br>
+        <div>
+          <img
+            className="h-106 w-full object-cover object-center poi"
+            src={logos}
+            alt="nature image"
+          />
+        </div>
+
+        {/* <br></br>
           <br></br> */}
-          
-        </span><br></br>
-         {/* <div className="flex justify-center sm:px-12 p-8 "> */}
-         <center> <img className="object-scale-up  rounded-md m-auto h-full w-full  dc"  src={intr} al="yu"></img>
-         {/* </div> */}
-         </center>
-     <div><center>
-     <div className="flex flex-col rounded-lg bg-white md:max-w-9xl md:flex-row mm">
-                <div className="flex flex-col p-10">
-       <img className="object-scale-down  rounded-md m-auto max-h-full  w-screen"  src="https://s3-alpha-sig.figma.com/img/4c40/73e4/0198a1aa6f81883b00365baa37650449?Expires=1694995200&Signature=dz2Kw3tjvn1ealbkagEc2rWKfujTTK9IVOs0sC-vCNFdP~nafhBDJeq7ff2pvx~MWtAMnH~pGk2U6TdG6CCP8mKqvc6vdRWk~hs7JWeJUHOBTkdWC~71VSQD7gPUzuVxZ52bIDYO6R3v9lN-K7N3WqQbposxGP77GhyJFI9mLX3vf0yGXu8y4z6koDqZljxqsMX6b-eincBLJ3dlG48QlZslUNuMUC2NIhH1CKhw48wyHzspmLahuC~nWch9lY0dNTVVAXtS~geihH8XhfSbPc2gDYjAJcNlInlaKUvE5Dhr1~jo3WDpMBAuWe4mJHPXv9E4uzHQtGLxNOuNWaEmKQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" al="yu"></img>
-       <br></br><br></br><h6 className="mb-8  pb-2 w-120 text-xl leading-tight text-black kl">
-       <strong>Blow: </strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit .
-          </h6>
-          <br></br><h6 className="mb-6  pb-2 text-xl leading-tight text-black kl">
-       <strong>Flow: </strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit .
-          </h6>
-          <br></br><h6 className="mb-4  pb-2 text-xl leading-tight text-black kl">
-       <strong>Seal: </strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit .
-          </h6>
-          </div></div>
-          </center></div>
-          <div className="tgb bg-[#8AA6AA]">
-      <div className="container">
-        <div className="text-box ">
-          <h2 className="mb-4 pb-4 text-5xl leading-tight text-white"><strong>ADVANTAGES</strong></h2>
-          <p className="mb-4 pb-4 text-xs leading-tight text-white">The BFS process is a technological advancement that offers a lot of advantages!</p>
-        </div>
-        {/* <div className="image-box"> */}
-          <img className="image-box" src="https://s3-alpha-sig.figma.com/img/ed02/79d9/a5f3eb9e225cde48048ee98888504e53?Expires=1694995200&Signature=Z8O6H3jGIjbP6pGWcjRrAcU0fjzhl62qnjtm9pMvHNpX0qWa1u9-6w2rdPukeV6zY-ssEB1CZjWIqPHqO9lFdXkMucdVcB7VtTfScXnClmd0jwOXHoTeqqLU8EB56TzI-fCZV0EbbCM73AUeD~UBKCYDOZy7yY5xZRBbPNA4w0GeSbF25nvBzzLmxJa4XK6r~fLmGPRlnmMHAe72VMsgnL9Qi6kKGNNGaoJn6p2wCK5ERXCgLvRADjwNnzkJl3H4CC6aJ~paf9wz6xkhk-E4zHeL0OD-bQdEz2LdnUIwWMIrttKd~CK2oa0Cuo3IriU0XWoISEXmhMa76aPMBcTuEw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="Large Image" />
+      </span>
+      <br></br>
+      {/* <div className="flex justify-center sm:px-12 p-8 "> */}
+      <center>
+        {" "}
+        <img
+          className="object-scale-up  rounded-md m-auto h-full w-full  dc"
+          src={intr}
+          al="yu"
+        ></img>
         {/* </div> */}
-        </div>
-      <div className="container ">
-        <div className="card-container">
-        <div className="card">
-            
-            <h6 className="mb-4 border-b pb-4 text-xs leading-tight text-black kl"><br></br> 
-       <strong>Reduced Environmental Impact<br></br> <br></br> </strong> BFS eliminates the need for multiple packaging components, reducing waste and promoting a more sustainable approach to pharmaceutical packaging.
-          </h6>
-            {/* <p>Text for Card 1 goes here.</p> */}
-          </div><div className="card">
-            
-            <h6 className="mb-4 border-b pb-4 text-xs leading-tight text-black kl"><br></br> 
-       <strong>Improved Dosing Accuracy<br></br><br></br>  </strong>BFS technology enables precise filling and dosing, minimizing variations and ensuring each unit contains the exact intended amount of medication.
-          </h6>
-            {/* <p>Text for Card 1 goes here.</p> */}
-          </div><div className="card">
-            
-            <h6 className="mb-4 border-b pb-4 text-xs leading-tight text-black kl"><br></br> 
-       <strong>Cost-Efficiency<br></br><br></br>  </strong>The seamless integration of container forming, filling, and sealing within a single system reduces labor, energy, and materials costs contributing to overall cost efficiency.
-          </h6>
-            {/* <p>Text for Card 1 goes here.</p> */}
-          </div><div className="card">
-            
-            <h6 className="mb-4 border-b pb-4 text-xs leading-tight text-black kl"><br></br> 
-       <strong>Enhanced Product Integrity<br></br> <br></br> </strong>BFS technology creates a hermetic seal, safeguarding pharmaceutical products from contamination, oxygen, and light, preserving their efficacy and shelf life.
-PG10 Process & Applications
-          </h6>
-            {/* <p>Text for Card 1 goes here.</p> */}
+      </center>
+      <div>
+        <center>
+          <div className="flex flex-col rounded-lg bg-white md:max-w-9xl md:flex-row mm">
+            <div className="flex flex-col p-10">
+              <img
+                className="object-scale-down  rounded-md m-auto max-h-full  w-screen"
+                src="https://s3-alpha-sig.figma.com/img/4c40/73e4/0198a1aa6f81883b00365baa37650449?Expires=1694995200&Signature=dz2Kw3tjvn1ealbkagEc2rWKfujTTK9IVOs0sC-vCNFdP~nafhBDJeq7ff2pvx~MWtAMnH~pGk2U6TdG6CCP8mKqvc6vdRWk~hs7JWeJUHOBTkdWC~71VSQD7gPUzuVxZ52bIDYO6R3v9lN-K7N3WqQbposxGP77GhyJFI9mLX3vf0yGXu8y4z6koDqZljxqsMX6b-eincBLJ3dlG48QlZslUNuMUC2NIhH1CKhw48wyHzspmLahuC~nWch9lY0dNTVVAXtS~geihH8XhfSbPc2gDYjAJcNlInlaKUvE5Dhr1~jo3WDpMBAuWe4mJHPXv9E4uzHQtGLxNOuNWaEmKQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                al="yu"
+              ></img>
+              <br></br>
+              <br></br>
+              <h6 className="mb-8  pb-2 w-120 text-xl leading-tight text-black kl">
+                <strong>Blow: </strong> Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit .
+              </h6>
+              <br></br>
+              <h6 className="mb-6  pb-2 text-xl leading-tight text-black kl">
+                <strong>Flow: </strong>Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit .
+              </h6>
+              <br></br>
+              <h6 className="mb-4  pb-2 text-xl leading-tight text-black kl">
+                <strong>Seal: </strong>Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit .
+              </h6>
+            </div>
           </div>
-          
+        </center>
+      </div>
+      <div className="tgb bg-[#8AA6AA]">
+        <div className="container">
+          <div className="text-box ">
+            <h2 className="mb-4 pb-4 text-5xl leading-tight text-white">
+              <strong>ADVANTAGES</strong>
+            </h2>
+            <p className="mb-4 pb-4 text-xs leading-tight text-white">
+              The BFS process is a technological advancement that offers a lot
+              of advantages!
+            </p>
+          </div>
+          {/* <div className="image-box"> */}
+          <img
+            className="image-box"
+            src="https://s3-alpha-sig.figma.com/img/ed02/79d9/a5f3eb9e225cde48048ee98888504e53?Expires=1694995200&Signature=Z8O6H3jGIjbP6pGWcjRrAcU0fjzhl62qnjtm9pMvHNpX0qWa1u9-6w2rdPukeV6zY-ssEB1CZjWIqPHqO9lFdXkMucdVcB7VtTfScXnClmd0jwOXHoTeqqLU8EB56TzI-fCZV0EbbCM73AUeD~UBKCYDOZy7yY5xZRBbPNA4w0GeSbF25nvBzzLmxJa4XK6r~fLmGPRlnmMHAe72VMsgnL9Qi6kKGNNGaoJn6p2wCK5ERXCgLvRADjwNnzkJl3H4CC6aJ~paf9wz6xkhk-E4zHeL0OD-bQdEz2LdnUIwWMIrttKd~CK2oa0Cuo3IriU0XWoISEXmhMa76aPMBcTuEw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+            alt="Large Image"
+          />
+          {/* </div> */}
         </div>
-      </div><br></br><br></br>
-    </div>
-    <div className="w-screen">
+        <div className="container ">
+          <div className="card-container">
+            <div className="card">
+              <h6 className="mb-4 border-b pb-4 text-xs leading-tight text-black kl">
+                <br></br>
+                <strong>
+                  Reduced Environmental Impact<br></br> <br></br>{" "}
+                </strong>{" "}
+                BFS eliminates the need for multiple packaging components,
+                reducing waste and promoting a more sustainable approach to
+                pharmaceutical packaging.
+              </h6>
+              {/* <p>Text for Card 1 goes here.</p> */}
+            </div>
+            <div className="card">
+              <h6 className="mb-4 border-b pb-4 text-xs leading-tight text-black kl">
+                <br></br>
+                <strong>
+                  Improved Dosing Accuracy<br></br>
+                  <br></br>{" "}
+                </strong>
+                BFS technology enables precise filling and dosing, minimizing
+                variations and ensuring each unit contains the exact intended
+                amount of medication.
+              </h6>
+              {/* <p>Text for Card 1 goes here.</p> */}
+            </div>
+            <div className="card">
+              <h6 className="mb-4 border-b pb-4 text-xs leading-tight text-black kl">
+                <br></br>
+                <strong>
+                  Cost-Efficiency<br></br>
+                  <br></br>{" "}
+                </strong>
+                The seamless integration of container forming, filling, and
+                sealing within a single system reduces labor, energy, and
+                materials costs contributing to overall cost efficiency.
+              </h6>
+              {/* <p>Text for Card 1 goes here.</p> */}
+            </div>
+            <div className="card">
+              <h6 className="mb-4 border-b pb-4 text-xs leading-tight text-black kl">
+                <br></br>
+                <strong>
+                  Enhanced Product Integrity<br></br> <br></br>{" "}
+                </strong>
+                BFS technology creates a hermetic seal, safeguarding
+                pharmaceutical products from contamination, oxygen, and light,
+                preserving their efficacy and shelf life. PG10
+                Process & Applications
+              </h6>
+              {/* <p>Text for Card 1 goes here.</p> */}
+            </div>
+          </div>
+        </div>
+        <br></br>
+        <br></br>
+      </div>
+      <div className="w-screen">
         <Slider options={{ align: "center" }}>
           {testimonials.map((testimonial, i) => (
             // 3. flex-[0_0_50%] set the width of each card to 50% of the viewport
             // for mobile devices we use 90% width
             <div key={i} className="flex-[0_0_90%] md:flex-[0_0_23%]">
               <div className="py-4 px-4 bg-white shadow-lg rounded-lg my-20">
-      <div className="flex justify-center md:justify-end -mt-16">
-        {/* <Image> */}
-          
-         {/* <img className="w-150 h-30 object-cover  border-2 border-indigo-500" src={{...testimonial}.imgSrc} alt={{...testimonial}.imgSrc}></img>  */}
-           {/* height={80}
+                <div className="flex justify-center md:justify-end -mt-16">
+                  {/* <Image> */}
+
+                  {/* <img className="w-150 h-30 object-cover  border-2 border-indigo-500" src={{...testimonial}.imgSrc} alt={{...testimonial}.imgSrc}></img>  */}
+                  {/* height={80}
            width={80}
            src={props.imgSrc} 
            </Image> */}
-      </div>
-      
-        {/* <h2 className="text-[#8AA6AA] text-3xl font-semibold">{props.title}</h2> */}
-        <div>
-          <div  className="asdf">
-        <h3 className="mb-4 border-b pb-4 text-3xl leading-tight text-[#8AA6AA] df asdf"><img className="w-150 h-30 object-cover "  src={{...testimonial}.imgSrc} style={{ width: '50px', height: '50px' }} alt="hi"></img> &nbsp;Pharma</h3>
-        {/* <spacer></spacer> */}
-        
-        </div>
-        
-        <h5 className="mt-2 text-gray-600 text-md kkk"><strong>{{...testimonial}.content}</strong></h5>
-        <h5 className="mt-2 text-gray-600 kkk" >{{...testimonial}.author}</h5><br></br>
-        <button class="bg-[#8AA6AA] text-black font-bold py-2 px-28 rounded">
-  Button
-</button>
-{/* <button class="btn btn-blue">
+                </div>
+
+                {/* <h2 className="text-[#8AA6AA] text-3xl font-semibold">{props.title}</h2> */}
+                <div>
+                  <div className="asdf">
+                    <h3 className="mb-4 border-b pb-4 text-3xl leading-tight text-[#8AA6AA] df asdf">
+                      <img
+                        className="w-150 h-30 object-cover "
+                        src={{ ...testimonial }.imgSrc}
+                        style={{ width: "50px", height: "50px" }}
+                        alt="hi"
+                      ></img>{" "}
+                      &nbsp;Pharma
+                    </h3>
+                    {/* <spacer></spacer> */}
+                  </div>
+
+                  <h5 className="mt-2 text-gray-600 text-md kkk">
+                    <strong>{{ ...testimonial }.content}</strong>
+                  </h5>
+                  <h5 className="mt-2 text-gray-600 kkk">
+                    {{ ...testimonial }.author}
+                  </h5>
+                  <br></br>
+                  <button class="bg-[#8AA6AA] text-black font-bold py-2 px-28 rounded">
+                    Button
+                  </button>
+                  {/* <button class="btn btn-blue">
   Button
 </button> */}
-      </div>
-      {/* <div className ="mt-2 text-gray-600flex justify-end mt-4 pyu text-[#8AA6AA]">Blow-Fill-Seal, Technology </div>
+                </div>
+                {/* <div className ="mt-2 text-gray-600flex justify-end mt-4 pyu text-[#8AA6AA]">Blow-Fill-Seal, Technology </div>
       <div className="flex justify-end mt-4 mt-2">
       <div className="flex flex-row place-items-center gap-3">
                     <a className="text-[#8AA6AA] font-extrabold">Read more</a>
@@ -159,8 +236,7 @@ PG10 Process & Applications
         </div>
         
       </div> */}
-      
-    </div>
+              </div>
             </div>
           ))}
         </Slider>

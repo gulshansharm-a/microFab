@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      colors: {
+        primary: '#8AA6AA', // Set 8AA6AA as the primary color
+      },
       "postcss-import": {},
       "tailwindcss/nesting": "postcss-nesting",
       tailwindcss: {},

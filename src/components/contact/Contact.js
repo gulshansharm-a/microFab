@@ -41,7 +41,7 @@ export default function Contact() {
               Submit
             </button>
           </div>
-          <div className="flex flex-col  justify-center place-items-center">
+          <div className="flex flex-col justify-center place-items-center">
             <img src={StoryPeek} alt="storyPeek"></img>
 
             <div className="flex flex-col justify-start gap-3">
