@@ -12,6 +12,7 @@ import img4 from "../../../assets/Icons/Header_Icons/Img4.svg";
 import img5 from "../../../assets/Icons/Header_Icons/Img5.svg";
 import img6 from "../../../assets/Icons/Header_Icons/Img6.svg";
 import img7 from "../../../assets/Icons/Header_Icons/Img7.svg";
+import logo from "../../../assets/logo.svg";
 import contact from "../../../assets/Icons/Header_Icons/contact.svg";
 
 const Header = () => {
@@ -67,11 +68,13 @@ const Header = () => {
           : {}
       }
     >
-      <nav className="relative mx-10 md:mx-10 lg:mx-20 xl:mx-22 flex flex-row items-center justify-between">
-        <div className="font-bold md:text-[18px] lg:text-[20px] text-[18px]">Logo</div>
+      <nav className="relative mx-10 md:mx-8 lg:mx-14 xl:mx-22 flex flex-row items-center justify-between">
+        <div className="font-bold md:text-[18px] lg:text-[20px] text-[18px]">
+          <img src={logo} alt="logo" className="md:w-[60%] md:h-[60%] h-[40px]"></img>
+        </div>
         <div className="font-light relative">
           <ul
-            className="hidden lg:flex lg:gap-14 lg:text-[18px] lg:text[16px] z-20
+            className="hidden lg:flex lg:gap-10 lg:text-[18px] z-20
           "
           >
             <li
