@@ -14,8 +14,8 @@ const WaterTS = () => {
         <div className="flex justify-center place-items-center md:h-[450px] md:w-[450px] w-[250px] h-[250px]  rounded-full  border border-solid border-[rgba(190, 190, 190, 0.20)] shadow-xl">
           <div className="border-[#8AA6AA] flex flex-col justify-center place-items-center md:h-[250px] md:w-[250px] w-[200px] h-[200px] rounded-full border border-solid border-[rgba(190, 190, 190, 0.20)] shadow-xl">
             <p className="md:text-[25px] font-bold">Turnkey-Lines</p>
-            <p className="md:text-[15px] text-center">
-              Our vast range of machinery
+            <p className="md:text-[15px] text-center font-bold px-2">
+              A vast range of machinery that we are proud about.
             </p>
           </div>
         </div>
@@ -29,9 +29,11 @@ const WaterTS = () => {
           ></img>
           <div className="custom-font md:absolute md:left-[20px] md:top-[250px] md:h-[200px] md:w-[300px] md:text-[10px]">
             <p className="h-[150px] w-[150px] text-[12px]">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-              turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
-              nec
+              Our advanced water purification system is a turnkey solution under
+              the FFS and the BFS machinery. With the system, you can ensure
+              that you obtain pristine water. Whether you need water for a
+              liquid solution or for cleaning equipment, you will surely be able
+              to source clean water, thereby enhancing the production standards.
             </p>
           </div>
           <img
@@ -41,9 +43,11 @@ const WaterTS = () => {
           ></img>
           <div className="md:hidden custom-font md:absolute h-[150px] w-[150px] md:left-[20px] md:top-[250px] md:h-[200px] md:w-[300px] md:text-[10px]">
             <p className="h-[150px] w-[150px] text-[11px]">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-              turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
-              nec
+              Our advanced water purification system is a turnkey solution under
+              the FFS and the BFS machinery. With the system, you can ensure
+              that you obtain pristine water. Whether you need water for a
+              liquid solution or for cleaning equipment, you will surely be able
+              to source clean water, thereby enhancing the production standards.
             </p>
           </div>
         </div>
@@ -56,18 +60,19 @@ const WaterTS = () => {
       ></img>
       <div className="hidden md:block custom-font md:absolute md:left-[20px] md:top-[250px] md:h-[200px] md:w-[300px] md:text-[10px]">
         <p className="h-[150px] w-[250px]">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-          turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec
-          fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus
-          elit sed risus. Maecenas eget condimentum velit, sit amet feugiat
-          lectus. Class aptent taciti sociosqu ad litora torquent per conubia
-          nostra,
+          Our advanced water purification system is a turnkey solution under the
+          FFS and the BFS machinery. With the system, you can ensure that you
+          obtain pristine water. Whether you need water for a liquid solution or
+          for cleaning equipment, you will surely be able to source clean water,
+          thereby enhancing the production standards.
         </p>
       </div>
 
-
       {/* img above water treatment system */}
-      <img src={WTS} className="hidden md:block md:absolute md:rounded-none rounded-[19px] md:h-[200px] md:w-[200px] h-[150px] w-[150px] right-[8%] bottom-[30%]"></img>
+      <img
+        src={WTS}
+        className="hidden md:block md:absolute md:rounded-none rounded-[19px] md:h-[200px] md:w-[200px] h-[150px] w-[150px] right-[8%] bottom-[30%]"
+      ></img>
 
       {/* four images in circle */}
       <img

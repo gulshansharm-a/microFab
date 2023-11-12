@@ -8,11 +8,11 @@ export default function Who_are_we() {
       <div className="md:hidden text-center p-4">
         <p className="md:text-[35px] text-[35px] font-bold">Who Are We?</p>
         <p className="md:text-[20px] md:w-[80%]">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-          turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec
-          fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus
-          elit sed risus. Maecenas eget condimentum velit, sit amet feugiat
-          lectus.
+          MicroFab represents the seamless collaboration of two industry giants,
+          Micro Tools and FabLab. These organizations are renowned for their
+          contributions in the realms of BFS and FFS technology for over five
+          decades. With years of experience, we are now distinct at a global
+          level owing to cost-effectiveness, quality, and innovation.
         </p>
       </div>
 
@@ -40,7 +40,7 @@ export default function Who_are_we() {
         <div className="electron"></div>
         <div className="electron"></div>
         <div className="electron"></div>
-      
+
         <div className="ty">
           <p className="absolute text-[12px] md:text-[16px] md:top-[100%] top-[95%]  font-bold md:right-[45%] right-[35%] bg-white rounded-[20px] px-4 border-black border-2 md:p-2">
             india
@@ -66,12 +66,12 @@ export default function Who_are_we() {
         {/* for desktop view */}
         <div className="hidden md:block">
           <p className="md:text-[35px] font-bold">Who Are We?</p>
-          <p className="md:text-[12px] md:w-[80%]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-            turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
-            nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
-            tellus elit sed risus. Maecenas eget condimentum velit, sit amet
-            feugiat lectus.
+          <p className="md:text-[16px] font-semibold md:w-[80%]">
+            MicroFab represents the seamless collaboration of two industry
+            giants, Micro Tools and FabLab. These organizations are renowned for
+            their contributions in the realms of BFS and FFS technology for over
+            five decades. With years of experience, we are now distinct at a
+            global level owing to cost-effectiveness, quality, and innovation.
           </p>
         </div>
 
@@ -83,8 +83,10 @@ export default function Who_are_we() {
               {/* line */}
               <div className="hidden md:block md:w-[5px] w-[10px] h-[170px] md:h-[80px] bg-[#8AA6AA] gap-4"></div>
               <div className="md:w-[75%] md:text-[16px] w-full">
-                <p className="md:text-[25px] text-[25px]">21+ Countries</p>
-                <p>We have our presence in 21+ Countries</p>
+                <p className="md:text-[20px] font-semibold text-[20px]">
+                  125+ cutting-edge machinery
+                </p>
+                <p className="">We design machinery as per the requirements</p>
               </div>
             </div>
 
@@ -92,8 +94,10 @@ export default function Who_are_we() {
               {/* line */}
               <div className="hidden md:block md:w-[5px] w-[10px] h-[170px] md:h-[80px] bg-[#8AA6AA] gap-4"></div>
               <div className="md:w-[75%] md:text-[16px] w-full">
-                <p className="md:text-[25px] text-[25px]">21+ Countries</p>
-                <p>We have our presence in 21+ Countries</p>
+                <p className="md:text-[20px] font-semibold text-[20px]">
+                  200+ assiduous employees
+                </p>
+                <p>We have maintained the aplomb through the years</p>
               </div>
             </div>
           </div>
@@ -103,14 +107,18 @@ export default function Who_are_we() {
             {/* line */}
             <div className="w-[5px] md:w-[8px] md:h-[80px] bg-[#8AA6AA] gap-4"></div>
             <div className="md:w-[75%] md:text-[16px]">
-              <p className="md:text-[25px] ">21+ Countries</p>
-              <p>We have our presence in 21+ Countries</p>
+              <p className="md:text-[20px] font-semibold text-[25px]">
+                75% customer retention
+              </p>
+              <p>Our team is known for incredible service</p>
             </div>
             {/* line */}
             <div className="w-[5px] md:h-[80px] md:w-[8px] bg-[#8AA6AA] gap-4"></div>
             <div className="md:w-[75%] w-[90%] md:text-[16px]">
-              <p className="md:text-[25px]">21+ Countries</p>
-              <p>We have our presence in 21+ Countries</p>
+              <p className="md:text-[20px] font-semibold text-[25px]">
+                Across 8+ countries
+              </p>
+              <p>We have our footprint across the globe</p>
             </div>
           </div>
         </div>
