@@ -74,7 +74,7 @@ const Header = () => {
         </div>
         <div className="font-light relative">
           <ul
-            className="hidden lg:flex lg:gap-10 lg:text-[18px] z-20
+            className="hidden lg:flex lg:gap-10 xl:gap-14 lg:text-[18px] z-20
           "
           >
             <li
