@@ -45,7 +45,7 @@ export default function MedicalDevicesCard({ img, heading, content }) {
         )}
       </div>
       {showContent && (
-        <p className="text-[12px] font-thin opacity-70 px-5 pb-5">{content}</p>
+        <p className="text-[14px] font-thin opacity-70 px-5 pb-5">{content}</p>
       )}
     </div>
   );
