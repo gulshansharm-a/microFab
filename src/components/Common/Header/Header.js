@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
+import { Icon } from "@iconify/react";
 
 import ExpandMore from "../../../assets/Icons/Header_Icons/Down.svg";
 import ExpandLess from "../../../assets/Icons/Header_Icons/Up.svg";
@@ -12,7 +13,8 @@ import img4 from "../../../assets/Icons/Header_Icons/Img4.svg";
 import img5 from "../../../assets/Icons/Header_Icons/Img5.svg";
 import img6 from "../../../assets/Icons/Header_Icons/Img6.svg";
 import img7 from "../../../assets/Icons/Header_Icons/Img7.svg";
-import logo from "../../../assets/logo.svg";
+import logo1 from "../../../assets/logo.svg";
+import logo2 from "../../../assets/footerlogo.svg";
 import contact from "../../../assets/Icons/Header_Icons/contact.svg";
 
 const Header = () => {
@@ -70,7 +72,11 @@ const Header = () => {
     >
       <nav className="relative mx-10 md:mx-8 lg:mx-14 xl:mx-22 flex flex-row items-center justify-between">
         <div className="font-bold md:text-[18px] lg:text-[20px] text-[18px]">
-          <img src={logo} alt="logo" className="md:w-[60%] md:h-[60%] h-[40px]"></img>
+          <img
+            src={isMenuOpen ? logo1 : logo1}
+            alt="logo"
+            className="md:w-[60%] md:h-[60%] h-[40px]"
+          ></img>
         </div>
         <div className="font-light relative">
           <ul
@@ -305,7 +311,15 @@ const Header = () => {
             onClick={toggleMenu}
             // Toggle the dropdown menu visibility here
           >
-            {isMenuOpen ? "✕" : "☰"}
+            {isMenuOpen ? (
+              <div className="text-black">
+                <Icon icon="ph:x-bold" />
+              </div>
+            ) : (
+              <div className="text-black bg-[#94adb0]">
+                <Icon icon="iconamoon:menu-burger-horizontal-light" />
+              </div>
+            )}
           </button>
         </div>
       </nav>

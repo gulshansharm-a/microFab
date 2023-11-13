@@ -59,7 +59,7 @@ const WaterTS = () => {
         className="hidden md:block md:absolute md:rounded-none rounded-[19px] md:h-[200px] md:w-[200px] h-[150px] w-[150px] left-[20px] top-0"
       ></img>
       <div className="hidden md:block custom-font md:absolute md:left-[20px] md:top-[250px] md:h-[200px] md:w-[300px] md:text-[10px]">
-        <p className="h-[150px] w-[250px]">
+        <p className="h-[150px] w-[250px] text-[14px]">
           Our advanced water purification system is a turnkey solution under the
           FFS and the BFS machinery. With the system, you can ensure that you
           obtain pristine water. Whether you need water for a liquid solution or

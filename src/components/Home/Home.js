@@ -11,6 +11,7 @@ import HomeArticle from "./Home_articles/HomeArticles";
 import HomeBlog from "./Home_blogs/HomeBlog";
 import HappyCustomers from "./Happy_customers/HappyCutomers";
 import SoldGraph from "./right/SoldGraph";
+import ProductSolutions from "./productSolutions/ProductSolutions";
 
 export default function Home() {
   return (
@@ -37,14 +38,19 @@ export default function Home() {
             </div>
           </div>
 
-          <div draggable="false" className="flex justify-center place-items-center w-full md:h-[40%] h-[65%] mt-2 relative">
+          <div
+            draggable="false"
+            className="flex justify-center place-items-center w-full md:h-[40%] h-[65%] mt-2 relative"
+          >
             {/* <img src={sold_img} className="md:object-cover h-full" alt="Sold"/> */}
-            <SoldGraph/>
+            <SoldGraph />
           </div>
         </div>
       </div>
 
       <Analytics />
+
+      <ProductSolutions />
 
       <OptionsButtons />
 
