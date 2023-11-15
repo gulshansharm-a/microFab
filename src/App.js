@@ -19,7 +19,8 @@ import Blogs from "./components/Blogs/Blogs";
 import SingleBlogPage from "./components/Blogs/SingleBlogPage/SingleBlogPage";
 import TurnKeySolutions from "./components/TurnKeySolutions/TurnKeySolutions";
 import MedicalDevices from "./components/MedicalDevices/MedicalDevices";
-import Service from "./components/Services/Services.jsx"
+import Service from "./components/Services/Services.jsx";
+import Product from "./components/Product/Product.jsx";
 export default function App() {
   return (
     <Router>
@@ -54,6 +55,7 @@ function AppContent() {
         <Route path="/technology" element={<Technology />} />
         <Route path="/turnKeySolutions" element={<TurnKeySolutions />} />
         <Route path="/service" element={<Service />} />
+        <Route path="/product" element={<Product />} />
 
       </Routes>
 

@@ -58,11 +58,12 @@ export default function Footer() {
               </div> */}
               <div className="flex flex-row justify-center md:gap-[150px] gap-10 place-items-start md:px-10 md:py-10">
                 <div className="flex flex-col gap-5">
-                  <a href="" className="font-semibold">
+                  <a href="/product" className="font-semibold">
                     Product Solutions
                   </a>
                   <a href="/turnKeySolutions">Turnkey Solutions</a>
                   <a href="/service">Service Solutions</a>
+                  
                   <a href="">Application</a>
                   <a href="">About Us</a>
                 </div>
