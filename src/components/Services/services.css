@@ -1,0 +1,173 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.mm{
+  width:190%;
+}
+.bb{
+  margin-right:-60%;
+}
+.mn{
+  position:relative;
+  left:70%;
+}
+.bh{
+  margin-right:5%;
+}
+.mmn{
+  position:relative;
+  left:50%;
+  margin-right:3%;
+}
+.bbv{
+  width:70%;
+  position:relative;
+  right:5%;
+  /* margin-right:3%; */
+}
+.bv{
+  margin-left:10%;
+  /* margin-right:3%; */
+  /* margin-right:-15%; */
+  position:relative;
+  right:15%;
+}
+.xc{
+  position:relative;
+  left:45%;
+}
+/* .zx{
+  margin-right:80%;
+} */
+.serv1
+{
+  padding-left:10px;
+  padding-right:10px;
+  width:50%;
+  margin:0% 5%;
+  color: #000;
+
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.16px;
+}
+.serv2{
+position:absolute;
+left:61%;
+top:200px;
+margin-right:5%;
+/* margin-bottom:480%; */
+color: #000;
+
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+letter-spacing: -0.16px;
+}
+
+.serv3{
+  color: var(--p-v20, #8AA6AA);
+
+font-size: 26px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -0.26px;
+}
+.serv4
+{
+  background: var(--p-v20, #8AA6AA);
+  width: 28px;
+height: 7px;
+
+}
+.serv5{
+  width:60%;
+  
+}
+.serv7{
+  width:135%;
+  margin-bottom:15%;
+}
+.serv8{
+  position:absolute;
+  left:61%;
+  top:55vh;
+}
+.serv9{
+  position:absolute;
+  left:58%;
+  top:1300px;
+}
+.serv11{
+  position:absolute;
+  left:61%;
+  top:1750px;
+  width:35%;
+}
+.serv10{
+  position:absolute;
+  /* margin-left:-3%; */
+  top:1750px;
+  width:50%;
+}
+.serv19{
+  margin-bottom:40%;
+}
+.serv23{
+  position:relative;
+  top:200px;
+}
+.serv15{
+  position:absolute;
+  left:95%;
+  top:50px;
+}
+.serv17{
+  position:absolute;
+  top:525%;
+  left:95%;
+  width:50%;
+}
+.serv18{
+  position:absolute;
+  left:5%;
+}

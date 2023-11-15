@@ -62,7 +62,7 @@ export default function Footer() {
                     Product Solutions
                   </a>
                   <a href="/turnKeySolutions">Turnkey Solutions</a>
-                  <a href="">Service Solutions</a>
+                  <a href="/service">Service Solutions</a>
                   <a href="">Application</a>
                   <a href="">About Us</a>
                 </div>
