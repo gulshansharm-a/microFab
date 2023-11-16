@@ -21,6 +21,10 @@ import TurnKeySolutions from "./components/TurnKeySolutions/TurnKeySolutions";
 import MedicalDevices from "./components/MedicalDevices/MedicalDevices";
 import Service from "./components/Services/Services.jsx";
 import Product from "./components/Product/Product.jsx";
+import Appli1 from "./appli1.js";
+import Appli2 from "./appli2.js";
+import Appli3 from "./appli3.js";
+import Appli4 from "./appli4.js"
 export default function App() {
   return (
     <Router>
@@ -43,7 +47,7 @@ function AppContent() {
 
       <Routes>
         <Route path="/about" element={<AboutUs />} />
-        <Route path="/applications" element={<Applications />} />
+        {/* <Route path="/applications" element={<Applications />} /> */}
         <Route path="/tp" element={<TP />} />
         <Route path="/medicalDevices" element={<MedicalDevices />} />
         <Route path="/articles" element={<Articles />} />
@@ -56,6 +60,10 @@ function AppContent() {
         <Route path="/turnKeySolutions" element={<TurnKeySolutions />} />
         <Route path="/service" element={<Service />} />
         <Route path="/product" element={<Product />} />
+        <Route path="/applications/pharmaceutical" element={<Appli1 />} />
+        <Route path="/applications/cosmic" element={<Appli2 />} />
+        <Route path="/applications/food" element={<Appli3 />} />
+        <Route path="/applications/chemical" element={<Appli4 />} />
 
       </Routes>
 

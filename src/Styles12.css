@@ -53,7 +53,7 @@
 }
  .kll{
   /* margin:0 4%; */
-  width:50%;
+  width:60%;
   text-align:left;
   padding:0;
   /* justify-content:center; */
@@ -73,10 +73,17 @@
   /* margin-left:80%; */
   /* padding-left:10%; */
   position:relative;
-  top:10px;
-  margin-top:13%;
+  top:-10px;
+  margin-top:10%;
   margin-left:1%;
   
+}
+.bvc{
+  background-image:url('./image 8.jpg');
+}
+.bnvf{
+  margin-left:20%;
+  margin-right:20%;
 }
 /* .vbn{
   margin-right:10%;
@@ -106,6 +113,39 @@
   border-color:#E8E8E9;
 
   /* font-size:35%; */
+}
+.navbar1{
+  display: flex;
+  background-color: #E8E8E9;
+  margin-left:4%;
+  width:300px;
+  height:60px;
+  padding: 0 1%;
+  border-radius: 15px;
+  border: 8px solid #E8E8E9;
+  border-color:#E8E8E9;
+}
+.navbar2{
+  display: flex;
+  background-color: #E8E8E9;
+  margin-left:4%;
+  width:470px;
+  height:60px;
+  padding: 0 1%;
+  border-radius: 15px;
+  border: 8px solid #E8E8E9;
+  border-color:#E8E8E9;
+}
+.navbar3{
+  display: flex;
+  background-color: #E8E8E9;
+  margin-left:4%;
+  width:470px;
+  height:60px;
+  padding: 0 1%;
+  border-radius: 15px;
+  border: 8px solid #E8E8E9;
+  border-color:#E8E8E9;
 }
 button:hover{
   background-color:white;
@@ -138,8 +178,13 @@ button:hover{
   /* margin-right:15%;
   margin-top:10%;width:110%; */
   position:relative;
-  left:3%;
-  top:50%;
+  left:-45%;
+  top:40%;
+}
+.vbnn{
+  margin-top:1%;
+  display:inline;
+  width:200%;
 }
 .mm{
 width:90%;  position:relative;
@@ -150,11 +195,12 @@ width:90%;  position:relative;
 }
 .sd{
   text-align:left;
-  margin-left:60%;
+  margin-left:30%;
+  /* margin-bottom:-4%; */
   position:relative;
 
   /* margin-top:-90%; */
-  top:40%
+  top:35%
 
 }
 .poi{

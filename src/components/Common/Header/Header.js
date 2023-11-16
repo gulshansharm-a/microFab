@@ -200,6 +200,7 @@ const Header = () => {
               {isApplicationDropdownOpen && (
                 <div className="dropdown-menu absolute mt-2 bg-white border border-gray-300 p-4 rounded-lg shadow-md w-[739px] left-1/2 transform -translate-x-1/2">
                   <div className="flex flex-row gap-[16px]">
+                     <Link to="/applications/pharmaceutical">
                     <Card
                       content="Pharmaceutical Industry"
                       img={img4}
@@ -210,6 +211,8 @@ const Header = () => {
                         handleApplicationCardClick("Pharmaceutical Industry")
                       }
                     />
+                    </Link>
+                    <Link to="/applications/cosmic">
                     <Card
                       content="Cosmetic Industry"
                       img={img5}
@@ -220,6 +223,8 @@ const Header = () => {
                         handleApplicationCardClick("Cosmetic Industry")
                       }
                     />
+                    </Link>
+                    <Link to="/applications/food">
                     <Card
                       content="Food Industry"
                       img={img6}
@@ -228,6 +233,8 @@ const Header = () => {
                         handleApplicationCardClick("Food Industry")
                       }
                     />
+                    </Link>
+                    <Link to="/applications/chemical">
                     <Card
                       content="Chemical Industry"
                       img={img7}
@@ -238,6 +245,7 @@ const Header = () => {
                         handleApplicationCardClick("Chemical Industry")
                       }
                     />
+                    </Link>
                   </div>
                 </div>
               )}
