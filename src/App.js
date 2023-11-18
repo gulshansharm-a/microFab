@@ -24,7 +24,9 @@ import Product from "./components/Product/Product.jsx";
 import Appli1 from "./appli1.js";
 import Appli2 from "./appli2.js";
 import Appli3 from "./appli3.js";
-import Appli4 from "./appli4.js"
+import Appli4 from "./appli4.js";
+import BFS from "./components/Products/BFS/BFS";
+
 export default function App() {
   return (
     <Router>
@@ -64,6 +66,7 @@ function AppContent() {
         <Route path="/applications/cosmic" element={<Appli2 />} />
         <Route path="/applications/food" element={<Appli3 />} />
         <Route path="/applications/chemical" element={<Appli4 />} />
+        <Route path="/BFS" element={<BFS />} />
 
       </Routes>
 
