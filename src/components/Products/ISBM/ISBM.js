@@ -1,4 +1,4 @@
-import top from "../../../assets/Products/FFS/top.svg";
+import top from "../../../assets/Products/ISBM/top.svg";
 import { Icon } from "@iconify/react";
 import intro1 from "../../../assets/Products/BFS/intro.svg";
 import intro2 from "../../../assets/Products/BFS/intro2.svg";
@@ -11,7 +11,7 @@ import Footer from "../../Common/Footer/Footer";
 import applicationContent from "./Application/applicationContent.json";
 import ApplicationCard from "./Application/ApplicationCard";
 
-export default function FFS() {
+export default function ISBM() {
   return (
     <div className="flex flex-col xl:gap-[40px] md:gap-[20px] gap-[15px] font-['ClashDisplay'] md:mt-[80px] mt-[40px] md:pt-0 pt-[30px]">
       {/* banner */}
@@ -23,12 +23,13 @@ export default function FFS() {
         ></img>
         <div className="absolute text-primary top-[2%] left-[2%] flex flex-col w-full">
           <div className="md:h-auto h-[150px] flex md:flex-row flex-row justify-between">
-            <p className="xl:tracking-wider xl:pr-[10%] 2xl:text-[50px] xl:text-[45px] lg:text-[40px] md:text-[36px] w-[50%] sm:text-[28px] text-[20px] font-[600] lg:leading-[80px] md:leading-[50px]">
-              We help you package sterile products through automated technology
+            <p className="xl:tracking-wider 2xl:text-[50px] xl:text-[45px] lg:text-[40px] md:text-[36px] w-[50%] sm:text-[28px] text-[20px] font-[600] lg:leading-[80px] md:leading-[50px]">
+              We offer a versatile solution for making hollow bottles 
+              cost-effectively
             </p>
             <p className="xl:w-[40%] md:p-0 sm:px-10 px-5 font-medium md:pr-[15%] md:pl-[3%] 2xl:text-[24px] xl:text-[20px] lg:text-[18px] w-[60%] lg:w-[50%] md:w-[60%]">
-              With the FFS technology, we ensure no personal intervention and
-              less risks of contamination.
+              With the ISBM/PFFS technology, you can produce high volume hollow
+              bottles with enhanced precision.
             </p>
           </div>
         </div>
@@ -40,13 +41,14 @@ export default function FFS() {
         <div className="px-[10%] text-white relative flex flex-col gap-10 justify-center place-items-center bg-primary w-[80%] h-[80%] rounded-[15px] my-[2%]">
           {/* content */}
           <p className="font-normal md:text-3xl xl:text-5xl text-2xl">
-            Introducing the FFS Technology
+            Introducing the ISBM/PFFS Technology
           </p>
           <p className="font-normal md:text-[18px] xl:text-[18px] text-[16px] text-center">
-            With MicroFab's FFS (Form-Fill-Seal) technology, ensure a seamless
-            packaging process, with minimal risk of contamination and
-            preservation of product integrity. FFS reduces manual labor and
-            streamlines production, thereby improving the overall efficiency.
+            MicroFab's ISBM technology represents a cutting-edge solution for
+            the efficient production of hollow plastic containers. By
+            integrating the capabilities of injection molding and blow molding,
+            this advanced process enables the creation of intricate designs with
+            enhanced precision.
           </p>
 
           {/* bottom left */}
@@ -79,14 +81,14 @@ export default function FFS() {
         {/* img */}
         <div className="relative">
           <img src={process} className="" alt="img"></img>
-          <p className="absolute bottom-0 text-[18px] font-semibold left-[32%]">
-            Form
+          <p className="absolute bottom-0 text-[18px] font-semibold left-[30%]">
+          Injection
           </p>
-          <p className="absolute bottom-0 text-[18px] font-semibold left-[58%]">
-            Fill
+          <p className="absolute bottom-0 text-[18px] font-semibold left-[48%]">
+          Stretching & Blowing
           </p>
-          <p className="absolute bottom-0 text-[18px] font-semibold left-[82%]">
-            Seal
+          <p className="absolute bottom-0 text-[18px] font-semibold left-[78%]">
+          Filling & Capping
           </p>
         </div>
 

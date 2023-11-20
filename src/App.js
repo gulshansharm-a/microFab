@@ -26,6 +26,9 @@ import Appli2 from "./appli2.js";
 import Appli3 from "./appli3.js";
 import Appli4 from "./appli4.js";
 import BFS from "./components/Products/BFS/BFS";
+import FFS from "./components/Products/FFS/FFS";
+import ISBM from "./components/Products/ISBM/ISBM";
+import IV from "./components/Products/IV/IV";
 
 export default function App() {
   return (
@@ -67,6 +70,9 @@ function AppContent() {
         <Route path="/applications/food" element={<Appli3 />} />
         <Route path="/applications/chemical" element={<Appli4 />} />
         <Route path="/BFS" element={<BFS />} />
+        <Route path="/FFS" element={<FFS />} />
+        <Route path="/ISBM" element={<ISBM />} />
+        <Route path="/IV" element={<IV />} />
 
       </Routes>
 
