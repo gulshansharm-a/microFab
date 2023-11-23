@@ -16,7 +16,7 @@ import Animation from "./Animation";
 import contents from "./content.json"; // Adjust the path accordingly
 
 export default function OptionsButtons() {
-  const options = ["B-F-S", "F-F-S", "I-S-B-M"];
+  const options = ["B-F-S", "F-F-S", "I-S-B-M/P-F-F-S"];
   const [currentOption, setCurrentOption] = useState("B-F-S");
 
   const handleOptionClick = (option) => {

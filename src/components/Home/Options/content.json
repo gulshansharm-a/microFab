@@ -1,23 +1,23 @@
 [
   {
-    "topic": "What is Blow-Fill-Seal?",
-    "content": "Blow-Fill-Seal is the better alternative to conventional packaging like glass. That is because Blow-Fill-Seal lets you produce, fill and seal unbreakable plastic packaging fully automatically in a single operation. 100% aseptic and with the greatest possible flexibility in container design. Compact, environmentally friendly and without any complex processes.",
+    "topic": "Why choose MicroFab’s BFS machines?",
+    "content": "Introducing Microfab's BFS Machine: A game-changer in packaging automation, our advanced BFS machine combines blow-fill-seal technology with higher output and less down time. Streamline your production line and take the packaging capabilities to the next level  with our machines, designed for ease of operation, less maintenance, and high efficiency.",
     "sub": "Blow",
-    "sub_content": "A tube is extruded from pure plastic granules. A container is blown into shape using sterile air.",
+    "sub_content": "The BFS process begins with the extrusion of plastic granules into a parison, a hollow tube-like structure. This parison is then enclosed within a mold.",
     "sequence": ["blow", "fill", "seal"]
   },
   {
-    "topic": "What is Form-Fill-Seal?",
-    "content": "In the initial stage of the process, the creation of the intended shape or structure takes place. This step involves the shaping or molding of raw materials into the desired configuration, setting the foundation for subsequent stages.",
+    "topic": "Why choose MicroFab’s FFS machines?",
+    "content": "Introducing Microfab's FFS Machine: Our advanced FFS machine combines form-fill-seal technology with unparalleled precision and speed. Streamline your production line and elevate your packaging capabilities with this innovative solution, designed to optimize efficiency and deliver consistent, high-quality results.",
     "sub": "Form",
     "sub_content": "A tube is extruded from pure plastic granules. A container is Form into shape using sterile air.",
     "sequence": ["Form", "fill", "seal"]
   },
   {
-    "topic": "What is Injection Stretch Blow Molding",
-    "content": "Injection stretch blow molding is a process for manufacturing predominantly hollow objects with rotational symmetry using polymers. In this multilevel process, a preform is first produced using an injection molding process.",
-    "sub": "Injection",
-    "sub_content": "A tube is extruded from pure plastic granules. A container is blown into shape using sterile air.",
+    "topic": "Why choose MicroFab’s ISBM machines?",
+    "content": "Introducing Microfab's ISBM Machine: A paragon of innovation to revolutionize production in the realm of manufacturing, our machine seamlessly blends blow molding along with injection molding. The technology ensures a swift and streamlined manufacturing process for the creation of bespoke durable containers. Enhance the packaging capabilities with our machines, designed for precision with eco-friendly practices in mind.",
+    "sub": "",
+    "sub_content": "",
     "sequence": ["Injection", "Stretch", "Blow", "Molding"]
   }
 ]

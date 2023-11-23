@@ -8,11 +8,7 @@ export default function Who_are_we() {
       <div className="md:hidden text-center p-4">
         <p className="md:text-[35px] text-[35px] font-bold">Who Are We?</p>
         <p className="md:text-[20px] md:w-[80%]">
-          MicroFab represents the seamless collaboration of two industry giants,
-          Micro Tools and FabLab. These organizations are renowned for their
-          contributions in the realms of BFS and FFS technology for over five
-          decades. With years of experience, we are now distinct at a global
-          level owing to cost-effectiveness, quality, and innovation.
+        MicroFab, born from the merger of MicroTools and FabLab, excels in BFS and FFS machine manufacturing and EPC contracting. Committed to quality and innovation, we redefine industry standards in advanced packaging and industrial solutions. Our mission is to revolutionize packaging and project execution as a unified source for cutting-edge technologies and turnkey solutions across diverse industries.
         </p>
       </div>
 
@@ -84,7 +80,7 @@ export default function Who_are_we() {
               <div className="hidden md:block md:w-[5px] w-[10px] h-[170px] md:h-[80px] bg-[#8AA6AA] gap-4"></div>
               <div className="md:w-[75%] md:text-[16px] w-full">
                 <p className="md:text-[20px] font-semibold text-[20px]">
-                  125+ cutting-edge machinery
+                500+ cutting-edge machinery
                 </p>
                 <p className="">We design machinery as per the requirements</p>
               </div>
@@ -108,7 +104,7 @@ export default function Who_are_we() {
             <div className="w-[5px] md:w-[8px] md:h-[80px] bg-[#8AA6AA] gap-4"></div>
             <div className="md:w-[75%] md:text-[16px]">
               <p className="md:text-[20px] font-semibold text-[25px]">
-                75% customer retention
+                90% customer retention
               </p>
               <p>Our team is known for incredible service</p>
             </div>
@@ -116,7 +112,7 @@ export default function Who_are_we() {
             <div className="w-[5px] md:h-[80px] md:w-[8px] bg-[#8AA6AA] gap-4"></div>
             <div className="md:w-[75%] w-[90%] md:text-[16px]">
               <p className="md:text-[20px] font-semibold text-[25px]">
-                Across 8+ countries
+                Across 15+ countries
               </p>
               <p>We have our footprint across the globe</p>
             </div>
