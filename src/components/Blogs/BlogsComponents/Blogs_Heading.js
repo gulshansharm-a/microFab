@@ -12,8 +12,8 @@ export default function Heading() {
     <div className="font-['ClashDisplay']">
       {/* set of headings */}
       <div>
-        <p className="md:text-[25px] text-[30px] md:block hidden font-bold pl-10">
-          Heading
+        <p className="text-primary md:text-[25px] text-[30px] md:block hidden font-bold pl-10">
+        Article and Blogs
         </p>
         {/* desktop view */}
         <div className="w-screen p-10 hidden md:block overflow-x-auto">

@@ -29,6 +29,7 @@ import BFS from "./components/Products/BFS/BFS";
 import FFS from "./components/Products/FFS/FFS";
 import ISBM from "./components/Products/ISBM/ISBM";
 import IV from "./components/Products/IV/IV";
+import ArticlesList from './components/ArticlesList/ArticlesList.js'
 
 export default function App() {
   return (
@@ -73,6 +74,7 @@ function AppContent() {
         <Route path="/FFS" element={<FFS />} />
         <Route path="/ISBM" element={<ISBM />} />
         <Route path="/IV" element={<IV />} />
+        <Route path="/articlesList" element={<ArticlesList />} />
 
       </Routes>
 
