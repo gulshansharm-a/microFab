@@ -10,7 +10,7 @@ import Footer from "../Common/Footer/Footer";
 
 export default function TurnKeySolutions() {
   return (
-    <div className="md:h-screen md:mt-[80px] mt-[40px] md:pt-0 pt-[30px] ">
+    <div id="turnkey" className="md:h-screen md:mt-[80px] mt-[40px] md:pt-0 pt-[30px] ">
       {/* top */}
       <div className="w-full md:h-[90%] h-[400px] flex rounded-[42px] relative md:px-4">
         <img

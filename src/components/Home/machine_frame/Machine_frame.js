@@ -17,13 +17,15 @@ const Machine_Frame = () => {
   }, []);
 
   return (
-    <div className="font-['ClashDisplay'] w-full h-[700px] md:w-[97%] md:h-full md:mt-[75px] mt-[50px] md:rounded-[20px] bg-gradient-to-r from-[#e1e1e1] to-[#8ca7ab] md:m-4 mb-0 overflow-clip">
+    <div className="font-['ClashDisplay'] w-full h-[700px] md:w-[97%] md:h-full md:mt-[80px] mt-[50px] md:rounded-[20px] bg-gradient-to-r from-[#e1e1e1] to-[#8ca7ab] md:m-4 mb-0 overflow-clip">
       <div className="relative w-full h-full z-0">
-        <div className="absolute md:top-[30%] md:left-[65%] z-10 top-[28%] left-[45%]">
-          <WFS_Card />
-        </div>
+        
         <div className="absolute md:top-[50%] md:left-[38%] z-10 top-[44%] left-[4%]">
-          <WFS_Card />
+          <div className="font-['ClashDisplay'] rounded-b-[16px] rounded-tr-[16px] bg-[#8AA6AA] md:bg-[#8AA6AA] md:h-[40px] h-[40px] w-[200px] md:w-[180px] p-[10px] md:p-[10px]">
+            <p className="custom-font text-white md:text-[12px] text-[11px] flex justify-center place-items-center">
+            Product Solutions
+            </p>
+          </div>
         </div>
         <div className="absolute md:top-[83%] md:left-[70%] z-10 top-[63%] left-[44%]">
           <WFS_Card />
@@ -48,8 +50,7 @@ const Machine_Frame = () => {
                   currentWordIndex === index ? "animate-fall" : ""
                 }`}
                 style={{
-                  visibility:
-                    currentWordIndex >= index ? "visible" : "hidden",
+                  visibility: currentWordIndex >= index ? "visible" : "hidden",
                   marginBottom: index === textArray.length - 1 ? 0 : "0px", // Adjust the margin as needed
                 }}
               >

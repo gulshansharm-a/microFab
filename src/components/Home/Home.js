@@ -23,7 +23,7 @@ export default function Home() {
         </div>
 
         {/* right */}
-        <div className="md:w-3/12 w-full md:mt-[75px] md:h-full">
+        <div className="md:w-3/12 w-full md:mt-[80px] md:h-full">
           <div className="flex justify-center md:h-[20%]">
             <Why_Microfab />
           </div>

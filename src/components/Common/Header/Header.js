@@ -21,8 +21,7 @@ const Header = () => {
   const [isTechnologyDropdownOpen, setTechnologyDropdownOpen] = useState(false);
   const [isApplicationDropdownOpen, setApplicationDropdownOpen] =
     useState(false);
-  const [selectedTechnologyCard, setSelectedTechnologyCard] =
-    useState("Blow-Fill-Seal");
+  const [selectedTechnologyCard, setSelectedTechnologyCard] = useState("BFS");
   const [selectedApplicationCard, setSelectedApplicationCard] = useState(
     "Pharmaceutical Industry"
   );
@@ -80,7 +79,7 @@ const Header = () => {
         </div>
         <div className="font-light relative">
           <ul
-            className="hidden lg:flex lg:gap-10 xl:gap-14 lg:text-[18px] z-20
+            className="hidden lg:flex lg:gap-10 xl:gap-14 lg:text-[16px] z-20
           "
           >
             <li
@@ -107,7 +106,7 @@ const Header = () => {
             </li>
             <li
               className={`relative cursor-pointer ${
-                location.pathname === "/Technology" ? "font-extrabold " : ""
+                location.pathname === "/Products" ? "font-extrabold " : ""
               }`}
             >
               <div
@@ -116,8 +115,8 @@ const Header = () => {
                 }`}
                 onClick={toggleTechnologyDropdown}
               >
-                <Link to="/Technology" onClick={toggleMenu}>
-                  Technology
+                <Link to="/Products" onClick={toggleMenu}>
+                  Products
                 </Link>
                 {isTechnologyDropdownOpen ? (
                   <img
@@ -137,22 +136,20 @@ const Header = () => {
                 <div className="dropdown-menu absolute mt-2 bg-white border border-gray-300 p-4 rounded-lg shadow-md w-[619px] left-1/2 transform -translate-x-1/2">
                   <div className="flex flex-row gap-[16px]">
                     <Card
-                      content="Blow-Fill-Seal"
+                      path="BFS"
+                      content="BFS"
                       img={img1}
-                      isSelected={selectedTechnologyCard === "Blow-Fill-Seal"}
-                      onClick={() =>
-                        handleTechnologyCardClick("Blow-Fill-Seal")
-                      }
+                      isSelected={selectedTechnologyCard === "BFS"}
+                      onClick={() => handleTechnologyCardClick("BFS")}
                     />
                     <Card
-                      content="Form-Fill-Seal"
+                      path="FFS"
+                      content="FFS"
                       img={img2}
-                      isSelected={selectedTechnologyCard === "Form-Fill-Seal"}
-                      onClick={() =>
-                        handleTechnologyCardClick("Form-Fill-Seal")
-                      }
+                      isSelected={selectedTechnologyCard === "FFS"}
+                      onClick={() => handleTechnologyCardClick("FFS")}
                     />
-                    <Card
+                    {/* <Card
                       content="Injection-Stretch-Blow-Molding"
                       img={img3}
                       isSelected={
@@ -164,11 +161,52 @@ const Header = () => {
                           "Injection-Stretch-Blow-Molding"
                         )
                       }
+                    /> */}
+                    <Card
+                    path="IV"
+                      content="IV Bag"
+                      img={img2}
+                      isSelected={selectedTechnologyCard === "IV Bag"}
+                      onClick={() => handleTechnologyCardClick("IV Bag")}
+                    />
+                    <Card
+                    path="ProductSolution"
+                      content="IV Bag"
+                      img={img1}
+                      isSelected={selectedTechnologyCard === "Product Solution"}
+                      onClick={() =>
+                        handleTechnologyCardClick("Product Solution")
+                      }
                     />
                   </div>
                 </div>
               )}
             </li>
+
+            <Link
+              to="/TurnKeySolutions"
+              onClick={toggleMenu}
+              className={`${
+                location.pathname === "/TP"
+                  ? "font-extrabold border-b-2 border-black "
+                  : ""
+              }`}
+            >
+              Turnkey
+            </Link>
+
+            <Link
+              to="#services"
+              onClick={toggleMenu}
+              className={`${
+                location.pathname === "/TP"
+                  ? "font-extrabold border-b-2 border-black "
+                  : ""
+              }`}
+            >
+              Services
+            </Link>
+
             <li
               className={`relative cursor-pointer ${
                 location.pathname === "/Applications" ? "font-extrabold " : ""
@@ -200,57 +238,57 @@ const Header = () => {
               {isApplicationDropdownOpen && (
                 <div className="dropdown-menu absolute mt-2 bg-white border border-gray-300 p-4 rounded-lg shadow-md w-[739px] left-1/2 transform -translate-x-1/2">
                   <div className="flex flex-row gap-[16px]">
-                     <Link to="/applications/pharmaceutical">
-                    <Card
-                      content="Pharmaceutical Industry"
-                      img={img4}
-                      isSelected={
-                        selectedApplicationCard === "Pharmaceutical Industry"
-                      }
-                      onClick={() =>
-                        handleApplicationCardClick("Pharmaceutical Industry")
-                      }
-                    />
+                    <Link to="/applications/pharmaceutical">
+                      <Card
+                        content="Pharmaceutical Industry"
+                        img={img4}
+                        isSelected={
+                          selectedApplicationCard === "Pharmaceutical Industry"
+                        }
+                        onClick={() =>
+                          handleApplicationCardClick("Pharmaceutical Industry")
+                        }
+                      />
                     </Link>
                     <Link to="/applications/cosmic">
-                    <Card
-                      content="Cosmetic Industry"
-                      img={img5}
-                      isSelected={
-                        selectedApplicationCard === "Cosmetic Industry"
-                      }
-                      onClick={() =>
-                        handleApplicationCardClick("Cosmetic Industry")
-                      }
-                    />
+                      <Card
+                        content="Cosmetic Industry"
+                        img={img5}
+                        isSelected={
+                          selectedApplicationCard === "Cosmetic Industry"
+                        }
+                        onClick={() =>
+                          handleApplicationCardClick("Cosmetic Industry")
+                        }
+                      />
                     </Link>
                     <Link to="/applications/food">
-                    <Card
-                      content="Food Industry"
-                      img={img6}
-                      isSelected={selectedApplicationCard === "Food Industry"}
-                      onClick={() =>
-                        handleApplicationCardClick("Food Industry")
-                      }
-                    />
+                      <Card
+                        content="Food Industry"
+                        img={img6}
+                        isSelected={selectedApplicationCard === "Food Industry"}
+                        onClick={() =>
+                          handleApplicationCardClick("Food Industry")
+                        }
+                      />
                     </Link>
                     <Link to="/applications/chemical">
-                    <Card
-                      content="Chemical Industry"
-                      img={img7}
-                      isSelected={
-                        selectedApplicationCard === "Chemical Industry"
-                      }
-                      onClick={() =>
-                        handleApplicationCardClick("Chemical Industry")
-                      }
-                    />
+                      <Card
+                        content="Chemical Industry"
+                        img={img7}
+                        isSelected={
+                          selectedApplicationCard === "Chemical Industry"
+                        }
+                        onClick={() =>
+                          handleApplicationCardClick("Chemical Industry")
+                        }
+                      />
                     </Link>
                   </div>
                 </div>
               )}
             </li>
-            <li>
+            {/* <li>
               <Link
                 to="/articles"
                 onClick={toggleMenu}
@@ -261,8 +299,8 @@ const Header = () => {
                 }`}
               >
                 Articles
-              </Link>
-            </li>
+              </Link> */}
+            {/* </li> */}
             <li>
               <Link
                 to="/blogs"
@@ -277,7 +315,7 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link
+              {/* <Link
                 to="/TP"
                 onClick={toggleMenu}
                 className={`${
@@ -287,7 +325,7 @@ const Header = () => {
                 }`}
               >
                 Terms & policies
-              </Link>
+              </Link> */}
             </li>
           </ul>
         </div>
@@ -375,36 +413,18 @@ const Header = () => {
                   <div className="lg:absolute mt-2 bg-white border border-gray-300 p-4 rounded-lg shadow-md h-[250px] w-[350px] lg:w-[739px] mx-auto lg:left-1/2 lg:transform lg:-translate-x-1/2">
                     <div className="flex flex-row gap-[8px] lg:gap-[16px]">
                       <Card
-                        content="Blow-Fill-Seal"
+                        content="BFS"
                         img={img1}
-                        isSelected={selectedTechnologyCard === "Blow-Fill-Seal"}
-                        onClick={() =>
-                          handleTechnologyCardClick("Blow-Fill-Seal")
-                        }
+                        isSelected={selectedTechnologyCard === "BFS"}
+                        onClick={() => handleTechnologyCardClick("BFS")}
                       />
                       <Card
-                        content="Form-Fill-Seal"
+                        content="FFS"
                         img={img2}
-                        isSelected={selectedTechnologyCard === "Form-Fill-Seal"}
-                        onClick={() =>
-                          handleTechnologyCardClick("Form-Fill-Seal")
-                        }
+                        isSelected={selectedTechnologyCard === "FFS"}
+                        onClick={() => handleTechnologyCardClick("FFS")}
                       />
                     </div>
-
-                    <Card
-                      content="Injection-Stretch-Blow-Molding"
-                      img={img3}
-                      isSelected={
-                        selectedTechnologyCard ===
-                        "Injection-Stretch-Blow-Molding"
-                      }
-                      onClick={() =>
-                        handleTechnologyCardClick(
-                          "Injection-Stretch-Blow-Molding"
-                        )
-                      }
-                    />
                   </div>
                 </Link>
               )}
