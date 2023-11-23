@@ -17,11 +17,7 @@ export default function ProductSolutions() {
           </div>
           <div className="w-[90%]">
             <p className="font-thin text-[#67675F] text-[18px] md:leading-7 md:tracking-wide">
-              In today’s era, it’s essential to maintain even the best
-              technology. So, with our comprehensive services, you can stay
-              confident that the system runs smoothly. To address the concerns
-              swiftly, we also offer support to provide you with timely
-              solutions.
+            MicroFab is a leading provider of comprehensive solutions, offering advanced machinery for BFS and FFS manufacturing, and medical devices. Our commitment extends to exceptional after-sales service, seamless machine upgrades, and expertise in refurbishing equipment. MicroFab focuses on continuous improvement, ensuring clients stay at the forefront of technological advancements.
             </p>
           </div>
         </div>

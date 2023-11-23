@@ -1,7 +1,7 @@
 .jk{
   background-image:cover;
  background-repeat:repeat-x; 
- background-color:#8AA6AA;
+ 
 }
 .mm{
  width:90%;
@@ -38,6 +38,14 @@ font-size: 120px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+}
+.as{
+  position:relative;
+  left:-300%;
+}
+.vvv{
+  position:relative;
+  left:50%;
 }
 /* @media (max-width: 1068px) {
   .se{
@@ -84,7 +92,9 @@ margin-left:-10%;
 
 }
 .uuu{
-  width:110%;
+  width:30%;
+  /* position:relative;
+  right:-20%; */
 }
 /* src/ResponsiveColumnsToRows.css */
 
@@ -120,7 +130,7 @@ margin-left:-10%;
  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 .okl{
-  margin:0 2%;
+  margin-left:70%;
 }
 .faq-item {
  margin-bottom: 15px;
@@ -183,7 +193,7 @@ background-repeat:repeat-y;
  padding-left: 20px;
 }
 .cv{
-margin:0 20%;
+margin-right:-20%;
 }
 /* .aws{
   margin-top:-2%;

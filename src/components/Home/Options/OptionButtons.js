@@ -8,9 +8,18 @@ export default function OptionButtons() {
   const [chosenOptionIndex, setChosenOptionIndex] = useState(0);
   const [currentStep, setCurrentStep] = useState(0);
 
+<<<<<<< HEAD
   const handleOptionClick = (index) => {
     setChosenOptionIndex(index);
     setCurrentStep(0); // Reset step index when changing the option
+=======
+export default function OptionsButtons() {
+  const options = ["B-F-S", "F-F-S", "I-S-B-M/P-F-F-S"];
+  const [currentOption, setCurrentOption] = useState("B-F-S");
+
+  const handleOptionClick = (option) => {
+    setCurrentOption(option);
+>>>>>>> 6f5c8517fb5fc04eda557d1cf3ba5f336c26184e
   };
 
   const handleNextStep = () => {
