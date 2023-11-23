@@ -113,7 +113,7 @@ process.
         <div className="container ">
           <div className="card-container">
             <div className="card">
-              <h6 className="mb-4  text-xs leading-tight text-black kl">
+              <h6 className="mb-4 text-xs leading-tight text-black kl">
                 <br></br>
                 <strong>
                   Reduced Environmental Impact<br></br> <br></br>{" "}
@@ -126,7 +126,7 @@ to pharmaceutical packaging.
               {/* <p>Text for Card 1 goes here.</p> */}
             </div>
             <div className="card">
-              <h6 className="mb-4  text-xs leading-tight text-black kl">
+              <h6 className="mb-4 text-xs leading-tight text-black kl">
                 <br></br>
                 <strong>
                 Enhances Product Integrity<br></br>
@@ -178,7 +178,7 @@ production.
             // 3. flex-[0_0_50%] set the width of each card to 50% of the viewport
             // for mobile devices we use 90% width
             <div key={i} className="flex-[0_0_90%] md:flex-[0_0_23%]">
-              <div className="py-4 px-4 h-80 bg-white shadow-lg rounded-lg my-20">
+              <div className="py-4 px-4 h-96 bg-white shadow-lg rounded-lg my-20">
                
 
                 {/* <h2 className="text-[#8AA6AA] text-3xl font-semibold">{props.title}</h2> */}
