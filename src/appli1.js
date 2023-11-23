@@ -46,13 +46,13 @@ export default function Appli1() {
              While we revolutionize the way of filling liquid or semi-liquid products, filling and sealing can take place seamlessly during the process.
             </h6>{" "}
             {/* <br></br> */}
-          </span>
-          </div>
+          
          
-          <button class="bg-[#8AA6AA] hover:bg-blue-700 text-white font-bold py-3 px-20 rounded m-2">
+          <button class="bg-[#8AA6AA] ee hover:bg-blue-700 text-white font-bold py-3 px-20 rounded m-2">
   Explore
 </button>
-
+</span>
+          </div>
 <div>
             <img
               className="h-106 w-full object-cover object-center poi"
