@@ -38,13 +38,13 @@ during the manufacturing
 process.
             </h6>{" "}
             <br></br>
-          </span>
-        </div>
+          
 
-        <button class="bg-[#8AA6AA] hover:bg-blue-700 text-white font-bold py-2 px-20 rounded m-2">
+        <button class="bg-[#8AA6AA] dd hover:bg-blue-700 text-white font-bold py-2 px-20 rounded m-2">
           Explore
         </button>
-
+        </span>
+        </div>
         <div>
           <img
             className="h-106 w-full object-cover object-center poi"
@@ -113,7 +113,7 @@ process.
         <div className="container ">
           <div className="card-container">
             <div className="card">
-              <h6 className="mb-4 border-b pb-4 text-xs leading-tight text-black kl">
+              <h6 className="mb-4 text-xs leading-tight text-black kl">
                 <br></br>
                 <strong>
                   Reduced Environmental Impact<br></br> <br></br>{" "}
@@ -126,7 +126,7 @@ to pharmaceutical packaging.
               {/* <p>Text for Card 1 goes here.</p> */}
             </div>
             <div className="card">
-              <h6 className="mb-4 border-b pb-4 text-xs leading-tight text-black kl">
+              <h6 className="mb-4 text-xs leading-tight text-black kl">
                 <br></br>
                 <strong>
                 Enhances Product Integrity<br></br>
@@ -141,7 +141,7 @@ thereby preserving the efficacy.
               {/* <p>Text for Card 1 goes here.</p> */}
             </div>
             <div className="card">
-              <h6 className="mb-4 border-b pb-4 text-xs leading-tight text-black kl">
+              <h6 className="mb-4 text-xs leading-tight text-black kl">
                 <br></br>
                 <strong>
                 Enhances cost-efficiency<br></br>
@@ -158,7 +158,7 @@ production.
               {/* <p>Text for Card 1 goes here.</p> */}
             </div>
             <div className="card">
-              <h6 className="mb-4 border-b pb-4 text-xs leading-tight text-black kl">
+              <h6 className="mb-4  text-xs leading-tight text-black kl">
                 <br></br>
                 <strong>
                 Swift & Streamlined production<br></br> <br></br>{" "}
@@ -178,7 +178,7 @@ production.
             // 3. flex-[0_0_50%] set the width of each card to 50% of the viewport
             // for mobile devices we use 90% width
             <div key={i} className="flex-[0_0_90%] md:flex-[0_0_23%]">
-              <div className="py-4 px-4 bg-white shadow-lg rounded-lg my-20">
+              <div className="py-4 px-4 h-96 bg-white shadow-lg rounded-lg my-20">
                
 
                 {/* <h2 className="text-[#8AA6AA] text-3xl font-semibold">{props.title}</h2> */}
@@ -198,10 +198,7 @@ production.
                   <h5 className="mt-2 text-gray-600 kkk">
                     {{ ...testimonial }.author}
                   </h5>
-                  <br></br>
-                  <button class="bg-[#8AA6AA] text-black font-bold py-2 px-28 rounded">
-                    Button
-                  </button>
+                 
                   {/* <button class="btn btn-blue">
   Button
 </button> */}
