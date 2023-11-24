@@ -44,11 +44,11 @@ export default function OptionsButtons() {
       </div>
 
       <div className="px-10 text-center flex flex-col md:flex-col md:mt-[50px] md:m-[50px] m-[15px] mt-[20px]">
-        <div className="flex md:flex-col flex-col justify-center place-items-center">
+        <div className="flex md:flex-col font-semibold flex-col justify-center place-items-center">
           <div className="md:text-[40px] text-[30px] font-bold">
             {selectedContent?.topic}
           </div>
-          <div className="text-center custom-font md:text-[14px]">
+          <div className="text-center md:text-[14px] leading-8">
             {selectedContent?.content}
           </div>
         </div>

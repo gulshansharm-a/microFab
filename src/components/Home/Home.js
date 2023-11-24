@@ -60,9 +60,9 @@ export default function Home() {
 
       <Who_are_we />
 
-      {/* <HomeArticle />
+      <HomeArticle />
 
-      <HomeBlog /> */}
+      {/* <HomeBlog /> */}
 
       <HappyCustomers />
 

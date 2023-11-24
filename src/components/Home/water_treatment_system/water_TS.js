@@ -1,13 +1,55 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../../../App.css";
+import mac1 from "../../../assets/water_TS/mac1.svg";
+import mac2 from "../../../assets/water_TS/mac2.svg";
+import mac3 from "../../../assets/water_TS/mac3.svg";
 import machine from "../../../assets/water_TS/machine.svg";
-import WTS from "../../../assets/water_TS/water_treatment_system.svg";
+import STO from "../../../assets/water_TS/storage_tank-outline.svg";
+import sync from "../../../assets/water_TS/sync.svg";
 import WCO from "../../../assets/water_TS/water_check_outline.svg";
 import water_polo from "../../../assets/water_TS/water_polo.svg";
-import sync from "../../../assets/water_TS/sync.svg";
-import STO from "../../../assets/water_TS/storage_tank-outline.svg";
+import data from "./water_TS_Data.json";
 
 const WaterTS = () => {
+  const images = {
+    mac1,
+    mac2,
+    mac3,
+  };
+
+  const [index, setIndex] = useState(0);
+  const [borderPercentage, setBorderPercentage] = useState("5%"); // Initial border percentage
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      // Update index every 2 seconds
+      setIndex((prevIndex) => (prevIndex < 3 ? prevIndex + 1 : 0));
+    }, 2000);
+
+    return () => clearInterval(interval); // Clear interval on component unmount
+  }, []);
+
+  useEffect(() => {
+    // Calculate border percentage based on index value
+    switch (index) {
+      case 0:
+        setBorderPercentage("5%");
+        break;
+      case 1:
+        setBorderPercentage("25%");
+        break;
+      case 2:
+        setBorderPercentage("50%");
+        break;
+      case 3:
+        setBorderPercentage("95%");
+        break;
+      default:
+        setBorderPercentage("5%");
+        break;
+    }
+  }, [index]);
+
   return (
     <div className="relative w-[100%] flex flex-col md:flex-row md:justify-center place-items-center">
       <div className="relative font-mono flex justify-center place-items-center md:w-[600px] w-[300px] h-[300px] md:h-[600px] rounded-full border border-solid border-[rgba(190, 190, 190, 0.20)] shadow-xl">
@@ -54,23 +96,17 @@ const WaterTS = () => {
       </div>
 
       <img
-        src={machine}
+        src={images[data[index].imgl]}
         alt="WTS"
         className="hidden md:block md:absolute md:rounded-none rounded-[19px] md:h-[200px] md:w-[200px] h-[150px] w-[150px] left-[20px] top-0"
       ></img>
       <div className="hidden md:block custom-font md:absolute md:left-[20px] md:top-[250px] md:h-[200px] md:w-[300px] md:text-[10px]">
-        <p className="h-[150px] w-[250px] text-[14px]">
-          Our advanced water purification system is a turnkey solution under the
-          FFS and the BFS machinery. With the system, you can ensure that you
-          obtain pristine water. Whether you need water for a liquid solution or
-          for cleaning equipment, you will surely be able to source clean water,
-          thereby enhancing the production standards.
-        </p>
+        <p className="h-[150px] w-[250px] text-[14px]">{data[index].content}</p>
       </div>
 
       {/* img above water treatment system */}
       <img
-        src={WTS}
+        src={images[data[index].imgr]}
         className="hidden md:block md:absolute md:rounded-none rounded-[19px] md:h-[200px] md:w-[200px] h-[150px] w-[150px] right-[8%] bottom-[30%]"
       ></img>
 
@@ -96,8 +132,8 @@ const WaterTS = () => {
         className="md:absolute absolute right-[76%] top-[30%] md:right-[60%] md:top-[49%] rounded-full md:p-2 p-0.5 h-[20px] bg-[#8AA6AA] md:h-[40px]"
       ></img>
 
-      <p className="md:block hidden md:text-[30px] font-bold text-[#3659FA] md:absolute bottom-[100px] right-[100px]">
-        Water Treatment <br></br> System
+      <p className="md:block w-[300px] hidden md:text-[30px] font-bold text-[#3659FA] md:absolute bottom-[100px] right-[100px]">
+        {data[index].heading}
       </p>
     </div>
   );

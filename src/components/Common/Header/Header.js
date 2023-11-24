@@ -53,6 +53,7 @@ const Header = () => {
 
   const handleApplicationCardClick = (content) => {
     setSelectedApplicationCard(content);
+    // toggleMenu();
   };
 
   const location = useLocation();
@@ -136,14 +137,14 @@ const Header = () => {
                 <div className="dropdown-menu absolute mt-2 bg-white border border-gray-300 p-4 rounded-lg shadow-md w-[619px] left-1/2 transform -translate-x-1/2">
                   <div className="flex flex-row gap-[16px]">
                     <Card
-                      path="BFS"
+                      path="/BFS"
                       content="BFS"
                       img={img1}
                       isSelected={selectedTechnologyCard === "BFS"}
                       onClick={() => handleTechnologyCardClick("BFS")}
                     />
                     <Card
-                      path="FFS"
+                      path="/FFS"
                       content="FFS"
                       img={img2}
                       isSelected={selectedTechnologyCard === "FFS"}
@@ -163,15 +164,15 @@ const Header = () => {
                       }
                     /> */}
                     <Card
-                    path="IV"
+                    path="/IV"
                       content="IV Bag"
                       img={img2}
                       isSelected={selectedTechnologyCard === "IV Bag"}
                       onClick={() => handleTechnologyCardClick("IV Bag")}
                     />
                     <Card
-                    path="ProductSolution"
-                      content="IV Bag"
+                    path="/product"
+                      content="Product Solution"
                       img={img1}
                       isSelected={selectedTechnologyCard === "Product Solution"}
                       onClick={() =>
@@ -236,8 +237,8 @@ const Header = () => {
                 )}
               </div>
               {isApplicationDropdownOpen && (
-                <div className="dropdown-menu absolute mt-2 bg-white border border-gray-300 p-4 rounded-lg shadow-md w-[739px] left-1/2 transform -translate-x-1/2">
-                  <div className="flex flex-row gap-[16px]">
+                <div className="dropdown-menu absolute mt-2 bg-white border border-gray-300 p-4 rounded-lg shadow-md w-[765px] left-1/2 transform -translate-x-1/2">
+                  <div className="flex flex-row gap-0">
                     <Link to="/applications/pharmaceutical">
                       <Card
                         content="Pharmaceutical Industry"

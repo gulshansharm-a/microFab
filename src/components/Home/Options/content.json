@@ -8,7 +8,7 @@
   },
   {
     "topic": "Why choose MicroFab’s FFS machines?",
-    "content": "Introducing Microfab's FFS Machine: Our advanced FFS machine combines form-fill-seal technology with unparalleled precision and speed. Streamline your production line and elevate your packaging capabilities with this innovative solution, designed to optimize efficiency and deliver consistent, high-quality results.",
+    "content": "Introducing Microfab's FFS Machine: Our advanced FFS machine combines form-\nfill-seal technology with unparalleled precision and speed. Streamline your production line and elevate your packaging capabilities with this innovative solution, designed to optimize efficiency and deliver consistent, high-quality results.",
     "sub": "Form",
     "sub_content": "A tube is extruded from pure plastic granules. A container is Form into shape using sterile air.",
     "sequence": ["Form", "fill", "seal"]
