@@ -12,14 +12,14 @@ export default function Heading() {
     <div className="font-['ClashDisplay']">
       {/* set of headings */}
       <div>
-        <p className="text-primary md:text-[25px] text-[30px] md:block hidden font-bold pl-10">
-        Article and Blogs
+        <p className="md:text-[25px] text-[30px] md:block hidden font-bold pl-10">
+          Heading
         </p>
         {/* desktop view */}
         <div className="w-screen p-10 hidden md:block overflow-x-auto">
           {/* Cards */}
           <div className="flex flex-row gap-3">
-            {Blogs_Heading.slice(0,4).map((blog, index) => (
+            {Blogs_Heading.slice(0, 4).map((blog, index) => (
               <div
                 key={index}
                 className="w-[50%] md:w-full md:max-w-[30%] rounded-lg shadow-md overflow-hidden"
