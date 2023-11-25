@@ -3,6 +3,11 @@ import "../../../App.css";
 import mac1 from "../../../assets/water_TS/mac1.svg";
 import mac2 from "../../../assets/water_TS/mac2.svg";
 import mac3 from "../../../assets/water_TS/mac3.svg";
+import mac4 from "../../../assets/water_TS/mac4.svg";
+import mac5 from "../../../assets/water_TS/mac5.svg";
+import mac6 from "../../../assets/water_TS/mac6.svg";
+import mac7 from "../../../assets/water_TS/mac7.svg";
+import mac8 from "../../../assets/water_TS/mac8.svg";
 import machine from "../../../assets/water_TS/machine.svg";
 import STO from "../../../assets/water_TS/storage_tank-outline.svg";
 import sync from "../../../assets/water_TS/sync.svg";
@@ -15,6 +20,11 @@ const WaterTS = () => {
     mac1,
     mac2,
     mac3,
+    mac4,
+    mac5,
+    mac6,
+    mac7,
+    mac8
   };
 
   const [index, setIndex] = useState(0);
