@@ -29,7 +29,7 @@ function FaqItem({ question, answers, initiallyOpen }) {
   };
   useEffect(() => {
     if (isOpen && answerRef.current) {
-      setBarHeight(answerRef.current.clientHeight + "px"); // Set the height when answer is open
+      setBarHeight((answerRef.current.clientHeight + 35) + "px"); // Set the height when answer is open
     } else {
       setBarHeight("auto"); // Set back to 'auto' when answer is closed
     }
@@ -55,7 +55,7 @@ function FaqItem({ question, answers, initiallyOpen }) {
         className={`question ${isOpen ? "active" : ""}`}
         onClick={toggleAnswer}
       >
-        <div className="vertical-bar" style={{ height: barHeight }}></div>
+        <div className="vertical-bar mt-2" style={{ height: barHeight }}></div>
         {question}
       </div>
       <br></br>
@@ -334,7 +334,7 @@ function AboutUs() {
             <p className="mb-4 text-sm leading-tight text-black lm">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit?
             </p> */}
-          <div className="cv">
+          <div className="cv pl-[100px] pr-[10px]">
             <FaqItem
               question="What is BFS and FFS Technology, and how does It work? "
               answers={[
