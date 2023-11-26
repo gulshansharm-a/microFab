@@ -11,19 +11,29 @@ import stretch from "../../../assets/Options/stretch.svg";
 import form from "../../../assets/Options/form.svg";
 import blow_small from "../../../assets/Options/blow_small.svg";
 import Animation from "./Animation";
+import { Icon } from "@iconify/react";
 
 // the data are fetched from a json file
 import contents from "./content.json"; // Adjust the path accordingly
 
 export default function OptionsButtons() {
-  const options = ["B-F-S", "F-F-S", "I-S-B-M"];
+  const images = {};
+
+  const options = ["B-F-S", "F-F-S", "I-S-B-M / P-F-F-S"];
   const [currentOption, setCurrentOption] = useState("B-F-S");
+  const [currentStep, setCurrentStep] = useState(0);
 
   const handleOptionClick = (option) => {
     setCurrentOption(option);
+    setCurrentStep(0); // Reset step to 0 when the option changes
+  };
+
+  const handleStepClick = (index) => {
+    setCurrentStep(index);
   };
 
   const selectedContent = contents[options.indexOf(currentOption)];
+  const currentSequenceItem = selectedContent?.sequence[currentStep];
 
   return (
     <div className="font-['ClashDisplay']">
@@ -44,11 +54,11 @@ export default function OptionsButtons() {
       </div>
 
       <div className="px-10 text-center flex flex-col md:flex-col md:mt-[50px] md:m-[50px] m-[15px] mt-[20px]">
-        <div className="flex md:flex-col font-semibold flex-col justify-center place-items-center">
+        <div className="flex md:flex-col flex-col justify-center place-items-center">
           <div className="md:text-[40px] text-[30px] font-bold">
             {selectedContent?.topic}
           </div>
-          <div className="text-center md:text-[14px] leading-8">
+          <div className="text-center custom-font md:text-[14px]">
             {selectedContent?.content}
           </div>
         </div>
@@ -62,48 +72,39 @@ export default function OptionsButtons() {
           <div className=" flex flex-col md:flex-col md:w-[600px] md:h-[300px]">
             {/* Flow chart for mobile */}
             <div className="md:hidden justify-center flex md:flex-row md:mt-6 place-items-center md:gap-1 gap-1 mt-6 mb-6">
-              {selectedContent?.sequence.map((step, index) => (
+            {selectedContent?.sequence.map((stepItem, index) => (
                 <React.Fragment key={index}>
                   <div
-                    className={`md:p-2 rounded-full ${
-                      index === 0
-                        ? "bg-[#8AA6AA] border border-[#8AA6AA]"
-                        : "bg-white border border-[#8AA6AA]"
+                    onClick={() => handleStepClick(index)}
+                    className={`md:p-2 rounded-full cursor-pointer ${
+                      index <= currentStep
+                        ? "bg-[#8AA6AA] border border-[#8AA6AA] text-white"
+                        : "bg-white border border-[#8AA6AA] text-primary"
                     } 
-                    ${currentOption === "I-S-B-M" ? "h-5 w-5" : "h-10 w-10"}
-                    justify-center flex place-items-center`}
+              ${currentOption === "I-S-B-M" ? "h-5 w-5" : "h-10 w-10"}
+              justify-center flex place-items-center`}
                   >
-                    <img
-                      src={
-                        step === "blow"
-                          ? img1
-                          : step === "fill"
-                          ? fill
-                          : step === "seal"
-                          ? seal
-                          : step === "Injection"
-                          ? injection
-                          : step === "Stretch"
-                          ? stretch
-                          : step === "Blow"
-                          ? blow_small
-                          : step === "Form"
-                          ? form
-                          : step === "Molding"
-                          ? molding
-                          : img1
-                      }
-                      alt={step}
-                    ></img>
+                    {stepItem.img === "blow" ? (
+                      <Icon icon="mdi:air-filter" />
+                    ) : stepItem.img === "fill" ? (
+                      <Icon icon="mdi:format-color-fill" />
+                    ) : stepItem.img === "seal" ? (
+                      <Icon icon="mdi:bottle-soda-outline" />
+                    ) : (
+                      <Icon icon="mdi:air-filter" />
+                    )}
                   </div>
                   <p
                     className={`font-bold text-[#8AA6AA] ${
-                      index === 0
+                      index <= currentStep
                         ? "font-['ClashDisplayBold'] text-[#8AA6AA]"
                         : "text-[#8AA6AA]"
                     }`}
                   >
-                    {step.charAt(0).toUpperCase() + step.slice(1)}
+                    {typeof stepItem === "string"
+                      ? stepItem.charAt(0).toUpperCase() + stepItem.slice(1)
+                      : stepItem.step.charAt(0).toUpperCase() +
+                        stepItem.step.slice(1)}
                   </p>
                   {index < selectedContent.sequence.length - 1 && (
                     <p className="text-[#8AA6AA] font-bold">━</p>
@@ -112,61 +113,55 @@ export default function OptionsButtons() {
               ))}
             </div>
             <div>
-              <div className="font-bold ">{selectedContent?.sub}</div>
-              <div className="]">{selectedContent?.sub_content}</div>
-              <div className="hover:bg-[#8AA6AA] mt-[20px] rounded-lg md:mt-[7%] md:mb-[5%] gap-4 text-white justify-center place-items-center md:rounded-md bg-[#8AA6AA] border-[#8AA6AA] flex md:flex-row md:h-[25%] md:w-[35%] h-[50px] w-[100%]">
+              <div className="font-bold">{currentSequenceItem?.step}</div>
+              <div>{currentSequenceItem?.content}</div>
+              {/* Replace sub and sub_content with currentSequenceItem */}
+              <div className="font-bold">{currentSequenceItem?.sub}</div>
+              <div>{currentSequenceItem?.sub_content}</div>
+              <a href="/BFS" className="hover:bg-[#8AA6AA] mt-[20px] rounded-lg md:mt-[7%] md:mb-[5%] gap-4 text-white justify-center place-items-center md:rounded-md bg-[#8AA6AA] border-[#8AA6AA] flex md:flex-row md:h-[25%] md:w-[35%] h-[50px] w-[100%]">
                 <button className="hover:bg-[#8AA6AA]">Know More</button>
                 <img src={arrow} alt="arrow" className="md:h-[20px]"></img>
-              </div>
+              </a>
             </div>
 
             {/* Flow chart for desktop */}
             <div className="hidden md:flex md:flex-row md:mt-6 place-items-center md:gap-1">
-              {selectedContent?.sequence.map((step, index) => (
+              {selectedContent?.sequence.map((stepItem, index) => (
                 <React.Fragment key={index}>
                   <div
-                    className={`md:p-2 rounded-full ${
-                      index === 0 ? "bg-[#8AA6AA] text-[#8AA6AA]" : "bg-white"
-                    } ${
-                      index < selectedContent.sequence.length
-                        ? "border border-[#8AA6AA]"
-                        : ""
-                    }`}
+                    onClick={() => handleStepClick(index)}
+                    className={`md:p-2 rounded-full cursor-pointer ${
+                      index <= currentStep
+                        ? "bg-[#8AA6AA] border border-[#8AA6AA] text-white"
+                        : "bg-white border border-[#8AA6AA] text-primary"
+                    } 
+              ${currentOption === "I-S-B-M" ? "h-5 w-5" : "h-10 w-10"}
+              justify-center flex place-items-center`}
                   >
-                    <img
-                      src={
-                        step === "blow"
-                          ? img1
-                          : step === "fill"
-                          ? fill
-                          : step === "seal"
-                          ? seal
-                          : step === "Injection"
-                          ? injection
-                          : step === "Stretch"
-                          ? stretch
-                          : step === "Blow"
-                          ? blow_small
-                          : step === "Form"
-                          ? form
-                          : step === "Molding"
-                          ? molding
-                          : img1
-                      }
-                      alt={step}
-                    ></img>
+                    {stepItem.img === "blow" ? (
+                      <Icon icon="mdi:air-filter" />
+                    ) : stepItem.img === "fill" ? (
+                      <Icon icon="mdi:format-color-fill" />
+                    ) : stepItem.img === "seal" ? (
+                      <Icon icon="mdi:bottle-soda-outline" />
+                    ) : (
+                      <Icon icon="mdi:air-filter" />
+                    )}
                   </div>
                   <p
                     className={`font-bold text-[#8AA6AA] ${
-                      index === 0
+                      index <= currentStep
                         ? "font-['ClashDisplayBold'] text-[#8AA6AA]"
                         : "text-[#8AA6AA]"
                     }`}
                   >
-                    {step.charAt(0).toUpperCase() + step.slice(1)}
+                    {typeof stepItem === "string"
+                      ? stepItem.charAt(0).toUpperCase() + stepItem.slice(1)
+                      : stepItem.step.charAt(0).toUpperCase() +
+                        stepItem.step.slice(1)}
                   </p>
                   {index < selectedContent.sequence.length - 1 && (
-                    <p className="text-[#8AA6AA] font-bold">━━━</p>
+                    <p className="text-[#8AA6AA] font-bold">━</p>
                   )}
                 </React.Fragment>
               ))}
