@@ -1,9 +1,14 @@
 import logo from "./appli.png";
 import pharma from "./pill.svg"
-import logos from "./logos.svg";
+import logos1 from "./logos1.svg";
 import drop from "./xca.png";
 import drop1 from "./drop1.svg";
 import hand from "./hand.png";
+import pic1 from "./pic1.svg";
+import pic2 from "./pic2.svg";
+import pic3 from "./pic3.svg";
+import pic4 from "./pic4.svg";
+import pic5 from "./pic5.svg";
 import "./Styles12.css";
 import arrow_right from "../src/assets/Home_article/ArrowRight.svg"
 import React from "react";
@@ -19,9 +24,13 @@ import testimonials from "./Testappli2.json";
 import { useState } from "react";
 import Footer from "./components/Common/Footer/Footer";
 import im1 from "./Frame 21441 (1).svg";
-import rt from "./image 8.svg"
+import rt from "./image 8.svg";
+
+import drop10 from "./drop10.svg";
+import aq from "./tyfg.png";
+import dropu from"./vbnm.svg";
 export default function Appli1() {
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedImage, setSelectedImage] = useState('image1');
   const [displayText, setDisplayText] = useState("");
   const showImage = (imageId) => {
    
@@ -43,8 +52,7 @@ export default function Appli1() {
               className="lg:text-3xl md:text-2xl sm:text-xl leading-tight text-[#8AA6AA]  sd"
               color="blue"
             >
-           Our BFS technology can be considered for a user-friendly packaging solution for serums, tonics or gels. The cosmetics will stay fresh and a need to add preservatives will not arise.
-            </h6>{" "}
+           Our technology can be considered for a user-friendly packaging solution for serums, tonics or gels. The cosmetics will stay fresh and a need to add preservatives will not arise. </h6>{" "}
             {/* <br></br> */}
           </span>
           </div>
@@ -56,7 +64,7 @@ export default function Appli1() {
 <div>
             <img
               className="h-106 w-full object-cover object-center poi"
-              src={logos}
+              src={logos1}
               
               alt="nature image"
             />
@@ -107,7 +115,7 @@ export default function Appli1() {
           Gels
         </button>
         <button
-          onClick={() => showImage("image3")}
+          onClick={() => showImage("image4")}
           style={{ marginRight: "4%" }}
         >
           Tonics
@@ -127,7 +135,53 @@ export default function Appli1() {
       >
         {displayText && <p>{displayText}</p>}
         <br></br>
-        <img src={drop} alt="Image 1" />
+        <div className="relative flex klp">
+  {/* Left Image */}
+  <div className="qwea relative flex">
+    <img
+      src={aq}
+      alt="Image 1"
+      className="absolute top-0 left-0 h-37 w-40 z-0"
+    />
+    <img src={pic1} alt="Image 2" className="relative" />
+  </div>
+
+  {/* Right Image */}
+  <div className="qwea relative flex ml-6">
+    <img
+      src={aq}
+      alt="Image 3"
+      className="absolute top-0 h-37 w-40 z-0"
+    />
+    <img src={dropu} alt="Image 4" className="relative" />
+
+    {/* Text inside the dropu image */}
+    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <h1 className="h"
+        style={{
+          color: 'var(--p-v20, #8AA6AA)',
+          fontFamily: 'Clash Display',
+          fontSize: '34px',
+          fontWeight: 500,
+          
+        }}
+      >
+      Creams
+      </h1>
+      <hr></hr><br></br>
+      <p className="j"
+        style={{
+          color: 'var(--p-v20, #8AA6AA)',
+          fontFamily: 'Clash Display',
+          fontSize: '22px',
+          fontStyle: 'normal',
+          fontWeight: 500,
+         
+        }}
+      >
+      Under the list of skin care products, the BFS technology helps you produce containers with the intended amount of cream. As the container’s material is quite soft, these are easily squeezable with a slight pressure.</p>  </div>
+  </div>
+</div>
       </div>
       <div
         className="image-container ml-10 mb-3"
@@ -135,7 +189,54 @@ export default function Appli1() {
         style={{ display: selectedImage === "image2" ? "block" : "none" }}
       >
         {displayText && <p>{displayText}</p>}
-        <br></br><img src={drop} alt="Image 2" />
+        <br></br>    <div className="relative flex klp">
+  {/* Left Image */}
+  <div className="qwea relative flex">
+    <img
+      src={aq}
+      alt="Image 1"
+      className="absolute top-0 left-0 h-37 w-40 z-0"
+    />
+    <img src={pic2} alt="Image 2" className="relative" />
+  </div>
+
+  {/* Right Image */}
+  <div className="qwea relative flex ml-6">
+    <img
+      src={aq}
+      alt="Image 3"
+      className="absolute top-0 h-37 w-40 z-0"
+    />
+    <img src={dropu} alt="Image 4" className="relative" />
+
+    {/* Text inside the dropu image */}
+    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <h1 className="h"
+        style={{
+          color: 'var(--p-v20, #8AA6AA)',
+          fontFamily: 'Clash Display',
+          fontSize: '34px',
+          fontWeight: 500,
+          
+        }}
+      >
+      Serums
+      </h1>
+      <hr></hr><br></br>
+      <p className="j"
+        style={{
+          color: 'var(--p-v20, #8AA6AA)',
+          fontFamily: 'Clash Display',
+          fontSize: '22px',
+          fontStyle: 'normal',
+          fontWeight: 500,
+         
+        }}
+      >
+       Under the list of skin care products, the BFS technology helps you produce containers with the intended amount of cream. As the container’s material is quite soft, these are easily squeezable with a slight pressure. </p>
+    </div>
+  </div>
+</div>
       </div>
       <div
         className="image-container ml-10 mb-3"
@@ -151,7 +252,108 @@ export default function Appli1() {
         style={{ display: selectedImage === "image3" ? "block" : "none" }}
       >
         {displayText && <p>{displayText}</p>}
-        <br></br><img src={drop} alt="Image 4" />
+        <br></br>
+        <div className="relative flex klp">
+  {/* Left Image */}
+  <div className="qwea relative flex">
+    <img
+      src={aq}
+      alt="Image 1"
+      className="absolute top-0 left-0 h-37 w-40 z-0"
+    />
+    <img src={pic3} alt="Image 2" className="relative" />
+  </div>
+
+  {/* Right Image */}
+  <div className="qwea relative flex ml-6">
+    <img
+      src={aq}
+      alt="Image 3"
+      className="absolute top-0 h-37 w-40 z-0"
+    />
+    <img src={dropu} alt="Image 4" className="relative" />
+
+    {/* Text inside the dropu image */}
+    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <h1 className="h"
+        style={{
+          color: 'var(--p-v20, #8AA6AA)',
+          fontFamily: 'Clash Display',
+          fontSize: '34px',
+          fontWeight: 500,
+          
+        }}
+      >
+      Gels
+      </h1>
+      <hr></hr><br></br>
+      <p className="j"
+        style={{
+          color: 'var(--p-v20, #8AA6AA)',
+          fontFamily: 'Clash Display',
+          fontSize: '22px',
+          fontStyle: 'normal',
+          fontWeight: 500,
+         
+        }}
+      >Under the list of skin care products, the BFS technology helps you produce containers with the intended amount of cream. As the container’s material is quite soft, these are easily squeezable with a slight pressure. </p>
+    </div>
+  </div>
+</div>
+      </div>
+      <div
+        className="image-container ml-10 mb-3"
+        id="image4"
+        style={{ display: selectedImage === "image4" ? "block" : "none" }}
+      >
+        {displayText && <p>{displayText}</p>}
+        <br></br>        <div className="relative flex klp">
+  {/* Left Image */}
+  <div className="qwea relative flex">
+    <img
+      src={aq}
+      alt="Image 1"
+      className="absolute top-0 left-0 h-37 w-40 z-0"
+    />
+    <img src={pic4} alt="Image 2" className="relative" />
+  </div>
+
+  {/* Right Image */}
+  <div className="qwea relative flex ml-6">
+    <img
+      src={aq}
+      alt="Image 3"
+      className="absolute top-0 h-37 w-40 z-0"
+    />
+    <img src={dropu} alt="Image 4" className="relative" />
+
+    {/* Text inside the dropu image */}
+    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <h1 className="h"
+        style={{
+          color: 'var(--p-v20, #8AA6AA)',
+          fontFamily: 'Clash Display',
+          fontSize: '34px',
+          fontWeight: 500,
+          
+        }}
+      >
+       Tonics
+      </h1>
+      <hr></hr><br></br>
+      <p className="j"
+        style={{
+          color: 'var(--p-v20, #8AA6AA)',
+          fontFamily: 'Clash Display',
+          fontSize: '22px',
+          fontStyle: 'normal',
+          fontWeight: 500,
+         
+        }}
+      >
+      Under the list of skin care products, the BFS technology helps you produce containers with the intended amount of cream. As the container’s material is quite soft, these are easily squeezable with a slight pressure. </p> </div>
+  </div>
+</div>
       </div>
 
       <br></br>
@@ -183,7 +385,7 @@ export default function Appli1() {
                           <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Lotions </li>     
                           <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Creams </li> 
                           <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Serums </li> 
-                          <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Gels for vaginal or rectal use</li>
+                         
                           <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Shampoos </li>
                           <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Hair Serums </li>
                           <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Conditioners</li>
@@ -194,7 +396,7 @@ export default function Appli1() {
                           <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">biotechnological products</li>  */}
                           </div> <br></br><br></br><br></br>
               {/* <br></br><br></br><br></br><br></br><br></br> */}
-              <img className="h-80 w-48 rounded-lg rounded-md uuu" src={im1} alt="NO image">
+              <img className="h-80 w-48 rounded-lg rounded-md uuu" src={pic5} alt="NO image">
                 
                
               </img>
@@ -219,7 +421,7 @@ export default function Appli1() {
             // 3. flex-[0_0_50%] set the width of each card to 50% of the viewport
             // for mobile devices we use 90% width
             <div key={i} className="flex-[0_0_90%] md:flex-[0_0_23%]">
-              <div className="py-4 px-4 bg-white shadow-lg rounded-lg my-20">
+              <div className="py-4 px-4 bg-white shadow-lg rounded-lg my-20 h-64">
       <div className="flex justify-center md:justify-end -mt-16">
         {/* <Image> */}
           
@@ -271,9 +473,9 @@ export default function Appli1() {
           Regardless of which instance you’re at; a wealth of experience and a plethora of services ensures you to move ahead. Maybe so what we offer:
           </h5>
           </center><br></br>
-          <a class="text-xs  leading-tight mb-4   text-white  tt" href="https://google.com">CONTRACT FILLING -></a><br></br>
-          <a class="text-xs  leading-tight mb-4 text-white  tt" href="https://google.com">PHARMA-SUITE-SERVICE -></a><br></br>
-          <a class="text-xs  leading-tight mb-4  text-white  tt" href="https://google.com">FACTORY PLANNING -></a><br></br>
+          <a class="text-xs  leading-tight mb-4   text-white  tt" href="https://google.com">Product solutions-></a><br></br>
+          <a class="text-xs  leading-tight mb-4 text-white  tt" href="https://google.com">Turnkey solutions -></a><br></br>
+          <a class="text-xs  leading-tight mb-4  text-white  tt" href="https://google.com">Service solutions -></a><br></br>
           <br></br>
           
           </div>

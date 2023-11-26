@@ -1,12 +1,16 @@
 import logo from "./appli.png";
 import pharma from "./pill.svg"
 import logos from "./logos.svg";
-import drop from "./drops.png";
+import drop from "./drop4.svg";
 import drop1 from "./drop1.svg";
 import hand from "./hand.png";
+import aq from "./tyfg.png";
+import phar from "./pharm.svg";
+import dropu from"./vbnm.svg";
 import "./Styles12.css";
 import arrow_right from "../src/assets/Home_article/ArrowRight.svg"
 import React from "react";
+import art from "./ap1.png"; 
 import { firsto } from "./first";
 import { NavbarDefault } from "./Navbar";
 import { Button } from "@material-tailwind/react";
@@ -19,13 +23,20 @@ import testimonials from "./Testappli1.json";
 import { useState } from "react";
 import Footer from "./components/Common/Footer/Footer";
 import im1 from "./Frame 21441.svg";
-import rt from "./image 8.svg"
+import rt from "./image 8.svg";
+
+import drop8 from "./drop8.svg";
+import drop9 from "./drop9.svg";
+import drop10 from "./drop10.svg";
+
+
+
 export default function Appli1() {
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedImage, setSelectedImage] = useState('image1');
   const [displayText, setDisplayText] = useState("");
   const showImage = (imageId) => {
    
-        setDisplayText("Leveraging the BFS technology, can enable you to aseptically fill a wide range of substances right from liquids and ointments to temperature sensitive products. The technology is far more capable of producing sterile single or multi-dose containers. You can certainly trust the BFS technology for secure packaging.");
+        setDisplayText("Leveraging our packaging technologies helps to aseptically fill a wide range of substances right from liquids and ointments to temperature sensitive products. The technology is far more capable of producing sterile single or multi-dose containers. ");
      
     setSelectedImage(imageId);
   };
@@ -43,8 +54,7 @@ export default function Appli1() {
               className="lg:text-3xl md:text-2xl sm:text-xl leading-tight text-[#8AA6AA]  sd"
               color="blue"
             >
-             While we revolutionize the way of filling liquid or semi-liquid products, filling and sealing can take place seamlessly during the process.
-            </h6>{" "}
+            MicroFab revolutionizes pharmaceutical packaging with cutting-edge solutions that prioritize precision, efficiency, and aseptic integrity.</h6>{" "}
             {/* <br></br> */}
           
          
@@ -56,9 +66,9 @@ export default function Appli1() {
 <div>
             <img
               className="h-106 w-full object-cover object-center poi"
-              src={logos}
+              src={phar}
               
-              alt="nature image"
+              alt="nature images"
             />
           </div>
 
@@ -107,7 +117,7 @@ export default function Appli1() {
           Inhalents
         </button>
         <button
-          onClick={() => showImage("image3")}
+          onClick={() => showImage("image4")}
           style={{ marginRight: "4%" }}
         >
           Infusion
@@ -127,7 +137,59 @@ export default function Appli1() {
       >
         {displayText && <p>{displayText}</p>}
         <br></br>
-        <img src={drop} alt="Image 1" />
+       
+        <div className="relative flex klp">
+  {/* Left Image */}
+  <div className="qwea relative flex">
+    <img
+      src={aq}
+      alt="Image 1"
+      className="absolute top-0 left-0 h-37 w-40 z-0"
+    />
+    <img src={drop} alt="Image 2" className="relative" />
+  </div>
+
+  {/* Right Image */}
+  <div className="qwea relative flex ml-6">
+    <img
+      src={aq}
+      alt="Image 3"
+      className="absolute top-0 h-37 w-40 z-0"
+    />
+    <img src={dropu} alt="Image 4" className="relative" />
+
+    {/* Text inside the dropu image */}
+    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <h1 className="h"
+        style={{
+          color: 'var(--p-v20, #8AA6AA)',
+          fontFamily: 'Clash Display',
+          fontSize: '34px',
+          fontWeight: 500,
+          
+        }}
+      >
+       Eye-Drops
+      </h1>
+      <hr></hr><br></br>
+      <p className="j"
+        style={{
+          color: 'var(--p-v20, #8AA6AA)',
+          fontFamily: 'Clash Display',
+          fontSize: '22px',
+          fontStyle: 'normal',
+          fontWeight: 500,
+         
+        }}
+      >
+        Our packaging technologies play a crucial role in ensuring the efficacy and safety of eye-drop products. We offer specialized packaging to maintain their integrity and prevent contamination. </p>
+    </div>
+  </div>
+</div>
+
+
+
+
       </div>
       <div
         className="image-container ml-10 mb-3"
@@ -135,23 +197,164 @@ export default function Appli1() {
         style={{ display: selectedImage === "image2" ? "block" : "none" }}
       >
         {displayText && <p>{displayText}</p>}
-        <br></br><img src={drop} alt="Image 2" />
+        <br></br>        <div className="relative flex klp">
+  {/* Left Image */}
+  <div className="qwea relative flex">
+    <img
+      src={aq}
+      alt="Image 1"
+      className="absolute top-0 left-0 h-37 w-40 z-0"
+    />
+    <img src={drop8} alt="Image 2" className="relative" />
+  </div>
+
+  {/* Right Image */}
+  <div className="qwea relative flex ml-6">
+    <img
+      src={aq}
+      alt="Image 3"
+      className="absolute top-0 h-37 w-40 z-0"
+    />
+    <img src={dropu} alt="Image 4" className="relative" />
+
+    {/* Text inside the dropu image */}
+    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <h1 className="h"
+        style={{
+          color: 'var(--p-v20, #8AA6AA)',
+          fontFamily: 'Clash Display',
+          fontSize: '34px',
+          fontWeight: 500,
+          
+        }}
+      >
+     Prefilled Syringes
+      </h1>
+      <hr></hr><br></br>
+      <p className="j"
+        style={{
+          color: 'var(--p-v20, #8AA6AA)',
+          fontFamily: 'Clash Display',
+          fontSize: '22px',
+          fontStyle: 'normal',
+          fontWeight: 500,
+         
+        }}
+      >
+       The packaging technologies of MicroFab ensure the safety, sterility, and effectiveness of injections. Various aseptic packaging techniques contribute to maintaining the sterility of the injectable product, reducing the risk of contamination during production.</p></div>
+  </div>
+</div>
       </div>
       <div
         className="image-container ml-10 mb-3"
         id="image3"
         style={{ display: selectedImage === "image3" ? "block" : "none" }}
       >
+          {displayText && <p>{displayText}</p>}
+        <br></br> 
+                <div className="relative flex klp">
+  {/* Left Image */}
+  <div className="qwea relative flex">
+    <img
+      src={aq}
+      alt="Image 1"
+      className="absolute top-0 left-0 h-37 w-40 z-0"
+    />
+    <img src={drop9} alt="Image 2" className="relative" />
+  </div>
+
+  {/* Right Image */}
+  <div className="qwea relative flex ml-6">
+    <img
+      src={aq}
+      alt="Image 3"
+      className="absolute top-0 h-37 w-40 z-0"
+    />
+    <img src={dropu} alt="Image 4" className="relative" />
+
+    {/* Text inside the dropu image */}
+    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <h1 className="h"
+        style={{
+          color: 'var(--p-v20, #8AA6AA)',
+          fontFamily: 'Clash Display',
+          fontSize: '34px',
+          fontWeight: 500,
+          
+        }}
+      >
+      Inhalants
+      </h1>
+      <hr></hr><br></br>
+      <p className="j"
+        style={{
+          color: 'var(--p-v20, #8AA6AA)',
+          fontFamily: 'Clash Display',
+          fontSize: '22px',
+          fontStyle: 'normal',
+          fontWeight: 500,
+         
+        }}
+      >
+      With our packaging technologies, the inhalants don’t lose their strength. The stability is also preserved because the innovations protect the contents from environmental factors such as moisture, and light. </p> </div>
+  </div>
+</div>
         {/* {displayText && <p>{displayText}</p>}
         <img src={drop} alt="Image 3" /> */}
       </div>
       <div
         className="image-container ml-10 mb-3"
-        id="image3"
-        style={{ display: selectedImage === "image3" ? "block" : "none" }}
+        id="image4"
+        style={{ display: selectedImage === "image4" ? "block" : "none" }}
       >
         {displayText && <p>{displayText}</p>}
-        <br></br><img src={drop} alt="Image 4" />
+        <br></br>        <div className="relative flex klp">
+  {/* Left Image */}
+  <div className="qwea relative flex">
+    <img
+      src={aq}
+      alt="Image 1"
+      className="absolute top-0 left-0 h-37 w-40 z-0"
+    />
+    <img src={drop10} alt="Image 2" className="relative" />
+  </div>
+
+  {/* Right Image */}
+  <div className="qwea relative flex ml-6">
+    <img
+      src={aq}
+      alt="Image 3"
+      className="absolute top-0 h-37 w-40 z-0"
+    />
+    <img src={dropu} alt="Image 4" className="relative" />
+
+    {/* Text inside the dropu image */}
+    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <h1 className="h"
+        style={{
+          color: 'var(--p-v20, #8AA6AA)',
+          fontFamily: 'Clash Display',
+          fontSize: '34px',
+          fontWeight: 500,
+          
+        }}
+      >
+       Infusion
+      </h1>
+      <hr></hr><br></br>
+      <p className="j"
+        style={{
+          color: 'var(--p-v20, #8AA6AA)',
+          fontFamily: 'Clash Display',
+          fontSize: '22px',
+          fontStyle: 'normal',
+          fontWeight: 500,
+         
+        }}
+      >
+        With our packaging technologies, the inhalants don’t lose their strength. The stability is also preserved because the innovations protect the contents from environmental factors such as moisture, and light. </p> </div>
+  </div>
+</div>
       </div>
 
       <br></br>
@@ -175,26 +378,26 @@ export default function Appli1() {
 
 <p className="mb-6 w-full pb-8 text-5xl leading-tight text-[#8AA6AA] kkk">
                 
-<strong>Unlocking Optimal Results: Blow-Fill-Seal for Various Applications</strong></p>
+<strong>Use of our packaging machines for different Applications</strong></p>
 <div className="flex flex-col rounded-lg bg-white md:max-w-10xl md:flex-row mm">
 
-              <div className="flex flex-col p-6 vbn">
+              <div className="flex flex-col p-6 vbnn">
                <br></br>
-                          <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Ear drops</li>     
-                          <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Nose drops</li> 
-                          <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Contact lens cleaners and rinses</li> 
-                          <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Gels for vaginal or rectal use</li>
-                          <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Drinking solutions</li>
-                          <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Wound care preparations, wound gels and rinses</li>
-                          <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Diagnostics</li>
+                          <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Vaccines </li>     
+                          <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Sterile Water </li> 
+                          <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Blood Products  </li> 
+                          <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Stability Test Kits  </li>
+                          {/* <li className=" w-full text-2xl leading-tight text-[#8AA6AA]"></li> */}
+                          <li className=" w-full text-2xl leading-tight text-[#8AA6AA]"> Temperature sensitive substances</li>
+                          {/* <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Diagnostics</li>
                           <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Biotechnological products</li> 
                           <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Vaccines</li> 
                           <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Stability Test Kits</li> 
                           <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Temperature Sensitive Products Antibodies</li> 
-                          <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Antibodies & Blood Products</li>
+                          <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Antibodies & Blood Products</li> */}
                           </div> <br></br><br></br><br></br>
               {/* <br></br><br></br><br></br><br></br><br></br> */}
-              <img className="h-96 w-48 rounded-lg rounded-md uuu" src={im1} alt="NO image">
+              <img className="h-96 w-48 rounded-lg rounded-md uuu mr-24" src={art} alt="NO image">
                 
                
               </img>
@@ -219,7 +422,7 @@ export default function Appli1() {
             // 3. flex-[0_0_50%] set the width of each card to 50% of the viewport
             // for mobile devices we use 90% width
             <div key={i} className="flex-[0_0_90%] md:flex-[0_0_23%]">
-              <div className="py-4 px-4 bg-white shadow-lg rounded-lg my-20">
+              <div className="py-4 px-4 bg-white shadow-lg rounded-lg my-20 h-64">
       <div className="flex justify-center md:justify-end -mt-16">
         {/* <Image> */}
           
@@ -271,9 +474,9 @@ export default function Appli1() {
           Regardless of which instance you’re at; a wealth of experience and a plethora of services ensures you to move ahead. Maybe so what we offer:
           </h5>
           </center><br></br>
-          <a class="text-xs  leading-tight mb-4   text-white  tt" href="https://google.com">CONTRACT FILLING -></a><br></br>
-          <a class="text-xs  leading-tight mb-4 text-white  tt" href="https://google.com">PHARMA-SUITE-SERVICE -></a><br></br>
-          <a class="text-xs  leading-tight mb-4  text-white  tt" href="https://google.com">FACTORY PLANNING -></a><br></br>
+          <a class="text-xs  leading-tight mb-4   text-white  tt" href="https://google.com">Product solutions-></a><br></br>
+          <a class="text-xs  leading-tight mb-4 text-white  tt" href="https://google.com">Turnkey solutions -></a><br></br>
+          <a class="text-xs  leading-tight mb-4  text-white  tt" href="https://google.com">Service solutions -></a><br></br>
           <br></br>
           
           </div>

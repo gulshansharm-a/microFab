@@ -197,10 +197,10 @@ const Header = () => {
             </Link>
 
             <Link
-              to="#services"
+              to="/service"
               onClick={toggleMenu}
               className={`${
-                location.pathname === "/TP"
+                location.pathname === "/services"
                   ? "font-extrabold border-b-2 border-black "
                   : ""
               }`}

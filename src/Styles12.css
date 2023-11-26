@@ -12,7 +12,52 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.h{
+  position:relative;
+  left:20%;
+  top:-20%;
+}
+.j{
+margin-top:20%;
+margin: 0 -30%;
+}
+/* @media screen and (min-width: 1200px) and (max-width: 1350px) {
+.qwea{
+  height:10%;
+  width:10%;
+  z-index:-1;
+  position:absolute;
+  top:1266px;
+  left:4%;
+  /* margin-top:-15%; */
 
+@media screen and (min-width: 650px) and (max-width: 1100px) {
+  .qwea{
+    height:5%;
+    width:5%;
+    z-index:-1;
+    position:absolute;
+    top:444%;
+    left:4%;
+    /* margin-top:-15%; */
+  }
+}
+/* }
+@media screen and (min-width: 1200px) and (max-width: 1350px) {
+  .qwea{
+    height:10vh;
+    width:10vh;
+    z-index:-1;
+    position:absolute;
+    top:1266px;
+    left:4%;
+    /* margin-top:-15%; */
+  
+
+    .klp{
+      margin:2%;
+    }
+ 
 .Application-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -178,7 +223,7 @@ button:hover{
   /* margin-right:15%;
   margin-top:10%;width:110%; */
   position:relative;
-  left:-45%;
+  left:-55%;
   top:40%;
 }
 .vbnn{
@@ -210,7 +255,7 @@ width:90%;  position:relative;
   left:-68%;
 } */
 .poi{
-  margin-top:-15%;
+  margin-top:-10%;
 }
 @media only screen and (max-width: 900px) {
   /* .sd {

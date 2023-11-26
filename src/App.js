@@ -67,6 +67,7 @@ function AppContent() {
         <Route path="/technology" element={<Technology />} />
         <Route path="/turnKeySolutions" element={<TurnKeySolutions />} />
         <Route path="/service" element={<Service />} />
+        <Route path="/services" element={<Service />} />
         <Route path="/product" element={<Product />} />
         <Route path="/applications/pharmaceutical" element={<Appli1 />} />
         <Route path="/applications/cosmic" element={<Appli2 />} />
