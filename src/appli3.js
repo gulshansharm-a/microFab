@@ -5,6 +5,8 @@ import drop from "./aqws.png";
 import drop1 from "./drop1.svg";
 import hand from "./hand.png";
 import "./Styles12.css";
+import aq from "./tyfg.png";
+import dropu from"./vbnm.svg";
 import arrow_right from "../src/assets/Home_article/ArrowRight.svg"
 import React from "react";
 import { firsto } from "./first";
@@ -18,14 +20,22 @@ import Slider from "./slider";
 import testimonials from "./Testappli2.json";
 import { useState } from "react";
 import Footer from "./components/Common/Footer/Footer";
-import im1 from "./Frame 21441 (2).svg";
-import rt from "./image 8.svg"
+import im1 from "./image 54-PhotoRoom 1.svg";
+import rt from "./image 8.svg";
+
+
+import logos56 from "./Rectangle 6224-PhotoRoom 1.svg";
+import pic11 from "./pic11.svg";
+import pic12 from "./pic12.svg";
+import pic13 from "./pic13.svg";
+import pic14 from "./pic14.svg";
+
 export default function Appli3() {
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedImage, setSelectedImage] = useState('image1');
   const [displayText, setDisplayText] = useState("");
   const showImage = (imageId) => {
    
-        setDisplayText("With the Blow-Fill-Seal Technology, you have many possibilities matching the desired quantity of the content. Eventually, you are sure to present an incomparable design.");
+        setDisplayText("Our packaging technologies are instrumental in transforming the packaging of food products. While these technologies ensure seamless creation of packaging, they safeguard the freshness and quality of perishable food items.");
      
     setSelectedImage(imageId);
   };
@@ -35,7 +45,7 @@ export default function Appli3() {
       <div>
         <span className="qaz">
         <div className="qa">
-          <h3 className="mb-6 w-full pb-8 lg:text-7xl md: text-5xl sm:text-3xl leading-tight text-[#8AA6AA]  df"><strong>
+          <h3 className="mb-6 w-full pb-8 lg:text-6xl md: text-4xl sm:text-3xl leading-tight text-[#8AA6AA]  df"><strong>
           Packaging Solutions for the Food Industry</strong>
           </h3>
           <span>
@@ -43,7 +53,7 @@ export default function Appli3() {
               className="lg:text-3xl md:text-2xl sm:text-xl leading-tight text-[#8AA6AA]  sd"
               color="blue"
             >
-          Fill beverages and thirst quenchers effectively with the BFS technology. You will also be pleased with the unique packaging solution that makes the product distinct.
+         MicroFab transforms the realm of food packaging with its solutions designed to preserve freshness, ensure safety, and enhance convenience. Our technologies cater to the unique needs, offering precision and innovation.
             </h6>{" "}
             {/* <br></br> */}
           </span>
@@ -56,7 +66,7 @@ export default function Appli3() {
 <div>
             <img
               className="h-106 w-full object-cover object-center poi"
-              src={logos}
+              src={logos56}
               
               alt="nature image"
             />
@@ -91,7 +101,7 @@ export default function Appli3() {
           onClick={() => showImage("image1")}
           style={{ marginRight: "4%" }}
         >
-          Dairy-Products
+          Flavoured Milk
         </button>
         <button
           onClick={() => showImage("image2")}
@@ -107,7 +117,7 @@ export default function Appli3() {
           Fruit Juices
         </button>
         <button
-          onClick={() => showImage("image3")}
+          onClick={() => showImage("image4")}
           style={{ marginRight: "4%" }}
         >
           Flavoured Syrups 
@@ -127,7 +137,53 @@ export default function Appli3() {
       >
         {displayText && <p>{displayText}</p>}
         <br></br>
-        <img src={drop} alt="Image 1" />
+        <div className="relative flex klp">
+  {/* Left Image */}
+  <div className="qwea relative flex">
+    <img
+      src={aq}
+      alt="Image 1"
+      className="absolute top-0 left-0 h-37 w-40 z-0"
+    />
+    <img src={pic11} alt="Image 2" className="relative" />
+  </div>
+
+  {/* Right Image */}
+  <div className="qwea relative flex ml-6">
+    <img
+      src={aq}
+      alt="Image 3"
+      className="absolute top-0 h-37 w-40 z-0"
+    />
+    <img src={dropu} alt="Image 4" className="relative" />
+
+    {/* Text inside the dropu image */}
+    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <h1 className="h"
+        style={{
+          color: 'var(--p-v20, #8AA6AA)',
+          fontFamily: 'Clash Display',
+          fontSize: '34px',
+          fontWeight: 500,
+          
+        }}
+      >
+      Flavoured Milk
+      </h1>
+      <hr></hr><br></br>
+      <p className="j"
+        style={{
+          color: 'var(--p-v20, #8AA6AA)',
+          fontFamily: 'Clash Display',
+          fontSize: '22px',
+          fontStyle: 'normal',
+          fontWeight: 500,
+         
+        }}
+      >The BFS technology enables you to create a unique packaging for dairy products like milk,  and yogurt. With the use of the same mold, you can produce different containers.</p>
+    </div>
+  </div>
+</div>
       </div>
       <div
         className="image-container ml-10 mb-3"
@@ -135,7 +191,53 @@ export default function Appli3() {
         style={{ display: selectedImage === "image2" ? "block" : "none" }}
       >
         {displayText && <p>{displayText}</p>}
-        <br></br><img src={drop} alt="Image 2" />
+        <br></br>       <div className="relative flex klp">
+  {/* Left Image */}
+  <div className="qwea relative flex">
+    <img
+      src={aq}
+      alt="Image 1"
+      className="absolute top-0 left-0 h-37 w-40 z-0"
+    />
+    <img src={pic12} alt="Image 2" className="relative" />
+  </div>
+
+  {/* Right Image */}
+  <div className="qwea relative flex ml-6">
+    <img
+      src={aq}
+      alt="Image 3"
+      className="absolute top-0 h-37 w-40 z-0"
+    />
+    <img src={dropu} alt="Image 4" className="relative" />
+
+    {/* Text inside the dropu image */}
+    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <h1 className="h"
+        style={{
+          color: 'var(--p-v20, #8AA6AA)',
+          fontFamily: 'Clash Display',
+          fontSize: '34px',
+          fontWeight: 500,
+          
+        }}
+      >
+      Sauces & Condiments
+      </h1>
+      <hr></hr><br></br>
+      <p className="j"
+        style={{
+          color: 'var(--p-v20, #8AA6AA)',
+          fontFamily: 'Clash Display',
+          fontSize: '22px',
+          fontStyle: 'normal',
+          fontWeight: 500,
+         
+        }}
+      >The BFS technology enables you to create a unique packaging for dairy products like milk,  and yogurt. With the use of the same mold, you can produce different containers. </p>
+    </div>
+  </div>
+</div>
       </div>
       <div
         className="image-container ml-10 mb-3"
@@ -151,9 +253,109 @@ export default function Appli3() {
         style={{ display: selectedImage === "image3" ? "block" : "none" }}
       >
         {displayText && <p>{displayText}</p>}
-        <br></br><img src={drop} alt="Image 4" />
+        <br></br>       <div className="relative flex klp">
+  {/* Left Image */}
+  <div className="qwea relative flex">
+    <img
+      src={aq}
+      alt="Image 1"
+      className="absolute top-0 left-0 h-37 w-40 z-0"
+    />
+    <img src={pic13} alt="Image 2" className="relative" />
+  </div>
+
+  {/* Right Image */}
+  <div className="qwea relative flex ml-6">
+    <img
+      src={aq}
+      alt="Image 3"
+      className="absolute top-0 h-37 w-40 z-0"
+    />
+    <img src={dropu} alt="Image 4" className="relative" />
+
+    {/* Text inside the dropu image */}
+    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <h1 className="h"
+        style={{
+          color: 'var(--p-v20, #8AA6AA)',
+          fontFamily: 'Clash Display',
+          fontSize: '34px',
+          fontWeight: 500,
+          
+        }}
+      >
+      Fruit Juices
+      </h1>
+      <hr></hr><br></br>
+      <p className="j"
+        style={{
+          color: 'var(--p-v20, #8AA6AA)',
+          fontFamily: 'Clash Display',
+          fontSize: '22px',
+          fontStyle: 'normal',
+          fontWeight: 500,
+         
+        }}
+      >The BFS technology enables you to create a unique packaging for dairy products like milk,  and yogurt. With the use of the same mold, you can produce different containers. </p>
+    </div>
+  </div>
+</div>
       </div>
 
+      <div
+        className="image-container ml-10 mb-3"
+        id="image4"
+        style={{ display: selectedImage === "image4" ? "block" : "none" }}
+      >
+        {displayText && <p>{displayText}</p>}
+        <br></br>       <div className="relative flex klp">
+  {/* Left Image */}
+  <div className="qwea relative flex">
+    <img
+      src={aq}
+      alt="Image 1"
+      className="absolute top-0 left-0 h-37 w-40 z-0"
+    />
+    <img src={pic14} alt="Image 2" className="relative" />
+  </div>
+
+  {/* Right Image */}
+  <div className="qwea relative flex ml-6">
+    <img
+      src={aq}
+      alt="Image 3"
+      className="absolute top-0 h-37 w-40 z-0"
+    />
+    <img src={dropu} alt="Image 4" className="relative" />
+
+    {/* Text inside the dropu image */}
+    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <h1 className="h"
+        style={{
+          color: 'var(--p-v20, #8AA6AA)',
+          fontFamily: 'Clash Display',
+          fontSize: '34px',
+          fontWeight: 500,
+          
+        }}
+      >
+      Flavoured Syrups
+      </h1>
+      <hr></hr><br></br>
+      <p className="j"
+        style={{
+          color: 'var(--p-v20, #8AA6AA)',
+          fontFamily: 'Clash Display',
+          fontSize: '22px',
+          fontStyle: 'normal',
+          fontWeight: 500,
+         
+        }}
+      >The BFS technology enables you to create a unique packaging for dairy products like milk,  and yogurt. With the use of the same mold, you can produce different containers.</p>
+    </div>
+  </div>
+</div>
+      </div>
       <br></br>
       {/* <div> <h6 className="text-1xl leading-tight text-black" color="blue">"Unleashing the Power of BFS Technology: Aseptic Filling, Sterile Containers, and Unbreakable Packaging in a Single Step!"</h6><br></br>
         </div> */}
@@ -219,7 +421,7 @@ export default function Appli3() {
             // 3. flex-[0_0_50%] set the width of each card to 50% of the viewport
             // for mobile devices we use 90% width
             <div key={i} className="flex-[0_0_90%] md:flex-[0_0_23%]">
-              <div className="py-4 px-4 bg-white shadow-lg rounded-lg my-20">
+              <div className="py-4 px-4 bg-white shadow-lg rounded-lg my-20 h-64">
       <div className="flex justify-center md:justify-end -mt-16">
         {/* <Image> */}
           
@@ -271,9 +473,9 @@ export default function Appli3() {
           Regardless of which instance you’re at; a wealth of experience and a plethora of services ensures you to move ahead. Maybe so what we offer:
           </h5>
           </center><br></br>
-          <a class="text-xs  leading-tight mb-4   text-white  tt" href="https://google.com">CONTRACT FILLING -></a><br></br>
-          <a class="text-xs  leading-tight mb-4 text-white  tt" href="https://google.com">PHARMA-SUITE-SERVICE -></a><br></br>
-          <a class="text-xs  leading-tight mb-4  text-white  tt" href="https://google.com">FACTORY PLANNING -></a><br></br>
+          <a class="text-xs  leading-tight mb-4   text-white  tt" href="https://google.com">Product solutions-></a><br></br>
+          <a class="text-xs  leading-tight mb-4 text-white  tt" href="https://google.com">Turnkey solutions -></a><br></br>
+          <a class="text-xs  leading-tight mb-4  text-white  tt" href="https://google.com">Service solutions -></a><br></br>
           <br></br>
           
           </div>

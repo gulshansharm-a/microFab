@@ -1,6 +1,6 @@
 import logo from "./appli.png";
 import pharma from "./pill.svg"
-import logos from "./logos.svg";
+import logos from "./logos56.svg";
 import drop from "./drops.png";
 import drop1 from "./drop1.svg";
 import hand from "./hand.png";
@@ -18,10 +18,19 @@ import Slider from "./slider";
 import testimonials from "./Testappli1.json";
 import { useState } from "react";
 import Footer from "./components/Common/Footer/Footer";
-import im1 from "./Frame 21441 (3).svg";
-import rt from "./image 8.svg"
+import im1 from "./image 50.svg";
+import rt from "./image 8.svg";
+
+
+import aq from "./tyfg.png";
+import dropu from"./vbnm.svg";
+import pic11 from "./pics21.svg";
+import pic12 from "./pics22.svg";
+import pic13 from "./pics23.svg";
+import pic14 from "./pics24.svg";
+
 export default function Appli4() {
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedImage, setSelectedImage] = useState('image1');
   const [displayText, setDisplayText] = useState("");
   const showImage = (imageId) => {
    
@@ -35,7 +44,7 @@ export default function Appli4() {
       <div>
         <span className="qaz">
         <div className="qa">
-          <h3 className="mb-6 w-full pb-8 lg:text-7xl md: text-5xl sm:text-3xl leading-tight text-[#8AA6AA]  df"><strong>
+          <h3 className="mb-6 w-full pb-8 lg:text-6xl md: text-4xl sm:text-3xl leading-tight text-[#8AA6AA]  df"><strong>
           Packaging solutions for the Chemical Industry</strong>
           </h3>
           <span>
@@ -43,8 +52,7 @@ export default function Appli4() {
               className="lg:text-3xl md:text-2xl sm:text-xl leading-tight text-[#8AA6AA]  sd"
               color="blue"
             >
-             Regardless of what it might be; chemicals, pesticides or lubricants, our BFS technology enables you to fill the intended amount with an optimal design in mind.
-             </h6>{" "}
+            MicroFab stands at the forefront of innovation, redefining packaging solutions for the cosmetics industry. Our cutting-edge technologies ensure quality maintenance of cosmetic formulations.</h6>{" "}
             {/* <br></br> */}
           </span>
           </div>
@@ -107,7 +115,7 @@ export default function Appli4() {
           Insecticides
         </button>
         <button
-          onClick={() => showImage("image3")}
+          onClick={() => showImage("image4")}
           style={{ marginRight: "4%" }}
         >
           Chemicals
@@ -127,7 +135,53 @@ export default function Appli4() {
       >
         {displayText && <p>{displayText}</p>}
         <br></br>
-        <img src={drop} alt="Image 1" />
+        <div className="relative flex klp">
+  {/* Left Image */}
+  <div className="qwea relative flex">
+    <img
+      src={aq}
+      alt="Image 1"
+      className="absolute top-0 left-0 h-37 w-40 z-0"
+    />
+    <img src={pic11} alt="Image 2" className="relative" />
+  </div>
+
+  {/* Right Image */}
+  <div className="qwea relative flex ml-6">
+    <img
+      src={aq}
+      alt="Image 3"
+      className="absolute top-0 h-37 w-40 z-0"
+    />
+    <img src={dropu} alt="Image 4" className="relative" />
+
+    {/* Text inside the dropu image */}
+    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <h1 className="h"
+        style={{
+          color: 'var(--p-v20, #8AA6AA)',
+          fontFamily: 'Clash Display',
+          fontSize: '34px',
+          fontWeight: 500,
+          
+        }}
+      >
+      Additives
+      </h1>
+      <hr></hr><br></br>
+      <p className="j"
+        style={{
+          color: 'var(--p-v20, #8AA6AA)',
+          fontFamily: 'Clash Display',
+          fontSize: '22px',
+          fontStyle: 'normal',
+          fontWeight: 500,
+         
+        }}
+      >MicroFab’s technologies can be employed for packaging additives which are used in different industrial processes. The aseptic packaging ensures the purity of these chemicals, especially in applications where precise dosage and quality control are essential.</p>
+    </div>
+  </div>
+</div>
       </div>
       <div
         className="image-container ml-10 mb-3"
@@ -135,7 +189,53 @@ export default function Appli4() {
         style={{ display: selectedImage === "image2" ? "block" : "none" }}
       >
         {displayText && <p>{displayText}</p>}
-        <br></br><img src={drop} alt="Image 2" />
+        <br></br>        <div className="relative flex klp">
+  {/* Left Image */}
+  <div className="qwea relative flex">
+    <img
+      src={aq}
+      alt="Image 1"
+      className="absolute top-0 left-0 h-37 w-40 z-0"
+    />
+    <img src={pic12} alt="Image 2" className="relative" />
+  </div>
+
+  {/* Right Image */}
+  <div className="qwea relative flex ml-6">
+    <img
+      src={aq}
+      alt="Image 3"
+      className="absolute top-0 h-37 w-40 z-0"
+    />
+    <img src={dropu} alt="Image 4" className="relative" />
+
+    {/* Text inside the dropu image */}
+    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <h1 className="h"
+        style={{
+          color: 'var(--p-v20, #8AA6AA)',
+          fontFamily: 'Clash Display',
+          fontSize: '34px',
+          fontWeight: 500,
+          
+        }}
+      >
+      Liquid Adhesives
+      </h1>
+      <hr></hr><br></br>
+      <p className="j"
+        style={{
+          color: 'var(--p-v20, #8AA6AA)',
+          fontFamily: 'Clash Display',
+          fontSize: '22px',
+          fontStyle: 'normal',
+          fontWeight: 500,
+         
+        }}
+      >By embracing our technologies, MicroFab delivers packaging solutions that go beyond containment, addressing the unique requirements of liquid adhesives. These technologies showcase our commitment to precision, ensuring that liquid adhesives are delivered to end-users with uncompromised quality.</p>
+    </div>
+  </div>
+</div>
       </div>
       <div
         className="image-container ml-10 mb-3"
@@ -151,7 +251,107 @@ export default function Appli4() {
         style={{ display: selectedImage === "image3" ? "block" : "none" }}
       >
         {displayText && <p>{displayText}</p>}
-        <br></br><img src={drop} alt="Image 4" />
+        <br></br>        <div className="relative flex klp">
+  {/* Left Image */}
+  <div className="qwea relative flex">
+    <img
+      src={aq}
+      alt="Image 1"
+      className="absolute top-0 left-0 h-37 w-40 z-0"
+    />
+    <img src={pic13} alt="Image 2" className="relative" />
+  </div>
+
+  {/* Right Image */}
+  <div className="qwea relative flex ml-6">
+    <img
+      src={aq}
+      alt="Image 3"
+      className="absolute top-0 h-37 w-40 z-0"
+    />
+    <img src={dropu} alt="Image 4" className="relative" />
+
+    {/* Text inside the dropu image */}
+    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <h1 className="h"
+        style={{
+          color: 'var(--p-v20, #8AA6AA)',
+          fontFamily: 'Clash Display',
+          fontSize: '34px',
+          fontWeight: 500,
+          
+        }}
+      >
+     Insecticides
+      </h1>
+      <hr></hr><br></br>
+      <p className="j"
+        style={{
+          color: 'var(--p-v20, #8AA6AA)',
+          fontFamily: 'Clash Display',
+          fontSize: '22px',
+          fontStyle: 'normal',
+          fontWeight: 500,
+         
+        }}
+      >MicroFab's implementation of packaging technologies prevents contamination, safeguards the potency of insecticides, and enhances shelf life. These technologies contribute to a seamless user experience, showcasing our dedication in chemical packaging.</p>
+    </div>
+  </div>
+</div>
+      </div>
+      <div
+        className="image-container ml-10 mb-3"
+        id="image4"
+        style={{ display: selectedImage === "image4" ? "block" : "none" }}
+      >
+        {displayText && <p>{displayText}</p>}
+        <br></br>       <div className="relative flex klp">
+  {/* Left Image */}
+  <div className="qwea relative flex">
+    <img
+      src={aq}
+      alt="Image 1"
+      className="absolute top-0 left-0 h-37 w-40 z-0"
+    />
+    <img src={pic14} alt="Image 2" className="relative" />
+  </div>
+
+  {/* Right Image */}
+  <div className="qwea relative flex ml-6">
+    <img
+      src={aq}
+      alt="Image 3"
+      className="absolute top-0 h-37 w-40 z-0"
+    />
+    <img src={dropu} alt="Image 4" className="relative" />
+
+    {/* Text inside the dropu image */}
+    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <h1 className="h"
+        style={{
+          color: 'var(--p-v20, #8AA6AA)',
+          fontFamily: 'Clash Display',
+          fontSize: '34px',
+          fontWeight: 500,
+          
+        }}
+      >
+      Chemicals
+      </h1>
+      <hr></hr><br></br>
+      <p className="j"
+        style={{
+          color: 'var(--p-v20, #8AA6AA)',
+          fontFamily: 'Clash Display',
+          fontSize: '22px',
+          fontStyle: 'normal',
+          fontWeight: 500,
+         
+        }}
+      >MicroFab's cutting-edge technologies redefine chemical packaging, ensuring optimal safety, efficiency, and product preservation. The lightweight design of containers also align with sustainability goals, mitigating the impact on the environment.</p>
+    </div>
+  </div>
+</div>
       </div>
 
       <br></br>
@@ -182,7 +382,7 @@ export default function Appli4() {
                <br></br>
                           <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Antiseptics</li>     
                           <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Disinfectants</li> 
-                          <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Cassettes For Sterilisers</li> 
+                        
                           <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Pest Control Chemicals</li>
                           
                           </div> <br></br><br></br><br></br>
@@ -212,7 +412,7 @@ export default function Appli4() {
             // 3. flex-[0_0_50%] set the width of each card to 50% of the viewport
             // for mobile devices we use 90% width
             <div key={i} className="flex-[0_0_90%] md:flex-[0_0_23%]">
-              <div className="py-4 px-4 bg-white shadow-lg rounded-lg my-20">
+              <div className="py-4 px-4 bg-white shadow-lg rounded-lg my-20 h-64">
       <div className="flex justify-center md:justify-end -mt-16">
         {/* <Image> */}
           
@@ -264,9 +464,9 @@ export default function Appli4() {
           Regardless of which instance you’re at; a wealth of experience and a plethora of services ensures you to move ahead. Maybe so what we offer:
           </h5>
           </center><br></br>
-          <a class="text-xs  leading-tight mb-4   text-white  tt" href="https://google.com">CONTRACT FILLING -></a><br></br>
-          <a class="text-xs  leading-tight mb-4 text-white  tt" href="https://google.com">PHARMA-SUITE-SERVICE -></a><br></br>
-          <a class="text-xs  leading-tight mb-4  text-white  tt" href="https://google.com">FACTORY PLANNING -></a><br></br>
+          <a class="text-xs  leading-tight mb-4   text-white  tt" href="https://google.com">Product solutions-></a><br></br>
+          <a class="text-xs  leading-tight mb-4 text-white  tt" href="https://google.com">Turnkey solutions -></a><br></br>
+          <a class="text-xs  leading-tight mb-4  text-white  tt" href="https://google.com">Service solutions -></a><br></br>
           <br></br>
           
           </div>

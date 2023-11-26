@@ -113,10 +113,10 @@ function AboutUs() {
               {/* </center> */}
 
               <div className="flex flex-col p-6 text-white bg-[#8AA6AA] kmk">
-                <h5 className="mb-4 text-3xl leading-tight text-white bg-[#8AA6AA]">
+                <h5 className="mb-4 text-5xl leading-tight text-white bg-[#8AA6AA]">
                   Our Beliefs
                 </h5>
-                <p className="mb-4 text-xs  text-white bg-[#8AA6AA]">
+                <p className="mb-4 text-xl  text-white bg-[#8AA6AA]">
                   {" "}
                   With our comprehensive approach that includes incorporation of
                   packaging technologies, installation, and maintenance, we help
@@ -308,7 +308,7 @@ function AboutUs() {
               <h5 className="mb-2 text-3xl leading-tight text-black vb">FAQ</h5>
             </p>
             <br></br>
-            <FaqItem
+            <br></br><FaqItem
           question="What is Lorem Ipsum?"
           answer="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
         />
@@ -335,42 +335,42 @@ function AboutUs() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit?
             </p> */}
           <div className="cv pl-[100px] pr-[10px]">
-            <FaqItem
+            <br></br><FaqItem
               question="What is BFS and FFS Technology, and how does It work? "
               answers={[
                 "Blow-Fill-Seal (BFS) and Form-Fill-Seal (FFS) technologies are advanced manufacturing processes for aseptic packaging. BFS involves forming a container, filling it with the product, and sealing it in one continuous operation. FFS, on the other hand, is a broader term encompassing various methods of forming and filling containers before sealing.",
               ]}
               initiallyOpen={true}
             />
-            <FaqItem
+            <br></br><FaqItem
               question="How energy-efficient are your BFS and FFS machines? "
               answers={[
                 "We prioritize energy efficiency in our machine designs. Our systems incorporate advanced technologies to minimize energy consumption, contributing to both cost savings and environmental sustainability.",
               ]}
               initiallyOpen={true}
             />
-            <FaqItem
+            <br></br><FaqItem
               question="What sets your BFS and FFS machines apart from others in the market?"
               answers={[
                 "Our machines stand out due to their state-of-the-art technology, customizable features, and a commitment to precision and reliability. We prioritize innovation to ensure our clients have a competitive edge in their respective industries.",
               ]}
               initiallyOpen={true}
             />
-            <FaqItem
+            <br></br><FaqItem
               question="Can your machines be customized for specific production needs? "
               answers={[
                 "Yes, we offer customization options to tailor our machines to the unique production requirements of our clients. Our engineering team works closely with clients to understand their needs and deliver bespoke solutions.",
               ]}
               initiallyOpen={true}
             />
-            <FaqItem
+            <br></br><FaqItem
               question="Do you provide turnkey solutions for BFS and FFS projects? "
               answers={[
                 "Absolutely. We provide comprehensive turnkey solutions, from initial design and manufacturing to installation and ongoing support. Our turnkey approach ensures a seamless and efficient process for our clients.",
               ]}
               initiallyOpen={true}
             />
-            <FaqItem
+            <br></br><FaqItem
               question="What quality control measures are implemented in your manufacturing process?"
               answers={[
                 "Our manufacturing process adheres to rigorous quality control standards. We implement thorough testing and inspection protocols at every stage to guarantee the highest quality and performance of our BFS and FFS machines..",
