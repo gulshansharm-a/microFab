@@ -42,8 +42,8 @@ export default function GetinTouchWithUs() {
               <img src={business} alt="office" className=""></img>
               <p className="md:text-[26px] text-[#8AA6AA]">Open Hours</p>
             </div>
-            <p className="md:text-[14px] text-left">Monday - Friday</p>
-            <p className="md:text-[14px] text-left">9AM - 6 PM</p>
+            <p className="md:text-[14px] text-left">Monday - Saturday</p>
+            <p className="md:text-[14px] text-left">9 AM -  6:30 PM</p>
           </div>
         </div>
         <div className="flex md:flex-row md:justify-start flex-col gap-6">
@@ -53,7 +53,7 @@ export default function GetinTouchWithUs() {
               <img src={contact} alt="office" className=""></img>
               <p className="md:text-[26px] text-[#8AA6AA]">Contact</p>
             </div>
-            <p className="md:text-[14px] text-left"> +91 98201 47512</p>
+            <p className="md:text-[14px] text-left">  +91 9323012344</p>
           </div>
 
           {/* email */}

@@ -64,8 +64,8 @@ export default function Footer() {
                   <a href="/turnKeySolutions">Turnkey Solutions</a>
                   <a href="/service">Service Solutions</a>
                   
-                  <a href="">Application</a>
-                  <a href="">About Us</a>
+                  <a href="/applications/pharmaceutical">Application</a>
+                  <a href="/about">About Us</a>
                 </div>
                 <div className="flex flex-col gap-5">
                   <a href="/articlesList">Article and Blogs</a>

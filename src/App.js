@@ -65,10 +65,10 @@ function AppContent() {
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Home />} /> 
         <Route path="/technology" element={<Technology />} />
-        <Route path="/turnKeySolutions" element={<TurnKeySolutions />} />
-        <Route path="/service" element={<Service />} />
-        <Route path="/services" element={<Service />} />
-        <Route path="/product" element={<Product />} />
+        {/* <Route path="/turnKeySolutions" element={<TurnKeySolutions />} /> */}
+        {/* <Route path="/service" element={<Service />} /> */}
+        {/* <Route path="/services" element={<Service />} /> */}
+        {/* <Route path="/product" element={<Product />} /> */}
         <Route path="/applications/pharmaceutical" element={<Appli1 />} />
         <Route path="/applications/cosmic" element={<Appli2 />} />
         <Route path="/applications/food" element={<Appli3 />} />
