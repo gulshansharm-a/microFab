@@ -29,7 +29,7 @@ function FaqItem({ question, answers, initiallyOpen }) {
   };
   useEffect(() => {
     if (isOpen && answerRef.current) {
-      setBarHeight((answerRef.current.clientHeight + 35) + "px"); // Set the height when answer is open
+      setBarHeight(answerRef.current.clientHeight + 35 + "px"); // Set the height when answer is open
     } else {
       setBarHeight("auto"); // Set back to 'auto' when answer is closed
     }
@@ -72,7 +72,7 @@ function FaqItem({ question, answers, initiallyOpen }) {
 function AboutUs() {
   return (
     <div>
-      <div className="App">
+      <div className="App font-['ClashDisplay']">
         {/* <div><NavbarDefault /></div><br></br><br></br> */}
         <div>
           <div className="ui">
@@ -112,11 +112,11 @@ function AboutUs() {
 
               {/* </center> */}
 
-              <div className="flex flex-col p-6 text-white bg-[#8AA6AA] kmk">
+              <div className=" flex flex-col p-6 text-white bg-[#8AA6AA] kmk md:px-[100px] md:py-[70px]">
                 <h5 className="mb-4 text-5xl leading-tight text-white bg-[#8AA6AA]">
                   Our Beliefs
                 </h5>
-                <p className="mb-4 text-xl  text-white bg-[#8AA6AA]">
+                <p className="mb-4 text-[16px] text-white bg-[#8AA6AA] md:w-[65%]">
                   {" "}
                   With our comprehensive approach that includes incorporation of
                   packaging technologies, installation, and maintenance, we help
@@ -125,54 +125,46 @@ function AboutUs() {
                 <br></br>
                 <br></br>
                 {/* <div class="lg:grid-grid-cols-3 md:grid-cols-3 gap-8 gh bg-[#8AA6AA]"> */}
-                <div class="grid grid-col-3 grid-flow-row gap-10 container">
-                  {/* <div><span className="text-7xl h-full">1</span><spacer></spacer>
-        <span>
-        <span className="text-3xl n"> Lorem ipsum tgrtg rgtg referfrgf</span>
-        </span>
-        </div> */}
-                  <div className="row-span-3 gap-10 flex md:flex-row column">
-                    {/* <div className="qa">  */}
-                    <div className="text-7xl wer">1</div>
-
-                    <div className="flex flex-col">
-                      <div className="text-2xl text-left"> INTEGRITY</div>
-                      {/* </div> */}
-                      <p className="mb-4 text-xs font-thin text-left leading-tight text-white">
-                        To earn trust of our customers with reliability and
-                        honesty in all of our interactions, along with our
-                        unwavering commitment.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="row-span-3 gap-10 flex md:flex-row column">
-                    {/* <div className="qa">  */}
-                    <div className="text-7xl wer">2</div>
-
-                    <div className="flex flex-col">
-                      <div className="text-2xl text-left">
-                        {" "}
-                        FORWARD-THINKING
+                <div className="grid grid-cols-3 gap-10 w-full">
+                  <div className="col-span-1 md:col-span-1 lg:col-span-1 w-full">
+                    <div className="w-full flex items-center">
+                      <div className="text-9xl text-[#bac8ca] pr-4">1</div>
+                      <div className="flex flex-col">
+                        <div className="text-3xl">INTEGRITY</div>
+                        <p className="text-sm text-white w-[75%]">
+                          To earn trust of our customers with reliability and
+                          honesty in all of our interactions, along with our
+                          unwavering commitment.
+                        </p>
                       </div>
-                      {/* </div> */}
-                      <p className="mb-4 text-xs font-thin text-left leading-tight text-white">
-                        To make a difference by staying ahead in the market,
-                        venturing unexplored domains, and ideating for a change.
-                      </p>
                     </div>
                   </div>
-                  <div className="row-span-3 gap-10 flex md:flex-row column">
-                    {/* <div className="qa">  */}
-                    <div className="text-7xl wer">3</div>
 
-                    <div className="flex flex-col">
-                      <div className="text-2xl text-left"> INNOVATION</div>
-                      {/* </div> */}
-                      <p className="mb-4 text-xs font-thin text-left leading-tight text-white">
-                        Striving for more effective solutions by actively
-                        pursuing research and development, infusing fresh
-                        perspectives, and exploring new technological avenues.
-                      </p>
+                  <div className="col-span-1 md:col-span-1 lg:col-span-1 w-full">
+                    <div className="w-full flex items-center">
+                      <div className="text-9xl text-[#bac8ca] pr-4">2</div>
+                      <div className="flex flex-col">
+                        <div className="text-3xl">FORWARD-THINKING</div>
+                        <p className="text-sm text-white w-[75%]">
+                          To make a difference by staying ahead in the market,
+                          venturing unexplored domains, and ideating for a
+                          change.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="col-span-1 md:col-span-1 lg:col-span-1 w-full">
+                    <div className="w-full flex">
+                      <div className="text-9xl text-[#bac8ca] pr-4">3</div>
+                      <div className="flex flex-col">
+                        <div className="text-3xl">INNOVATION</div>
+                        <p className="text-sm text-white w-[75%]">
+                          Striving for more effective solutions by actively
+                          pursuing research and development, infusing fresh
+                          perspectives, and exploring new technological avenues.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -335,42 +327,48 @@ function AboutUs() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit?
             </p> */}
           <div className="cv pl-[100px] pr-[10px]">
-            <br></br><FaqItem
+            <br></br>
+            <FaqItem
               question="What is BFS and FFS Technology, and how does It work? "
               answers={[
                 "Blow-Fill-Seal (BFS) and Form-Fill-Seal (FFS) technologies are advanced manufacturing processes for aseptic packaging. BFS involves forming a container, filling it with the product, and sealing it in one continuous operation. FFS, on the other hand, is a broader term encompassing various methods of forming and filling containers before sealing.",
               ]}
               initiallyOpen={true}
             />
-            <br></br><FaqItem
+            <br></br>
+            <FaqItem
               question="How energy-efficient are your BFS and FFS machines? "
               answers={[
                 "We prioritize energy efficiency in our machine designs. Our systems incorporate advanced technologies to minimize energy consumption, contributing to both cost savings and environmental sustainability.",
               ]}
               initiallyOpen={true}
             />
-            <br></br><FaqItem
+            <br></br>
+            <FaqItem
               question="What sets your BFS and FFS machines apart from others in the market?"
               answers={[
                 "Our machines stand out due to their state-of-the-art technology, customizable features, and a commitment to precision and reliability. We prioritize innovation to ensure our clients have a competitive edge in their respective industries.",
               ]}
               initiallyOpen={true}
             />
-            <br></br><FaqItem
+            <br></br>
+            <FaqItem
               question="Can your machines be customized for specific production needs? "
               answers={[
                 "Yes, we offer customization options to tailor our machines to the unique production requirements of our clients. Our engineering team works closely with clients to understand their needs and deliver bespoke solutions.",
               ]}
               initiallyOpen={true}
             />
-            <br></br><FaqItem
+            <br></br>
+            <FaqItem
               question="Do you provide turnkey solutions for BFS and FFS projects? "
               answers={[
                 "Absolutely. We provide comprehensive turnkey solutions, from initial design and manufacturing to installation and ongoing support. Our turnkey approach ensures a seamless and efficient process for our clients.",
               ]}
               initiallyOpen={true}
             />
-            <br></br><FaqItem
+            <br></br>
+            <FaqItem
               question="What quality control measures are implemented in your manufacturing process?"
               answers={[
                 "Our manufacturing process adheres to rigorous quality control standards. We implement thorough testing and inspection protocols at every stage to guarantee the highest quality and performance of our BFS and FFS machines..",
