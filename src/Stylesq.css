@@ -7,7 +7,6 @@
 .mm{
  width:90%;
  color: var(--text, #111);
- font-family: Clash Display;
  font-size: 18px;
  font-style: normal;
  font-weight: 400;
@@ -34,7 +33,6 @@
 }
 .wer{
   color: rgba(234, 234, 234, 0.50);
-font-family: Clash Display;
 font-size: 120px;
 font-style: normal;
 font-weight: 400;

@@ -163,7 +163,7 @@ export default function Appli1() {
       <h1 className="h"
         style={{
           color: 'var(--p-v20, #8AA6AA)',
-          fontFamily: 'Clash Display',
+          fontFamily: '',
           fontSize: '34px',
           fontWeight: 500,
           
@@ -175,7 +175,7 @@ export default function Appli1() {
       <p className="j"
         style={{
           color: 'var(--p-v20, #8AA6AA)',
-          fontFamily: 'Clash Display',
+          fontFamily: '',
           fontSize: '22px',
           fontStyle: 'normal',
           fontWeight: 500,
@@ -222,7 +222,7 @@ export default function Appli1() {
       <h1 className="h"
         style={{
           color: 'var(--p-v20, #8AA6AA)',
-          fontFamily: 'Clash Display',
+          fontFamily: '',
           fontSize: '34px',
           fontWeight: 500,
           
@@ -234,7 +234,7 @@ export default function Appli1() {
       <p className="j"
         style={{
           color: 'var(--p-v20, #8AA6AA)',
-          fontFamily: 'Clash Display',
+          
           fontSize: '22px',
           fontStyle: 'normal',
           fontWeight: 500,
@@ -277,7 +277,7 @@ export default function Appli1() {
       <h1 className="h"
         style={{
           color: 'var(--p-v20, #8AA6AA)',
-          fontFamily: 'Clash Display',
+          
           fontSize: '34px',
           fontWeight: 500,
           
@@ -289,7 +289,7 @@ export default function Appli1() {
       <p className="j"
         style={{
           color: 'var(--p-v20, #8AA6AA)',
-          fontFamily: 'Clash Display',
+          
           fontSize: '22px',
           fontStyle: 'normal',
           fontWeight: 500,
@@ -333,7 +333,7 @@ export default function Appli1() {
       <h1 className="h"
         style={{
           color: 'var(--p-v20, #8AA6AA)',
-          fontFamily: 'Clash Display',
+          
           fontSize: '34px',
           fontWeight: 500,
           
@@ -345,7 +345,7 @@ export default function Appli1() {
       <p className="j"
         style={{
           color: 'var(--p-v20, #8AA6AA)',
-          fontFamily: 'Clash Display',
+          
           fontSize: '22px',
           fontStyle: 'normal',
           fontWeight: 500,

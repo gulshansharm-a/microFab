@@ -10,7 +10,7 @@ import Footer from '../Common/Footer/Footer';
 
 function AboutUs() {
   return (
-    <div className="App">
+    <div className="App font-['ClashDisplay']">
      <div><NavbarDefault /></div><br></br><br></br>
      <div>
 
