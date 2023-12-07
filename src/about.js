@@ -227,18 +227,14 @@ function AboutUs() {
             <center>
               <div className="flex flex-col rounded-lg md:max-w-3xl md:flex-row mm">
                 <center>
-                  <div className="flex flex-col p-6">
+                  <div className="flex flex-col p-6 klkl">
                     <p>
-                      <h5 className="mb-2 text-6xl leading-tight text-white">
-                        <strong>Why Choose Us</strong>
+                      <h5 className="mb-2 text-5xl leading-tight text-white ">
+                        <strong>Why choose MicroFab?</strong>
                       </h5>
                     </p>
                     <p className="mb-4 text-xl leading-tight text-white">
-                      With MicroFab, you can gain the most from cutting-edge
-                      innovations to evolve the company in the industry it’s
-                      destined for. While we are driven by passion to transform
-                      the packaging industry, we infuse every endeavour with a
-                      blend of technical brilliance and utmost dedication.
+                    With MicroFab, you can gain the most from cutting-edge innovations to evolve the company in the industry it’s destined for. While we are driven by passion to transform the packaging industry, we infuse every endeavour with a blend of technical brilliance and utmost dedication.
                     </p>
                   </div>
                 </center>
@@ -247,9 +243,9 @@ function AboutUs() {
                 variant="filled"
                 size="lg"
                 color="white"
-                className="ab rounded-full bg-white text-black"
+                className="ab h-12 w-32 rounded-full bg-white text-black"
               >
-                <strong> --Read More-- </strong>
+                <strong> Read More </strong>
               </Button>
             </center>
             <br></br>
@@ -260,13 +256,13 @@ function AboutUs() {
             <center>
               <div className="flex flex-col rounded-lg md:max-w-5xl md:flex-row mm">
                 <center>
-                  <div className="flex flex-col p-6">
+                  <div className="flex flex-col p-6 klkl">
                     <p>
                       <h5 className="mb-2 text-3xl leading-tight text-black">
                         <strong>MEET OUR TEAM</strong>
                       </h5>
                     </p>
-                    <p className="mb-4 text-xl leading-tight text-black">
+                    <p className="mb-4 text-xl leading-tight text-black zxcv">
                       Our entire team of mavericks are dedicated to offer
                       packaging solutions and support your business.
                     </p>
