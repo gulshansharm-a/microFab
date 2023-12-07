@@ -91,7 +91,15 @@
         
       }
     }
-  
+  .klkl{
+    font-family: Clash Display;
+    font-size: 18px;
+font-style: normal;
+font-weight: 500;
+  }
+  .zxcv{
+    margin: 0 20%;
+  }
   .electron:nth-of-type(3) {
       animation:orbit3 6s infinite linear;
      
