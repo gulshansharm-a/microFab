@@ -72,7 +72,7 @@ function FaqItem({ question, answers, initiallyOpen }) {
 function AboutUs() {
   return (
     <div>
-      <div className="App font-['ClashDisplay']">
+      <div className="font-['ClashDisplay']">
         {/* <div><NavbarDefault /></div><br></br><br></br> */}
         <div>
           <div className="ui">
@@ -85,10 +85,10 @@ function AboutUs() {
               <center>
                 <div className="flex flex-col rounded-lg bg-white md:max-w-6xl md:flex-row mm">
                   <div className="flex flex-col p-6">
-                    <h3 className="mb-2 text-7xl leading-tight text-[#8AA6AA]">
+                    <h3 className="mb-2 text-7xl leading-tight text-[#8AA6AA] font-['ClashDisplay']">
                       About Us
                     </h3>
-                    <p className="mb-4 text-xs leading-tight text-[#8AA6AA]">
+                    <p className="mb-4 text-xs leading-tight text-[#8AA6AA] font-['ClashDisplay']">
                       MicroFab is the result of a collaboration between industry
                       leaders MicroTools and FabLab, combining expertise in BFS
                       and FFS machine manufacturing and EPC contracting.
@@ -113,10 +113,10 @@ function AboutUs() {
               {/* </center> */}
 
               <div className=" flex flex-col p-6 text-white bg-[#8AA6AA] kmk md:px-[100px] md:py-[70px]">
-                <h5 className="mb-4 text-5xl leading-tight text-white bg-[#8AA6AA]">
+                <h5 className="mb-4 text-5xl leading-tight text-white bg-[#8AA6AA] font-['ClashDisplay']">
                   Our Beliefs
                 </h5>
-                <p className="mb-4 text-[16px] text-white bg-[#8AA6AA] md:w-[65%]">
+                <p className="mb-4 text-[16px] text-white bg-[#8AA6AA] md:w-[65%] font-['ClashDisplay']">
                   {" "}
                   With our comprehensive approach that includes incorporation of
                   packaging technologies, installation, and maintenance, we help
@@ -130,8 +130,8 @@ function AboutUs() {
                     <div className="w-full flex items-center">
                       <div className="text-9xl text-[#bac8ca] pr-4">1</div>
                       <div className="flex flex-col">
-                        <div className="text-3xl">INTEGRITY</div>
-                        <p className="text-sm text-white w-[75%]">
+                        <div className="text-3xl font-['ClashDisplay']">INTEGRITY</div>
+                        <p className="text-sm text-white w-[75%] font-['ClashDisplay']">
                           To earn trust of our customers with reliability and
                           honesty in all of our interactions, along with our
                           unwavering commitment.
@@ -144,8 +144,8 @@ function AboutUs() {
                     <div className="w-full flex items-center">
                       <div className="text-9xl text-[#bac8ca] pr-4">2</div>
                       <div className="flex flex-col">
-                        <div className="text-3xl">FORWARD-THINKING</div>
-                        <p className="text-sm text-white w-[75%]">
+                        <div className="text-3xl font-['ClashDisplay']">FORWARD-THINKING</div>
+                        <p className="text-sm text-white w-[75%] font-['ClashDisplay']">
                           To make a difference by staying ahead in the market,
                           venturing unexplored domains, and ideating for a
                           change.
@@ -158,8 +158,8 @@ function AboutUs() {
                     <div className="w-full flex">
                       <div className="text-9xl text-[#bac8ca] pr-4">3</div>
                       <div className="flex flex-col">
-                        <div className="text-3xl">INNOVATION</div>
-                        <p className="text-sm text-white w-[75%]">
+                        <div className="text-3xl font-['ClashDisplay']">INNOVATION</div>
+                        <p className="text-sm text-white w-[75%] font-['ClashDisplay']">
                           Striving for more effective solutions by actively
                           pursuing research and development, infusing fresh
                           perspectives, and exploring new technological avenues.
@@ -194,13 +194,13 @@ function AboutUs() {
             <br></br>
             <div className="flex flex-col rounded-lg bg-white md:max-w-6xl md:flex-row mm">
               <div className="flex flex-col p-6">
-                <p className="mb-4 text-5xl leading-tight ">
+                <p className="mb-4 text-5xl leading-tight font-['ClashDisplay'] ">
                   Industries that we serve
                 </p>
                 {/* <h5 className="mb-2 text-4xl leading-tight ll">
                   Lorem ipsum
                 </h5> */}
-                <p className="mb-4 text-xs mr-20 leading-tight  ll">
+                <p className="mb-4 text-xs mr-20 leading-tight  ll font-['ClashDisplay']">
                   MicroFab technology serves as a versatile tool across pharma,
                   chemical, dairy, food and cosmetics providing solutions for
                   precise manufacturing, miniaturization, and enhancing the
@@ -229,11 +229,11 @@ function AboutUs() {
                 <center>
                   <div className="flex flex-col p-6 klkl">
                     <p>
-                      <h5 className="mb-2 text-5xl leading-tight text-white ">
+                      <h5 className="mb-2 text-5xl leading-tight text-white  font-['ClashDisplay']">
                         <strong>Why choose MicroFab?</strong>
                       </h5>
                     </p>
-                    <p className="mb-4 text-xl leading-tight text-white">
+                    <p className="mb-4 text-xl leading-tight text-white font-['ClashDisplay']">
                     With MicroFab, you can gain the most from cutting-edge innovations to evolve the company in the industry it’s destined for. While we are driven by passion to transform the packaging industry, we infuse every endeavour with a blend of technical brilliance and utmost dedication.
                     </p>
                   </div>
@@ -243,7 +243,7 @@ function AboutUs() {
                 variant="filled"
                 size="lg"
                 color="white"
-                className="ab h-12 w-32 rounded-full bg-white text-black"
+                className="ab h-12 w-32 rounded-full bg-white text-black font-['ClashDisplay']"
               >
                 <strong> Read More </strong>
               </Button>
@@ -258,11 +258,11 @@ function AboutUs() {
                 <center>
                   <div className="flex flex-col p-6 klkl">
                     <p>
-                      <h5 className="mb-2 text-3xl leading-tight text-black">
+                      <h5 className="mb-2 text-3xl leading-tight text-black font-['ClashDisplay']">
                         <strong>MEET OUR TEAM</strong>
                       </h5>
                     </p>
-                    <p className="mb-4 text-xl leading-tight text-black zxcv">
+                    <p className="mb-4 text-xl leading-tight text-black zxcv font-['ClashDisplay']">
                       Our entire team of mavericks are dedicated to offer
                       packaging solutions and support your business.
                     </p>
@@ -286,7 +286,7 @@ function AboutUs() {
         </div>
         <br></br>
         <br></br>
-        <h5 className="mb-2 text-3xl leading-tight text-black">
+        <h5 className="mb-2 text-3xl leading-tight text-black font-['ClashDisplay']">
           <center>FAQ</center>
         </h5>
         <br></br>
