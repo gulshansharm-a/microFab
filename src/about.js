@@ -4,15 +4,22 @@ import { NavbarDefault } from "./Navbar";
 import { Button } from "@material-tailwind/react";
 import we from "./qw.png";
 import sdd from "./cder.png";
+import uio from "./Frame 21430 (1).svg"
 import hj from "./Union1.jpg";
 import "./Styles_abt2.css";
 import pic from "./List.png";
 import tasto from "./testicards.json";
 import Slider from "./slider";
 import TestimonialCard from "./tasticard";
+import yy1 from "./Frame 21443.svg";
+import yy2 from "./Frame 21448.svg";import yy3 from "./Frame 21449.svg";import yy4 from "./Frame 21450.svg";
+import qwe from "./qwe.svg"
+import y1 from "./y1.svg";
+import y2 from "./y2.svg";import y3 from "./y3.svg";import y4 from "./y4.svg";import y5 from "./y1.svg";
+
 import Footer from "./components/Common/Footer/Footer";
 import React, { useState, useRef, useEffect } from "react";
-import yu from "./fgf.svg";
+import yu from "./Rectangle 57 (2).svg";
 import a from "./Rectangle 57.svg";
 import b from "./layer.svg";
 import cc from "./WhatsApp Image 2023-11-23 at 13.48.59.jpeg";
@@ -194,35 +201,95 @@ function AboutUs() {
             <br></br>
             <div className="flex flex-col rounded-lg bg-white md:max-w-6xl md:flex-row mm">
               <div className="flex flex-col p-6">
-                <p className="mb-4 text-5xl leading-tight font-['ClashDisplay'] ">
-                  Industries that we serve
+                <p className="mb-4 text-5xl leading-tight font-['ClashDisplay'] "><center><strong>
+                  Industries that we serve</strong></center>
                 </p>
                 {/* <h5 className="mb-2 text-4xl leading-tight ll">
                   Lorem ipsum
                 </h5> */}
-                <p className="mb-4 text-xs mr-20 leading-tight  ll font-['ClashDisplay']">
-                  MicroFab technology serves as a versatile tool across pharma,
-                  chemical, dairy, food and cosmetics providing solutions for
-                  precise manufacturing, miniaturization, and enhancing the
-                  efficiency and safety of processes in pharmaceuticals, food,
-                  cosmetics, and chemicals. Its adaptability makes it a valuable
-                  asset in addressing specific needs within each sector,
-                  contributing to advancements in product development and
-                  manufacturing processes.
+                <center>
+                <p className="mb-4 text-xl text-[#8AA6AA] mr-20 leading-tight  ll font-['ClashDisplay']">
+                At MicroFab, we have been serving the Pharmaceutical, Cosmetic, Food and the Chemical industry across the years. Our adept and motivated team of professionals, along with the state-of-the-art engineering facilities, undertake designing, manufacturing and delivering machinery to meet the requirements of our esteemed clients.
                 </p>
+                </center>
+                
               </div>
+             
               <br></br>
               <br></br>
               <br></br>
               {/* <br></br><br></br><br></br><br></br><br></br> */}
 
-              <img src={a} alt="no" />
+              {/* <img src={a} alt="no" /> */}
               {/* Your browser does not support the video tag. */}
             </div>
+            
           </center>
+         
           <br></br>
+          <img className="cvfg" src ={qwe} alt="img"></img>
+
+          
+          <div className="flex flex-row ml-1">
+  {/* {[1, 2, 3, 4, 5, 6].map((index) => ( */}
+  <div className="flex flex-row p-2 m-auto">
+
+    <div className="flex flex-col items-center">
+      <img
+        className="w-48 h-48 p-2"
+        src={y1}
+        alt=""
+      />
+      <p className="text-center text-[#8AA6AA]">Pharmaceuticals</p>
+    </div>
+
+    <div className="flex flex-col items-center">
+      <img
+        className="w-48 h-48 p-2"
+        src={y2}
+        alt=""
+      />
+      <p className="text-center text-[#8AA6AA]">Chemicals</p>
+    </div>
+
+    <div className="flex flex-col items-center">
+      <img
+        className="w-48 h-48 p-2"
+        src={y3}
+        alt=""
+      />
+      <p className="text-center text-[#8AA6AA]">Cosmetics</p>
+    </div>
+
+    <div className="flex flex-col items-center">
+      <img
+        className="w-48 h-48 p-2"
+        src={y4}
+        alt=""
+      />
+      <p className="text-center text-[#8AA6AA]">Food</p>
+    </div>
+
+    <div className="flex flex-col items-center">
+      <img
+        className="w-48 h-48 p-2"
+        src={y5}
+        alt=""
+      />
+      <p className="text-center text-[#8AA6AA]">Dairy</p>
+    </div>
+
+  </div>
+  
+  {/* ))} */}
+</div>
+
+  
           <br></br>
-          <div className="bg-[url('./piku.png')] jk">
+
+
+
+          {/* <div className="bg-[url('./piku.png')] jk">
             <br></br>
             <center>
               <div className="flex flex-col rounded-lg md:max-w-3xl md:flex-row mm">
@@ -249,79 +316,140 @@ function AboutUs() {
               </Button>
             </center>
             <br></br>
+          </div> */}
+           <div className="flex">
+      {/* Block 1 - SVG Image */}
+      <div className="bg-white">
+        {/* Replace 'your-svg-file.svg' with the actual path to your SVG file */}
+        <img src={uio} alt="SVG Image" className="w-full xdf" />
+      </div>
+
+      {/* Block 2 - Text and Boxes */}
+      <div className="flex-1 h-screen bg-white p-8">
+      <h3 className="mb-4 text-xl text-[#8AA6AA] mr-20 m-auto leading-tight  ll font-['ClashDisplay']"><strong><center>Key Figures</center></strong>
+      </h3>
+      <h3 className="mb-4 text-2xs text-[#8AA6AA] mr-20 m-auto leading-tight  ll font-['ClashDisplay']"><center>Phenomenal business success has now made us proud about 
+how we have flourished in the competitive era.</center>
+      </h3>
+
+        <div className="flex flex-wrap -mx-4 ml-auto mt-22">
+          {/* Box 1 */}
+          <div>
+          <div className="w-36 h-36 md:w-30 p-4 bg-[#8AA6AA] text-white ml-8 mt-8 p-6">
+          <h3 className=" text-2xs text-white  leading-tight  ll font-['ClashDisplay']"><center><strong>400+</strong></center>
+      </h3><br></br>
+      <h3 className=" text-xs text-white w-full m-0 leading-tight  ll font-['ClashDisplay']"><center>Cutting-Edge Machinery</center>
+      </h3>
           </div>
-          <br></br>
-          <div className="bg-white ">
-            <br></br>
-            <center>
-              <div className="flex flex-col rounded-lg md:max-w-5xl md:flex-row mm">
+
+          {/* Box 2 */}
+          <div className="w-36 h-36 md:w-30 p-4 bg-[#8AA6AA] text-white ml-8 mt-8 p-6">
+          <h3 className=" text-2xs text-white  leading-tight  ll font-['ClashDisplay']"><center><strong>75%</strong></center>
+      </h3><br></br>
+      <h3 className=" text-xs text-white w-full m-0 leading-tight  ll font-['ClashDisplay']"><center>Customer Retention & repeat orders</center>
+      </h3>
+          </div>
+          </div>
+          <div>
+          {/* Box 3 */}
+          <div className="w-36 h-36 md:w-30 p-4 bg-[#8AA6AA] text-white ml-8 mt-8 p-6">
+          <h3 className=" text-2xs text-white  leading-tight  ll font-['ClashDisplay']"><center><strong>200+</strong></center>
+      </h3><br></br>
+      <h3 className=" text-xs text-white w-full m-0 leading-tight  ll font-['ClashDisplay']"><center>Premium molds from
+different origins</center>
+      </h3>
+          </div>
+
+          {/* Box 4 */}
+          <div className="w-36 h-36 md:w-30 p-4 bg-[#8AA6AA] text-white ml-8 mt-8 p-6">
+          <h3 className=" text-2xs text-white  leading-tight  ll font-['ClashDisplay']"><center><strong>50,000+ sq. ft.</strong></center>
+      </h3><br></br>
+      <h3 className=" text-xs text-white w-full m-0 leading-tight  ll font-['ClashDisplay']"><center>Workplaces across strategic locatio30</center>
+      </h3>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+     
+          <div className="flex flex-col rounded-lg bg-white md:max-w-6xl md:flex-row m-auto gggg">
+              <div className="flex flex-col p-6">
+                <p className="mb-2 text-5xl leading-tight text-[#8AA6AA] font-['ClashDisplay'] "><center>
+                  Key People</center>
+                </p>
+                {/* <h5 className="mb-2 text-4xl leading-tight ll">
+                  Lorem ipsum
+                </h5> */}
                 <center>
-                  <div className="flex flex-col p-6 klkl">
-                    <p>
-                      <h5 className="mb-2 text-3xl leading-tight text-black font-['ClashDisplay']">
-                        <strong>MEET OUR TEAM</strong>
-                      </h5>
-                    </p>
-                    <p className="mb-4 text-xl leading-tight text-black zxcv font-['ClashDisplay']">
-                      Our entire team of mavericks are dedicated to offer
-                      packaging solutions and support your business.
-                    </p>
-                  </div>
+                <p className="mb-4 text-4xl text-black leading-tight  ll font-['ClashDisplay']"><strong>
+                Our entire team of mavericks are dedicated to offer packaging solutions and support your business.</strong> </p>
                 </center>
+                
               </div>
-            </center>
-          </div>
+             
+              <br></br>
+              <br></br>
+              <br></br>
+              {/* <br></br><br></br><br></br><br></br><br></br> */}
+
+              {/* <img src={a} alt="no" /> */}
+              {/* Your browser does not support the video tag. */}
+            </div>
+            <div className="flex flex-row ml-1">
+            <div className="flex flex-row p-2 m-auto">
+
+<div className="flex flex-col items-center">
+  <img
+    className="w-48 h-48 p-2"
+    src={yy1}
+    alt=""
+  />
+  
+</div>
+
+<div className="flex flex-col items-center">
+  <img
+    className="w-48 h-48 p-2"
+    src={yy2}
+    alt=""
+  />
+  
+</div>
+
+<div className="flex flex-col items-center">
+  <img
+    className="w-48 h-48 p-2"
+    src={yy3}
+    alt=""
+  />
+  
+</div>
+
+<div className="flex flex-col items-center">
+  <img
+    className="w-48 h-48 p-2"
+    src={yy4}
+    alt=""
+  />
+  
+</div>
+
+
+</div>
+</div>
           <br></br>
         </div>
 
-        <div className="io">
-          {/* <center><img src='./popo.jpeg' alt="Loading"></img></center> */}
-          {/* <img src="https://s3-alpha-sig.figma.com/img/688c/1dfa/e642076d55e4e4759eb7174f0f65f42b?Expires=1694995200&Signature=BReTl6LL1sOswmno5ryCVGBYZCGZS0LWSY4~xTYD7ZmyY4G9Gy4oAf4rIFVhpOAnoGihJ63ywqQ~v83fR5Cf9f70ie0L~qlLFPJEgELtXApAGUm4I7KLbNNTqZORhlkU3McxPKhBIZOWzkqHBVy~A3yXAGRpcsgC1gHH-JXbekHgvYtAO9od1cFQ~xqxFaoz8vp81N0UvLNuMlmABLwg~oSQvXUcn0j3-oHwMr4G6p4RiEF8IzuYhTdh-rNY9Ccjq~SmicZeLfoWZmETMe8qHUc6pJcOdJZaTuf5y-CwvHa6kE3ELQ02Ned20Dv~DNLWZfsN2IzN-RXdHTHkq2ZNrw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"  alt="loading failed" width="100%" ></img> */}
-          <img
-            className="aws"
-            src={sdd}
-            alt="loading failed"
-            width="100%"
-          ></img>
-        </div>
+     
         <br></br>
-        <br></br>
+        {/* <br></br>
         <h5 className="mb-2 text-3xl leading-tight text-black font-['ClashDisplay']">
           <center>FAQ</center>
         </h5>
-        <br></br>
-        {/* </div> */}
-        <div className="flex flex-col p-6 container">
-          {/* <p>
-              <h5 className="mb-2 text-3xl leading-tight text-black vb">FAQ</h5>
-            </p>
-            <br></br>
-            <br></br><FaqItem
-          question="What is Lorem Ipsum?"
-          answer="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
-        />
-            <p className="mb-4 text-sm leading-tight text-black lm faq-container">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit?
-            </p>
-            <p className="mb-4 text-sm leading-tight text-black lm">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.If
-              you are a Hookah business, please join us and help us defend and
-              protect your business, our culture and community.
-            </p>
-            <br></br>
-            <p className="mb-4 text-sm leading-tight text-black lm">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit?
-            </p>
-            <br></br>
-            <p className="mb-4 text-sm leading-tight text-black lm">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit?
-            </p> */}
+        <br></br> */}
+    
+        {/* <div className="flex flex-col p-6 container">
+
           <div className="cv pl-[100px] pr-[10px]">
             <br></br>
             <FaqItem
@@ -372,7 +500,35 @@ function AboutUs() {
               initiallyOpen={true}
             />
           </div>
-        </div>
+        </div> */}
+         <div className="flex flex-col rounded-lg bg-white md:max-w-6xl md:flex-row m-auto">
+              <div className="flex flex-col p-6">
+                <p className="mb-2 text-5xl leading-tight text-[#8AA6AA] font-['ClashDisplay']"><center>
+                Project  by Region</center>
+                </p>
+                {/* <h5 className="mb-2 text-4xl leading-tight ll">
+                  Lorem ipsum
+                </h5> */}
+                <center>
+                <p className="mb-4 text-4xl text-black leading-tight  ll font-['ClashDisplay']"><strong>
+                Here’s a glimpse of our projects by various regions across countries</strong> </p>
+                </center>
+                
+              </div>
+              
+              <br></br>
+              <br></br>
+              <br></br>
+              {/* <br></br><br></br><br></br><br></br><br></br> */}
+
+              {/* <img src={a} alt="no" /> */}
+              {/* Your browser does not support the video tag. */}
+            </div>
+            <div className="w-196 h-48 m-10 md:w-30 p-4 bg-[#8AA6AA] text-white ml-8 mt-8 p-6">
+          <h3 className=" text-2xs text-white  leading-tight  ll font-['ClashDisplay'] mt-16"><center><strong>Vector Map of India</strong></center>
+      </h3><br></br>
+      
+          </div>
       </div>
       <Footer />
     </div>
