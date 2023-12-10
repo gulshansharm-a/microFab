@@ -5,12 +5,27 @@
  
 }
 .mm{
- width:90%;
+ /* width:90%; */
  color: var(--text, #111);
+ font-family: Clash Display;
  font-size: 18px;
  font-style: normal;
  font-weight: 400;
  line-height: 135.2%; /* 24.336px */
+}
+.xdf{
+  height:70%;
+}
+.gggg{
+  margin-top:-10%;
+}
+.cvfg{
+  position:absolute;
+  left:65%;
+   
+  /* top:-1%; */
+  z-index:-2;
+  opacity:0.3;
 }
 .se{
   position:relative;
@@ -33,6 +48,7 @@
 }
 .wer{
   color: rgba(234, 234, 234, 0.50);
+font-family: Clash Display;
 font-size: 120px;
 font-style: normal;
 font-weight: 400;
