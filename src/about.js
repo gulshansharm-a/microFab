@@ -269,21 +269,25 @@ function AboutUs() {
       />
       <p className="text-center text-[#8AA6AA]">Food</p>
     </div>
+    </div>
+    
 
-    <div className="flex flex-col items-center">
+
+
+  
+
+  
+  
+  {/* ))} */}
+</div>
+<div className="flex flex-col items-center bbb">
       <img
-        className="w-48 h-48 p-2"
+        className="w-48 h-48 p-2 "
         src={y5}
         alt=""
       />
       <p className="text-center text-[#8AA6AA]">Dairy</p>
     </div>
-
-  </div>
-  
-  {/* ))} */}
-</div>
-
   
           <br></br>
 
@@ -335,7 +339,7 @@ how we have flourished in the competitive era.</center>
         <div className="flex flex-wrap -mx-4 ml-auto mt-22">
           {/* Box 1 */}
           <div>
-          <div className="w-36 h-36 md:w-30 p-4 bg-[#8AA6AA] text-white ml-8 mt-8 p-6">
+          <div className="w-36 h-36 md:w-30 p-6 md:m-4 bg-[#8AA6AA] text-white awsw es">
           <h3 className=" text-2xs text-white  leading-tight  ll font-['ClashDisplay']"><center><strong>400+</strong></center>
       </h3><br></br>
       <h3 className=" text-xs text-white w-full m-0 leading-tight  ll font-['ClashDisplay']"><center>Cutting-Edge Machinery</center>
@@ -343,7 +347,7 @@ how we have flourished in the competitive era.</center>
           </div>
 
           {/* Box 2 */}
-          <div className="w-36 h-36 md:w-30 p-4 bg-[#8AA6AA] text-white ml-8 mt-8 p-6">
+          <div className="w-36 h-36 md:w-30 p-6 lg:m-4  bg-[#8AA6AA] text-white awsw ">
           <h3 className=" text-2xs text-white  leading-tight  ll font-['ClashDisplay']"><center><strong>75%</strong></center>
       </h3><br></br>
       <h3 className=" text-xs text-white w-full m-0 leading-tight  ll font-['ClashDisplay']"><center>Customer Retention & repeat orders</center>
@@ -352,7 +356,7 @@ how we have flourished in the competitive era.</center>
           </div>
           <div>
           {/* Box 3 */}
-          <div className="w-36 h-36 md:w-30 p-4 bg-[#8AA6AA] text-white ml-8 mt-8 p-6">
+          <div className="w-36 h-36 md:w-30 p-6 md:m-4 bg-[#8AA6AA] text-white awsw es">
           <h3 className=" text-2xs text-white  leading-tight  ll font-['ClashDisplay']"><center><strong>200+</strong></center>
       </h3><br></br>
       <h3 className=" text-xs text-white w-full m-0 leading-tight  ll font-['ClashDisplay']"><center>Premium molds from
@@ -361,7 +365,7 @@ different origins</center>
           </div>
 
           {/* Box 4 */}
-          <div className="w-36 h-36 md:w-30 p-4 bg-[#8AA6AA] text-white ml-8 mt-8 p-6">
+          <div className="w-36 h-36 md:w-30 p-6 lg:m-4 bg-[#8AA6AA] text-white awsw ">
           <h3 className=" text-2xs text-white  leading-tight  ll font-['ClashDisplay']"><center><strong>50,000+ sq. ft.</strong></center>
       </h3><br></br>
       <h3 className=" text-xs text-white w-full m-0 leading-tight  ll font-['ClashDisplay']"><center>Workplaces across strategic locatio30</center>
