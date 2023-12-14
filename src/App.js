@@ -14,6 +14,7 @@ import Home from "./components/Home/Home";
 import "./Style.css";
 import "./Style_tech.css"
 import "./Styles12.css";
+import Appl from "./Application.js"
 import Articles from "./components/Articles/Articles";
 import Blogs from "./components/Blogs/Blogs";
 import SingleBlogPage from "./components/Blogs/SingleBlogPage/SingleBlogPage";
@@ -65,7 +66,9 @@ function AppContent() {
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Home />} /> 
         <Route path="/technology" element={<Technology />} />
-        {/* <Route path="/turnKeySolutions" element={<TurnKeySolutions />} /> */}
+
+        <Route path="/turnKeySolutions" element={<TurnKeySolutions />} /> 
+        <Route path="/applications" element={<Applications />} />
         {/* <Route path="/service" element={<Service />} /> */}
         {/* <Route path="/services" element={<Service />} /> */}
         {/* <Route path="/product" element={<Product />} /> */}

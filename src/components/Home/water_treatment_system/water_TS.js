@@ -65,7 +65,10 @@ const WaterTS = () => {
       <div className="relative font-mono flex justify-center place-items-center md:w-[600px] w-[300px] h-[300px] md:h-[600px] rounded-full border border-solid border-[rgba(190, 190, 190, 0.20)] shadow-xl">
         <div className="flex justify-center place-items-center md:h-[450px] md:w-[450px] w-[250px] h-[250px]  rounded-full  border border-solid border-[rgba(190, 190, 190, 0.20)] shadow-xl">
           <div className="border-[#8AA6AA] flex flex-col justify-center place-items-center md:h-[250px] md:w-[250px] w-[200px] h-[200px] rounded-full border border-solid border-[rgba(190, 190, 190, 0.20)] shadow-xl">
-            <p className="md:text-[25px] font-bold">Turnkey-Lines</p>
+{/*             
+            <Route path="/turnKeySolutions" element={<TurnKeySolutions />} ></Route> */}
+            <a className="md:text-[25px] font-bold" href="/turnKeySolutions">Turnkey-Lines</a>
+            
             <p className="md:text-[15px] text-center font-bold px-2">
               A vast range of machinery that we are proud about.
             </p>
