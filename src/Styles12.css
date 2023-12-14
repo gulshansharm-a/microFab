@@ -274,8 +274,30 @@ margin:auto;
 /* background:cover;
 background-repeat:no-repeat; */
 }
+.bbb{
+  margin-left:-580px;
+}
 .dc{
   margin-left:3%
+}
+@media only screen and (min-width: 1350px) {
+.awsw{
+  /* margin-top:5%;
+  margin-bottom:5%;
+  margin-right:-15%; */
+  margin-left:75%;
+  padding:10px;
+  
+}
+@media only screen and (min-width: 1149px and max-width:1349px) {
+  .awsw{
+    margin-left:85%;
+  }
+  .es{
+    margin:-10%;
+  }
+}
+
 }
  .qaz{
   position:relative;
