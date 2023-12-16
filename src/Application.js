@@ -30,7 +30,7 @@ function Application() {
       <div>
         <span className="qaz">
         <div className="qa">
-          <h3 className="mb-6 w-full pb-8 lg:text-7xl md: text-5xl sm:text-3xl leading-tight text-[#8AA6AA]  df"><strong>
+          <h3 className="mb-6 w-full pb-8 lg:text-7xl md: text-5xl sm:text-5xl leading-tight text-[#8AA6AA]  df"><strong>
           Lorem ipsum dolor sit  consectetur adipiscing elit sed do eiusmod</strong>
           </h3>
           <span>
@@ -228,7 +228,7 @@ function Application() {
         </div>
         
         <h5 className="mt-2 text-gray-600 text-md kkk"><strong>{{...testimonial}.content}</strong></h5>
-        <h5 className="mt-2 text-gray-600 kkk" >{{...testimonial}.author}</h5>
+        <h5 className="mt-2 text-gray-600 text-xs kkk" >{{...testimonial}.author}</h5>
       </div>
       {/* <div className ="mt-2 text-gray-600flex justify-end mt-4 pyu text-[#8AA6AA]">Blow-Fill-Seal, Technology </div>
       <div className="flex justify-end mt-4 mt-2">
