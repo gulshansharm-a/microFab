@@ -369,7 +369,7 @@ const Header = () => {
                 <Icon icon="ph:x-bold" />
               </div>
             ) : (
-              <div className="text-black bg-[#94adb0]">
+              <div className="text-black">
                 <Icon icon="iconamoon:menu-burger-horizontal-light" />
               </div>
             )}
