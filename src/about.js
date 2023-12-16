@@ -90,12 +90,12 @@ function AboutUs() {
               <br></br>
               <br></br>
               <center>
-                <div className="flex flex-col rounded-lg bg-white md:max-w-6xl md:flex-row mm">
-                  <div className="flex flex-col p-6">
-                    <h3 className="mb-2 text-7xl leading-tight text-[#8AA6AA] font-['ClashDisplay']">
+                <div className="flex flex-col rounded-lg bg-white md:max-w-6xl md:flex-row mm ggg sm:ml-24">
+                  <div className="flex flex-col p-6 sm:ml-24">
+                    <h3 className="mb-2 text-7xl sm:mr-8  leading-tight text-[#8AA6AA] font-['ClashDisplay']">
                       About Us
                     </h3>
-                    <p className="mb-4 text-xs leading-tight text-[#8AA6AA] font-['ClashDisplay']">
+                    <p className="mb-4  text-xs sm:mr-24 w-96   leading-tight text-[#8AA6AA] font-['ClashDisplay']">
                       MicroFab is the result of a collaboration between industry
                       leaders MicroTools and FabLab, combining expertise in BFS
                       and FFS machine manufacturing and EPC contracting.
@@ -109,7 +109,7 @@ function AboutUs() {
                   </div>
                   {/* <br></br><br></br><br></br> */}
                   <img
-                    className="h-96 w-full rounded-t-lg ju  md:h-64 md:w-74 md:rounded-none md:rounded-l-lg"
+                    className="h-96 w-96 rounded-t-lg ju aws  md:h-96  md:w-74 md:mr-96 md:rounded-none md:rounded-l-lg"
                     src={yu}
                     alt=""
                   />
@@ -119,7 +119,7 @@ function AboutUs() {
 
               {/* </center> */}
 
-              <div className=" flex flex-col p-6 text-white bg-[#8AA6AA] kmk md:px-[100px] md:py-[70px]">
+              <div className=" flex flex-col p-6 text-white bg-[#8AA6AA] kmk lg:py-[30px] md:px-[100px] md:py-[70px]">
                 <h5 className="mb-4 text-5xl leading-tight text-white bg-[#8AA6AA] font-['ClashDisplay']">
                   Our Beliefs
                 </h5>
@@ -132,9 +132,9 @@ function AboutUs() {
                 <br></br>
                 <br></br>
                 {/* <div class="lg:grid-grid-cols-3 md:grid-cols-3 gap-8 gh bg-[#8AA6AA]"> */}
-                <div className="grid grid-cols-3 gap-10 w-full">
-                  <div className="col-span-1 md:col-span-1 lg:col-span-1 w-full">
-                    <div className="w-full flex items-center">
+                <div className="md:grid grid-rows-3 lg:grid grid-cols-3 lg:grid grid-rows-1 gap-20 w-full">
+                  <div className="col-span-1 md:col-span-1 lg:col-span-1 w-full mb-10">
+                    <div className="w-full h-auto flex items-center">
                       <div className="text-9xl text-[#bac8ca] pr-4">1</div>
                       <div className="flex flex-col">
                         <div className="text-3xl font-['ClashDisplay']">INTEGRITY</div>
@@ -147,7 +147,7 @@ function AboutUs() {
                     </div>
                   </div>
 
-                  <div className="col-span-1 md:col-span-1 lg:col-span-1 w-full">
+                  <div className="col-span-1 md:col-span-1 lg:col-span-1 w-full mb-10">
                     <div className="w-full flex items-center">
                       <div className="text-9xl text-[#bac8ca] pr-4">2</div>
                       <div className="flex flex-col">
@@ -161,7 +161,7 @@ function AboutUs() {
                     </div>
                   </div>
 
-                  <div className="col-span-1 md:col-span-1 lg:col-span-1 w-full">
+                  <div className="col-span-1 md:col-span-1 lg:col-span-1 w-full mb-10">
                     <div className="w-full flex">
                       <div className="text-9xl text-[#bac8ca] pr-4">3</div>
                       <div className="flex flex-col">
@@ -195,20 +195,20 @@ function AboutUs() {
               ))}
             </Slider>
           </div> */}
-          <br></br>
+          
           <center>
             <br></br>
             <br></br>
             <div className="flex flex-col rounded-lg bg-white md:max-w-6xl md:flex-row mm">
               <div className="flex flex-col p-6">
-                <p className="mb-4 text-5xl leading-tight font-['ClashDisplay'] "><center><strong>
+                <p className="mb-4 text-5xl ddd leading-tight font-['ClashDisplay'] "><center><strong>
                   Industries that we serve</strong></center>
                 </p>
                 {/* <h5 className="mb-2 text-4xl leading-tight ll">
                   Lorem ipsum
                 </h5> */}
                 <center>
-                <p className="mb-4 text-xl text-[#8AA6AA] mr-20 leading-tight  ll font-['ClashDisplay']">
+                <p className="mb-4 text-xl ddd text-[#8AA6AA] leading-tight  ll font-['ClashDisplay']">
                 At MicroFab, we have been serving the Pharmaceutical, Cosmetic, Food and the Chemical industry across the years. Our adept and motivated team of professionals, along with the state-of-the-art engineering facilities, undertake designing, manufacturing and delivering machinery to meet the requirements of our esteemed clients.
                 </p>
                 </center>
@@ -230,7 +230,7 @@ function AboutUs() {
           <img className="cvfg" src ={qwe} alt="img"></img>
 
           
-          <div className="flex flex-row ml-1">
+          <div className="lg:flex flex-row sm:flex flex-colml-1">
   {/* {[1, 2, 3, 4, 5, 6].map((index) => ( */}
   <div className="flex flex-row p-2 m-auto">
 
@@ -280,15 +280,22 @@ function AboutUs() {
   
   {/* ))} */}
 </div>
-<div className="flex flex-col items-center bbb">
+          
+
+
+{/* <div className="flex flex-row p-2 m-auto"> */}
+
+<div className="flex flex-col items-center bbb m-auto">
       <img
-        className="w-48 h-48 p-2 "
+        className="w-48 h-32 p-2 lg:ml-0 jjjjj"
         src={y5}
         alt=""
       />
-      <p className="text-center text-[#8AA6AA]">Dairy</p>
+      <p className="text-center text-[#8AA6AA] lg:ml-0 jjjjj">Dairy</p>
     </div>
-  
+
+   
+  {/* </div> */}
           <br></br>
 
 
@@ -323,14 +330,14 @@ function AboutUs() {
           </div> */}
            <div className="flex">
       {/* Block 1 - SVG Image */}
-      <div className="bg-white">
+      <div className="bg-white dfdf">
         {/* Replace 'your-svg-file.svg' with the actual path to your SVG file */}
         <img src={uio} alt="SVG Image" className="w-full xdf" />
       </div>
 
       {/* Block 2 - Text and Boxes */}
-      <div className="flex-1 h-screen bg-white p-8">
-      <h3 className="mb-4 text-xl text-[#8AA6AA] mr-20 m-auto leading-tight  ll font-['ClashDisplay']"><strong><center>Key Figures</center></strong>
+      <div className="flex-1 h-96 mb-48 bg-white p-8">
+      <h3 className="lg:ml-0 sm:ml-64 text-xl text-[#8AA6AA] mr-20 m-auto leading-tight  ll font-['ClashDisplay']"><strong><center>Key Figures</center></strong>
       </h3>
       <h3 className="mb-4 text-2xs text-[#8AA6AA] mr-20 m-auto leading-tight  ll font-['ClashDisplay']"><center>Phenomenal business success has now made us proud about 
 how we have flourished in the competitive era.</center>
@@ -376,16 +383,16 @@ different origins</center>
       </div>
     </div>
      
-          <div className="flex flex-col rounded-lg bg-white md:max-w-6xl md:flex-row m-auto gggg">
+          <div className="flex flex-col h-96 mb-24 rounded-lg bg-white md:max-w-6xl md:flex-row m-auto gggg">
               <div className="flex flex-col p-6">
-                <p className="mb-2 text-5xl leading-tight text-[#8AA6AA] font-['ClashDisplay'] "><center>
+                <p className=" text-5xl leading-tight text-[#8AA6AA] font-['ClashDisplay'] "><center>
                   Key People</center>
                 </p>
                 {/* <h5 className="mb-2 text-4xl leading-tight ll">
                   Lorem ipsum
                 </h5> */}
                 <center>
-                <p className="mb-4 text-4xl text-black leading-tight  ll font-['ClashDisplay']"><strong>
+                <p className="mb-1 text-4xl text-black leading-tight  ll font-['ClashDisplay']"><strong>
                 Our entire team of mavericks are dedicated to offer packaging solutions and support your business.</strong> </p>
                 </center>
                 
@@ -399,7 +406,7 @@ different origins</center>
               {/* <img src={a} alt="no" /> */}
               {/* Your browser does not support the video tag. */}
             </div>
-            <div className="flex flex-row ml-1">
+            <div className="flex flex-row ml-1 ">
             <div className="flex flex-row p-2 m-auto">
 
 <div className="flex flex-col items-center">
@@ -507,14 +514,14 @@ different origins</center>
         </div> */}
          <div className="flex flex-col rounded-lg bg-white md:max-w-6xl md:flex-row m-auto">
               <div className="flex flex-col p-6">
-                <p className="mb-2 text-5xl leading-tight text-[#8AA6AA] font-['ClashDisplay']"><center>
+                <p className=" text-5xl leading-tight text-[#8AA6AA] font-['ClashDisplay']"><center>
                 Project  by Region</center>
                 </p>
                 {/* <h5 className="mb-2 text-4xl leading-tight ll">
                   Lorem ipsum
                 </h5> */}
                 <center>
-                <p className="mb-4 text-4xl text-black leading-tight  ll font-['ClashDisplay']"><strong>
+                <p className=" text-4xl text-black leading-tight  ll font-['ClashDisplay']"><strong>
                 Here’s a glimpse of our projects by various regions across countries</strong> </p>
                 </center>
                 
