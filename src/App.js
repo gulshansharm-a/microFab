@@ -71,11 +71,11 @@ function AppContent() {
         <Route path="/applications" element={<Applications />} />
         {/* <Route path="/service" element={<Service />} /> */}
         {/* <Route path="/services" element={<Service />} /> */}
-        {/* <Route path="/product" element={<Product />} /> */}
-        <Route path="/applications/pharmaceutical" element={<Appli1 />} />
-        <Route path="/applications/cosmic" element={<Appli2 />} />
-        <Route path="/applications/food" element={<Appli3 />} />
-        <Route path="/applications/chemical" element={<Appli4 />} />
+        <Route path="/product" element={<Product />} />
+        <Route path="/pharmaceutical" element={<Appli1 />} />
+        <Route path="/cosmic" element={<Appli2 />} />
+        <Route path="/food" element={<Appli3 />} />
+        <Route path="/chemical" element={<Appli4 />} />
         <Route path="/BFS" element={<BFS />} />
         <Route path="/FFS" element={<FFS />} />
         <Route path="/ISBM" element={<ISBM />} />

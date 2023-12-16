@@ -23,7 +23,7 @@ export default function Footer() {
       <div className="md:mt-[0px] md:flex md:flex-col md:justify-center md:place-items-center md:w-full w-full h-[850px] md:h-[500px] bg-[#8AA6AA] text-white">
         <div className="p-6 md:p-0 md:flex md:flex-col w-[100%] md:justify-center md:w-[90%]">
           <div className="mt-4 md:mt-0">
-            <hr class="hidden md:block h-px my-8 bg-white border-0"></hr>
+            <hr className="hidden md:block h-px my-8 bg-white border-0"></hr>
             {/* vertical line */}
             <div className="md:hidden md:w-[1px] md:h-[w-[30%]] w-[h-[90%]] h-[2px] bg-white md:mt-0 md:mb-0 mt-[22px] mb-[15px]"></div>
           </div>
@@ -111,7 +111,7 @@ export default function Footer() {
                 </div>
               </div>
               <div className="md:flex md:flex-col">
-                <hr class="h-px my-8 bg-white border-0"></hr>
+                <hr className="h-px my-8 bg-white border-0"></hr>
 
                 <div className="md:text-[14px] md:flex md:flex-row justify-between">
                   <p>Lorem ipsum:</p>
@@ -133,7 +133,7 @@ export default function Footer() {
 
           <div>
             <div className="">
-              <hr class="h-px my-8 bg-white border-0"></hr>
+              <hr className="h-px my-8 bg-white border-0"></hr>
             </div>
             <div></div>
           </div>

@@ -56,8 +56,8 @@ function AboutUs() {
       Lorem ipsum
         </p>
         <br></br><br></br>
-        {/* <div class="lg:grid-grid-cols-3 md:grid-cols-3 gap-8 gh bg-[#8AA6AA]"> */}
-        <div class="grid grid-rows-3 grid-flow-col gap-10">
+        {/* <div className="lg:grid-grid-cols-3 md:grid-cols-3 gap-8 gh bg-[#8AA6AA]"> */}
+        <div className="grid grid-rows-3 grid-flow-col gap-10">
       {/* <div><span className="text-7xl h-full">1</span><spacer></spacer>
       <span>
       <span className="text-3xl n"> Lorem ipsum tgrtg rgtg referfrgf</span>

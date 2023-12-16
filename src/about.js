@@ -131,7 +131,7 @@ function AboutUs() {
                 </p>
                 <br></br>
                 <br></br>
-                {/* <div class="lg:grid-grid-cols-3 md:grid-cols-3 gap-8 gh bg-[#8AA6AA]"> */}
+                {/* <div className="lg:grid-grid-cols-3 md:grid-cols-3 gap-8 gh bg-[#8AA6AA]"> */}
                 <div className="md:grid grid-rows-3 lg:grid grid-cols-3 lg:grid grid-rows-1 gap-20 w-full">
                   <div className="col-span-1 md:col-span-1 lg:col-span-1 w-full mb-10">
                     <div className="w-full h-auto flex items-center">

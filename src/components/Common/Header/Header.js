@@ -71,13 +71,13 @@ const Header = () => {
       }
     >
       <nav className="relative mx-10 md:mx-8 lg:mx-14 xl:mx-22 flex flex-row items-center justify-between">
-        <div className="font-bold md:text-[18px] lg:text-[20px] text-[18px]">
+        <a className="font-bold md:text-[18px] lg:text-[20px] text-[18px]">
           <img
             src={isMenuOpen ? logo1 : logo1}
             alt="logo"
             className="md:w-[60%] md:h-[60%] h-[40px]"
           ></img>
-        </div>
+        </a>
         <div className="font-light relative">
           <ul
             className="hidden lg:flex lg:gap-10 xl:gap-14 lg:text-[16px] z-20
@@ -107,16 +107,15 @@ const Header = () => {
             </li>
             <li
               className={`relative cursor-pointer ${
-                location.pathname === "/Products" ? "font-extrabold " : ""
+                location.pathname === "/product" ? "font-extrabold " : ""
               }`}
             >
               <div
                 className={`flex items-center cursor-pointer ${
                   isTechnologyDropdownOpen ? "font-bold" : ""
                 }`}
-                onClick={toggleTechnologyDropdown}
               >
-                <Link to="/Products" onClick={toggleMenu}>
+                <Link to="/product" onClick={toggleMenu}>
                   Products
                 </Link>
                 {isTechnologyDropdownOpen ? (
@@ -124,12 +123,14 @@ const Header = () => {
                     src={ExpandLess}
                     alt="Expand Less"
                     className="ml-2 w-4 h-4"
+                    onClick={toggleTechnologyDropdown}
                   />
                 ) : (
                   <img
                     src={ExpandMore}
                     alt="Expand More"
                     className="ml-2 w-4 h-4"
+                    onClick={toggleTechnologyDropdown}
                   />
                 )}
               </div>
@@ -164,14 +165,14 @@ const Header = () => {
                       }
                     /> */}
                     <Card
-                    path="/IV"
+                      path="/IV"
                       content="IV Bag"
                       img={img2}
                       isSelected={selectedTechnologyCard === "IV Bag"}
                       onClick={() => handleTechnologyCardClick("IV Bag")}
                     />
                     <Card
-                    path="/product"
+                      path="/product"
                       content="Product Solution"
                       img={img1}
                       isSelected={selectedTechnologyCard === "Product Solution"}
@@ -217,7 +218,6 @@ const Header = () => {
                 className={`flex items-center cursor-pointer ${
                   isApplicationDropdownOpen ? "font-bold" : ""
                 }`}
-                onClick={toggleApplicationDropdown}
               >
                 <Link to="/Applications" onClick={toggleMenu}>
                   Applications
@@ -227,62 +227,68 @@ const Header = () => {
                     src={ExpandLess}
                     alt="Expand Less"
                     className="ml-2 w-4 h-4"
+                    onClick={toggleApplicationDropdown}
                   />
                 ) : (
                   <img
                     src={ExpandMore}
                     alt="Expand More"
                     className="ml-2 w-4 h-4"
+                    onClick={toggleApplicationDropdown}
                   />
                 )}
               </div>
               {isApplicationDropdownOpen && (
                 <div className="dropdown-menu absolute mt-2 bg-white border border-gray-300 p-4 rounded-lg shadow-md w-[765px] left-1/2 transform -translate-x-1/2">
                   <div className="flex flex-row gap-0">
-                    <Link to="/applications/pharmaceutical">
+                    <Link to="/pharmaceutical">
                       <Card
                         content="Pharmaceutical Industry"
                         img={img4}
                         isSelected={
                           selectedApplicationCard === "Pharmaceutical Industry"
                         }
-                        onClick={() =>
-                          handleApplicationCardClick("Pharmaceutical Industry")
-                        }
+                        onClick={() => {
+                          handleApplicationCardClick("Pharmaceutical Industry");
+                          toggleApplicationDropdown();
+                        }}
                       />
                     </Link>
-                    <Link to="/applications/cosmic">
+                    <Link to="/cosmic">
                       <Card
                         content="Cosmetic Industry"
                         img={img5}
                         isSelected={
                           selectedApplicationCard === "Cosmetic Industry"
                         }
-                        onClick={() =>
-                          handleApplicationCardClick("Cosmetic Industry")
-                        }
+                        onClick={() => {
+                          handleApplicationCardClick("Cosmetic Industry");
+                          toggleApplicationDropdown();
+                        }}
                       />
                     </Link>
-                    <Link to="/applications/food">
+                    <Link to="/food">
                       <Card
                         content="Food Industry"
                         img={img6}
                         isSelected={selectedApplicationCard === "Food Industry"}
-                        onClick={() =>
-                          handleApplicationCardClick("Food Industry")
-                        }
+                        onClick={() => {
+                          handleApplicationCardClick("Food Industry");
+                          toggleApplicationDropdown();
+                        }}
                       />
                     </Link>
-                    <Link to="/applications/chemical">
+                    <Link to="/chemical">
                       <Card
                         content="Chemical Industry"
                         img={img7}
                         isSelected={
                           selectedApplicationCard === "Chemical Industry"
                         }
-                        onClick={() =>
-                          handleApplicationCardClick("Chemical Industry")
-                        }
+                        onClick={() => {
+                          handleApplicationCardClick("Chemical Industry");
+                          toggleApplicationDropdown();
+                        }}
                       />
                     </Link>
                   </div>
@@ -304,10 +310,10 @@ const Header = () => {
             {/* </li> */}
             <li>
               <Link
-                to="/blogs"
+                to="/articlesList"
                 onClick={toggleMenu}
                 className={`${
-                  location.pathname === "/blogs"
+                  location.pathname === "/articlesList"
                     ? "font-extrabold border-b-2 border-black "
                     : ""
                 }`}
@@ -510,7 +516,7 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link to="/blogs" onClick={toggleMenu}>
+              <Link to="/articlesList" onClick={toggleMenu}>
                 Blogs
               </Link>
             </li>

@@ -59,7 +59,7 @@ export default function Product() {
 
           <br></br>
           <div className="serv1">
-          <div class="serv4"></div>
+          <div className="serv4"></div>
           <br></br>
           
 
@@ -91,7 +91,7 @@ service </h3>
 <br></br>
 <br></br>
 <br></br>
-<div class="serv4 serv1"></div>
+<div className="serv4 serv1"></div>
           <br></br>
           
 
@@ -117,7 +117,7 @@ upgradisation</h3>
 <div className="serv1">
         <div>
         <br></br><br></br><br></br><br></br><br></br>
-          <div class="serv4"></div>
+          <div className="serv4"></div>
           <br></br>
           
 
@@ -155,7 +155,7 @@ upgradisation</h3>
 </div>
 <br></br><br></br><br></br>
           <div className="serv1">
-          <div class="serv4"></div>
+          <div className="serv4"></div>
           <br></br>
           
 

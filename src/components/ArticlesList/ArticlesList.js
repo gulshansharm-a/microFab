@@ -1,25 +1,4 @@
-// // import Blogs_Heading from './BlogsComponents/Blogs_Heading'
-// import SingleBlog from "../Blogs/BlogsComponents/SingleBlog";
-// import Blogs_Heading from "../Blogs/BlogsComponents/Blogs_Heading";
-// import BlogsCardScroll from "../Blogs/BlogsComponents/BlogsCardScroll";
-// import Footer from "../Common/Footer/Footer";
-
-// export default function Blogs() {
-//   return (
-//     <div className="font-['ClashDisplay'] flex flex-col md:mt-[80px] mt-[40px]">
-//       <Blogs_Heading />
-//       <Footer />
-//     </div>
-//   );
-// }
-
 import arrow_right from "../../assets/Home_article/ArrowRight.svg";
-// import arrow_right from '../../assets'
-import img1 from "../../assets/Home_article/article1.svg";
-import img2 from "../../assets/Home_article/article2.svg";
-import img3 from "../../assets/Home_article/article3.svg";
-// import arrow_right from "../../../assets/Home_article/ArrowRight.svg";
-import homeArticles from "../../assets/Articles/Heading.svg";
 import ArticleCard from "../Home/Home_articles/ArticleCard";
 import Footer from "../Common/Footer/Footer";
 // import Blogs_Heading from "homeArticleData.json";
@@ -51,18 +30,11 @@ export default function articlesList() {
       sub: "Blow-Fill-Seal, Technology",
       img: "https://res.cloudinary.com/dzhdarh4q/image/upload/v1700851989/articles/article4_i8chpp.svg",
       date: false,
-    },
-    {
-      content:
-        "Where do COVID-19 vaccine players stand on pricing? So far, it's no profit, slight profit or undecided",
-      sub: "Covid - 19 Vaccine",
-      img: "https://res.cloudinary.com/dzhdarh4q/image/upload/v1696178553/articles/h3vl1dbx1gh0b2vte0an.svg",
-      date: false,
-    },
+    }
   ];
 
   return (
-    <div className="font-['ClashDisplay'] md:mt-[100px]">
+    <div className="font-['ClashDisplay'] md:mt-[100px] mt-[40px]">
       {/* set of headings */}
       <div>
         <p className="text-primary md:text-[25px] text-[30px] md:block hidden font-bold pl-10">
@@ -90,11 +62,11 @@ export default function articlesList() {
       </div>
 
       {/* mobile */}
-      <div className="font-['ClashDisplay'] p-10 md:hidden ">
-        <p className="md:text-[25px] text-[30px] font-bold mb-4">Heading</p>
+      <div className="font-['ClashDisplay'] p-10 md:hidden">
+        <p className="text-primary md:text-[25px] text-[30px] font-bold mb-4">Article and Blogs</p>
 
         <div
-          className="w-full h-[41vh] flex overflow-x-scroll gap-4 "
+          className="w-full h-[43vh] flex overflow-x-scroll gap-4"
           style={{ scrollSnapType: "x mandatory" }}
         >
           {Blogs_Heading.map((article, index) => (

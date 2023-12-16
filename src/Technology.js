@@ -40,7 +40,7 @@ process.
             <br></br>
           
 
-        <button class="bg-[#8AA6AA] dd hover:bg-blue-700 text-white font-bold py-2 px-20 rounded m-2">
+        <button className="bg-[#8AA6AA] dd hover:bg-blue-700 text-white font-bold py-2 px-20 rounded m-2">
           Explore
         </button>
         </span>
@@ -199,7 +199,7 @@ production.
                     {{ ...testimonial }.author}
                   </h5>
                  
-                  {/* <button class="btn btn-blue">
+                  {/* <button className="btn btn-blue">
   Button
 </button> */}
                 </div>

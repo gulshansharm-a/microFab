@@ -29,7 +29,7 @@ export default function Service() {
           While we dabble in providing exceptional customer service, you can connect with us for project management and contract manufacturing.
           </h6>
           <br></br><br></br><br></br><br></br>
-          <div class="serv4"></div>
+          <div className="serv4"></div>
           <br></br>
           
 
@@ -63,7 +63,7 @@ export default function Service() {
       <br></br><br></br>
       <div className="serv1">
         <div>
-          <div class="serv4"></div>
+          <div className="serv4"></div>
           <br></br>
           
 
@@ -97,7 +97,7 @@ export default function Service() {
   />
 </div>
 <br></br><br></br><br></br><br></br>
-          <div class="serv4"></div>
+          <div className="serv4"></div>
           <br></br>
           
 

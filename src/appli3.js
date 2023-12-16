@@ -59,7 +59,7 @@ export default function Appli3() {
           </span>
           </div>
          
-          <button class="bg-[#8AA6AA] ee hover:bg-blue-700 text-white font-bold py-3 px-20 rounded m-2">
+          <button className="bg-[#8AA6AA] ee hover:bg-blue-700 text-white font-bold py-3 px-20 rounded m-2">
   Explore
 </button>
 
@@ -460,22 +460,22 @@ export default function Appli3() {
 
       {/* <HorizontalCard/> */}
 
-      <div class="h-150 bvc">
+      <div className="h-150 bvc">
         <br></br>
         <br></br>
         <center>
-        <div class=" leading-tight bg-[#8AA6AA] kll"><center>
-          <h1 class="text-3xl leading-tight font-bold text-white kll">
+        <div className=" leading-tight bg-[#8AA6AA] kll"><center>
+          <h1 className="text-3xl leading-tight font-bold text-white kll">
           As a one-stop partner, we offer more for your company
           </h1>
           <br></br>
-          <h5 class="text-xs  leading-tight mb-4 text-white kll">
+          <h5 className="text-xs  leading-tight mb-4 text-white kll">
           Regardless of which instance you’re at; a wealth of experience and a plethora of services ensures you to move ahead. Maybe so what we offer:
           </h5>
           </center><br></br>
-          <a class="text-xs  leading-tight mb-4   text-white  tt" href="https://google.com">Product solutions-></a><br></br>
-          <a class="text-xs  leading-tight mb-4 text-white  tt" href="https://google.com">Turnkey solutions -></a><br></br>
-          <a class="text-xs  leading-tight mb-4  text-white  tt" href="https://google.com">Service solutions -></a><br></br>
+          <a className="text-xs  leading-tight mb-4   text-white  tt" href="https://google.com">Product solutions-></a><br></br>
+          <a className="text-xs  leading-tight mb-4 text-white  tt" href="https://google.com">Turnkey solutions -></a><br></br>
+          <a className="text-xs  leading-tight mb-4  text-white  tt" href="https://google.com">Service solutions -></a><br></br>
           <br></br>
           
           </div>

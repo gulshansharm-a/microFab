@@ -99,15 +99,15 @@ function App() {
 
         {/* <HorizontalCard/> */}
 
-        <div class="h-250 bg-[url('https://s3-alpha-sig.figma.com/img/adef/1933/3c4aec3165561e0e66507d1a5f04c828?Expires=1694390400&Signature=kUA16-811h509lNqndeJGtd88RFyAdXz0N8v8D~vaQLsOn6-mCgp4wgOKRKiWQ2C3taSrmoJJqYhovyrQ-SihL9U3KeUiTaVEDh-VmPN5yCw3XmsHP-C8ohD85dUTVdQBtEj-rU4~IycgnN-W6W2a-wA8CVQd~NkzXp~HEzbhCXdzCP8zL2hAvDd7-x~DEM22czyTYjSb5ndeF-kxuoT7Uci~3NgRx1x4ty7IGj4jFhWTs-ifNhdUmhKwRVtqW9zwb5hu~N7vL8arx1syFJM9dRYF1-m22rr0rJ7u3DVc~pRCgJSV1t~k1DMk9AU80fcUthKdqtXZonVQT8HAMtCEQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4')]">
+        <div className="h-250 bg-[url('https://s3-alpha-sig.figma.com/img/adef/1933/3c4aec3165561e0e66507d1a5f04c828?Expires=1694390400&Signature=kUA16-811h509lNqndeJGtd88RFyAdXz0N8v8D~vaQLsOn6-mCgp4wgOKRKiWQ2C3taSrmoJJqYhovyrQ-SihL9U3KeUiTaVEDh-VmPN5yCw3XmsHP-C8ohD85dUTVdQBtEj-rU4~IycgnN-W6W2a-wA8CVQd~NkzXp~HEzbhCXdzCP8zL2hAvDd7-x~DEM22czyTYjSb5ndeF-kxuoT7Uci~3NgRx1x4ty7IGj4jFhWTs-ifNhdUmhKwRVtqW9zwb5hu~N7vL8arx1syFJM9dRYF1-m22rr0rJ7u3DVc~pRCgJSV1t~k1DMk9AU80fcUthKdqtXZonVQT8HAMtCEQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4')]">
           <br></br>
           <br></br>
-          <div class="p-2 m-2 bg-[#8AA6AA] kp">
-            <h1 class="text-3xl font-bold text-white kl">
+          <div className="p-2 m-2 bg-[#8AA6AA] kp">
+            <h1 className="text-3xl font-bold text-white kl">
               One-stop partners have more to offer
             </h1>
             <br></br>
-            <h5 class="text-xl font-bold text-white kl">
+            <h5 className="text-xl font-bold text-white kl">
               No matter what point you are at: With our experience and range of
               services, we are sure to get you ahead. Maybe so with these
               offers:
