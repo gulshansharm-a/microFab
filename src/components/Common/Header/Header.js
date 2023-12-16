@@ -418,19 +418,34 @@ const Header = () => {
               {isTechnologyDropdownOpen && (
                 <Link to="/Technology" onClick={toggleMenu}>
                   <div className="lg:absolute mt-2 bg-white border border-gray-300 p-4 rounded-lg shadow-md h-[250px] w-[350px] lg:w-[739px] mx-auto lg:left-1/2 lg:transform lg:-translate-x-1/2">
-                    <div className="flex flex-row gap-[8px] lg:gap-[16px]">
-                      <Card
-                        content="BFS"
-                        img={img1}
-                        isSelected={selectedTechnologyCard === "BFS"}
-                        onClick={() => handleTechnologyCardClick("BFS")}
-                      />
-                      <Card
-                        content="FFS"
-                        img={img2}
-                        isSelected={selectedTechnologyCard === "FFS"}
-                        onClick={() => handleTechnologyCardClick("FFS")}
-                      />
+                    <div className="flex flex-col">
+                      <div className="flex flex-row gap-[8px] lg:gap-[16px]">
+                        <Link to="/BFS">
+                          <Card
+                            path="/BFS"
+                            content="BFS"
+                            img={img1}
+                            isSelected={selectedTechnologyCard === "BFS"}
+                            onClick={() => handleTechnologyCardClick("BFS")}
+                          />
+                        </Link>
+                        <Link to="FFS">
+                          <Card
+                            content="FFS"
+                            img={img2}
+                            isSelected={selectedTechnologyCard === "FFS"}
+                            onClick={() => handleTechnologyCardClick("FFS")}
+                          />
+                        </Link>
+                      </div>
+                      <Link to="IV">
+                        <Card
+                          content="IV"
+                          img={img2}
+                          isSelected={selectedTechnologyCard === "IV"}
+                          onClick={() => handleTechnologyCardClick("IV")}
+                        />
+                      </Link>
                     </div>
                   </div>
                 </Link>
