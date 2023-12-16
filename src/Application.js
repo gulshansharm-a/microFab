@@ -1,7 +1,7 @@
 import logo from "./appli.png";
 import pharma from "./pill.svg"
 import logos from "./logos.svg";
-import drop from "./drops.png";
+import drop from "./image 1.png";
 import drop1 from "./drop1.svg";
 import hand from "./hand.png";
 import "./Styles12.css";
