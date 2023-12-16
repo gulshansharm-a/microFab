@@ -44,7 +44,7 @@ export default function Appli1() {
       <div>
         <span className="qaz">
         <div className="qa">
-          <h3 className="mb-6 w-full pb-8 lg:text-7xl md: text-5xl sm:text-3xl leading-tight text-[#8AA6AA]  df"><strong>
+          <h3 className="mb-6 w-full pb-8 lg:text-7xl md: text-5xl sm:text-5xl leading-tight text-[#8AA6AA]  df"><strong>
           Packaging Solutions for Cosmetics</strong>
           </h3>
           <span>
@@ -57,7 +57,7 @@ export default function Appli1() {
           </span>
           </div>
          
-          <button className="bg-[#8AA6AA] ee hover:bg-blue-700 text-white font-bold py-3 px-20 rounded m-2">
+          <button class="bg-[#8AA6AA] ee hover:bg-blue-700 text-white font-bold py-3 px-20 rounded m-2">
   Explore
 </button>
 
@@ -141,7 +141,7 @@ export default function Appli1() {
     <img
       src={aq}
       alt="Image 1"
-      className="absolute top-0 left-0 h-37 w-40 z-0"
+      className="absolute top-0 left-0 h-37 w-40 fd z-0"
     />
     <img src={pic1} alt="Image 2" className="relative" />
   </div>
@@ -151,16 +151,16 @@ export default function Appli1() {
     <img
       src={aq}
       alt="Image 3"
-      className="absolute top-0 h-37 w-40 z-0"
+      className="absolute top-0 h-37 w-40 fd z-0"
     />
-    <img src={dropu} alt="Image 4" className="relative" />
+    <img src={dropu} alt="Image 4" className="relative fd" />
 
     {/* Text inside the dropu image */}
-    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 fd">
       <h1 className="h"
         style={{
           color: 'var(--p-v20, #8AA6AA)',
-          
+          fontFamily: 'Clash Display',
           fontSize: '34px',
           fontWeight: 500,
           
@@ -172,7 +172,7 @@ export default function Appli1() {
       <p className="j"
         style={{
           color: 'var(--p-v20, #8AA6AA)',
-          
+          fontFamily: 'Clash Display',
           fontSize: '22px',
           fontStyle: 'normal',
           fontWeight: 500,
@@ -195,7 +195,7 @@ export default function Appli1() {
     <img
       src={aq}
       alt="Image 1"
-      className="absolute top-0 left-0 h-37 w-40 z-0"
+      className="absolute top-0 left-0 h-37 w-40 z-0 fd"
     />
     <img src={pic2} alt="Image 2" className="relative" />
   </div>
@@ -205,16 +205,16 @@ export default function Appli1() {
     <img
       src={aq}
       alt="Image 3"
-      className="absolute top-0 h-37 w-40 z-0"
+      className="absolute top-0 h-37 w-40 z-0 fd"
     />
-    <img src={dropu} alt="Image 4" className="relative" />
+    <img src={dropu} alt="Image 4" className="relative fd" />
 
     {/* Text inside the dropu image */}
-    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 fd">
       <h1 className="h"
         style={{
           color: 'var(--p-v20, #8AA6AA)',
-          
+          fontFamily: 'Clash Display',
           fontSize: '34px',
           fontWeight: 500,
           
@@ -226,7 +226,7 @@ export default function Appli1() {
       <p className="j"
         style={{
           color: 'var(--p-v20, #8AA6AA)',
-          
+          fontFamily: 'Clash Display',
           fontSize: '22px',
           fontStyle: 'normal',
           fontWeight: 500,
@@ -259,7 +259,7 @@ export default function Appli1() {
     <img
       src={aq}
       alt="Image 1"
-      className="absolute top-0 left-0 h-37 w-40 z-0"
+      className="absolute top-0 left-0 h-37 w-40 z-0 fd"
     />
     <img src={pic3} alt="Image 2" className="relative" />
   </div>
@@ -269,16 +269,16 @@ export default function Appli1() {
     <img
       src={aq}
       alt="Image 3"
-      className="absolute top-0 h-37 w-40 z-0"
+      className="absolute top-0 h-37 w-40 z-0 fd"
     />
-    <img src={dropu} alt="Image 4" className="relative" />
+    <img src={dropu} alt="Image 4" className="relative fd" />
 
     {/* Text inside the dropu image */}
-    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 fd">
       <h1 className="h"
         style={{
           color: 'var(--p-v20, #8AA6AA)',
-          
+          fontFamily: 'Clash Display',
           fontSize: '34px',
           fontWeight: 500,
           
@@ -290,7 +290,7 @@ export default function Appli1() {
       <p className="j"
         style={{
           color: 'var(--p-v20, #8AA6AA)',
-          
+          fontFamily: 'Clash Display',
           fontSize: '22px',
           fontStyle: 'normal',
           fontWeight: 500,
@@ -313,7 +313,7 @@ export default function Appli1() {
     <img
       src={aq}
       alt="Image 1"
-      className="absolute top-0 left-0 h-37 w-40 z-0"
+      className="absolute top-0 left-0 h-37 w-40 z-0 fd"
     />
     <img src={pic4} alt="Image 2" className="relative" />
   </div>
@@ -323,16 +323,16 @@ export default function Appli1() {
     <img
       src={aq}
       alt="Image 3"
-      className="absolute top-0 h-37 w-40 z-0"
+      className="absolute top-0 h-37 w-40 z-0 fd"
     />
-    <img src={dropu} alt="Image 4" className="relative" />
+    <img src={dropu} alt="Image 4" className="relative fd" />
 
     {/* Text inside the dropu image */}
-    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 fd">
       <h1 className="h"
         style={{
           color: 'var(--p-v20, #8AA6AA)',
-          
+          fontFamily: 'Clash Display',
           fontSize: '34px',
           fontWeight: 500,
           
@@ -344,7 +344,7 @@ export default function Appli1() {
       <p className="j"
         style={{
           color: 'var(--p-v20, #8AA6AA)',
-          
+          fontFamily: 'Clash Display',
           fontSize: '22px',
           fontStyle: 'normal',
           fontWeight: 500,
@@ -421,7 +421,7 @@ export default function Appli1() {
             // 3. flex-[0_0_50%] set the width of each card to 50% of the viewport
             // for mobile devices we use 90% width
             <div key={i} className="flex-[0_0_90%] md:flex-[0_0_23%]">
-              <div className="py-4 px-4 bg-white shadow-lg rounded-lg my-20 h-64">
+              <div className="py-4 px-4 bg-white shadow-lg rounded-lg my-20 h-96">
       <div className="flex justify-center md:justify-end -mt-16">
         {/* <Image> */}
           
@@ -460,22 +460,22 @@ export default function Appli1() {
 
       {/* <HorizontalCard/> */}
 
-      <div className="h-150 bvc">
+      <div class="h-150 bvc">
         <br></br>
         <br></br>
         <center>
-        <div className=" leading-tight bg-[#8AA6AA] kll"><center>
-          <h1 className="text-3xl leading-tight font-bold text-white kll">
+        <div class=" leading-tight bg-[#8AA6AA] kll"><center>
+          <h1 class="text-3xl leading-tight font-bold text-white kll">
           As a one-stop partner, we offer more for your company
           </h1>
           <br></br>
-          <h5 className="text-xs  leading-tight mb-4 text-white kll">
+          <h5 class="text-xs  leading-tight mb-4 text-white kll">
           Regardless of which instance you’re at; a wealth of experience and a plethora of services ensures you to move ahead. Maybe so what we offer:
           </h5>
           </center><br></br>
-          <a className="text-xs  leading-tight mb-4   text-white  tt" href="https://google.com">Product solutions-></a><br></br>
-          <a className="text-xs  leading-tight mb-4 text-white  tt" href="https://google.com">Turnkey solutions -></a><br></br>
-          <a className="text-xs  leading-tight mb-4  text-white  tt" href="https://google.com">Service solutions -></a><br></br>
+          <a class="text-xs  leading-tight mb-4   text-white  tt" href="https://google.com">Product solutions-></a><br></br>
+          <a class="text-xs  leading-tight mb-4 text-white  tt" href="https://google.com">Turnkey solutions -></a><br></br>
+          <a class="text-xs  leading-tight mb-4  text-white  tt" href="https://google.com">Service solutions -></a><br></br>
           <br></br>
           
           </div>
