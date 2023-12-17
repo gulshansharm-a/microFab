@@ -8,7 +8,12 @@ export default function Who_are_we() {
       <div className="md:hidden text-center p-4">
         <p className="md:text-[35px] text-[35px] font-bold">Who Are We?</p>
         <p className="md:text-[20px] md:w-[80%]">
-        MicroFab, born from the merger of MicroTools and FabLab, excels in BFS and FFS machine manufacturing and EPC contracting. Committed to quality and innovation, we redefine industry standards in advanced packaging and industrial solutions. Our mission is to revolutionize packaging and project execution as a unified source for cutting-edge technologies and turnkey solutions across diverse industries.
+          MicroFab, born from the merger of MicroTools and FabLab, excels in BFS
+          and FFS machine manufacturing and EPC contracting. Committed to
+          quality and innovation, we redefine industry standards in advanced
+          packaging and industrial solutions. Our mission is to revolutionize
+          packaging and project execution as a unified source for cutting-edge
+          technologies and turnkey solutions across diverse industries.
         </p>
       </div>
 
@@ -58,16 +63,17 @@ export default function Who_are_we() {
           </p>
         </div>
       </div>
-      <div className="w-full flex md:flex-col p-10 flex-col">
+      <div className="w-full flex md:flex-col p-10 flex-col ml-[150px]">
         {/* for desktop view */}
         <div className="hidden md:block">
           <p className="md:text-[35px] font-bold">Who Are We?</p>
           <p className="md:text-[16px] font-semibold md:w-[80%]">
-            MicroFab represents the seamless collaboration of two industry
-            giants, Micro Tools and FabLab. These organizations are renowned for
-            their contributions in the realms of BFS and FFS technology for over
-            five decades. With years of experience, we are now distinct at a
-            global level owing to cost-effectiveness, quality, and innovation.
+            MicroFab, born from the merger of MicroTools and FabLab, excels in
+            BFS and FFS machine manufacturing and EPC contracting. Committed to
+            quality and innovation, we redefine industry standards in advanced
+            packaging and industrial solutions. Our mission is to revolutionize
+            packaging and project execution as a unified source for cutting-edge
+            technologies and turnkey solutions across diverse industries.
           </p>
         </div>
 
@@ -77,23 +83,23 @@ export default function Who_are_we() {
           <div className="flex md:flex-row gap-1 flex-row md:mt-10">
             <div className="flex flex-row w-full gap-4">
               {/* line */}
-              <div className="hidden md:block md:w-[5px] w-[10px] h-[170px] md:h-[80px] bg-[#8AA6AA] gap-4"></div>
+              <div className="hidden md:block md:w-[5px] w-[10px] h-[170px] md:h-[120px] bg-[#8AA6AA] gap-4"></div>
               <div className="md:w-[75%] md:text-[16px] w-full">
                 <p className="md:text-[20px] font-semibold text-[20px]">
-                500+ cutting-edge machinery
+                  500+ cutting-edge <br></br>machinery
                 </p>
-                <p className="">We design machinery as per the requirements</p>
+                <p className="">We design machinery as<br></br> per the requirements</p>
               </div>
             </div>
 
             <div className="flex flex-row w-full gap-4">
               {/* line */}
-              <div className="hidden md:block md:w-[5px] w-[10px] h-[170px] md:h-[80px] bg-[#8AA6AA] gap-4"></div>
+              <div className="hidden md:block md:w-[5px] w-[10px] h-[170px] md:h-[120px] bg-[#8AA6AA] gap-4"></div>
               <div className="md:w-[75%] md:text-[16px] w-full">
                 <p className="md:text-[20px] font-semibold text-[20px]">
-                  200+ assiduous employees
+                  200+ employees
                 </p>
-                <p>We have maintained the aplomb through the years</p>
+                <p>We have maintained the<br></br> aplomb through the<br></br> years</p>
               </div>
             </div>
           </div>
@@ -101,20 +107,20 @@ export default function Who_are_we() {
           {/* this is hidden in mobile view */}
           <div className="md:flex md:flex-row gap-4 hidden">
             {/* line */}
-            <div className="w-[5px] md:w-[8px] md:h-[80px] bg-[#8AA6AA] gap-4"></div>
+            <div className="w-[5px] md:w-[8px] md:h-[100px] bg-[#8AA6AA] gap-4"></div>
             <div className="md:w-[75%] md:text-[16px]">
               <p className="md:text-[20px] font-semibold text-[25px]">
                 90% customer retention
               </p>
-              <p>Our team is known for incredible service</p>
+              <p>Our team is known for <br></br>incredible service</p>
             </div>
             {/* line */}
-            <div className="w-[5px] md:h-[80px] md:w-[8px] bg-[#8AA6AA] gap-4"></div>
+            <div className="w-[5px] md:h-[100px] md:w-[8px] bg-[#8AA6AA] gap-4"></div>
             <div className="md:w-[75%] w-[90%] md:text-[16px]">
               <p className="md:text-[20px] font-semibold text-[25px]">
                 Across 15+ countries
               </p>
-              <p>We have our footprint across the globe</p>
+              <p>We have our footprint <br></br>across the globe</p>
             </div>
           </div>
         </div>

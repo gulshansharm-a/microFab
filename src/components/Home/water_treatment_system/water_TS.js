@@ -85,16 +85,26 @@ const WaterTS = () => {
       <div className="relative w-[100%] flex flex-col md:flex-row md:justify-center place-items-center">
         <div className="relative font-mono flex justify-center place-items-center md:w-[600px] w-[300px] h-[300px] md:h-[600px] rounded-full border border-solid border-[rgba(190, 190, 190, 0.20)] shadow-xl">
           <div className="flex justify-center place-items-center md:h-[450px] md:w-[450px] w-[250px] h-[250px]  rounded-full  border border-solid border-[rgba(190, 190, 190, 0.20)] shadow-xl">
-            <div className="border-[#8AA6AA] flex flex-col justify-center place-items-center md:h-[250px] md:w-[250px] w-[200px] h-[200px] rounded-full border border-solid border-[rgba(190, 190, 190, 0.20)] shadow-xl">
-              {/*             
-            <Route path="/turnKeySolutions" element={<TurnKeySolutions />} ></Route> */}
-              <a className="md:text-[25px] font-bold" href="/turnKeySolutions">
-                Turnkey-Lines
-              </a>
+            <div className="relative border-[rgba(190, 190, 190, 0.20)] shadow-xl rounded-full w-[200px] h-[200px] md:w-[250px] md:h-[250px] flex items-center justify-center">
+              <div
+                className="absolute w-full h-full rounded-full border border-solid border-[rgba(190, 190, 190, 0.20)] transition-all duration-500"
+                style={{
+                  background: `conic-gradient(#8AA6AA ${borderPercentage}, transparent ${borderPercentage})`,
+                  transform: "rotate(0deg)", // Rotate to start the gradient from the top
+                }}
+              ></div>
+              <div className="absolute w-[96%] h-[96%] mb-0.5 flex justify-center place-items-center flex-col bg-white rounded-full">
+                <a
+                  className="md:text-[25px] font-bold"
+                  href="/turnKeySolutions"
+                >
+                  Turnkey-Lines
+                </a>
 
-              <p className="md:text-[15px] text-center font-bold px-2">
-                A vast range of machinery that we are proud about.
-              </p>
+                <p className="md:text-[15px] text-center font-bold px-2">
+                  A vast range of machinery that we are proud about.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -113,6 +123,7 @@ const WaterTS = () => {
         {/* img above water treatment system */}
         <img
           src={images[data[index].imgr]}
+          alt="imgr"
           className="hidden md:block md:absolute md:rounded-none rounded-[19px] md:h-[200px] md:w-[200px] h-[150px] w-[150px] right-[8%] bottom-[30%]"
         ></img>
 
