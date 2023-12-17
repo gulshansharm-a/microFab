@@ -21,7 +21,7 @@ export default function Service() {
           </h3>
           <br></br><br></br><br></br>
 
-          <h3 className="mb-4  pb-4 text-4xl leading-tight text-black zx">
+          <h3 className="mb-4  pb-4 text-3xl leading-tight text-black zx">
           Experience the difference with us as firmly stand with our motto to offer incredible services every step of the way
           </h3>
 
@@ -40,7 +40,7 @@ export default function Service() {
     alt=""
   />
   <div className="flex flex-col justify-start order-1 md:order-1">
-    <h3 className="mb-2 pb-4 text-5xl leading-tight text-black">
+    <h3 className="mb-2 pb-4 text-3xl kl leading-tight text-black">
     Project Construction & Management </h3>
     <h6 className="text-2xs leading-tight text-black zx " color="clack">
           While you communicate your project requirements with us, our agile and proactive team always directs and supervises project implementation right from the nascent and initial stage. Ultimately, our strength lies in customer satisfaction and meeting the business needs for a viable project with regards to the budget and the functionality.
@@ -50,7 +50,7 @@ export default function Service() {
 </div>
 <br></br><br></br>
 </div></div>
-<div className="md:pl-6 flex flex-wrap md:gap-5 md:gap-y-4 md:p-0 p-8 md:place-items-start place-items-center md:justify-start justify-center">
+<div className="md:pl-6 flex flex-wrap gap-7 md:gap-5 md:gap-y-4 md:p-0 p-8 md:place-items-start place-items-center md:justify-start justify-center">
         {ServicesJson.map((device, index) => (
           <MedicalDevicesCard
             key={index} // Ensure each card has a unique key
@@ -74,7 +74,7 @@ export default function Service() {
     alt=""
   />
   <div className="flex flex-col justify-start order-1 md:order-1">
-    <h3 className="mb-2 pb-4 text-5xl leading-tight text-black">
+    <h3 className="mb-2 pb-4 text-3xl kl leading-tight text-black">
     Contract manufacturing</h3>
     <h6 className="text-2xs leading-tight text-black zx" color="clack">
     When the entire gamut of production operational activities becomes cumbersome, you can approach us to deal with everything from scratch. With MicroFab, your company is sure to save money, produce more products, and gain access to more resources. As we cater to different businesses, our mavericks are adept at maintaining machinery and the tools. We also shoulder every responsibility while designing products. </h6>
@@ -108,7 +108,7 @@ export default function Service() {
     alt=""
   />
   <div className="flex flex-col justify-start order-1 md:order-2 xc">
-    <h3 className="mb-2 pb-4 text-5xl leading-tight text-black">
+    <h3 className="mb-2 pb-4 text-3xl leading-tight kl text-black">
     Advisory Services </h3>
     <h6 className="text-2xs leading-tight text-black" color="clack">
     When perplexity is still reigning when you gear up to be future ready, we advise on the technology that you need to incorporate in your organization. Eventually, the machinery must lower down the operational costs and be capable of producing an astounding number of finished products. After all, we provide packaging solutions for you to attain recognition in the competitive world. </h6>
@@ -117,7 +117,7 @@ export default function Service() {
 </div>  
 </div></div>
 <br></br><br></br><br></br>
-<div className="md:pl-6 flex flex-wrap md:gap-5 md:gap-y-4 md:p-0 p-8 md:place-items-start place-items-center md:justify-start justify-center">
+<div className="md:pl-6 flex flex-wrap gap-7 md:gap-5 md:gap-y-4 md:p-0 p-8 md:place-items-start place-items-center md:justify-start justify-center">
         {ServicesJson1.map((device, index) => (
           <MedicalDevicesCard
             key={index} // Ensure each card has a unique key
