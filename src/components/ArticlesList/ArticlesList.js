@@ -24,12 +24,14 @@ export default function articlesList() {
       sub: "Blow-Fill-Seal, Technology",
       img: "https://res.cloudinary.com/dzhdarh4q/image/upload/v1700851989/articles/article3_hwh8vw.svg",
       date: "April 12, 2023 PAP-Q1-2023",
+      path: "article3"
     },
     {
       content: "Benefits of Approaching a Contract Manufacturer",
       sub: "Blow-Fill-Seal, Technology",
       img: "https://res.cloudinary.com/dzhdarh4q/image/upload/v1700851989/articles/article4_i8chpp.svg",
       date: false,
+      path: "article4"
     }
   ];
 

@@ -11,29 +11,34 @@ export default function HomeArticles() {
 
   const Blogs_Heading = [
     {
-      "content": "Latest Trends you could perceive with the BFS Technology",
-      "sub": "Blow-Fill-Seal, Technology",
-      "img": "https://res.cloudinary.com/dzhdarh4q/image/upload/v1700851990/articles/article1_lvcpq0.svg"
+      content: "Latest Trends you could perceive with the BFS Technology",
+      sub: "Blow-Fill-Seal, Technology",
+      img: "https://res.cloudinary.com/dzhdarh4q/image/upload/v1700851990/articles/article1_lvcpq0.svg",
+      path: "article1"
     },
     {
-      "content": "Factors you must consider while Purchasing an FFS Machine",
-      "sub": "Blow-Fill-Seal, Technology",
-      "img": "https://res.cloudinary.com/dzhdarh4q/image/upload/v1700851989/articles/article2_pqgsdx.svg",
-      "date": "April 12, 2023 PAP-Q1-2023"
+      content: "Factors you must consider while Purchasing an FFS Machine",
+      sub: "Blow-Fill-Seal, Technology",
+      img: "https://res.cloudinary.com/dzhdarh4q/image/upload/v1700851989/articles/article2_pqgsdx.svg",
+      date: "April 12, 2023 PAP-Q1-2023",
+      path: "article2"
     },
     {
-      "content": "Things to look for When Buying Medical Devices for your Hospital",
-      "sub": "Blow-Fill-Seal, Technology",
-      "img": "https://res.cloudinary.com/dzhdarh4q/image/upload/v1700851989/articles/article3_hwh8vw.svg",
-      "date": "April 12, 2023 PAP-Q1-2023"
+      content:
+        "Things to look for When Buying Medical Devices for your Hospital",
+      sub: "Blow-Fill-Seal, Technology",
+      img: "https://res.cloudinary.com/dzhdarh4q/image/upload/v1700851989/articles/article3_hwh8vw.svg",
+      date: "April 12, 2023 PAP-Q1-2023",
+      path: "article3"
     },
     {
-      "content": "Benefits of Approaching a Contract Manufacturer",
-      "sub": "Blow-Fill-Seal, Technology",
-      "img": "https://res.cloudinary.com/dzhdarh4q/image/upload/v1700851989/articles/article4_i8chpp.svg",
-      "date": false
+      content: "Benefits of Approaching a Contract Manufacturer",
+      sub: "Blow-Fill-Seal, Technology",
+      img: "https://res.cloudinary.com/dzhdarh4q/image/upload/v1700851989/articles/article4_i8chpp.svg",
+      date: false,
+      path: "article4"
     }
-  ]
+  ];
 
   return (
     <div className="font-['ClashDisplay']">
@@ -43,11 +48,12 @@ export default function HomeArticles() {
         Our latest Articles
         </p>
         {/* desktop view */}
+        {/* desktop view */}
         <div className="w-screen p-10 hidden md:block overflow-x-auto">
           {/* Cards */}
           <div className="flex flex-row gap-3">
-            {Blogs_Heading.slice(0,4).map((blog, index) => (
-              <div
+            {Blogs_Heading.slice(0, 4).map((blog, index) => (
+              <a href={blog.path}
                 key={index}
                 className="w-[50%] md:w-full md:max-w-[30%] rounded-lg shadow-md overflow-hidden"
               >
@@ -57,7 +63,7 @@ export default function HomeArticles() {
                   img={blog.img}
                   date={blog.date}
                 />
-              </div>
+              </a>
             ))}
           </div>
         </div>

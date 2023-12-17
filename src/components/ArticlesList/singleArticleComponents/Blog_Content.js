@@ -3,11 +3,15 @@ import ContentData from "./content.json";
 import img1 from "../../../assets/Articles/article1/img1.svg";
 import img2 from "../../../assets/Articles/article1/img2.svg";
 import img3 from "../../../assets/Articles/article1/img3.svg";
-import img4 from "../../../assets/Articles/article1/img3.svg";
+import img4 from "../../../assets/Articles/article1/img4.svg";
 
 import img7 from "../../../assets/Articles/article1/img7.svg";
 import img8 from "../../../assets/Articles/article1/img8.svg";
 import img9 from "../../../assets/Articles/article1/img9.svg";
+import img10 from "../../../assets/Articles/article1/img10.svg";
+import img11 from "../../../assets/Articles/article1/img11.svg";
+import img12 from "../../../assets/Articles/article1/img12.svg";
+import img13 from "../../../assets/Articles/article1/img13.svg";
 
 export default function Blog_Content({ index }) {
   const blogContent = ContentData[index];
@@ -19,12 +23,12 @@ export default function Blog_Content({ index }) {
   const { heading, img, content1, qa } = blogContent;
 
   const renderQA = () => {
-    return qa.map((item, index) => {
+    return qa.map((item, inde) => {
       if (item.q) {
-        if (index === 2) {
+        if (inde === 2) {
           return (
             <div>
-              <div key={index} className="py-4">
+              <div key={inde} className="py-4">
                 <p className="font-bold">{item.q}</p>
                 <p>{item.a}</p>
               </div>
@@ -33,10 +37,20 @@ export default function Blog_Content({ index }) {
                   <img src={img2} className="w-[49%]"></img>
                   <img src={img3} className="w-[49%]"></img>
                 </div>
-              ) : (
+              ) : index === 1 ? (
                 <div className="flex flex-row my-10 place-items-center justify-between">
                   <img src={img8} className="w-[49%]"></img>
                   <img src={img9} className="w-[49%]"></img>
+                </div>
+              ) : index === 2 ? (
+                <div className="flex flex-row my-10 place-items-center justify-between">
+                  <img src={img10} className="w-[49%]"></img>
+                  <img src={img11} className="w-[49%]"></img>
+                </div>
+              ) : (
+                <div className="flex flex-row my-10 place-items-center justify-between">
+                  <img src={img12} className="w-[49%]"></img>
+                  <img src={img13} className="w-[49%]"></img>
                 </div>
               )}
             </div>
@@ -90,12 +104,12 @@ export default function Blog_Content({ index }) {
       <div className="flex flex-col py-10 gap-4">
         {renderQA()}
         {/* Conditionally render img2 and img3 if the index value is 2 */}
-        {index === 2 && (
+        {/* {index === 2 && (
           <div className="flex flex-row gap-4">
             <img src={img2} className="w-[50%]" alt="Image 2" />
             <img src={img3} className="w-[50%]" alt="Image 3" />
           </div>
-        )}
+        )} */}
       </div>
     </div>
   );
