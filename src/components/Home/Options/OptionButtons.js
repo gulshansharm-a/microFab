@@ -64,11 +64,11 @@ export default function OptionsButtons() {
         </div>
 
         {/* mobile machine images */}
-        <div className="md:hidden flex justify-center">
+        <div className="md:hidden flex justify-center h-[150px] w-full mb-[290px] place-items-center">
           <Animation />
         </div>
 
-        <div className="flex flex-col md:flex-row md:justify-between md:place-items-center text-left">
+        <div className="flex flex-col md:flex-row md:justify-center md:gap-[20%] md:place-items-center text-left">
           <div className=" flex flex-col md:flex-col md:w-[600px] md:h-[300px]">
             {/* Flow chart for mobile */}
             <div className="md:hidden justify-center flex md:flex-row md:mt-6 place-items-center md:gap-1 gap-1 mt-6 mb-6">
@@ -170,7 +170,7 @@ export default function OptionsButtons() {
 
           {/* desktop machine images */}
 
-          <div className="hidden md:block ">
+          <div className="hidden md:block h-[435px] w-[200px] mt-3">
             <Animation />
           </div>
         </div>

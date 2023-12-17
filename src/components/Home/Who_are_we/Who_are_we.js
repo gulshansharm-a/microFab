@@ -77,8 +77,74 @@ export default function Who_are_we() {
           </p>
         </div>
 
+        {/* mobile x scroll */}
+        <div>
+          <div className="md:hidden flex flex-row overflow-x-scroll mt-[30px]">
+            <div className="flex flex-nowrap">
+
+
+              <div className="w-[45%] flex-shrink-0">
+                <div className="flex flex-row gap-10">
+                  <div className="block md:w-[5px] w-[10px] h-[120px] md:h-[120px] bg-[#8AA6AA] gap-4"></div>
+                  <div className="md:w-[75%] md:text-[16px] flex flex-col">
+                    <p className="md:text-[20px] font-semibold text-[20px]">
+                      500+ cutting-edge <br></br>machinery
+                    </p>
+                    <p className="">
+                      We design machinery as<br></br> per the requirements
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="w-[50%] flex-shrink-0">
+                <div className="flex flex-row gap-10">
+                  <div className="block md:w-[5px] w-[10px] h-[120px] md:h-[120px] bg-[#8AA6AA] gap-4"></div>
+                  <div className="md:w-[75%] md:text-[16px] flex flex-col">
+                    <p className="md:text-[20px] font-semibold text-[20px]">
+                    200+ employees
+                    </p>
+                    <p className="">
+                    We have maintained the<br></br> aplomb through the<br></br> years
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="w-[50%] flex-shrink-0">
+                <div className="flex flex-row gap-10">
+                  <div className="block md:w-[5px] w-[10px] h-[100px] bg-[#8AA6AA] gap-4"></div>
+                  <div className="md:w-[75%] md:text-[16px] flex flex-col">
+                    <p className="md:text-[20px] font-semibold text-[20px]">
+                    90% customer retention
+                    </p>
+                    <p className="">
+                    Our team is known for<br></br> incredible service
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="w-[50%] flex-shrink-0">
+                <div className="flex flex-row gap-10">
+                  <div className="block md:w-[5px] w-[10px] h-[100px] bg-[#8AA6AA] gap-4"></div>
+                  <div className="md:w-[75%] md:text-[16px] flex flex-col">
+                    <p className="md:text-[20px] font-semibold text-[20px]">
+                    Across 15+ countries
+                    </p>
+                    <p className="">
+                    We have our footprint <br></br>across the globe
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              
+            </div>
+
+            
+          </div>
+        </div>
+
         {/* desktop view */}
-        <div className="md:flex md:flex-col overflow-x-auto md:justify-start md:gap-20">
+        <div className="md:flex hidden md:flex-col overflow-x-auto md:justify-start md:gap-20">
           {/* 21 countries */}
           <div className="flex md:flex-row gap-1 flex-row md:mt-10">
             <div className="flex flex-row w-full gap-4">
@@ -88,7 +154,9 @@ export default function Who_are_we() {
                 <p className="md:text-[20px] font-semibold text-[20px]">
                   500+ cutting-edge <br></br>machinery
                 </p>
-                <p className="">We design machinery as<br></br> per the requirements</p>
+                <p className="">
+                  We design machinery as<br></br> per the requirements
+                </p>
               </div>
             </div>
 
@@ -99,7 +167,10 @@ export default function Who_are_we() {
                 <p className="md:text-[20px] font-semibold text-[20px]">
                   200+ employees
                 </p>
-                <p>We have maintained the<br></br> aplomb through the<br></br> years</p>
+                <p>
+                  We have maintained the<br></br> aplomb through the<br></br>{" "}
+                  years
+                </p>
               </div>
             </div>
           </div>
@@ -112,7 +183,9 @@ export default function Who_are_we() {
               <p className="md:text-[20px] font-semibold text-[25px]">
                 90% customer retention
               </p>
-              <p>Our team is known for <br></br>incredible service</p>
+              <p>
+                Our team is known for <br></br>incredible service
+              </p>
             </div>
             {/* line */}
             <div className="w-[5px] md:h-[100px] md:w-[8px] bg-[#8AA6AA] gap-4"></div>
@@ -120,7 +193,9 @@ export default function Who_are_we() {
               <p className="md:text-[20px] font-semibold text-[25px]">
                 Across 15+ countries
               </p>
-              <p>We have our footprint <br></br>across the globe</p>
+              <p>
+                We have our footprint <br></br>across the globe
+              </p>
             </div>
           </div>
         </div>
