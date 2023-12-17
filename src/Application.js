@@ -20,10 +20,12 @@ import { useState } from "react";
 import Footer from "./components/Common/Footer/Footer";
 
 function Application() {
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedImage, setSelectedImage] = useState('image1');
   const showImage = (imageId) => {
     setSelectedImage(imageId);
   };
+  
+
   return (
     <>
       {/* <div> */}
@@ -114,7 +116,10 @@ function Application() {
         className="image-container"
         id="image1"
         style={{ display: selectedImage === "image1" ? "block" : "none" }}
+        
       >
+       
+        <br></br>
         <img src={drop} alt="Image 1" />
       </div>
       <div
