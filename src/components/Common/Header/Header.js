@@ -479,47 +479,63 @@ const Header = () => {
                 <Link to="/applications" onClick={toggleMenu}>
                   <div className="lg:absolute mt-2 bg-white border border-gray-300 p-4 rounded-lg shadow-md h-[250px] w-[350px] lg:w-[739px] mx-auto lg:left-1/2 lg:transform lg:-translate-x-1/2">
                     <div className="flex flex-row gap-[16px]">
-                      <Card
-                        content="Pharmaceutical Industry"
-                        img={img4}
-                        isSelected={
-                          selectedApplicationCard === "Pharmaceutical Industry"
-                        }
-                        onClick={() =>
-                          toggleMenu &&
-                          handleApplicationCardClick("Pharmaceutical Industry")
-                        }
-                      />
-                      <Card
-                        content="Cosmetic Industry"
-                        img={img5}
-                        isSelected={
-                          selectedApplicationCard === "Cosmetic Industry"
-                        }
-                        onClick={() =>
-                          handleApplicationCardClick("Cosmetic Industry")
-                        }
-                      />
+                      <Link to="/pharmaceutical">
+                        <Card
+                          content="Pharmaceutical Industry"
+                          img={img4}
+                          isSelected={
+                            selectedApplicationCard ===
+                            "Pharmaceutical Industry"
+                          }
+                          onClick={() => {
+                            handleApplicationCardClick(
+                              "Pharmaceutical Industry"
+                            );
+                            toggleApplicationDropdown();
+                          }}
+                        />
+                      </Link>
+                      <Link to="/cosmic">
+                        <Card
+                          content="Cosmetic Industry"
+                          img={img5}
+                          isSelected={
+                            selectedApplicationCard === "Cosmetic Industry"
+                          }
+                          onClick={() => {
+                            handleApplicationCardClick("Cosmetic Industry");
+                            toggleApplicationDropdown();
+                          }}
+                        />
+                      </Link>
                     </div>
                     <div className="flex flex-row gap-[16px]">
-                      <Card
-                        content="Food Industry"
-                        img={img6}
-                        isSelected={selectedApplicationCard === "Food Industry"}
-                        onClick={() =>
-                          handleApplicationCardClick("Food Industry")
-                        }
-                      />
-                      <Card
-                        content="Chemical Industry"
-                        img={img7}
-                        isSelected={
-                          selectedApplicationCard === "Chemical Industry"
-                        }
-                        onClick={() =>
-                          handleApplicationCardClick("Chemical Industry")
-                        }
-                      />
+                      <Link to="/food">
+                        <Card
+                          content="Food Industry"
+                          img={img6}
+                          isSelected={
+                            selectedApplicationCard === "Food Industry"
+                          }
+                          onClick={() => {
+                            handleApplicationCardClick("Food Industry");
+                            toggleApplicationDropdown();
+                          }}
+                        />
+                      </Link>
+                      <Link to="/chemical">
+                        <Card
+                          content="Chemical Industry"
+                          img={img7}
+                          isSelected={
+                            selectedApplicationCard === "Chemical Industry"
+                          }
+                          onClick={() => {
+                            handleApplicationCardClick("Chemical Industry");
+                            toggleApplicationDropdown();
+                          }}
+                        />
+                      </Link>
                     </div>
                   </div>
                 </Link>
@@ -527,7 +543,7 @@ const Header = () => {
             </li>
             <li>
               <Link to="/TurnKeySolutions" onClick={toggleMenu}>
-              TurnKey
+                TurnKey
               </Link>
             </li>
             <li>
