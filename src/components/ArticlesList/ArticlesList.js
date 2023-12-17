@@ -9,14 +9,14 @@ export default function articlesList() {
       content: "Latest Trends you could perceive with the BFS Technology",
       sub: "Blow-Fill-Seal, Technology",
       img: "https://res.cloudinary.com/dzhdarh4q/image/upload/v1700851990/articles/article1_lvcpq0.svg",
-      path: "article1"
+      path: "article1",
     },
     {
       content: "Factors you must consider while Purchasing an FFS Machine",
       sub: "Blow-Fill-Seal, Technology",
       img: "https://res.cloudinary.com/dzhdarh4q/image/upload/v1700851989/articles/article2_pqgsdx.svg",
       date: "April 12, 2023 PAP-Q1-2023",
-      path: "article2"
+      path: "article2",
     },
     {
       content:
@@ -24,15 +24,15 @@ export default function articlesList() {
       sub: "Blow-Fill-Seal, Technology",
       img: "https://res.cloudinary.com/dzhdarh4q/image/upload/v1700851989/articles/article3_hwh8vw.svg",
       date: "April 12, 2023 PAP-Q1-2023",
-      path: "article3"
+      path: "article3",
     },
     {
       content: "Benefits of Approaching a Contract Manufacturer",
       sub: "Blow-Fill-Seal, Technology",
       img: "https://res.cloudinary.com/dzhdarh4q/image/upload/v1700851989/articles/article4_i8chpp.svg",
       date: false,
-      path: "article4"
-    }
+      path: "article4",
+    },
   ];
 
   return (
@@ -40,14 +40,15 @@ export default function articlesList() {
       {/* set of headings */}
       <div>
         <p className="text-primary md:text-[25px] text-[30px] md:block hidden font-bold pl-10">
-        Article and Blogs
+          Article and Blogs
         </p>
         {/* desktop view */}
         <div className="w-screen p-10 hidden md:block overflow-x-auto">
           {/* Cards */}
           <div className="flex flex-row gap-3">
             {Blogs_Heading.slice(0, 4).map((blog, index) => (
-              <a href={blog.path}
+              <a
+                href={blog.path}
                 key={index}
                 className="w-[50%] md:w-full md:max-w-[30%] rounded-lg shadow-md overflow-hidden"
               >
@@ -65,14 +66,17 @@ export default function articlesList() {
 
       {/* mobile */}
       <div className="font-['ClashDisplay'] p-10 md:hidden">
-        <p className="text-primary md:text-[25px] text-[30px] font-bold mb-4">Article and Blogs</p>
+        <p className="text-primary md:text-[25px] text-[30px] font-bold mb-4">
+          Article and Blogs
+        </p>
 
         <div
           className="w-full h-[43vh] flex overflow-x-scroll gap-4"
           style={{ scrollSnapType: "x mandatory" }}
         >
           {Blogs_Heading.map((article, index) => (
-            <div
+            <a
+              href={article.path}
               key={index}
               className="w-full flex-shrink-0 scroll-snap-align-start rounded-lg shadow-md"
             >
@@ -102,7 +106,7 @@ export default function articlesList() {
                   </div>
                 </div>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>

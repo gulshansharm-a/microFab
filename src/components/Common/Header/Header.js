@@ -398,7 +398,7 @@ const Header = () => {
                 }`}
                 onClick={toggleTechnologyDropdown}
               >
-                Technology
+                Products
                 {isTechnologyDropdownOpen ? (
                   <img
                     src={ExpandLess}
@@ -526,8 +526,8 @@ const Header = () => {
               )}
             </li>
             <li>
-              <Link to="/articles" onClick={toggleMenu}>
-                Articles
+              <Link to="/TurnKeySolutions" onClick={toggleMenu}>
+              TurnKey
               </Link>
             </li>
             <li>
@@ -536,13 +536,13 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link to="/TP" onClick={toggleMenu}>
-                Terms & policies
+              <Link to="/service" onClick={toggleMenu}>
+                Services
               </Link>
             </li>
             <li>
               <Link to="/contact" onClick={toggleMenu}>
-                CONTACT
+                Contact
               </Link>
             </li>
           </ul>
