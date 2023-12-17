@@ -44,7 +44,7 @@ export default function Product() {
           </h6>
           <br></br>
           
-          <div className="md:pl-16 flex flex-wrap md:gap-4 md:gap-y-8 md:p-0 p-8 md:place-items-start place-items-center md:justify-start justify-center">
+          <div className="md:pl-16 flex flex-wrap gap-7 md:gap-4 md:gap-y-8 md:p-0 p-8 md:place-items-start place-items-center md:justify-start justify-center">
         {TurnKeySolutionsData.map((device, index) => (
           <MedicalDevicesCard
             key={index} // Ensure each card has a unique key
@@ -81,7 +81,7 @@ export default function Product() {
     alt=""
   />
   <div className="flex flex-col justify-start order-1 md:order-2 xc">
-    <h3 className="mb-2 pb-4 text-6xl leading-tight text-black bh">
+    <h3 className="mb-2 pb-4 text-3xl leading-tight text-black bh">
     After sale
 service </h3>
     <h6 className="text-2xs leading-tight text-black serv7" color="clack">
@@ -109,7 +109,7 @@ service </h3>
   />
  
   <div className="flex flex-col justify-start order-2 md:order-2 xd">
-    <h3 className="mb-2 pb-4 text-6xl leading-tight text-black ">
+    <h3 className="mb-2 pb-4 text-3xl leading-tight text-black ">
     Machine
 upgradisation</h3>
     <h6 className="text-xl leading-tight text-black " color="clack">
@@ -130,9 +130,9 @@ upgradisation</h3>
   />
 
   <div className="flex flex-col justify-start order-1 md:order-1 gghh">
-    <h3 className="mb-2 pb-4 md:text-3xl text-5xl hhjj  leading-tight text-black">
+    <h3 className="mb-2 pb-4 md:text-3xl text-3xl hhjj  leading-tight text-black">
     Contract manufacturing</h3>
-    <h6 className="text-2xs leading-tight text-black " color="clack">
+    <h6 className="text-2xs sdd leading-tight text-black " color="clack">
     When the entire gamut of production operational activities becomes cumbersome, you can approach us to deal with everything from scratch. With MicroFab, your company is sure to save money, produce more products, and gain access to more resources. As we cater to different businesses, our mavericks are adept at maintaining machinery and the tools. We also shoulder every responsibility while designing products. </h6>
     
   </div>
@@ -177,14 +177,14 @@ upgradisation</h3>
     alt=""
   />
   <div className="flex flex-col justify-start order-1 md:order-1 xv">
-    <h3 className="mb-2 pb-4 text-7xl leading-tight text-black hj">
+    <h3 className="mb-2 pb-4 text-3xl leading-tight text-black hhjj">
     Medical devices</h3>
     <h6 className="text-xl leading-tight text-black hdfc" color="clack">
   
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt . </h6>
   <button
               type="submit"
-              className="bg-[#8AA6AA] mt-4 md:mt-4 text-white px-4 py-2 md:w-[80%] w-[90%] rounded-md"
+              className="bg-[#8AA6AA] mt-4 md:mt-4 text-white px-4 py-2 md:w-[90%] w-[100%] rounded-md"
             >
               KNOW MORE ->
             </button>
