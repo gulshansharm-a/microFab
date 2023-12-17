@@ -131,8 +131,8 @@ function AboutUs() {
                 </p>
                 <br></br>
                 <br></br>
-                {/* <div className="lg:grid-grid-cols-3 md:grid-cols-3 gap-8 gh bg-[#8AA6AA]"> */}
-                <div className="md:grid grid-rows-3 lg:grid grid-cols-3 lg:grid grid-rows-1 gap-20 w-full">
+                {/* <div class="lg:grid-grid-cols-3 md:grid-cols-3 gap-8 gh bg-[#8AA6AA]"> */}
+                <div className="md:grid grid-rows-1 lg:grid grid-cols-3 lg:grid grid-rows-1 gap-20 w-full">
                   <div className="col-span-1 md:col-span-1 lg:col-span-1 w-full mb-10">
                     <div className="w-full h-auto flex items-center">
                       <div className="text-9xl text-[#bac8ca] pr-4">1</div>
@@ -208,7 +208,7 @@ function AboutUs() {
                   Lorem ipsum
                 </h5> */}
                 <center>
-                <p className="mb-4 text-xl ddd text-[#8AA6AA] leading-tight  ll font-['ClashDisplay']">
+                <p className="mb-4 text-xl ddd text-[#8AA6AA] leading-tight   font-['ClashDisplay']">
                 At MicroFab, we have been serving the Pharmaceutical, Cosmetic, Food and the Chemical industry across the years. Our adept and motivated team of professionals, along with the state-of-the-art engineering facilities, undertake designing, manufacturing and delivering machinery to meet the requirements of our esteemed clients.
                 </p>
                 </center>
@@ -230,9 +230,9 @@ function AboutUs() {
           <img className="cvfg" src ={qwe} alt="img"></img>
 
           
-          <div className="lg:flex flex-row sm:flex flex-colml-1">
+          <div className="lg:flex flex-rows md:flex flex-cols sm:flex flex-cols-1">
   {/* {[1, 2, 3, 4, 5, 6].map((index) => ( */}
-  <div className="flex flex-row p-2 m-auto">
+  <div className="jkhj p-2 m-auto">
 
     <div className="flex flex-col items-center">
       <img
@@ -336,10 +336,10 @@ function AboutUs() {
       </div>
 
       {/* Block 2 - Text and Boxes */}
-      <div className="flex-1 h-96 mb-48 bg-white p-8">
-      <h3 className="lg:ml-0 sm:ml-64 text-xl text-[#8AA6AA] mr-20 m-auto leading-tight  ll font-['ClashDisplay']"><strong><center>Key Figures</center></strong>
+      <div className="flex-1 h-96 mb-48 sm:ml-64 bg-white p-8">
+      <h3 className="lg:ml-0 sm:ml-64 text-xl text-[#8AA6AA] mr-32 m-auto leading-tight  ll ty font-['ClashDisplay']"><strong><center>Key Figures</center></strong>
       </h3>
-      <h3 className="mb-4 text-2xs text-[#8AA6AA] mr-20 m-auto leading-tight  ll font-['ClashDisplay']"><center>Phenomenal business success has now made us proud about 
+      <h3 className="mb-4 text-2xs text-[#8AA6AA] mr-32 m-auto leading-tight  ll font-['ClashDisplay']"><center>Phenomenal business success has now made us proud about 
 how we have flourished in the competitive era.</center>
       </h3>
 
