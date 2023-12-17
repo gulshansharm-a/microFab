@@ -27,7 +27,7 @@ export default function Product() {
           </h3>
           <br></br><br></br><br></br>
 
-          <h3 className="mb-4  pb-4 text-4xl leading-tight text-black">
+          <h3 className="mb-4  pb-4 text-4xl sm:text-2xl hgf leading-tight text-black">
           Our service can be a peace of mind when you’re very much concerned about machine maintenance.</h3>
 
           <h6 className="text-2xs leading-tight text-black serv2" color="clack">
@@ -59,18 +59,19 @@ export default function Product() {
 
           <br></br>
           <div className="serv1">
-          <div className="serv4"></div>
+          <div class="serv4"></div>
           <br></br>
           
 
-          <div className="flex flex-col rounded-lg text-black md:max-w-5xl md:flex-row">
+          <div className="flex flex-col rounded-lg text-black md:max-w-5xl md:flex-row nnnn">
   <img
-    className="h-48 w-full rounded-t-lg object-cover  md:h-auto md:w-48 md:rounded-none md:rounded-l-lg md:order-1"
+    className="w-full rounded-t-lg object-cover zz  md:w-48 md:rounded-none md:rounded-l-lg md:order-1"
     src={s3}
     alt=""
   />
+ 
    <img
-    className="w-full df rounded-t-lg object-cover  md:h-auto md:w-64 md:rounded-none md:rounded-l-lg md:order-1"
+    className="w-full df rounded-t-lg object-cover  md:h-auto md:w-96 md:rounded-none md:rounded-l-lg md:order-1"
     src={s2}
     alt=""
   />
@@ -91,18 +92,18 @@ service </h3>
 <br></br>
 <br></br>
 <br></br>
-<div className="serv4 serv1"></div>
+<div class="serv4 serv1"></div>
           <br></br>
           
 
-          <div className="flex flex-col rounded-lg text-black md:max-w-5xl md:flex-row">
+          <div className="flex flex-col rounded-lg text-black md:max-w-4xl lg:max-w-6xl  sm:max-w-3xl sm:flex-row md:flex-row">
   <img
-    className="h-48 w-full rounded-t-lg object-cover  md:h-auto md:w-96 md:rounded-none md:rounded-l-lg md:order-1"
+    className="h-48 w-auto rounded-t-lg object-cover qwer md:h-auto md:w-full md:rounded-none md:rounded-l-lg md:order-1"
     src={a1}
     alt=""
   />
    <img
-    className="w-full  rounded-t-lg object-cover ghj md:h-auto md:w-full md:rounded-none md:rounded-l-lg md:order-3"
+    className="w-auto rounded-t-lg object-cover ghj md:h-auto md:w-full md:rounded-none md:rounded-l-lg md:order-3"
     src={a2}
     alt=""
   />
@@ -117,7 +118,7 @@ upgradisation</h3>
 <div className="serv1">
         <div>
         <br></br><br></br><br></br><br></br><br></br>
-          <div className="serv4"></div>
+          <div class="serv4"></div>
           <br></br>
           
 
@@ -128,8 +129,8 @@ upgradisation</h3>
     alt=""
   />
 
-  <div className="flex flex-col justify-start order-1 md:order-1">
-    <h3 className="mb-2 pb-4 text-6xl leading-tight text-black">
+  <div className="flex flex-col justify-start order-1 md:order-1 gghh">
+    <h3 className="mb-2 pb-4 md:text-3xl text-5xl hhjj  leading-tight text-black">
     Contract manufacturing</h3>
     <h6 className="text-2xs leading-tight text-black " color="clack">
     When the entire gamut of production operational activities becomes cumbersome, you can approach us to deal with everything from scratch. With MicroFab, your company is sure to save money, produce more products, and gain access to more resources. As we cater to different businesses, our mavericks are adept at maintaining machinery and the tools. We also shoulder every responsibility while designing products. </h6>
@@ -155,16 +156,16 @@ upgradisation</h3>
 </div>
 <br></br><br></br><br></br>
           <div className="serv1">
-          <div className="serv4"></div>
+          <div class="serv4"></div>
           <br></br>
           
 
           <div className="flex flex-col rounded-lg text-black md:max-w-9xl md:flex-row">
-  <img
+  {/* <img
     className="vf w-full rounded-t-lg object-cover ee  md:h-auto md:w-48 md:rounded-none md:rounded-l-lg md:order-3"
     src={b1}
     alt=""
-  />
+  /> */}
    <img
     className="w-full ml-96 dff rounded-t-lg object-cover  md:h-auto md:w-64 md:rounded-none md:rounded-l-lg md:order-3"
     src={b2}
@@ -178,7 +179,7 @@ upgradisation</h3>
   <div className="flex flex-col justify-start order-1 md:order-1 xv">
     <h3 className="mb-2 pb-4 text-7xl leading-tight text-black hj">
     Medical devices</h3>
-    <h6 className="text-xl leading-tight text-black " color="clack">
+    <h6 className="text-xl leading-tight text-black hdfc" color="clack">
   
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt . </h6>
   <button

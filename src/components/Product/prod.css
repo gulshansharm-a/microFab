@@ -51,16 +51,17 @@
     margin-right:150%;
   }
   .ghj{
-    margin-right:-15%;
+    margin-right:-35%;
+    width:200%;
   }
   .xd{
     margin:auto 8%;;
     text-align:center;
   }
-  .xc{
+  /* .xc{
     position:relative;
     left:550%;
-  }
+  } */
   .ee{
     margin-left:70%;
   }
@@ -89,10 +90,8 @@
     /* margin-left:56%; */
     
   }
-  .xc{
-    position:relative;
-    left:45%;
-  }
+
+
   /* .zx{
     margin-right:80%;
   } */
@@ -110,10 +109,11 @@
   line-height: normal;
   letter-spacing: -0.16px;
   }
+  
   .serv2{
   position:absolute;
   left:61%;
-  top:200px;
+  top:300px;
   margin-right:5%;
   /* margin-bottom:480%; */
   color: #000;
@@ -155,8 +155,8 @@
     justify-content:center;
   }
   .df{
-    height:15%;
-    margin-top:270px;
+    height:20%;
+    margin-top:300px;
     margin-left:2%;
     margin-right:2%;
    
@@ -169,8 +169,8 @@
     margin-right:2%;
   }
   .as{
-    height:15%;
-    margin-top:2%;
+    height:40%;
+    margin-top:-2%;
     margin-left:2%;
     margin-right:2%;
     margin-bottom:2%;
@@ -238,3 +238,115 @@
     position:absolute;
     left:5%;
   }
+
+  @media only screen and (max-width: 1350px) {
+.ghj{
+  position:absolute;
+  display:none;
+}
+.as{
+  position:absolute;
+  display:none;
+}
+.zz{
+  position:absolute;
+  display:none;
+}
+  }
+
+  @media only screen and (max-width: 900px) {
+    .qwer{
+      position:absolute;
+      display:none;
+    }
+    .serv2{
+      position:absolute;
+      display:none;
+      text-align:center;
+    }
+    .hgf{
+      margin-right:-55%;
+    }
+  
+ 
+  
+      }
+ 
+      @media only screen (min-width:580px) and (max-width: 1320px) {
+
+   .nnnn{
+    position:absolute;
+    display:hidden;
+   }
+   .df{
+    position:absolute;
+    display:none;
+   }
+   
+      }
+
+
+      @media only screen and (max-width: 880px) {
+      /* .df{
+        margin-left:30%;
+        margin-top:50%;
+       } */
+     
+       
+        .xc{
+          position:relative;
+          left:250%;
+        }
+        
+      }
+
+      @media only screen and (max-width: 800px) {
+        .gghh{
+          margin:0 -20%;
+          position:relative;
+          left:20%;
+         }
+         .hhjj{
+          text-align:center;
+         }
+         .mmn{
+          position:absolute;
+          display:none;
+         }
+         .bbv{
+          position:absolute;
+          display:none;
+         }
+         .bv{
+          margin-left:40%;
+         }
+         .xv{
+          text-align:center;
+          margin:0 -20%;
+          /* position:relative;
+          left:20%; */
+         }
+         .dff{
+          position:absolute;
+          display:none;
+         }
+         .hj{
+          margin-right:-80%;
+         }
+         .hdfc{
+          margin-right:-120%;
+          text-align:left;
+         }
+         .ase{
+          position:absolute;
+          display:none;
+         }
+      }
+
+
+      @media only screen and (min-width:1300px) {
+      .xc{
+        position:relative;
+        left:45%;
+      }
+    }

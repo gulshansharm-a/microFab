@@ -133,3 +133,29 @@ height: 7px;
   position:absolute;
   left:5%;
 }
+
+@media only screen and (max-width: 750px) {
+.ds{
+  margin-left:-70%;
+  margin-top:5%;
+}
+.bbv{
+  margin-left:-70%;
+}
+.zx{
+  margin-right:-40%;
+
+}
+
+.xc{
+  position:absolute;
+  display:none;
+}
+}
+
+@media only screen and (max-width: 886px) {
+  .dc{
+    position:absolute;
+    display:none;
+  }
+}
