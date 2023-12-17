@@ -18,7 +18,8 @@ import Slider from "./slider";
 import testimonials from "./testimonials.json";
 import { useState } from "react";
 import Footer from "./components/Common/Footer/Footer";
-
+import applicationContent from './components/Products/BFS/Application/applicationContent.json'
+import ApplicationCard from "./components/Products/BFS/Application/ApplicationCard";
 function Application() {
   const [selectedImage, setSelectedImage] = useState('image1');
   const showImage = (imageId) => {
@@ -170,20 +171,20 @@ function Application() {
 
               <div className="flex flex-col p-6 vbn kkk">
                <br></br>
-                          <li className=" w-96 text-2xl leading-tight text-[#8AA6AA]">ear drops</li>     
-                          <li className=" w-96 text-2xl leading-tight text-[#8AA6AA]">nose drops</li> 
-                          <li className=" w-96 text-2xl leading-tight text-[#8AA6AA]">contact lens cleaners and rinses</li> 
-                          <li className=" w-96 text-2xl leading-tight text-[#8AA6AA]">Gels for vaginal or rectal use</li>
-                          <li className=" w-96 text-2xl leading-tight text-[#8AA6AA]">drinking solutions</li>
-                          <li className=" w-96 text-2xl leading-tight text-[#8AA6AA]">Wound care preparations,</li>
+                          <li className=" w-96 ml--5 text-xl  leading-tight text-[#8AA6AA]">ear drops</li>     
+                          <li className=" w-96 ml--5 text-xl  leading-tight text-[#8AA6AA]">nose drops</li> 
+                          <li className=" w-96 ml--5 text-xl  leading-tight text-[#8AA6AA]">contact lens cleaners and rinses</li> 
+                          <li className=" w-96 ml--5 text-xl  leading-tight text-[#8AA6AA]">Gels for vaginal or rectal use</li>
+                          <li className=" w-96 ml--5 text-xl  leading-tight text-[#8AA6AA]">drinking solutions</li>
+                          <li className=" w-96 ml--5 text-xl  leading-tight text-[#8AA6AA]">Wound care preparations,</li>
 
-                          <p className= " w-96 text-2xl ml-7 leading-tight text-[#8AA6AA]">wound gels and rinses</p>
-                          <li className=" w-96 text-2xl leading-tight text-[#8AA6AA]">disinfectant</li>
-                          <li className=" w-96 text-2xl leading-tight text-[#8AA6AA]">diagnostics</li>
-                          <li className=" w-96 text-2xl leading-tight text-[#8AA6AA]">biotechnological products</li> 
-                          <li className=" w-96 text-2xl leading-tight text-[#8AA6AA]">vaccines</li> 
-                          <li className=" w-96 text-2xl leading-tight text-[#8AA6AA]">Stability Test Kits</li> 
-                          <li className=" w-96 text-2xl leading-tight text-[#8AA6AA]">biotechnological products</li> 
+                          <p className= " w-96 ml--5 text-xl  ml-7 leading-tight text-[#8AA6AA]">wound gels and rinses</p>
+                          <li className=" w-96 ml--5 text-xl  leading-tight text-[#8AA6AA]">disinfectant</li>
+                          <li className=" w-96 ml--5 text-xl  leading-tight text-[#8AA6AA]">diagnostics</li>
+                          <li className=" w-96 ml--5 text-xl  leading-tight text-[#8AA6AA]">biotechnological products</li> 
+                          <li className=" w-96 ml--5 text-xl  leading-tight text-[#8AA6AA]">vaccines</li> 
+                          <li className=" w-96 ml--5 text-xl  leading-tight text-[#8AA6AA]">Stability Test Kits</li> 
+                          <li className=" w-96 ml--5 text-xl  leading-tight text-[#8AA6AA]">biotechnological products</li> 
                           </div> <br></br><br></br><br></br>
               {/* <br></br><br></br><br></br><br></br><br></br> */}
               <img className="h-96 w-48 rounded-lg rounded-md uuu" src="https://s3-alpha-sig.figma.com/img/4f3d/619c/61df89bd22062ce2d6a4d886511827c3?Expires=1703462400&Signature=PdTfbQQ-2xK7ioRoAKAqJfCwVBZIO1MDV6Do7sr~PPO58AUEEe8af~zybw19JmFSyeaYcdVvTfp0zRQKwIgWeLgp8VMuPDZU086kHK44BVzAfaUCF19oiyu2KUElUMcaxnTbrUySTdcAuQW6DGl1L0GVQO0cvVXpbA~G2F7greCMyyc2uZVTv0fq3hIyAQlOhG7oXEXFoCWB6ceTT-07jn7zKkJgRk3042Gpp1EbGKryNaizIOk5TT4BkjvqrjDnoDJZ00mMto0xUjL1sTzVscPKdcp~ZampRYdX24DGGijVI-1gifeQrSgt~wI0F88l18RjTVLmxhiuRLv7euYmnA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="NO image">
@@ -202,56 +203,24 @@ function Application() {
           yourself!"
         </h6>
         <br></br></center>
+        <br></br><br></br>
         {/* <Card3Presentation/> */}
       </div>
       {/* className={`flex min-h-screen flex-col items-center justify-between py-24`} */}
 
       {/* 2. make sure our carousel container takes up the full screen width using w-screen */}
-      <div className="w-screen">
-        <Slider options={{ align: "center" }}>
-          {testimonials.map((testimonial, i) => (
-            // 3. flex-[0_0_50%] set the width of each card to 50% of the viewport
-            // for mobile devices we use 90% width
-            <div key={i} className="flex-[0_0_90%] md:flex-[0_0_23%]">
-              <div className="py-4 h-96 px-4 bg-white shadow-lg rounded-lg my-20">
-      <div className="flex justify-center md:justify-end -mt-16">
-        {/* <Image> */}
-          
-         {/* <img className="w-150 h-30 object-cover  border-2 border-indigo-500" src={{...testimonial}.imgSrc} alt={{...testimonial}.imgSrc}></img>  */}
-           {/* height={80}
-           width={80}
-           src={props.imgSrc} 
-           </Image> */}
-      </div>
-      
-        {/* <h2 className="text-[#8AA6AA] text-3xl font-semibold">{props.title}</h2> */}
-        <div>
-          <div  className="asdf">
-        <h3 className="mb-4 border-b pb-4 text-3xl leading-tight text-[#8AA6AA] df asdf"><img className="w-150 h-30 object-cover " src={pharma} alt={pharma}></img> &nbsp;Pharma</h3>
-        {/* <spacer></spacer> */}
-        
-        </div>
-        
-        <h5 className="mt-2 text-gray-600 text-md kkk"><strong>{{...testimonial}.content}</strong></h5>
-        <h5 className="mt-2 text-gray-600 text-xs kkk" >{{...testimonial}.author}</h5>
-      </div>
-      {/* <div className ="mt-2 text-gray-600flex justify-end mt-4 pyu text-[#8AA6AA]">Blow-Fill-Seal, Technology </div>
-      <div className="flex justify-end mt-4 mt-2">
-      <div className="flex flex-row place-items-center gap-3">
-                    <a className="text-[#8AA6AA] font-extrabold">Read more</a>
-                    <img
-                      src={arrow_right}
-                      className="bg-[#8AA6AA] h-6 p-0.5 rounded-full"
-                      alt="Read more"
-                    />
-        
-        </div>
-        
-      </div> */}
-    </div>
+      <div className="md:px-14 mt-[5%] px-4 gap-10 flex flex-col">
+       
+        <div className="w-full flex flex-row md:gap-10 gap-[200px] md:overflow-auto overflow-scroll pb-10">
+          {applicationContent.map((item, index) => (
+            <div
+              key={index}
+              className="md:w-[25%] w-[100%]"
+            >
+              <ApplicationCard heading={item.heading} content={item.content} img={item.img}/>
             </div>
           ))}
-        </Slider>
+        </div>
       </div>
 
       {/* <HorizontalCard/> */}
