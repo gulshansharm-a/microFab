@@ -22,7 +22,8 @@ import { useState } from "react";
 import Footer from "./components/Common/Footer/Footer";
 import im1 from "./image 54-PhotoRoom 1.svg";
 import rt from "./image 8.svg";
-
+import applicationContent from './components/Products/BFS/Application/applicationContent.json'
+import ApplicationCard from "./components/Products/BFS/Application/ApplicationCard";
 
 import logos56 from "./Rectangle 6224-PhotoRoom 1.svg";
 import pic11 from "./pic11.svg";
@@ -415,48 +416,19 @@ export default function Appli3() {
       {/* className={`flex min-h-screen flex-col items-center justify-between py-24`} */}
 
       {/* 2. make sure our carousel container takes up the full screen width using w-screen */}
-      <div className="w-screen">
-        <Slider options={{ align: "center" }}>
-          {testimonials.map((testimonial, i) => (
-            // 3. flex-[0_0_50%] set the width of each card to 50% of the viewport
-            // for mobile devices we use 90% width
-            <div key={i} className="flex-[0_0_90%] md:flex-[0_0_23%]">
-              <div className="py-4 px-4 bg-white shadow-lg rounded-lg my-20 h-96">
-      <div className="flex justify-center md:justify-end -mt-16">
-        {/* <Image> */}
-          
-         {/* <img className="w-150 h-30 object-cover  border-2 border-indigo-500" src={{...testimonial}.imgSrc} alt={{...testimonial}.imgSrc}></img>  */}
-           {/* height={80}
-           width={80}
-           src={props.imgSrc} 
-           </Image> */}
-      </div>
-      
-        {/* <h2 className="text-[#8AA6AA] text-3xl font-semibold">{props.title}</h2> */}
-        <div>
-     
-        
-        
-        <h5 className="mt-2 text-gray-600 kkk" ><strong>{{...testimonial}.author}</strong></h5>
-      </div>
-      {/* <div className ="mt-2 text-gray-600flex justify-end mt-4 pyu text-[#8AA6AA]">Blow-Fill-Seal, Technology </div>
-      <div className="flex justify-end mt-4 mt-2">
-      <div className="flex flex-row place-items-center gap-3">
-                    <a className="text-[#8AA6AA] font-extrabold">Read more</a>
-                    <img
-                      src={arrow_right}
-                      className="bg-[#8AA6AA] h-6 p-0.5 rounded-full"
-                      alt="Read more"
-                    />
-        
-        </div>
-        
-      </div> */}
-    </div>
-            </div>
-          ))}
-        </Slider>
-      </div>
+      <div className="md:px-14 mt-[5%] px-4 gap-10 flex flex-col">
+       
+       <div className="w-full flex flex-row md:gap-10 gap-[200px] md:overflow-auto overflow-scroll pb-10">
+         {applicationContent.map((item, index) => (
+           <div
+             key={index}
+             className="md:w-[25%] w-[100%]"
+           >
+             <ApplicationCard heading={item.heading} content={item.content} img={item.img}/>
+           </div>
+         ))}
+       </div>
+     </div>
 
       {/* <HorizontalCard/> */}
 
