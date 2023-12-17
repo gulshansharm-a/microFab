@@ -192,7 +192,7 @@
   .vbb{
     text-align:center;
     justify-content:center;
-    margin:0 20%;
+    margin:0 2%;
   }
   .serv8{
     position:absolute;
@@ -265,7 +265,7 @@
       text-align:center;
     }
     .hgf{
-      margin-right:-55%;
+      margin-right:-70%;
     }
   
  
@@ -307,7 +307,10 @@
           left:20%;
          }
          .hhjj{
-          text-align:center;
+          text-align:left;
+         }
+         .sdd{
+          margin-right:-40%;
          }
          .mmn{
           position:absolute;
@@ -334,7 +337,7 @@
           margin-right:-80%;
          }
          .hdfc{
-          margin-right:-120%;
+          margin-right:-350%;
           text-align:left;
          }
          .ase{
