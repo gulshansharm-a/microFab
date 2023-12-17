@@ -63,7 +63,7 @@ export default function Who_are_we() {
           </p>
         </div>
       </div>
-      <div className="w-full flex md:flex-col p-10 flex-col ml-[150px]">
+      <div className="w-full flex md:flex-col p-10 flex-col md:ml-[150px]">
         {/* for desktop view */}
         <div className="hidden md:block">
           <p className="md:text-[35px] font-bold">Who Are We?</p>
@@ -83,7 +83,7 @@ export default function Who_are_we() {
           <div className="flex md:flex-row gap-1 flex-row md:mt-10">
             <div className="flex flex-row w-full gap-4">
               {/* line */}
-              <div className="hidden md:block md:w-[5px] w-[10px] h-[170px] md:h-[120px] bg-[#8AA6AA] gap-4"></div>
+              <div className="block md:w-[5px] w-[10px] h-[170px] md:h-[120px] bg-[#8AA6AA] gap-4"></div>
               <div className="md:w-[75%] md:text-[16px] w-full">
                 <p className="md:text-[20px] font-semibold text-[20px]">
                   500+ cutting-edge <br></br>machinery
@@ -94,7 +94,7 @@ export default function Who_are_we() {
 
             <div className="flex flex-row w-full gap-4">
               {/* line */}
-              <div className="hidden md:block md:w-[5px] w-[10px] h-[170px] md:h-[120px] bg-[#8AA6AA] gap-4"></div>
+              <div className="md:w-[5px] w-[10px] h-[170px] md:h-[120px] bg-[#8AA6AA] gap-4"></div>
               <div className="md:w-[75%] md:text-[16px] w-full">
                 <p className="md:text-[20px] font-semibold text-[20px]">
                   200+ employees
