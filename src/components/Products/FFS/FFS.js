@@ -79,13 +79,13 @@ export default function FFS() {
         {/* img */}
         <div className="relative">
           <img src={process} className="" alt="img"></img>
-          <p className="absolute bottom-0 text-[18px] font-semibold left-[32%]">
-            Form
+          <p className="absolute md:bottom-0 -bottom-0.5 md:text-[18px] text-[8px] pt-2 font-semibold md:left-[32%] left-[30%]">
+            Blow
           </p>
-          <p className="absolute bottom-0 text-[18px] font-semibold left-[58%]">
+          <p className="absolute md:bottom-0 -bottom-0.5 md:text-[18px] text-[8px] pt-2 font-semibold left-[58%]">
             Fill
           </p>
-          <p className="absolute bottom-0 text-[18px] font-semibold left-[82%]">
+          <p className="absolute md:bottom-0 -bottom-0.5 md:text-[18px] text-[8px] pt-2 font-semibold left-[82%]">
             Seal
           </p>
         </div>
