@@ -26,6 +26,7 @@ import Appli1 from "./appli1.js";
 import Appli2 from "./appli2.js";
 import Appli3 from "./appli3.js";
 import Appli4 from "./appli4.js";
+import Appli5 from "./appli5.js";
 import BFS from "./components/Products/BFS/BFS";
 import FFS from "./components/Products/FFS/FFS";  
 import ISBM from "./components/Products/ISBM/ISBM";
@@ -78,6 +79,7 @@ function AppContent() {
         <Route path="/cosmic" element={<Appli2 />} />
         <Route path="/food" element={<Appli3 />} />
         <Route path="/chemical" element={<Appli4 />} />
+        <Route path="/dairy" element={<Appli5 />} />
         <Route path="/BFS" element={<BFS />} />
         <Route path="/FFS" element={<FFS />} />
         <Route path="/ISBM" element={<ISBM />} />
