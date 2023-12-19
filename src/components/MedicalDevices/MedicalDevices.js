@@ -62,7 +62,7 @@ export default function MedicalDevices() {
 
           {/* cards */}
 
-          <div className="flex flex-wrap md:gap-4 md:gap-y-8 md:pl-10 md:p-0 p-8 md:place-items-start place-items-center md:justify-start justify-center">
+          <div className="flex flex-wrap md:gap-4 md:gap-y-8 gap-6 md:pl-10 md:p-0 p-8 md:place-items-start place-items-center md:justify-start justify-center">
             {medicalDevicesData.map((device, index) => (
               <MedicalDevicesCard
                 key={index} // Ensure each card has a unique key

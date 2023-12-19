@@ -13,6 +13,7 @@ import img4 from "../../../assets/Icons/Header_Icons/Img4.svg";
 import img5 from "../../../assets/Icons/Header_Icons/Img5.svg";
 import img6 from "../../../assets/Icons/Header_Icons/Img6.svg";
 import img7 from "../../../assets/Icons/Header_Icons/Img7.svg";
+import img8 from "../../../assets/Icons/Header_Icons/Img8.svg";
 import logo1 from "../../../assets/logo.svg";
 import logo2 from "../../../assets/footerlogo.svg";
 import contact from "../../../assets/Icons/Header_Icons/contact.svg";
@@ -106,6 +107,17 @@ const Header = () => {
               </Link>
             </li>
             <li
+              className={`${
+                location.pathname === "/product"
+                  ? "font-extrabold border-b-2 border-black "
+                  : ""
+              }`}
+            >
+              <Link to="/product" onClick={toggleMenu}>
+                Products
+              </Link>
+            </li>
+            {/* <li
               className={`relative cursor-pointer ${
                 location.pathname === "/product" ? "font-extrabold " : ""
               }`}
@@ -117,8 +129,8 @@ const Header = () => {
               >
                 <Link to="/product" onClick={toggleMenu}>
                   Products
-                </Link>
-                {isTechnologyDropdownOpen ? (
+                </Link> */}
+            {/* {isTechnologyDropdownOpen ? (
                   <img
                     src={ExpandLess}
                     alt="Expand Less"
@@ -132,9 +144,9 @@ const Header = () => {
                     className="ml-2 w-4 h-4"
                     onClick={toggleTechnologyDropdown}
                   />
-                )}
-              </div>
-              {isTechnologyDropdownOpen && (
+                )} */}
+            {/* </div> */}
+            {/* {isTechnologyDropdownOpen && (
                 <div className="dropdown-menu absolute mt-2 bg-white border border-gray-300 p-4 rounded-lg shadow-md w-[619px] left-1/2 transform -translate-x-1/2">
                   <div className="flex flex-row gap-[16px]">
                     <Card
@@ -150,8 +162,8 @@ const Header = () => {
                       img={img2}
                       isSelected={selectedTechnologyCard === "FFS"}
                       onClick={() => handleTechnologyCardClick("FFS")}
-                    />
-                    {/* <Card
+                    /> */}
+            {/* <Card
                       content="Injection-Stretch-Blow-Molding"
                       img={img3}
                       isSelected={
@@ -164,7 +176,7 @@ const Header = () => {
                         )
                       }
                     /> */}
-                    <Card
+            {/* <Card
                       path="/IV"
                       content="IV Bag"
                       img={img2}
@@ -182,14 +194,14 @@ const Header = () => {
                     />
                   </div>
                 </div>
-              )}
-            </li>
+              )} */}
+            {/* </li> */}
 
             <Link
               to="/TurnKeySolutions"
               onClick={toggleMenu}
               className={`${
-                location.pathname === "/TP"
+                location.pathname === "/TurnKeySolutions"
                   ? "font-extrabold border-b-2 border-black "
                   : ""
               }`}
@@ -201,7 +213,7 @@ const Header = () => {
               to="/service"
               onClick={toggleMenu}
               className={`${
-                location.pathname === "/services"
+                location.pathname === "/service"
                   ? "font-extrabold border-b-2 border-black "
                   : ""
               }`}
@@ -239,7 +251,7 @@ const Header = () => {
                 )}
               </div>
               {isApplicationDropdownOpen && (
-                <div className="dropdown-menu absolute mt-2 bg-white border border-gray-300 p-4 rounded-lg shadow-md w-[765px] left-1/2 transform -translate-x-1/2">
+                <div className="dropdown-menu absolute mt-2 bg-white border border-gray-300 p-4 rounded-lg shadow-md w-[855px] xl:left-[10%] -left-[80%] transform -translate-x-1/2">
                   <div className="flex flex-row gap-0">
                     <Link to="/pharmaceutical">
                       <Card
@@ -287,6 +299,19 @@ const Header = () => {
                         }
                         onClick={() => {
                           handleApplicationCardClick("Chemical Industry");
+                          toggleApplicationDropdown();
+                        }}
+                      />
+                    </Link>
+                    <Link to="/dairy">
+                      <Card
+                        content="Dairy Industry"
+                        img={img8}
+                        isSelected={
+                          selectedApplicationCard === "Dairy Industry"
+                        }
+                        onClick={() => {
+                          handleApplicationCardClick("Dairy Industry");
                           toggleApplicationDropdown();
                         }}
                       />
@@ -391,7 +416,12 @@ const Header = () => {
                 About Us
               </Link>
             </li>
-            <li className="relative cursor-pointer">
+            <li>
+              <Link to="/product" onClick={toggleMenu}>
+                Products
+              </Link>
+            </li>
+            {/* <li className="relative cursor-pointer">
               <div
                 className={`flex items-center cursor-pointer${
                   isTechnologyDropdownOpen ? "font-bold" : ""
@@ -412,10 +442,10 @@ const Header = () => {
                     className="ml-2 w-4 h-4"
                   />
                 )}
-              </div>
+              </div> */}
 
-              {/* tech in mobile */}
-              {isTechnologyDropdownOpen && (
+            {/* tech in mobile */}
+            {/* {isTechnologyDropdownOpen && (
                 <Link to="/Technology" onClick={toggleMenu}>
                   <div className="lg:absolute mt-2 bg-white border border-gray-300 p-4 rounded-lg shadow-md h-[250px] w-[350px] lg:w-[739px] mx-auto lg:left-1/2 lg:transform lg:-translate-x-1/2">
                     <div className="flex flex-col">
@@ -450,26 +480,29 @@ const Header = () => {
                   </div>
                 </Link>
               )}
-            </li>
+            </li> */}
             <li className="relative cursor-pointer">
               <div
                 className={`flex items-center cursor-pointer ${
                   isApplicationDropdownOpen ? "font-bold" : ""
                 }`}
-                onClick={toggleApplicationDropdown}
               >
-                Applications
+                <Link to="/Applications" onClick={toggleMenu}>
+                  Applications
+                </Link>
                 {isApplicationDropdownOpen ? (
                   <img
                     src={ExpandLess}
                     alt="Expand Less"
                     className="ml-2 w-4 h-4"
+                    onClick={toggleApplicationDropdown}
                   />
                 ) : (
                   <img
                     src={ExpandMore}
                     alt="Expand More"
                     className="ml-2 w-4 h-4"
+                    onClick={toggleApplicationDropdown}
                   />
                 )}
               </div>
@@ -477,7 +510,7 @@ const Header = () => {
               {/* application in mobile */}
               {isApplicationDropdownOpen && (
                 <Link to="/applications" onClick={toggleMenu}>
-                  <div className="lg:absolute mt-2 bg-white border border-gray-300 p-4 rounded-lg shadow-md h-[250px] w-[350px] lg:w-[739px] mx-auto lg:left-1/2 lg:transform lg:-translate-x-1/2">
+                  <div className="lg:absolute mt-2 bg-white border border-gray-300 p-4 rounded-lg shadow-md h-[360px] w-[350px] lg:w-[739px] mx-auto lg:left-1/2 lg:transform lg:-translate-x-1/2">
                     <div className="flex flex-row gap-[16px]">
                       <Link to="/pharmaceutical">
                         <Card
@@ -532,6 +565,21 @@ const Header = () => {
                           }
                           onClick={() => {
                             handleApplicationCardClick("Chemical Industry");
+                            toggleApplicationDropdown();
+                          }}
+                        />
+                      </Link>
+                    </div>
+                    <div className="flex flex-row gap-[16px]">
+                    <Link to="/dairy">
+                        <Card
+                          content="Dairy Industry"
+                          img={img8}
+                          isSelected={
+                            selectedApplicationCard === "Dairy Industry"
+                          }
+                          onClick={() => {
+                            handleApplicationCardClick("Dairy Industry");
                             toggleApplicationDropdown();
                           }}
                         />

@@ -22,7 +22,7 @@ export default function MedicalDevicesCard({ img, heading, content }) {
 
   return (
     <div
-      className={`md:m-2 lg:w-[22%] md:w-[250px]  flex flex-col shadow-lg rounded-[20px]`}
+      className={`md:m-2 lg:w-[22%] md:w-[250px] w-full flex flex-col shadow-lg rounded-[20px]`}
       onClick={toggleContent}
     >
       <div className="md:h-[190px] w-full">
