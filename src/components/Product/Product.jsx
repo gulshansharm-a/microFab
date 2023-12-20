@@ -71,7 +71,7 @@ export default function Product() {
           />
 
           <img
-            className="w-full df rounded-t-lg object-cover  md:h-auto md:w-96 md:rounded-none md:rounded-l-lg md:order-1"
+            className="w-full df zz rounded-t-lg dffp object-cover  md:h-auto md:w-96 md:rounded-none md:rounded-l-lg md:order-1"
             src={s2}
             alt=""
           />
@@ -80,7 +80,7 @@ export default function Product() {
             src={s1}
             alt=""
           />
-          <div className="flex flex-col justify-start order-1 md:order-2 xc">
+          <div className="flex flex-col justify-start order-1 md:order-1 gh">
             <h3 className="mb-2 pb-4 text-3xl leading-tight text-black bh">
               After sale
               service </h3>
@@ -108,11 +108,11 @@ export default function Product() {
           alt=""
         />
 
-        <div className="flex flex-col justify-start order-2 md:order-2 xd">
-          <h3 className="mb-2 pb-4 text-3xl leading-tight text-black ">
+        <div className="flex flex-col justify-start order-2 md:order-2 xd gh">
+          <h3 className="mb-2 pb-4 text-3xl leading-tight text-black xd">
             Machine
             upgradisation</h3>
-          <h6 className="text-xl leading-tight text-black " color="clack">
+          <h6 className="text-xl leading-tight text-black xd " color="clack">
             When you think about machine upgrades and modernization, we walk miles ahead to optimize the older models with significant modifications. This, eventually, enhances the overall efficiency and the quality of the products. It may sound easy to replace the existing components. But, if there are no suitable components, then our experienced engineers develop special solutions.  </h6></div>
       </div>
       <div className="serv1">
@@ -177,7 +177,7 @@ export default function Product() {
               alt=""
             />
             <div className="flex flex-col justify-start order-1 md:order-1 xv">
-              <h3 className="mb-2 pb-4 text-3xl leading-tight text-black hhjj">
+              <h3 className="mb-2 pb-4 text-3xl leading-tight text-black hdfc">
                 Medical devices</h3>
               <h6 className="text-xl leading-tight text-black hdfc" color="clack">
 
@@ -185,7 +185,7 @@ export default function Product() {
               <a
               href="/medicalDevices"
                 type="submit"
-                className="bg-[#8AA6AA] mt-4 md:mt-4 text-white px-4 py-2 md:w-[90%] w-[100%] rounded-md"
+                className="bg-[#8AA6AA] mt-4 md:mt-4 text-white px-4 py-2  w-[200px] rounded-md"
               >
               KNOW MORE ->
               </a>
