@@ -103,14 +103,14 @@ export default function Service() {
 
           <div className="flex flex-col rounded-lg text-black md:max-w-5xl md:flex-row">
   <img
-    className="h-64 w-full rounded-t-lg object-cover dc md:h-auto md:w-64 md:rounded-none md:rounded-l-lg md:order-1"
+    className="h-64 w-full sm:ml-12 md:ml-8 rounded-t-lg object-cover bv md:h-auto md:w-72 md:rounded-none md:rounded-l-lg md:order-1"
     src={pro}
     alt=""
   />
-  <div className="flex flex-col justify-start order-1 md:order-2 xc">
-    <h3 className="mb-2 pb-4 text-3xl leading-tight kl text-black">
+  <div className="flex flex-col justify-start order-1 md:order-2 op mr-6">
+    <h3 className="mb-2 pb-4 text-3xl leading-tight kl zx text-black">
     Advisory Services </h3>
-    <h6 className="text-2xs leading-tight text-black" color="clack">
+    <h6 className="text-2xs leading-tight text-black zx" color="clack">
     When perplexity is still reigning when you gear up to be future ready, we advise on the technology that you need to incorporate in your organization. Eventually, the machinery must lower down the operational costs and be capable of producing an astounding number of finished products. After all, we provide packaging solutions for you to attain recognition in the competitive world. </h6>
     
   </div>
