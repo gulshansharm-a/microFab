@@ -20,31 +20,31 @@ export default function Product() {
     <>
       {/* <NavbarDefault /> */}
       <br></br><br></br><br></br><br></br>
-      <div className="serv1">
+      <div className="serv1 ">
         <br></br><br></br>
-        <h3 className="mb-4 pb-4 text-3xl leading-tight text-[#8AA6AA] serv3">
+        <h3 className="mb-4 pb-4 text-3xl leading-tight text-[#8AA6AA] serv3  animated-box animate__animated animate__fadeInLeft">
           Product solutions
         </h3>
         <br></br><br></br><br></br>
 
-        <h3 className="mb-4  pb-4 text-4xl sm:text-2xl hgf leading-tight text-black">
+        <h3 className="mb-4  pb-4 text-4xl sm:text-2xl hgf leading-tight text-black  animated-box animate__animated animate__fadeInLeft">
           Our service can be a peace of mind when you’re very much concerned about machine maintenance.</h3>
 
-        <h6 className="text-2xs leading-tight text-black serv2" color="clack">
+        <h6 className="text-2xs leading-tight text-black serv2 animated-box animate__animated animate__fadeInRight" color="clack">
           While we dabble in providing exceptional customer service, you can connect with us for project management and contract manufacturing.
         </h6>
         <br></br><br>
         </br>
       </div>
 
-      <h3 className="mb-4  pb-4 text-4xl leading-tight text-black vb">
+      <h3 className="mb-4  pb-4 text-4xl leading-tight text-black vb  animated-box animate__animated animate__fadeInLeft animate__delay-1s">
         Machines</h3>
-      <h6 className="text-xl leading-tight text-black vbb" color="clack">
+      <h6 className="text-xl leading-tight text-black vbb  animated-box animate__animated animate__fadeInRight animate__delay-1s" color="clack">
         While we dabble in providing exceptional customer service, you can connect with us for project management and contract manufacturing.
       </h6>
       <br></br>
 
-      <div className="md:pl-16 flex flex-wrap gap-7 md:gap-4 md:gap-y-8 md:p-0 p-8 md:place-items-start place-items-center md:justify-start justify-center">
+      <div className="md:pl-16 flex flex-wrap gap-7 md:gap-4 md:gap-y-8 md:p-0 p-8 md:place-items-start place-items-center md:justify-start justify-center  animated-box animate__animated animate__fadeIn animate__delay-1s">
         {TurnKeySolutionsData.map((device, index) => (
           <MedicalDevicesCard
             key={index} // Ensure each card has a unique key
@@ -58,7 +58,7 @@ export default function Product() {
 
 
       <br></br>
-      <div className="serv1">
+      <div className="serv1 animated-box animate__animated animate__fadeInRight animate__delay-1s">
         <div class="serv4"></div>
         <br></br>
 
@@ -96,7 +96,7 @@ export default function Product() {
       <br></br>
 
 
-      <div className="flex flex-col rounded-lg text-black md:max-w-4xl lg:max-w-6xl  sm:max-w-3xl sm:flex-row md:flex-row">
+      <div className="flex flex-col rounded-lg text-black md:max-w-4xl lg:max-w-6xl  sm:max-w-3xl sm:flex-row md:flex-row  animated-box animate__animated animate__fadeIn animate__delay-2s">
         <img
           className="h-48 w-auto rounded-t-lg object-cover qwer md:h-auto md:w-full md:rounded-none md:rounded-l-lg md:order-1"
           src={a1}
@@ -108,7 +108,7 @@ export default function Product() {
           alt=""
         />
 
-        <div className="flex flex-col justify-start order-2 md:order-2 xd gh">
+        <div className="flex flex-col justify-start order-2 md:order-2 xd gh  animated-box animate__animated animate__fadeInLeft animate__delay-3s">
           <h3 className="mb-2 pb-4 text-3xl leading-tight text-black xd">
             Machine
             upgradisation</h3>
@@ -124,12 +124,12 @@ export default function Product() {
 
           <div className="flex flex-col rounded-lg text-black md:max-w-5xl md:flex-row">
             <img
-              className="h-120 w-full rounded-t-lg object-cover  md:h-auto lg:w-120 md:w-96 md:rounded-none md:rounded-l-lg order-2 mmn md:order-"
+              className="h-120 w-full animated-box animate__animated animate__fadeInRight animate__delay-4s rounded-t-lg object-cover  md:h-auto lg:w-120 md:w-96 md:rounded-none md:rounded-l-lg order-2 mmn md:order-"
               src={pro2}
               alt=""
             />
 
-            <div className="flex flex-col justify-start order-1 md:order-1 gghh">
+            <div className="flex flex-col justify-start order-1 md:order-1 gghh  animated-box animate__animated animate__fadeInRight animate__delay-4s">
               <h3 className="mb-2 pb-4 md:text-3xl text-3xl hhjj  leading-tight text-black">
                 Contract manufacturing</h3>
               <h6 className="text-2xs sdd leading-tight text-black " color="clack">
@@ -140,14 +140,14 @@ export default function Product() {
           <br></br>
 
 
-          <div className="flex flex-col rounded-lg text-black md:max-w-5xl md:flex-row">
+          <div className="flex flex-col rounded-lg text-black md:max-w-5xl md:flex-row  animated-box animate__animated animate__fadeInLeft animate__delay-5s">
             <img
-              className="h-96 w-full rounded-t-lg object-cover  md:h-auto md:w-96 md:rounded-none md:rounded-l-lg order-2 bbv md:order-"
+              className="h-96 w-full rounded-t-lg object-cover  md:h-auto md:w-96 md:rounded-none md:rounded-l-lg order-2 bbv animated-box animate__animated animate__fadeInLeft animate__delay-5s md:order-"
               src={pro4}
               alt=""
             />
             <img
-              className="h-64 w-full rounded-t-lg object-cover  md:h-auto md:w-120 md:rounded-none md:rounded-l-lg order-2 bv md:order-1"
+              className="h-64 w-full rounded-t-lg object-cover  md:h-auto md:w-120 md:rounded-none md:rounded-l-lg order-2 bv animated-box animate__animated animate__fadeInLeft animate__delay-5s md:order-1"
               src={pro3}
               alt=""
             />
@@ -160,7 +160,7 @@ export default function Product() {
           <br></br>
 
 
-          <div className="flex flex-col rounded-lg text-black md:max-w-9xl md:flex-row">
+          <div className="flex flex-col rounded-lg text-black md:max-w-9xl md:flex-row  animated-box animate__animated animate__fadeInRight animate__delay-6s">
             {/* <img
     className="vf w-full rounded-t-lg object-cover ee  md:h-auto md:w-48 md:rounded-none md:rounded-l-lg md:order-3"
     src={b1}

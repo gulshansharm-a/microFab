@@ -33,12 +33,12 @@ function Application() {
       <div>
         <span className="qaz">
         <div className="qa">
-          <h3 className="mb-6 w-full pb-8 lg:text-7xl md: text-5xl sm:text-5xl leading-tight text-[#8AA6AA]  df"><strong>
+          <h3 className="mb-6 w-full pb-8 lg:text-7xl md: text-5xl sm:text-5xl leading-tight text-[#8AA6AA]  df  animate__animated animate__fadeInLeft animate__delay-0s"><strong>
           Lorem ipsum dolor sit  consectetur adipiscing elit sed do eiusmod</strong>
           </h3>
           <span>
             <h6
-              className="lg:text-3xl md:text-2xl sm:text-xl leading-tight text-[#8AA6AA]  sd"
+              className="lg:text-3xl md:text-2xl sm:text-xl leading-tight text-[#8AA6AA]  sd  animate__animated animate__fadeInRight animate__delay-0s"
               color="blue"
             >
               "Unleashing the Power of BFS Technology: Aseptic Filling, Sterile
@@ -48,13 +48,13 @@ function Application() {
           </span>
           </div>
          
-          <button class="bg-[#8AA6AA] hover:bg-blue-700 text-white font-bold py-2 px-20 rounded m-2">
+          <button class="bg-[#8AA6AA] text-white font-bold py-2 px-20 rounded m-2">
   Explore
 </button>
 
 <div>
             <img
-              className="h-106 w-full object-cover object-center poi"
+              className="h-106 w-full object-cover object-center poi  animate__animated animate__fadeIn animate__delay-1s"
               src={logos}
               
               alt="nature image"
@@ -81,7 +81,7 @@ function Application() {
       alt="nature image"
     />
     </div> */}
-     <h3 className="mb-4 pb-4 text-5xl ml-8 leading-tight text-black"><strong>
+     <h3 className="mb-4 pb-4 text-5xl ml-8 leading-tight text-black  animate__animated animate__fadeInLeft animate__delay-2s"><strong>
             Types of Packaging</strong>
           </h3>
       <div className="navbar">
@@ -164,7 +164,7 @@ function Application() {
       </div> */}
 <br></br><br></br>
 
-<p className="mb-6 w-full pb-8 text-5xl leading-tight text-[#8AA6AA] kkk">
+<p className="mb-6 w-full pb-8 text-5xl leading-tight text-[#8AA6AA] kkk  animate__animated animate__fadeInRight animate__delay-2s">
                 
 <strong>Unlocking Optimal Results: Blow-Fill-Seal for Various Applications</strong></p>
 <div className="flex flex-col rounded-lg bg-white md:max-w-10xl md:flex-row mm">
@@ -187,18 +187,18 @@ function Application() {
                           <li className=" w-96 ml--5 text-xl  leading-tight text-[#8AA6AA]">biotechnological products</li> 
                           </div> <br></br><br></br><br></br>
               {/* <br></br><br></br><br></br><br></br><br></br> */}
-              <img className="h-96 w-48 rounded-lg rounded-md uuu" src="https://s3-alpha-sig.figma.com/img/4f3d/619c/61df89bd22062ce2d6a4d886511827c3?Expires=1703462400&Signature=PdTfbQQ-2xK7ioRoAKAqJfCwVBZIO1MDV6Do7sr~PPO58AUEEe8af~zybw19JmFSyeaYcdVvTfp0zRQKwIgWeLgp8VMuPDZU086kHK44BVzAfaUCF19oiyu2KUElUMcaxnTbrUySTdcAuQW6DGl1L0GVQO0cvVXpbA~G2F7greCMyyc2uZVTv0fq3hIyAQlOhG7oXEXFoCWB6ceTT-07jn7zKkJgRk3042Gpp1EbGKryNaizIOk5TT4BkjvqrjDnoDJZ00mMto0xUjL1sTzVscPKdcp~ZampRYdX24DGGijVI-1gifeQrSgt~wI0F88l18RjTVLmxhiuRLv7euYmnA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="NO image">
+              <img className="h-96 w-48 rounded-lg rounded-md uuu  animate__animated animate__fadeInRight animate__delay-2s" src="https://s3-alpha-sig.figma.com/img/4f3d/619c/61df89bd22062ce2d6a4d886511827c3?Expires=1703462400&Signature=PdTfbQQ-2xK7ioRoAKAqJfCwVBZIO1MDV6Do7sr~PPO58AUEEe8af~zybw19JmFSyeaYcdVvTfp0zRQKwIgWeLgp8VMuPDZU086kHK44BVzAfaUCF19oiyu2KUElUMcaxnTbrUySTdcAuQW6DGl1L0GVQO0cvVXpbA~G2F7greCMyyc2uZVTv0fq3hIyAQlOhG7oXEXFoCWB6ceTT-07jn7zKkJgRk3042Gpp1EbGKryNaizIOk5TT4BkjvqrjDnoDJZ00mMto0xUjL1sTzVscPKdcp~ZampRYdX24DGGijVI-1gifeQrSgt~wI0F88l18RjTVLmxhiuRLv7euYmnA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="NO image">
                 
                
               </img>
             </div> 
 <br></br>
       <div><center>
-        <h3 className="mb-4 pb-4 text-4xl ml-8 mr-8 leading-tight text-[#8AA6AA]">
+        <h3 className="mb-4 pb-4 text-4xl ml-8 mr-8 leading-tight text-[#8AA6AA]  animate__animated animate__fadeIn animate__delay-3s">
           From the industry leader: Exemplary BFS solutions for the
           pharmaceutical industry
         </h3>
-        <h6 className="mb-4 pb-4 text-2xl ml-8 mr-8 leading-tight text-[#8AA6AA]" color="blue">
+        <h6 className="mb-4 pb-4 text-2xl ml-8 mr-8 leading-tight text-[#8AA6AA]  animate__animated animate__fadeIn animate__delay-3s" color="blue">
           "Our concepts are as individual as your requirements. See for
           yourself!"
         </h6>
@@ -209,7 +209,7 @@ function Application() {
       {/* className={`flex min-h-screen flex-col items-center justify-between py-24`} */}
 
       {/* 2. make sure our carousel container takes up the full screen width using w-screen */}
-      <div className="md:px-14 mt-[5%] px-4 gap-10 flex flex-col">
+      <div className="md:px-14 mt-[5%] px-4 gap-10 flex flex-col  animate__animated animate__fadeInLeft animate__delay-4s">
        
         <div className="w-full flex flex-row md:gap-10 gap-[200px] md:overflow-auto overflow-scroll pb-10">
           {applicationContent.map((item, index) => (

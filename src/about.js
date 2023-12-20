@@ -79,10 +79,10 @@ function FaqItem({ question, answers, initiallyOpen }) {
 function AboutUs() {
   return (
     <div>
-      <div className="font-['ClashDisplay']">
+      <div className="font-['ClashDisplay'] ">
         {/* <div><NavbarDefault /></div><br></br><br></br> */}
         <div>
-          <div className="ui">
+          <div className="ui  animated-box animate__animated animate__fadeInLeft animate__delay-0s">
             <div className="bg-[url('./opp.png')] nn">
               <br></br>
               <br></br>
@@ -119,7 +119,7 @@ function AboutUs() {
 
               {/* </center> */}
 <br></br><br></br>
-              <div className=" flex flex-col p-6 text-white bg-[#8AA6AA] kmk lg:py-[30px] md:px-[100px] md:py-[70px]">
+              <div className=" flex flex-col p-6 text-white bg-[#8AA6AA] kmk lg:py-[30px] md:px-[100px] md:py-[70px] ">
                 <h5 className="mb-4 text-5xl leading-tight text-white bg-[#8AA6AA] font-['ClashDisplay']">
                   Our Beliefs
                 </h5>
@@ -199,7 +199,7 @@ function AboutUs() {
           <center>
             <br></br>
             <br></br>
-            <div className="flex flex-col rounded-lg bg-white md:max-w-6xl md:flex-row mm">
+            <div className="flex flex-col rounded-lg bg-white md:max-w-6xl md:flex-row mm  animate__animated animate__fadeInRight animate__delay-1s">
               <div className="flex flex-col p-6">
                 <p className="mb-4 text-5xl ddd leading-tight font-['ClashDisplay'] "><center><strong>
                   Industries that we serve</strong></center>
@@ -230,7 +230,7 @@ function AboutUs() {
           <img className="cvfg" src ={qwe} alt="img"></img>
 
           
-          <div className="lg:flex flex-rows md:flex flex-cols sm:flex flex-cols-1">
+          <div className="lg:flex flex-rows md:flex flex-cols sm:flex flex-cols-1  animate__animated animate__fadeInRight animate__delay-1s">
   {/* {[1, 2, 3, 4, 5, 6].map((index) => ( */}
   <div className="jkhj p-2 m-auto">
 
@@ -285,7 +285,7 @@ function AboutUs() {
 
 {/* <div className="flex flex-row p-2 m-auto"> */}
 
-<div className="flex flex-col  items-center bbb m-auto">
+<div className="flex flex-col  items-center bbb m-auto  animate__animated animate__fadeInRight animate__delay-1s">
       <img
         className="lg:w-48 md:48 sm:96 h-48 p-2 lg:ml-0 jjjjj"
         src={y5}
@@ -328,7 +328,7 @@ function AboutUs() {
             </center>
             <br></br>
           </div> */}
-           <div className="flex">
+           <div className="flex  animate__animated animate__fadeInLeft animate__delay-2s">
       {/* Block 1 - SVG Image */}
       <div className="bg-white dfdf">
         {/* Replace 'your-svg-file.svg' with the actual path to your SVG file */}
@@ -382,10 +382,10 @@ different origins</center>
         </div>
       </div>
     </div>
-     
-          <div className="flex flex-col h-96 mb-24 rounded-lg bg-white md:max-w-6xl md:flex-row m-auto gggg">
+
+          <div className="flex flex-col h-96 mb-24 mt-12 rounded-lg bg-white md:max-w-6xl md:flex-row m-auto gggg  animate__animated animate__fadeIn animate__delay-3s">
               <div className="flex flex-col p-6">
-                <p className=" text-5xl leading-tight text-[#8AA6AA] font-['ClashDisplay'] "><center>
+                <p className=" text-5xl leading-tight text-[#8AA6AA] font-['ClashDisplay'] mt-24 "><center>
                   Key People</center>
                 </p>
                 {/* <h5 className="mb-2 text-4xl leading-tight ll">
@@ -406,7 +406,7 @@ different origins</center>
               {/* <img src={a} alt="no" /> */}
               {/* Your browser does not support the video tag. */}
             </div>
-            <div className=" ml-1 lg:flex flex-rows md:flex flex-cols sm:flex flex-cols-1">
+            <div className=" ml-1 lg:flex flex-rows md:flex flex-cols sm:flex flex-cols-1  animate__animated animate__fadeIn animate__delay-3s">
             <div className="flex flex-row p-2 h-96 lp">
 
 <div className="flex flex-col items-center">
@@ -512,7 +512,7 @@ different origins</center>
             />
           </div>
         </div> */}
-         <div className="flex flex-col rounded-lg bg-white md:max-w-6xl md:flex-row m-auto">
+         <div className="flex flex-col rounded-lg bg-white md:max-w-6xl md:flex-row m-auto  animate__animated animate__fadeInLeft animate__delay-4s">
               <div className="flex flex-col p-6">
                 <p className=" text-5xl leading-tight text-[#8AA6AA] font-['ClashDisplay']"><center>
                 Project  by Region</center>
