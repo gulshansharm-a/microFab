@@ -379,12 +379,12 @@ export default function Appli4() {
 <strong>Unlocking Optimal Results: Blow-Fill-Seal for Various Applications</strong></p>
 <div className="flex flex-col rounded-lg bg-white md:max-w-10xl md:flex-row mm">
 
-              <div className="flex flex-col p-28 vbn">
+              <div className="flex flex-col p-6 vbn">
                <br></br>
-                          <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Antiseptics</li>     
-                          <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Disinfectants</li> 
+                          <li className=" w-full lg:text-2xl sm:text-2xs leading-tight text-[#8AA6AA]">Antiseptics</li>     
+                          <li className=" w-full lg:text-2xl sm:text-2xs leading-tight text-[#8AA6AA]">Disinfectants</li> 
                         
-                          <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Pest Control Chemicals</li>
+                          <li className=" w-full lg:text-2xl sm:text-2xs leading-tight text-[#8AA6AA]">Pest Control Chemicals</li>
                           
                           </div> <br></br><br></br><br></br>
               {/* <br></br><br></br><br></br><br></br><br></br> */}

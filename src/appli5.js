@@ -379,14 +379,14 @@ export default function Appli4() {
 <strong>Use of our packaging machines for different applications</strong></p>
 <div className="flex flex-col rounded-lg bg-white md:max-w-10xl md:flex-row mm">
 
-              <div className="flex flex-col p-28 vbn">
+              <div className="flex flex-col p-6 vbn">
                <br></br>
-                          <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Flavoured Milk</li>     
-                          <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Laban</li> 
+                          <li className=" w-full lg:text-2xl sm:text-2xs leading-tight text-[#8AA6AA]">Flavoured Milk</li>     
+                          <li className=" w-full lg:text-2xl sm:text-2xs leading-tight text-[#8AA6AA]">Laban</li> 
                         
-                          <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Cream</li>
-                          <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Almond Milk</li>
-                          <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Spreads</li>
+                          <li className=" w-full lg:text-2xl sm:text-2xs leading-tight text-[#8AA6AA]">Cream</li>
+                          <li className=" w-full lg:text-2xl sm:text-2xs leading-tight text-[#8AA6AA]">Almond Milk</li>
+                          <li className=" w-full lg:text-2xl sm:text-2xs leading-tight text-[#8AA6AA]">Spreads</li>
                           
                           </div> <br></br><br></br><br></br>
               {/* <br></br><br></br><br></br><br></br><br></br> */}
