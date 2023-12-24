@@ -37,7 +37,7 @@ export default function Product() {
         </br>
       </div>
 
-      <h3 className="mb-4  pb-4 text-4xl leading-tight text-black vb  animated-box animate__animated animate__fadeInLeft animate__delay-1s">
+      <h3 className="mb-4 ml-12  pb-4 text-4xl leading-tight text-black vbb  animated-box animate__animated animate__fadeInLeft animate__delay-1s">
         Machines</h3>
       <h6 className="text-xl leading-tight text-black vbb  animated-box animate__animated animate__fadeInRight animate__delay-1s" color="clack">
         While we dabble in providing exceptional customer service, you can connect with us for project management and contract manufacturing.
@@ -80,8 +80,8 @@ export default function Product() {
             src={s1}
             alt=""
           />
-          <div className="flex flex-col justify-start order-1 md:order-1 gh">
-            <h3 className="mb-2 pb-4 text-3xl leading-tight text-black bh">
+          <div className="flex flex-col justify-start order-1 md:order-1 xd gh">
+            <h3 className="mb-2 pb-4 text-3xl leading-tight text-black xd bh">
               After sale
               service </h3>
             <h6 className="text-2xs leading-tight text-black serv7" color="clack">
@@ -109,10 +109,10 @@ export default function Product() {
         />
 
         <div className="flex flex-col justify-start order-2 md:order-2 xd gh  animated-box animate__animated animate__fadeInLeft animate__delay-3s">
-          <h3 className="mb-2 pb-4 text-3xl leading-tight text-black xd">
+          <h3 className="mb-2 pb-4 text-3xl leading-tight text-black xd fgi">
             Machine
             upgradisation</h3>
-          <h6 className="text-xl leading-tight text-black xd " color="clack">
+          <h6 className="text-xl leading-tight text-black xd fgi" color="clack">
             When you think about machine upgrades and modernization, we walk miles ahead to optimize the older models with significant modifications. This, eventually, enhances the overall efficiency and the quality of the products. It may sound easy to replace the existing components. But, if there are no suitable components, then our experienced engineers develop special solutions.  </h6></div>
       </div>
       <div className="serv1">
@@ -176,10 +176,10 @@ export default function Product() {
               src={b3}
               alt=""
             />
-            <div className="flex flex-col justify-start order-1 md:order-1 xv">
-              <h3 className="mb-2 pb-4 text-3xl leading-tight text-black hdfc">
+            <div className="flex flex-col justify-start order-1 md:order-1 xv xdd ">
+              <h3 className="mb-2 pb-4 text-3xl leading-tight text-black hdfc fgi">
                 Medical devices</h3>
-              <h6 className="text-xl leading-tight text-black hdfc" color="clack">
+              <h6 className="text-xl leading-tight text-black hdfc fgi" color="clack">
 
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt . </h6>
               <a

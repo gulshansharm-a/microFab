@@ -193,7 +193,7 @@ function Application() {
               </img>
             </div> 
 <br></br>
-      <div><center>
+<div className="qwe">
         <h3 className="mb-4 pb-4 text-4xl ml-8 mr-8 leading-tight text-[#8AA6AA]  animate__animated animate__fadeIn animate__delay-3s">
           From the industry leader: Exemplary BFS solutions for the
           pharmaceutical industry
@@ -202,7 +202,7 @@ function Application() {
           "Our concepts are as individual as your requirements. See for
           yourself!"
         </h6>
-        <br></br></center>
+        <br></br>
         <br></br><br></br>
         {/* <Card3Presentation/> */}
       </div>

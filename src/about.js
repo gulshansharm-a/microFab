@@ -199,16 +199,16 @@ function AboutUs() {
           <center>
             <br></br>
             <br></br>
-            <div className="flex flex-col rounded-lg bg-white md:max-w-6xl md:flex-row mm  animate__animated animate__fadeInRight animate__delay-1s">
+            <div className="flex flex-col rounded-lg bg-white md:max-w-6xl md:flex-row  animate__animated animate__fadeInRight animate__delay-1s">
               <div className="flex flex-col p-6">
-                <p className="mb-4 text-5xl ddd leading-tight font-['ClashDisplay'] "><center><strong>
-                  Industries that we serve</strong></center>
+                <p className="mb-4 text-5xl ddd leading-tight font-['ClashDisplay'] pp kk mr-4"><strong>
+                  Industries that we serve</strong>
                 </p>
                 {/* <h5 className="mb-2 text-4xl leading-tight ll">
                   Lorem ipsum
                 </h5> */}
                 <center>
-                <p className="mb-1 text-xl ddd text-[#8AA6AA] leading-tight   font-['ClashDisplay']">
+                <p className="mb-1 text-2xs ddd text-[#8AA6AA] leading-tight mr-4 pp font-['ClashDisplay']">
                 At MicroFab, we have been serving the Pharmaceutical, Cosmetic, Food and the Chemical industry across the years. Our adept and motivated team of professionals, along with the state-of-the-art engineering facilities, undertake designing, manufacturing and delivering machinery to meet the requirements of our esteemed clients.
                 </p>
                 </center>
@@ -336,11 +336,11 @@ function AboutUs() {
       </div>
 
       {/* Block 2 - Text and Boxes */}
-      <div className="flex-1 h-96z mb-48 sm:ml-64 bg-white p-8">
-      <h3 className="lg:ml-0 sm:ml-64 text-xl text-[#8AA6AA] mr-32 m-auto leading-tight  ll ty font-['ClashDisplay']"><strong><center>Key Figures</center></strong>
+      <div className="flex-1 h-96 mb-12 sm:ml-64 bg-white p-8">
+      <h3 className="lg:ml-0 sm:ml-64 text-xl text-[#8AA6AA]  mr-32 m-auto leading-tight  ll kk pp font-['ClashDisplay']"><strong>Key Figures</strong>
       </h3>
-      <h3 className="mb-4 text-2xs text-[#8AA6AA] mr-32 m-auto leading-tight  ll font-['ClashDisplay']"><center>Phenomenal business success has now made us proud about 
-how we have flourished in the competitive era.</center>
+      <h3 className="mb-4 text-2xs text-[#8AA6AA] mr-32 m-auto leading-tight kk pp ll font-['ClashDisplay']">Phenomenal business success has now made us proud about 
+how we have flourished in the competitive era.
       </h3>
 
         <div className="flex flex-wrap -mx-4 ml-auto mt-22">
@@ -354,7 +354,7 @@ how we have flourished in the competitive era.</center>
           </div>
 
           {/* Box 2 */}
-          <div className="w-36 h-36 md:w-30 p-6 lg:m-4  bg-[#8AA6AA] text-white awsw ">
+          <div className="w-36 h-36 md:w-30 p-6 m-auto lg:m-4  bg-[#8AA6AA] text-white awsw ">
           <h3 className=" text-2xs text-white  leading-tight  ll font-['ClashDisplay']"><center><strong>75%</strong></center>
       </h3><br></br>
       <h3 className=" text-xs text-white w-full m-0 leading-tight  ll font-['ClashDisplay']"><center>Customer Retention & repeat orders</center>
@@ -383,31 +383,31 @@ different origins</center>
       </div>
     </div>
 
-          <div className="flex flex-col h-96 mb-24 mt-12 rounded-lg bg-white md:max-w-6xl md:flex-row m-auto gggg  animate__animated animate__fadeIn animate__delay-3s">
-              <div className="flex flex-col p-6">
-                <p className=" text-5xl leading-tight text-[#8AA6AA] font-['ClashDisplay'] mt-24 "><center>
-                  Key People</center>
+          <div className="flex flex-col h-96 mb-24 mt-48 rounded-lg bg-white md:max-w-6xl md:flex-row mx-auto gggg  animate__animated animate__fadeIn animate__delay-3s">
+              <div className="flex flex-col p-6 mt-24">
+                <p className=" text-5xl leading-tight  text-[#8AA6AA] font-['ClashDisplay'] kk mt-48 pp ">
+                  Key People
                 </p>
                 {/* <h5 className="mb-2 text-4xl leading-tight ll">
                   Lorem ipsum
                 </h5> */}
                 <center>
-                <p className="mb-1 text-4xl text-black leading-tight  ll font-['ClashDisplay']"><strong>
+                <p className="mb-1 text-4xl text-black leading-tight pp ll font-['ClashDisplay']"><strong>
                 Our entire team of mavericks are dedicated to offer packaging solutions and support your business.</strong> </p>
                 </center>
                 
               </div>
              
               <br></br>
-              <br></br>
+              <br></br> <br></br>
               <br></br>
               {/* <br></br><br></br><br></br><br></br><br></br> */}
 
               {/* <img src={a} alt="no" /> */}
               {/* Your browser does not support the video tag. */}
             </div>
-            <div className=" ml-1 lg:flex flex-rows md:flex flex-cols sm:flex flex-cols-1  animate__animated animate__fadeIn animate__delay-3s">
-            <div className="flex flex-row p-2 h-96 lp">
+            <div className=" mr-8 lg:flex flex-rows md:flex flex-cols sm:flex flex-cols-1  animate__animated animate__fadeIn animate__delay-3s">
+            <div className="flex flex-row p-2 h-96 lp pot">
 
 <div className="flex flex-col items-center">
   <img
@@ -514,14 +514,14 @@ different origins</center>
         </div> */}
          <div className="flex flex-col rounded-lg bg-white md:max-w-6xl md:flex-row m-auto  animate__animated animate__fadeInLeft animate__delay-4s">
               <div className="flex flex-col p-6">
-                <p className=" text-5xl leading-tight text-[#8AA6AA] font-['ClashDisplay']"><center>
-                Project  by Region</center>
+                <p className=" text-5xl leading-tight text-[#8AA6AA] kk pp font-['ClashDisplay']">
+                Project  by Region
                 </p>
                 {/* <h5 className="mb-2 text-4xl leading-tight ll">
                   Lorem ipsum
                 </h5> */}
                 <center>
-                <p className=" text-4xl text-black leading-tight  ll font-['ClashDisplay']"><strong>
+                <p className=" text-4xl text-black leading-tight pp ll font-['ClashDisplay']"><strong>
                 Here’s a glimpse of our projects by various regions across countries</strong> </p>
                 </center>
                 
