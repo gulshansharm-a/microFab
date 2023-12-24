@@ -336,17 +336,17 @@ function AboutUs() {
       </div>
 
       {/* Block 2 - Text and Boxes */}
-      <div className="flex-1 h-96 mb-12 sm:ml-64 bg-white p-8">
-      <h3 className="lg:ml-0 sm:ml-64 text-xl text-[#8AA6AA]  mr-32 m-auto leading-tight  ll kk pp font-['ClashDisplay']"><strong>Key Figures</strong>
+      <div className="flex-1 h-96 mb-12 sm:ml-0 bg-white p-8 kk pp ll">
+      <h3 className="lg:ml-0 sm:ml-0 text-xl text-[#8AA6AA]  mr-32 m-auto leading-tight   kk pp font-['ClashDisplay']"><strong>Key Figures</strong>
       </h3>
-      <h3 className="mb-4 text-2xs text-[#8AA6AA] mr-32 m-auto leading-tight kk pp ll font-['ClashDisplay']">Phenomenal business success has now made us proud about 
+      <h3 className="mb-4 text-2xs text-[#8AA6AA] mr-32 m-auto leading-tight  pp  font-['ClashDisplay']">Phenomenal business success has now made us proud about 
 how we have flourished in the competitive era.
       </h3>
 
         <div className="flex flex-wrap -mx-4 ml-auto mt-22">
           {/* Box 1 */}
           <div>
-          <div className="w-36 h-36 md:w-30 p-6 md:m-4 bg-[#8AA6AA] text-white awsw es">
+          <div className="w-36 h-36 md:w-30 p-6 md:m-4 bg-[#8AA6AA] text-white awsw ll kk pp es">
           <h3 className=" text-2xs text-white  leading-tight  ll font-['ClashDisplay']"><center><strong>400+</strong></center>
       </h3><br></br>
       <h3 className=" text-xs text-white w-full m-0 leading-tight  ll font-['ClashDisplay']"><center>Cutting-Edge Machinery</center>
@@ -354,7 +354,7 @@ how we have flourished in the competitive era.
           </div>
 
           {/* Box 2 */}
-          <div className="w-36 h-36 md:w-30 p-6 m-auto lg:m-4  bg-[#8AA6AA] text-white awsw ">
+          <div className="w-36 h-36 md:w-30 p-6 m-auto lg:m-4 bg-[#8AA6AA] text-white awsw kk pp ll ">
           <h3 className=" text-2xs text-white  leading-tight  ll font-['ClashDisplay']"><center><strong>75%</strong></center>
       </h3><br></br>
       <h3 className=" text-xs text-white w-full m-0 leading-tight  ll font-['ClashDisplay']"><center>Customer Retention & repeat orders</center>
@@ -363,7 +363,7 @@ how we have flourished in the competitive era.
           </div>
           <div>
           {/* Box 3 */}
-          <div className="w-36 h-36 md:w-30 p-6 md:m-4 bg-[#8AA6AA] text-white awsw es">
+          <div className="w-36 h-36 md:w-30 p-6 md:m-4 bg-[#8AA6AA] fg text-white awsw kk pp ll es">
           <h3 className=" text-2xs text-white  leading-tight  ll font-['ClashDisplay']"><center><strong>200+</strong></center>
       </h3><br></br>
       <h3 className=" text-xs text-white w-full m-0 leading-tight  ll font-['ClashDisplay']"><center>Premium molds from
@@ -372,7 +372,7 @@ different origins</center>
           </div>
 
           {/* Box 4 */}
-          <div className="w-36 h-36 md:w-30 p-6 lg:m-4 bg-[#8AA6AA] text-white awsw ">
+          <div className="w-36 h-36 md:w-30 p-6 lg:m-4 bg-[#8AA6AA] fg text-white awsw kk pp ll ">
           <h3 className=" text-2xs text-white  leading-tight  ll font-['ClashDisplay']"><center><strong>50,000+ sq. ft.</strong></center>
       </h3><br></br>
       <h3 className=" text-xs text-white w-full m-0 leading-tight  ll font-['ClashDisplay']"><center>Workplaces across strategic locatio30</center>
@@ -382,7 +382,7 @@ different origins</center>
         </div>
       </div>
     </div>
-
+<br></br>
           <div className="flex flex-col h-96 mb-24 mt-48 rounded-lg bg-white md:max-w-6xl md:flex-row mx-auto gggg  animate__animated animate__fadeIn animate__delay-3s">
               <div className="flex flex-col p-6 mt-24">
                 <p className=" text-5xl leading-tight  text-[#8AA6AA] font-['ClashDisplay'] kk mt-48 pp ">
