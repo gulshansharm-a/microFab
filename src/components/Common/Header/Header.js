@@ -62,7 +62,7 @@ const Header = () => {
   return (
     <header
       className={`font-['ClashDisplay'] fixed top-0 left-0 p-0 m-0 right-0 lg:w-full py-4 z-10 ${
-        isMenuOpen ? "bg-white" : "bg-gradient-to-r from-[#e1e1e1] to-[#8ca7ab]"
+        isMenuOpen ? "bg-white" : "bg-white"
       } w-screen`}
       style={
         window.innerWidth >= 768 ||
@@ -72,7 +72,7 @@ const Header = () => {
       }
     >
       <nav className="relative mx-10 md:mx-8 lg:mx-14 xl:mx-22 flex flex-row items-center justify-between">
-        <a className="font-bold md:text-[18px] lg:text-[20px] text-[18px]">
+        <a href="/" className="font-bold md:text-[18px] lg:text-[20px] text-[18px]">
           <img
             src={isMenuOpen ? logo1 : logo1}
             alt="logo"
@@ -404,7 +404,7 @@ const Header = () => {
 
       {/* Mobile menu */}
       {isMenuOpen && (
-        <div className="relative z-50 lg:hidden h-screen w-screen bg-[#8AA6AA] text-white text-[28px] p-4 mt-4 shadow-md">
+        <div className="relative z-50 lg:hidden h-screen w-screen bg-[#8AA6AA] text-white text-[28px] p-4 mt-4 shadow-md transition-transform duration-400 ease-in-out">
           <ul className="flex flex-col gap-4 gap-y-6">
             <li>
               <Link to="/" onClick={toggleMenu}>

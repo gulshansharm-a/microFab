@@ -10,7 +10,10 @@ import Footer from "../Common/Footer/Footer";
 
 export default function TurnKeySolutions() {
   return (
-    <div id="turnkey" className="md:h-screen md:mt-[80px] mt-[40px] md:pt-0 pt-[30px] ">
+    <div
+      id="turnkey"
+      className="md:h-screen md:mt-[80px] mt-[40px] md:pt-0 pt-[30px] "
+    >
       {/* top */}
       <div className="w-full md:h-[90%] h-[400px] flex rounded-[42px] relative md:px-4">
         <img
@@ -24,14 +27,14 @@ export default function TurnKeySolutions() {
               Turnkey Solutions
             </p>
             <p className="xl:w-[40%] 2xl:text-[24px] xl:text-[20px] lg:text-[18px] w-[60%] lg:w-[50%] md:w-[60%]">
-              "Unleashing the Power of BFS Technology: Aseptic Filling, Sterile
-              Containers, and Unbreakable Packaging in a Single Step!"
+              Unlock the potential of water treatment effectively and with
+              precision.
             </p>
           </div>
-          <div className="text-white flex flex-row justify-center place-items-center md:mt-8 gap-2 bg-primary xl:w-[18%] lg:w-[20%] md:w-[20%] w-[40%] rounded-[10px] h-[55px]">
+          {/* <div className="text-white flex flex-row justify-center place-items-center md:mt-8 gap-2 bg-primary xl:w-[18%] lg:w-[20%] md:w-[20%] w-[40%] rounded-[10px] h-[55px]">
             <p className="">Know More</p>
             <Icon icon="majesticons:arrow-right" className="" />
-          </div>
+          </div> */}
         </div>
       </div>
 
