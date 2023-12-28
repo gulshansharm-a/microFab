@@ -45,12 +45,12 @@ export default function Appli4() {
       <div>
         <span className="qaz">
         <div className="qa">
-          <h3 className="mb-6 w-full pb-8 lg:text-6xl md: text-4xl sm:text-4xl leading-tight text-[#8AA6AA]  df"><strong>
+          <h3 className="mb-6 w-full pb-8 lg:text-6xl md: text-4xl sm:text-4xl leading-tight text-[#8AA6AA]  animate__animated animate__fadeInLeft animate__delay-0s df"><strong>
           Packaging Solutions for Dairy</strong>
           </h3>
           <span>
             <h6
-              className="lg:text-3xl md:text-2xl sm:text-xl leading-tight text-[#8AA6AA]  sd"
+              className="lg:text-3xl md:text-2xl sm:text-xl leading-tight text-[#8AA6AA]  animate__animated animate__fadeInRight animate__delay-0s sd"
               color="blue"
             >
          Our packaging solutions play a pivotal role in preserving the freshness and quality of dairy products. These also extend the shelf life of dairy goods, ensuring that the consumers can enjoy the product with its nutritional benefits. </h6>{" "}
@@ -58,13 +58,13 @@ export default function Appli4() {
           </span>
           </div>
          
-          <button class="bg-[#8AA6AA] ee hover:bg-blue-700 text-white font-bold py-3 px-20 rounded m-2">
+          <button class="bg-[#8AA6AA] ee text-white font-bold py-3 px-20 rounded m-2 ">
   Explore
 </button>
 
 <div>
             <img
-              className="h-106 w-full object-cover object-center poi"
+              className="h-106 w-full object-cover object-center poi  animate__animated animate__fadeIn animate__delay-1s"
               src={logos}
               
               alt="nature image"
@@ -91,7 +91,7 @@ export default function Appli4() {
       alt="nature image"
     />
     </div> */}
-     <h3 className="mb-4 pb-4 text-5xl ml-8 leading-tight text-black"><strong>
+     <h3 className="mb-4 pb-4 text-5xl ml-8 leading-tight text-black  animate__animated animate__fadeInLeft animate__delay-1s"><strong>
             Types of Packaging</strong>
           </h3>
       <div className="navbar3">
@@ -374,36 +374,36 @@ export default function Appli4() {
       </div> */}
 <br></br><br></br>
 
-<p className="mb-6 w-full pb-8 text-5xl leading-tight text-[#8AA6AA] kkk">
+<p className="mb-6 w-full pb-8 text-5xl leading-tight text-[#8AA6AA] kkk  animate__animated animate__fadeInLeft animate__delay-2s">
                 
 <strong>Use of our packaging machines for different applications</strong></p>
 <div className="flex flex-col rounded-lg bg-white md:max-w-10xl md:flex-row mm">
 
-              <div className="flex flex-col p-28 vbn">
+              <div className="flex flex-col p-6 vbn">
                <br></br>
-                          <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Flavoured Milk</li>     
-                          <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Laban</li> 
+                          <li className=" w-full lg:text-2xl sm:text-2xs leading-tight text-[#8AA6AA]">Flavoured Milk</li>     
+                          <li className=" w-full lg:text-2xl sm:text-2xs leading-tight text-[#8AA6AA]">Laban</li> 
                         
-                          <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Cream</li>
-                          <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Almond Milk</li>
-                          <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Spreads</li>
+                          <li className=" w-full lg:text-2xl sm:text-2xs leading-tight text-[#8AA6AA]">Cream</li>
+                          <li className=" w-full lg:text-2xl sm:text-2xs leading-tight text-[#8AA6AA]">Almond Milk</li>
+                          <li className=" w-full lg:text-2xl sm:text-2xs leading-tight text-[#8AA6AA]">Spreads</li>
                           
                           </div> <br></br><br></br><br></br>
               {/* <br></br><br></br><br></br><br></br><br></br> */}
-              <img className="h-96 w-48 rounded-lg rounded-md uuu" src={im1} alt="NO image">
+              <img className="h-96 w-48 rounded-lg rounded-md uuu  animate__animated animate__fadeInRight animate__delay-2s" src={im1} alt="NO image">
                 
                
               </img>
             </div> 
 <br></br>
-      <div><center>
-        <h3 className="mb-4 pb-4 text-4xl ml-8 leading-tight text-[#8AA6AA]">
+<div className="qwe">
+        <h3 className="mb-4 pb-4 text-4xl ml-8 leading-tight text-[#8AA6AA]  animate__animated animate__fadeInLeft animate__delay-3s">
         Advantages of Microfab machines in the Pharmaceutical Industry
         </h3>
-        <h6 className="mb-4 pb-4 text-2xl ml-8 leading-tight text-[#8AA6AA]" color="blue">
+        <h6 className="mb-4 pb-4 text-2xl ml-8 leading-tight text-[#8AA6AA]  animate__animated animate__fadeInLeft animate__delay-3s" color="blue">
         The BFS technology offers many benefits for pharmaceutical companies.
         </h6>
-        <br></br></center>
+        <br></br>
         {/* <Card3Presentation/> */}
       </div>
       {/* className={`flex min-h-screen flex-col items-center justify-between py-24`} */}
@@ -411,7 +411,7 @@ export default function Appli4() {
       {/* 2. make sure our carousel container takes up the full screen width using w-screen */}
       <div className="md:px-14 mt-[5%] px-4 gap-10 flex flex-col">
        
-       <div className="w-full flex flex-row md:gap-10 gap-[200px] md:overflow-auto overflow-scroll pb-10">
+       <div className="w-full flex flex-row md:gap-10 gap-[200px] md:overflow-auto overflow-scroll pb-10  animate__animated animate__fadeInLeft animate__delay-4s">
          {applicationContent.map((item, index) => (
            <div
              key={index}

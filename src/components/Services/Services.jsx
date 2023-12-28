@@ -21,11 +21,11 @@ export default function Service() {
           </h3>
           <br></br><br></br><br></br>
 
-          <h3 className="mb-4  pb-4 text-3xl leading-tight text-black zx">
+          <h3 className="mb-4  pb-4 text-3xl leading-tight text-black zx  animate__animated animate__fadeInLeft animate__delay-0s">
           Experience the difference with us as firmly stand with our motto to offer incredible services every step of the way
           </h3>
 
-          <h6 className="text-2xs leading-tight text-black serv2" color="clack">
+          <h6 className="text-2xs leading-tight text-black serv2  animate__animated animate__fadeInRight animate__delay-0s" color="clack">
           While we dabble in providing exceptional customer service, you can connect with us for project management and contract manufacturing.
           </h6>
           <br></br><br></br><br></br><br></br>
@@ -33,7 +33,7 @@ export default function Service() {
           <br></br>
           
 
-          <div className="flex flex-col rounded-lg text-black md:max-w-5xl md:flex-row">
+          <div className="flex flex-col rounded-lg text-black md:max-w-5xl md:flex-row  animate__animated animate__fadeInLeft animate__delay-1s">
   <img
     className="h-64 w-full rounded-t-lg object-cover ds md:h-auto md:w-64 md:rounded-none md:rounded-l-lg order-2 mn md:order-"
     src={pro}
@@ -50,7 +50,7 @@ export default function Service() {
 </div>
 <br></br><br></br>
 </div></div>
-<div className="md:pl-6 flex flex-wrap gap-7 md:gap-5 md:gap-y-4 md:p-0 p-8 md:place-items-start place-items-center md:justify-start justify-center">
+<div className="md:pl-6 flex flex-wrap gap-7 md:gap-5 md:gap-y-4 md:p-0 p-8 md:place-items-start place-items-center md:justify-start justify-center  animate__animated animate__fadeInRight animate__delay-2s">
         {ServicesJson.map((device, index) => (
           <MedicalDevicesCard
             key={index} // Ensure each card has a unique key
@@ -67,9 +67,9 @@ export default function Service() {
           <br></br>
           
 
-          <div className="flex flex-col rounded-lg text-black md:max-w-5xl md:flex-row">
+          <div className="flex flex-col rounded-lg text-black md:max-w-5xl md:flex-row  animate__animated animate__fadeInLeft animate__delay-3s">
   <img
-    className="h-120 w-full rounded-t-lg object-cover  md:h-auto lg:w-120 md:w-96 md:rounded-none md:rounded-l-lg order-2 mmn md:order-"
+    className="h-120 w-full rounded-t-lg object-cover  animate__animated animate__fadeInLeft animate__delay-3s  md:h-auto lg:w-120 md:w-96 md:rounded-none md:rounded-l-lg order-2 mmn md:order-"
     src={pro2}
     alt=""
   />
@@ -84,7 +84,7 @@ export default function Service() {
 <br></br>
           
 
-          <div className="flex flex-col rounded-lg text-black md:max-w-5xl md:flex-row">
+          <div className="flex flex-col rounded-lg text-black md:max-w-5xl md:flex-row  animate__animated animate__fadeInRight animate__delay-4s">
   <img
     className="h-96 w-full rounded-t-lg object-cover md:h-auto md:w-96 md:rounded-none md:rounded-l-lg order-2 bbv md:order-"
     src={pro4}
@@ -103,21 +103,21 @@ export default function Service() {
 
           <div className="flex flex-col rounded-lg text-black md:max-w-5xl md:flex-row">
   <img
-    className="h-64 w-full rounded-t-lg object-cover dc md:h-auto md:w-64 md:rounded-none md:rounded-l-lg md:order-1"
+    className="h-64 w-full  animate__animated animate__fadeInRight animate__delay-4s sm:ml-12 md:ml-8 rounded-t-lg object-cover bv md:h-auto md:w-72 md:rounded-none md:rounded-l-lg md:order-1"
     src={pro}
     alt=""
   />
-  <div className="flex flex-col justify-start order-1 md:order-2 xc">
-    <h3 className="mb-2 pb-4 text-3xl leading-tight kl text-black">
+  <div className="flex flex-col justify-start order-1 md:order-2 op mr-6  animate__animated animate__fadeInLeft animate__delay-4s">
+    <h3 className="mb-2 pb-4 text-3xl leading-tight kl zx text-black">
     Advisory Services </h3>
-    <h6 className="text-2xs leading-tight text-black" color="clack">
+    <h6 className="text-2xs leading-tight text-black zx" color="clack">
     When perplexity is still reigning when you gear up to be future ready, we advise on the technology that you need to incorporate in your organization. Eventually, the machinery must lower down the operational costs and be capable of producing an astounding number of finished products. After all, we provide packaging solutions for you to attain recognition in the competitive world. </h6>
     
   </div>
 </div>  
 </div></div>
 <br></br><br></br><br></br>
-<div className="md:pl-6 flex flex-wrap gap-7 md:gap-5 md:gap-y-4 md:p-0 p-8 md:place-items-start place-items-center md:justify-start justify-center">
+<div className="md:pl-6 flex flex-wrap gap-7 md:gap-5 md:gap-y-4 md:p-0 p-8 md:place-items-start place-items-center md:justify-start justify-center  animate__animated animate__fadeIn animate__delay-5s">
         {ServicesJson1.map((device, index) => (
           <MedicalDevicesCard
             key={index} // Ensure each card has a unique key

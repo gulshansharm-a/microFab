@@ -46,12 +46,12 @@ export default function Appli3() {
       <div>
         <span className="qaz">
         <div className="qa">
-          <h3 className="mb-6 w-full pb-8 lg:text-6xl md: text-4xl sm:text-5xl leading-tight text-[#8AA6AA]  df"><strong>
+          <h3 className="mb-6 w-full pb-8 lg:text-6xl md: text-4xl sm:text-5xl leading-tight text-[#8AA6AA]  animate__animated animate__fadeInLeft animate__delay-0s  df"><strong>
           Packaging Solutions for the Food Industry</strong>
           </h3>
           <span>
             <h6
-              className="lg:text-3xl md:text-2xl sm:text-xl leading-tight text-[#8AA6AA]  sd"
+              className="lg:text-3xl md:text-2xl sm:text-xl leading-tight text-[#8AA6AA]  animate__animated animate__fadeInRight animate__delay-0s sd"
               color="blue"
             >
          MicroFab transforms the realm of food packaging with its solutions designed to preserve freshness, ensure safety, and enhance convenience. Our technologies cater to the unique needs, offering precision and innovation.
@@ -60,13 +60,13 @@ export default function Appli3() {
           </span>
           </div>
          
-          <button class="bg-[#8AA6AA] ee hover:bg-blue-700 text-white font-bold py-3 px-20 rounded m-2">
+          <button class="bg-[#8AA6AA] ee  text-white font-bold py-3 px-20 rounded m-2">
   Explore
 </button>
 
 <div>
             <img
-              className="h-106 w-full object-cover object-center poi"
+              className="h-106 w-full object-cover object-center poi  animate__animated animate__fadeIn animate__delay-1s"
               src={logos56}
               
               alt="nature image"
@@ -93,7 +93,7 @@ export default function Appli3() {
       alt="nature image"
     />
     </div> */}
-     <h3 className="mb-4 pb-4 text-5xl ml-8 leading-tight text-black"><strong>
+     <h3 className="mb-4 pb-4 text-5xl ml-8 leading-tight text-black  animate__animated animate__fadeInLeft animate__delay-1s"><strong>
             Types of Packaging</strong>
           </h3>
       <div className="navbar2">
@@ -376,18 +376,18 @@ export default function Appli3() {
       </div> */}
 <br></br><br></br>
 
-<p className="mb-6 w-full pb-8 text-5xl leading-tight text-[#8AA6AA] kkk">
+<p className="mb-6 w-full pb-8 text-5xl leading-tight text-[#8AA6AA] kkk  animate__animated animate__fadeInLeft animate__delay-2s">
                 
 <strong>Use of our packaging machines for different Applications</strong></p>
 <div className="flex flex-col rounded-lg bg-white md:max-w-10xl md:flex-row mm">
 
               <div className="flex flex-col p-6 vbnn">
                <br></br>
-                          <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Cheese Sauces </li>     
-                          <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Non-Carbonated Beverages</li> 
-                          <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Electrolytes</li> 
-                          <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Drinking Bottles</li>
-                          <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Nutraceuticals </li>
+                          <li className=" w-full lg:text-2xl sm:text-2xs leading-tight text-[#8AA6AA]">Cheese Sauces </li>     
+                          <li className=" w-full lg:text-2xl sm:text-2xs leading-tight text-[#8AA6AA]">Non-Carbonated Beverages</li> 
+                          <li className=" w-full lg:text-2xl sm:text-2xs leading-tight text-[#8AA6AA]">Electrolytes</li> 
+                          <li className=" w-full lg:text-2xl sm:text-2xs leading-tight text-[#8AA6AA]">Drinking Bottles</li>
+                          <li className=" w-full lg:text-2xl sm:text-2xs leading-tight text-[#8AA6AA]">Nutraceuticals </li>
                           {/* <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Hair Serums </li>
                           <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Conditioners</li> */}
                           {/* <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">diagnostics</li>
@@ -397,20 +397,20 @@ export default function Appli3() {
                           <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">biotechnological products</li>  */}
                           </div> <br></br><br></br><br></br>
               {/* <br></br><br></br><br></br><br></br><br></br> */}
-              <img className="h-80 w-48 rounded-lg rounded-md uuu" src={im1} alt="NO image">
+              <img className="h-80 w-48 rounded-lg rounded-md uuu  animate__animated animate__fadeInRight animate__delay-2s" src={im1} alt="NO image">
                 
                
               </img>
             </div> 
 <br></br>
-      <div><center>
-        <h3 className="mb-4 pb-4 text-4xl ml-8 leading-tight text-[#8AA6AA]">
+<div className="qwe">
+        <h3 className="mb-4 pb-4 text-4xl ml-8 leading-tight text-[#8AA6AA]  animate__animated animate__fadeInLeft animate__delay-3s">
         Advantages of Microfab machines in the Pharmaceutical Industry
         </h3>
-        <h6 className="mb-4 pb-4 text-2xl ml-8 leading-tight text-[#8AA6AA]" color="blue">
+        <h6 className="mb-4 pb-4 text-2xl ml-8 leading-tight text-[#8AA6AA] animate__animated animate__fadeInLeft animate__delay-3s" color="blue">
         The BFS technology offers many benefits for pharmaceutical companies.
         </h6>
-        <br></br></center>
+        <br></br>
         {/* <Card3Presentation/> */}
       </div>
       {/* className={`flex min-h-screen flex-col items-center justify-between py-24`} */}
@@ -418,7 +418,7 @@ export default function Appli3() {
       {/* 2. make sure our carousel container takes up the full screen width using w-screen */}
       <div className="md:px-14 mt-[5%] px-4 gap-10 flex flex-col">
        
-       <div className="w-full flex flex-row md:gap-10 gap-[200px] md:overflow-auto overflow-scroll pb-10">
+       <div className="w-full flex flex-row md:gap-10 gap-[200px] md:overflow-auto overflow-scroll pb-10  animate__animated animate__fadeInLeft animate__delay-4s" >
          {applicationContent.map((item, index) => (
            <div
              key={index}

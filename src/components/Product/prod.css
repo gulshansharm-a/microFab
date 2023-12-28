@@ -1,5 +1,5 @@
 .App {
-    text-align: center;
+    text-align: left;
   }
   
   .App-logo {
@@ -46,17 +46,18 @@
     position:relative;
     left:70%;
   }
-  .bh{
-    margin-left:-225%;
-    margin-right:150%;
-  }
+ 
   .ghj{
     margin-right:-35%;
     width:200%;
   }
   .xd{
-    margin:auto 8%;;
-    text-align:center;
+    margin:auto 4%;;
+    text-align:left;
+  }
+  .xdd{
+    margin:auto -10%;
+    text-align:left;
   }
   /* .xc{
     position:relative;
@@ -145,14 +146,37 @@
     width:60%;
     
   }
+  @media only screen and (min-width: 1321px) {
+    .df{
+      height:20%;
+      margin-top:300px;
+      margin-left:2%;
+      margin-right:2%;
+     
+    
+    }
   .serv7{
-    width:135%;
+    width:235%;
     margin-bottom:15%;
     margin-left:-225%;
+    margin-right:-190%;
   }
-  .vb{
-    text-align:center;
-    justify-content:center;
+  .bh{
+    margin-left:-225%;
+    margin-right:-190%;
+  }
+}
+@media only screen and (min-width: 1150px) and (max-width:1320px){
+  .serv7{
+    width:75%;
+    margin-top:5%;
+    margin-left:20%;
+    /* margin-right:-190%; */
+  }
+  .bh{
+    margin-left:25%;
+    margin-top:45%;
+    /* margin-right:-190%; */
   }
   .df{
     height:20%;
@@ -162,6 +186,74 @@
    
   
   }
+}
+@media only screen and (min-width: 1050px) and (max-width:1249px){
+  .serv7{
+    width:75%;
+    margin-top:5%;
+    margin-left:120%;
+    /* margin-right:-190%; */
+  }
+ 
+
+  .dffp{
+    position:absolute;
+    display:none;
+  }
+}
+@media only screen (max-width: 749px) {
+  .dffp{
+    position:absolute;
+    display:none;
+  }
+  .xd{
+    text-align:left;
+  }
+  .fgi{
+    margin-left:-10%;
+  }
+}
+
+.df{
+  height:20%;
+  margin-top:300px;
+  margin-left:2%;
+  margin-right:2%;
+ 
+
+}
+
+@media only screen (min-width: 750px) and (max-width: 1249px) {
+.gh{
+  margin-left:-1000px;
+  margin-top:100px;
+}
+.bh{
+  margin-left:320px;
+  margin-right:-380px;
+  margin-top:300px;
+  margin-right:-190%;
+}
+}
+@media only screen (min-width: 750px) and (max-width: 1049px) {
+  .serv7{
+    width:380px;
+    margin-top:300px;
+    margin-left:320px; 
+    margin-right:-430px; 
+     margin-right:-190%;
+  }
+
+  .dffp{
+    position:absolute;
+    display:none;
+  }
+}
+  .vb{
+    text-align:left;
+    justify-content:center;
+  }
+
   .dff{
     height:5%;
     margin-top:2px;
@@ -191,7 +283,7 @@
     height:10%;
   }
   .vbb{
-    text-align:center;
+    text-align:left;
     justify-content:center;
     margin:0 2%;
   }
@@ -263,7 +355,7 @@
     .serv2{
       position:absolute;
       display:none;
-      text-align:center;
+      text-align:left;
     }
     .hgf{
       margin-right:-70%;
@@ -324,12 +416,7 @@
          .bv{
           margin-left:40%;
          }
-         .xv{
-          text-align:center;
-          margin:0 -20%;
-          /* position:relative;
-          left:20%; */
-         }
+        
          .dff{
           position:absolute;
           display:none;
@@ -338,7 +425,8 @@
           margin-right:-80%;
          }
          .hdfc{
-          margin-right:-350%;
+          margin-right:-300%;
+          margin-left:30%;
           text-align:left;
          }
          .ase{
@@ -351,7 +439,8 @@
       @media only screen and (min-width:1300px) {
       .xc{
         position:relative;
-        left:45%;
+        left:35%;
+        margin-right:-30%;
       }
     }
     @media only screen and (min-width:900px) {
@@ -364,7 +453,8 @@
   @media only screen and (min-width:750px) {
     .hdfc{
       margin-left:-150%;
+      margin-right:10%;
       position:relative;
-      left:100%;
+      left:130%;
     }
   }

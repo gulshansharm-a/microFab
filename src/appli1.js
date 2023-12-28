@@ -48,26 +48,26 @@ export default function Appli1() {
       <div>
         <span className="qaz">
         <div className="qa">
-          <h3 className="mb-6 w-full pb-8 lg:text-7xl md: text-5xl sm:text-5xl leading-tight text-[#8AA6AA]  df"><strong>
+          <h3 className="mb-6 w-full pb-8 lg:text-7xl md: text-5xl sm:text-5xl leading-tight text-[#8AA6AA]  df  animate__animated animate__fadeInLeft animate__delay-0s"><strong>
           Packaging Solutions for Pharmaceuticals</strong>
           </h3>
           <span>
             <h6
-              className="lg:text-3xl md:text-2xl sm:text-xl leading-tight text-[#8AA6AA]  sd"
+              className="lg:text-3xl md:text-2xl sm:text-xl leading-tight text-[#8AA6AA]  sd  animate__animated animate__fadeInRight animate__delay-0s"
               color="blue"
             >
             MicroFab revolutionizes pharmaceutical packaging with cutting-edge solutions that prioritize precision, efficiency, and aseptic integrity.</h6>{" "}
             {/* <br></br> */}
           
          
-          <button class="bg-[#8AA6AA] ee hover:bg-blue-700 text-white font-bold py-3 px-20 rounded m-2">
+          <button class="bg-[#8AA6AA] ee  text-white font-bold py-3 px-20 rounded m-2">
   Explore
 </button>
 </span>
           </div>
 <div>
             <img
-              className="h-106 w-full object-cover object-center poi"
+              className="h-106 w-full object-cover object-center poi  animate__animated animate__fadeIn animate__delay-1s"
               src={phar}
               
               alt="nature images"
@@ -94,7 +94,7 @@ export default function Appli1() {
       alt="nature image"
     />
     </div> */}
-     <h3 className="mb-4 pb-4 text-5xl ml-8 leading-tight text-black"><strong>
+     <h3 className="mb-4 pb-4 text-5xl ml-8 leading-tight text-black  animate__animated animate__fadeInLeft animate__delay-2s"><strong>
             Types of Packaging</strong>
           </h3>
       <div className="navbar">
@@ -385,12 +385,12 @@ export default function Appli1() {
 
               <div className="flex flex-col p-6 vbnn">
                <br></br>
-                          <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Vaccines </li>     
-                          <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Sterile Water </li> 
-                          <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Blood Products  </li> 
-                          <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Stability Test Kits  </li>
+                          <li className=" w-full lg:text-2xl sm:text-2xs leading-tight text-[#8AA6AA]">Vaccines </li>     
+                          <li className=" w-full lg:text-2xl sm:text-2xs leading-tight text-[#8AA6AA]">Sterile Water </li> 
+                          <li className=" w-full lg:text-2xl sm:text-2xs leading-tight text-[#8AA6AA]">Blood Products  </li> 
+                          <li className=" w-full lg:text-2xl sm:text-2xs leading-tight text-[#8AA6AA]">Stability Test Kits  </li>
                           {/* <li className=" w-full text-2xl leading-tight text-[#8AA6AA]"></li> */}
-                          <li className=" w-full text-2xl leading-tight text-[#8AA6AA]"> Temperature sensitive substances</li>
+                          <li className=" w-full lg:text-2xl sm:text-2xs leading-tight text-[#8AA6AA]"> Temperature sensitive substances</li>
                           {/* <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Diagnostics</li>
                           <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Biotechnological products</li> 
                           <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Vaccines</li> 
@@ -399,26 +399,26 @@ export default function Appli1() {
                           <li className=" w-full text-2xl leading-tight text-[#8AA6AA]">Antibodies & Blood Products</li> */}
                           </div> <br></br><br></br><br></br>
               {/* <br></br><br></br><br></br><br></br><br></br> */}
-              <img className="h-96 w-48 rounded-lg rounded-md uuu mr-24" src={art} alt="NO image">
+              <img className="h-96 w-48 rounded-lg rounded-md uuu mr-24  animate__animated animate__fadeInRight animate__delay-2s" src={art} alt="NO image">
                 
                
               </img>
             </div> 
 <br></br>
-      <div><center>
-        <h3 className="mb-4 pb-4 text-4xl ml-8 leading-tight text-[#8AA6AA]">
+      <div className="qwe">
+        <h3 className="mb-4 pb-4 text-4xl ml-8 leading-tight text-[#8AA6AA]  animate__animated animate__fadeInLeft animate__delay-3s">
         Advantages of Microfab machines in the Pharmaceutical Industry
         </h3>
-        <h6 className="mb-4 pb-4 text-2xl ml-8 leading-tight text-[#8AA6AA]" color="blue">
+        <h6 className="mb-4 pb-4 text-2xl ml-8 leading-tight text-[#8AA6AA] animate__animated animate__fadeInLeft animate__delay-3s" color="blue">
         The BFS technology offers many benefits for pharmaceutical companies.
         </h6>
-        <br></br></center>
+        <br></br>
         {/* <Card3Presentation/> */}
       </div>
       {/* className={`flex min-h-screen flex-col items-center justify-between py-24`} */}
 
       {/* 2. make sure our carousel container takes up the full screen width using w-screen */}
-      <div className="md:px-14 mt-[5%] px-4 gap-10 flex flex-col">
+      <div className="md:px-14 mt-[5%] px-4 gap-10 flex flex-col  animate__animated animate__fadeInRight animate__delay-4s">
        
        <div className="w-full flex flex-row md:gap-10 gap-[200px] md:overflow-auto overflow-scroll pb-10">
          {applicationContent.map((item, index) => (
