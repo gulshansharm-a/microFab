@@ -35,10 +35,10 @@ const WaterTS = () => {
             <img
               src={images[item.imgl]}
               alt="WTS"
-              className="rounded-[19px object-cover"
+              className="rounded-[19px] object-cover"
             />
           </div>
-          <div className="w-[40%]">
+          <div className="w-[55%]">
             <h3 className="text-lg font-bold">{item.heading}</h3>
             <p className="text-sm">{item.content}</p>
           </div>
@@ -50,35 +50,9 @@ const WaterTS = () => {
   const [index, setIndex] = useState(0);
   const [borderPercentage, setBorderPercentage] = useState("5%"); // Initial border percentage
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      // Update index every 2 seconds
-      setIndex((prevIndex) => (prevIndex < 3 ? prevIndex + 1 : 0));
-    }, 2000);
+  console.log(index);
 
-    return () => clearInterval(interval); // Clear interval on component unmount
-  }, []);
-
-  useEffect(() => {
-    // Calculate border percentage based on index value
-    switch (index) {
-      case 0:
-        setBorderPercentage("5%");
-        break;
-      case 1:
-        setBorderPercentage("25%");
-        break;
-      case 2:
-        setBorderPercentage("50%");
-        break;
-      case 3:
-        setBorderPercentage("95%");
-        break;
-      default:
-        setBorderPercentage("5%");
-        break;
-    }
-  }, [index]);
+  console.log(index);
 
   return (
     <div className="w-[100%] flex flex-col">
@@ -131,21 +105,40 @@ const WaterTS = () => {
         <img
           src={WCO}
           alt="WCO"
+          onClick={() => {
+            setBorderPercentage("5%");
+            setIndex(0);
+          }}
           className="md:absolute absolute right-[47%] top-[8%] md:right-[49%] md:top-[20%] rounded-full p-0.5 bg-[#8AA6AA] h-[20px] md:h-[40px]"
         ></img>
+
         <img
           src={sync}
           alt="sync"
+          onClick={() => {
+            setBorderPercentage("50%");
+            setIndex(2);
+          }}
           className="md:absolute absolute right-[18%] top-[45%] md:right-[48%] md:top-[73%] rounded-full md:p-2 p-0.5 h-[20px] bg-[#8AA6AA] md:h-[40px]"
         ></img>
+
         <img
           src={water_polo}
           alt="Water polo"
+          onClick={() => {
+            setBorderPercentage("25%");
+            setIndex(1);
+          }}
           className="md:absolute absolute right-[47%] top-[85%] md:right-[37%] md:top-[49%] rounded-full md:p-2 p-0.5 h-[20px] bg-[#8AA6AA] md:h-[40px]"
         ></img>
+
         <img
           src={STO}
           alt="STO"
+          onClick={() => {
+            setBorderPercentage("95%");
+            setIndex(3);
+          }}
           className="md:absolute absolute right-[76%] top-[45%] md:right-[60%] md:top-[49%] rounded-full md:p-2 p-0.5 h-[20px] bg-[#8AA6AA] md:h-[40px]"
         ></img>
 
@@ -155,8 +148,8 @@ const WaterTS = () => {
       </div>
       <div>
         <div className="md:hidden flex flex-row overflow-x-scroll mt-[30px]">
-          <div className="flex flex-nowrap">
-            {data.map((item) => (
+          {/* <div className="flex flex-nowrap">
+            {data.map((item,num) => (
               <div
                 key={item.heading}
                 className="w-full flex-shrink-0 md:w-[300px]"
@@ -164,7 +157,8 @@ const WaterTS = () => {
                 {renderMobileView(item)}
               </div>
             ))}
-          </div>
+          </div> */}
+          {renderMobileView(data[index])}
         </div>
       </div>
     </div>
