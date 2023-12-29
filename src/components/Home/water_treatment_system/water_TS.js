@@ -119,7 +119,7 @@ const WaterTS = () => {
             setBorderPercentage("50%");
             setIndex(2);
           }}
-          className="md:absolute absolute right-[18%] top-[45%] md:right-[48%] md:top-[73%] rounded-full md:p-2 p-0.5 h-[20px] bg-[#8AA6AA] md:h-[40px]"
+          className="md:absolute absolute right-[47%] top-[85%] md:right-[48%] md:top-[73%] rounded-full md:p-2 p-0.5 h-[20px] bg-[#8AA6AA] md:h-[40px]"
         ></img>
 
         <img
@@ -129,7 +129,7 @@ const WaterTS = () => {
             setBorderPercentage("25%");
             setIndex(1);
           }}
-          className="md:absolute absolute right-[47%] top-[85%] md:right-[37%] md:top-[49%] rounded-full md:p-2 p-0.5 h-[20px] bg-[#8AA6AA] md:h-[40px]"
+          className="md:absolute absolute right-[18%] top-[45%] md:right-[37%] md:top-[49%] rounded-full md:p-2 p-0.5 h-[20px] bg-[#8AA6AA] md:h-[40px]"
         ></img>
 
         <img
