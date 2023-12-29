@@ -19,12 +19,10 @@ export default function MedicalDevices() {
             </div>
             <div className="w-[90%]">
               <p className="font-thin text-[#67675F] text-[18px] md:leading-7 md:tracking-wide">
-                In the healthcare sector, MicroFab has always understood the
-                importance of choosing quality medical equipment. While you
-                serve the most emaciated patient, we ensure that the device is
-                safe to use, and maintain with ease. We also develop designs for
-                devices which are apt for using, with comfort, in different
-                types of enviornment.
+                In the healthcare sector, MicroFab understands the criticality
+                of choosing quality medical equipment. While serving patients,
+                we ensure that the device is safe to use. We also develop
+                designs for devices which are apt for using, with comfort.
               </p>
             </div>
           </div>
@@ -42,7 +40,7 @@ export default function MedicalDevices() {
         {/* Medical devices we Provide */}
         <div>
           {/* content */}
-          <div className="flex flex-col md:gap-6 gap-4 md:p-10 p-4">
+          {/* <div className="flex flex-col md:gap-6 gap-4 md:p-10 p-4">
             <div className="bg-primary h-1 w-5"></div>
             <div>
               <p className="font-semibold text-4xl tracking-widest capitalize">
@@ -58,7 +56,7 @@ export default function MedicalDevices() {
                 amet, consectetur adipiscing elit.
               </p>
             </div>
-          </div>
+          </div> */}
 
           {/* cards */}
 
