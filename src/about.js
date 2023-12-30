@@ -19,7 +19,7 @@ import y2 from "./y2.svg";import y3 from "./y3.svg";import y4 from "./y4.svg";im
 
 import Footer from "./components/Common/Footer/Footer";
 import React, { useState, useRef, useEffect } from "react";
-import yu from "./Rectangle 57 (2).svg";
+import yu from "./WhatsApp Image 2023-11-16 at 18.26 1.svg";
 import a from "./Rectangle 57.svg";
 import b from "./layer.svg";
 import cc from "./WhatsApp Image 2023-11-23 at 13.48.59.jpeg";
