@@ -6,6 +6,7 @@ import arrow2 from "../../../assets/Happy_customers/arrow2.svg";
 import quotes from "../../../assets/Happy_customers/quotes.svg";
 import ONEMILL from "../../../assets/Happy_customers/1M.svg";
 import "../../../App.css";
+import MobileTestimonials from '../Testimonials/MobileTestimonials'
 
 export default function HappyCustomers() {
   const customerData = [
@@ -22,12 +23,14 @@ export default function HappyCustomers() {
       company: "Future Creative Technician",
     },
     {
-      content: "Packaging Intravenous Solutions in huge quantities would otherwise be a pain if we wouldn’t have contacted MicroFab. However, when the team comprehended our needs, it was brimming with proactiveness to set up four lines of IV. Thanks MicroFab for being quite supportive and managing things just the way we wanted.",
+      content:
+        "Packaging Intravenous Solutions in huge quantities would otherwise be a pain if we wouldn’t have contacted MicroFab. However, when the team comprehended our needs, it was brimming with proactiveness to set up four lines of IV. Thanks MicroFab for being quite supportive and managing things just the way we wanted.",
       author: "Healthline Pharmaceuticals",
       company: "Future Creative Technician",
     },
     {
-      content: "Hats off to the entire team working at MicroFab. We really appreciate the efforts that the entire team has put in while working towards the design of the machinery that had to be set up in Sri Lanka. Earlier, we were at our wit s end and didn t know how to commence. But, everything seemed easy when we contacted MicroFab.",
+      content:
+        "Hats off to the entire team working at MicroFab. We really appreciate the efforts that the entire team has put in while working towards the design of the machinery that had to be set up in Sri Lanka. Earlier, we were at our wit s end and didn t know how to commence. But, everything seemed easy when we contacted MicroFab.",
       author: "PIIPL, Sri Lanka",
       company: "Future Creative Technician",
     },
@@ -88,14 +91,16 @@ export default function HappyCustomers() {
             </div>
           ))}
         </div>
-        <div className="md:hidden block bg-white shadow-md p-4 m-4 rounded-lg w-[80%] md:w-[40%] text-center">
+        {/* <div className="md:hidden block bg-white shadow-md p-4 m-4 rounded-lg w-[80%] md:w-[40%] text-center">
           <div className="flex justify-center">
             <img src={quotes} className=""></img>
           </div>
           <p className="text-[17px]">{customerData[0].content}</p>
           <p className="text-[15px] mt-2 font-bold">{customerData[0].author}</p>
           <p className="text-[13px]">{customerData[0].company}</p>
-        </div>
+        </div> */}
+
+        <MobileTestimonials />
       </div>
     </div>
   );
