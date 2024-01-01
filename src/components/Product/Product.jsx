@@ -135,9 +135,9 @@ export default function Product() {
             <div className="flex flex-col justify-start order-1 md:order-1 gghh  animated-box animate__animated animate__fadeInRight animate__delay-4s">
               <h3 className="mb-2 pb-4 md:text-5xl text-5xl hhjj  leading-tight text-black">
               Refurbished Machines</h3>
-              <h6 className="text-xl sdd leading-tight text-black fui" color="clack">
+              <h6 className="text-xl " color="clack">
               Our refurbished machines offer the perfect blend of performance and value. By breathing new life into pre-owned equipment, we make cutting-edge technology accessible at a fraction of the cost, all while promoting eco-friendly practices. 
-  </h6><br></br><h6>
+  </h6><br></br><h6 className="text-xl ">
 Note: The images used for this section is for reference purpose only</h6>
 
             </div>
