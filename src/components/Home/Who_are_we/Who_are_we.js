@@ -2,6 +2,53 @@ import world from "../../../assets/Who_are_we/world.svg";
 import world_mobile from "../../../assets/Who_are_we/world_mobile.svg";
 // import "../../../App.css";
 import "./hstyle.css";
+import Slider from "../Testimonials/Slider";
+
+const Section = ({ title, description }) => (
+  <div className="flex-shrink-0 w-[50%] flex flex-row gap-10">
+    <div className="block md:w-[5px] w-[10px] h-[100px] md:h-[120px] bg-[#8AA6AA] gap-4"></div>
+    <div className="md:w-[75%] md:text-[16px] flex flex-col">
+      <p className="md:text-[20px] font-semibold text-[20px]">{title}</p>
+      <p className="md:w-full w-[60%]">{description}</p>
+    </div>
+  </div>
+);
+
+const Sections = ({ data }) => (
+  <div className="md:hidden flex flex-row overflow-x-scroll mt-[30px]">
+    <div className="flex flex-nowrap -mx-36">
+      <Slider options={{ align: "center" }}>
+        {data.map((section, index) => (
+          <Section
+            key={index}
+            title={section.title}
+            description={section.description}
+          />
+        ))}
+      </Slider>
+    </div>
+  </div>
+);
+
+const sectionsData = [
+  {
+    title: "500+ cutting-edge machinery",
+    description: "We design machinery as per the requirements",
+  },
+  {
+    title: "200+ employees",
+    description: "We have maintained the aplomb through the years",
+  },
+  {
+    title: "90% customer retention",
+    description: "Our team is known for incredible service",
+  },
+  {
+    title: "Across 15+ countries",
+    description: "We have our footprint across the globe",
+  },
+];
+
 export default function Who_are_we() {
   return (
     <div className="custom-font flex md:flex-row flex-col md:justify-between">
@@ -79,10 +126,10 @@ export default function Who_are_we() {
 
         {/* mobile x scroll */}
         <div>
-          <div className="md:hidden flex flex-row overflow-x-scroll mt-[30px]">
+          <Sections data={sectionsData} />
+
+          {/* <div className="md:hidden flex flex-row overflow-x-scroll mt-[30px]">
             <div className="flex flex-nowrap">
-
-
               <div className="w-[45%] flex-shrink-0">
                 <div className="flex flex-row gap-10">
                   <div className="block md:w-[5px] w-[10px] h-[120px] md:h-[120px] bg-[#8AA6AA] gap-4"></div>
@@ -101,10 +148,11 @@ export default function Who_are_we() {
                   <div className="block md:w-[5px] w-[10px] h-[120px] md:h-[120px] bg-[#8AA6AA] gap-4"></div>
                   <div className="md:w-[75%] md:text-[16px] flex flex-col">
                     <p className="md:text-[20px] font-semibold text-[20px]">
-                    200+ employees
+                      200+ employees
                     </p>
                     <p className="">
-                    We have maintained the<br></br> aplomb through the<br></br> years
+                      We have maintained the<br></br> aplomb through the
+                      <br></br> years
                     </p>
                   </div>
                 </div>
@@ -114,10 +162,10 @@ export default function Who_are_we() {
                   <div className="block md:w-[5px] w-[10px] h-[100px] bg-[#8AA6AA] gap-4"></div>
                   <div className="md:w-[75%] md:text-[16px] flex flex-col">
                     <p className="md:text-[20px] font-semibold text-[20px]">
-                    90% customer retention
+                      90% customer retention
                     </p>
                     <p className="">
-                    Our team is known for<br></br> incredible service
+                      Our team is known for<br></br> incredible service
                     </p>
                   </div>
                 </div>
@@ -127,20 +175,16 @@ export default function Who_are_we() {
                   <div className="block md:w-[5px] w-[10px] h-[100px] bg-[#8AA6AA] gap-4"></div>
                   <div className="md:w-[75%] md:text-[16px] flex flex-col">
                     <p className="md:text-[20px] font-semibold text-[20px]">
-                    Across 15+ countries
+                      Across 15+ countries
                     </p>
                     <p className="">
-                    We have our footprint <br></br>across the globe
+                      We have our footprint <br></br>across the globe
                     </p>
                   </div>
                 </div>
               </div>
-
-              
             </div>
-
-            
-          </div>
+          </div> */}
         </div>
 
         {/* desktop view */}
