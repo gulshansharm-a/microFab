@@ -140,7 +140,7 @@ export default function Footer() {
 
           {/* Justify-between section */}
           <div className="md:flex md:flex-row flex flex-row justify-between">
-            <p>Copyright 2023</p>
+            <p>Copyright 2024</p>
             {/* <p>Lorem ipsum</p> */}
           </div>
         </div>

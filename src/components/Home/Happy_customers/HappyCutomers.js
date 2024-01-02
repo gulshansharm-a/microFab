@@ -6,7 +6,7 @@ import arrow2 from "../../../assets/Happy_customers/arrow2.svg";
 import quotes from "../../../assets/Happy_customers/quotes.svg";
 import ONEMILL from "../../../assets/Happy_customers/1M.svg";
 import "../../../App.css";
-import MobileTestimonials from '../Testimonials/MobileTestimonials'
+import MobileTestimonials from "../Testimonials/MobileTestimonials";
 
 export default function HappyCustomers() {
   const customerData = [
@@ -100,7 +100,9 @@ export default function HappyCustomers() {
           <p className="text-[13px]">{customerData[0].company}</p>
         </div> */}
 
-        <MobileTestimonials />
+        <div className="md:hidden">
+          <MobileTestimonials />
+        </div>
       </div>
     </div>
   );

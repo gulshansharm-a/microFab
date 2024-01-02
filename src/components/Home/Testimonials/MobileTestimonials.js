@@ -33,18 +33,21 @@ export default function MobileTestimonials() {
 
   return (
     <div>
-      <div className="w-screen fg flex flex-col md:gap-5 gap-[100px] pb-10 -mb-24 overflow-x-auto">
+      <div className="w-screen fg flex flex-col gap-10 pb-10 -mb-24 overflow-x-auto px-10">
         <Slider options={{ align: "center" }}>
         {customerData.map((customer, index) => (
             <div
               key={index}
-              className="bg-white shadow-md p-4 m-4 rounded-lg w-[200px] text-center"
+              // className="bg-white shadow-md p-4 m-4 rounded-lg w-[300px] h-[200px] text-center"
+              className="text-center shadow-md rounded-lg"
             >
+              {/* <p>{index+1}</p>
+              <p className="text-[14px] w-[400px]">{customer.content}</p> */}
               <div className="flex justify-center">
                 <img src={quotes} alt="quote" className=""></img>
               </div>
-              <p className="text-[14px]">{customer.content}</p>
-              <p className="text-[15px] mt-2 font-normal">{customer.author}</p>
+              <p className="text-[14px] w-[250px] p-3">{customer.content}</p>
+              {/* <p className="text-[15px] mt-2 font-normal w-[250px]">{customer.author}</p> */}
               {/* <p className="text-[13px]">{customer.company}</p> */}
             </div>
           ))}
