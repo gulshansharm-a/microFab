@@ -1,4 +1,9 @@
 import "../../../App.css";
+import React from 'react';
+import CountUp from 'react-countup';
+
+// Import your CSS file if necessary
+// import "../../../App.css";
 
 export default function Analytics() {
   return (
@@ -11,7 +16,8 @@ export default function Analytics() {
         <div className="md:w-[80%] w-[80%] flex md:flex-row flex-col md:justify-between gap-10">
           <div>
             <h1 className="md:text-[80px] text-[50px] flex flex-row font-[1000]">
-              200 <p className="text-[#8AA6AA]">+</p>
+              <CountUp end={200} duration={7} separator="," /> {/* Counting animation for 200 */}
+              <p className="text-[#8AA6AA]">+</p>
             </h1>
             <p className="text-[15px]">
               Premium moulds made for machines <br></br>from Germany, Italy and
@@ -20,7 +26,7 @@ export default function Analytics() {
           </div>
           <div className="">
             <h1 className="md:text-[80px] text-[50px] flex flex-row font-[1000]">
-              100<p className="text-[#8AA6AA]">,</p>000{" "}
+              <CountUp end={100000} duration={7} separator="," /> {/* Counting animation for 100,000 */}
               <p className="text-[#8AA6AA]">+</p>
             </h1>
             <p className="">Square feet across four strategic locations</p>
@@ -30,7 +36,8 @@ export default function Analytics() {
         {/* bottom */}
         <div className="md:w-[80%] w-[80%] mt-[30px]">
           <h1 className="md:text-[80px] text-[50px] flex flex-row font-[1000]">
-            15<p className="text-[#8AA6AA]">+</p>Countries
+            <CountUp end={15} duration={10} /> {/* Counting animation for 15 */}
+            <p className="text-[#8AA6AA]">+</p>Countries
           </h1>
           <p className="">
             Our global footprint spans over Algeria, Ghana, Nigeria, South
