@@ -86,7 +86,7 @@ export default function HappyCustomers() {
                 <img src={quotes} className=""></img>
               </div>
               <p className="text-[14px]">{customer.content}</p>
-              <p className="text-[15px] mt-2 font-normal">{customer.author}</p>
+              {/* <p className="text-[15px] mt-2 font-normal">{customer.author}</p> */}
               {/* <p className="text-[13px]">{customer.company}</p> */}
             </div>
           ))}
