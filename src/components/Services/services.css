@@ -12,9 +12,9 @@
   margin-right:5%;
 }
 .mmn{
-  position:relative;
-  left:50%;
-  margin-right:3%;
+ width:70%;
+  margin-left:20%;
+  /* margin-right:-150%; */
 }
 .bbv{
   width:70%;
@@ -29,17 +29,37 @@
   position:relative;
   right:15%;
 }
+
+
+@media only screen and (min-width: 1350px) {
+.xz{
+  margin-right:-150%;
+}
+}
+
 @media only screen and (min-width: 1350px) {
 .xc{
   position:relative;
   left:45%;
 }
+
 }
 @media only screen and (max-width: 1349px) {
   .xc{
     position:relative;
     left:35%;
   }
+}
+
+@media only screen and (max-width: 1200px) {
+
+
+.mmn{
+  position:absolute;
+  display:none;
+}
+
+
 }
 /* .zx{
   margin-right:80%;
@@ -141,7 +161,12 @@ height: 7px;
   position:absolute;
   left:5%;
 }
+@media only screen and (min-width: 751px) {
+.kl{
+  margin-right:-80%;
+}
 
+}
 @media only screen and (max-width: 750px) {
 .ds{
   margin-left:-70%;
