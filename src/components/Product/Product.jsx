@@ -1,5 +1,6 @@
 import React from "react";
 import './prod.css';
+
 // import pro from "./images/Frame 21516.svg";
 import pro2 from "./images/image 47.svg";
 import pro3 from "./images/image 48.svg";
@@ -13,7 +14,7 @@ import b1 from "./images/Rectangle 49 (1).svg";
 import b2 from "./images/4.svg";
 import b3 from "./images/1.svg";
 import b4 from "./images/3.svg";
-import MedicalDevicesCard from "../MedicalDevices/MedicalDevicesCard";
+import MedicalDevicesCard from "./Form";
 import Footer from "../Common/Footer/Footer";
 import TurnKeySolutionsData from "./prodt.json";
 export default function Product() {
@@ -46,7 +47,7 @@ export default function Product() {
       </div>
       <br></br>
 
-      {/* <div className="md:pl-16 flex flex-wrap gap-7 md:gap-4 md:gap-y-8 md:p-0 p-8 md:place-items-start place-items-center md:justify-start justify-center  animated-box animate__animated animate__fadeIn animate__delay-1s">
+      <div className="md:pl-16 flex flex-wrap gap-7 md:gap-4 md:gap-y-8 md:p-0 p-8 md:place-items-start place-items-center md:justify-start justify-center  animated-box animate__animated animate__fadeIn animate__delay-1s">
         {TurnKeySolutionsData.map((device, index) => (
           <MedicalDevicesCard
             key={index} // Ensure each card has a unique key
@@ -55,7 +56,7 @@ export default function Product() {
             img={device.img}
           />
         ))}
-      </div> */}
+      </div>
       <br></br>
 
 
@@ -65,20 +66,20 @@ export default function Product() {
         <br></br>
         <br></br><br></br>
 
-        <div className="flex flex-col rounded-lg text-black md:max-w-5xl md:flex-row nnnn">
+        <div className="flex flex-col rounded-lg  text-black md:max-w-5xl md:flex-row nnnn">
           <img
-            className="w-full rounded-t-lg object-cover zz  md:w-48 md:rounded-none md:rounded-l-lg md:order-1"
+            className="w-64 rounded-t-lg object-cover zz kkkl mt-12 md:w-48 md:rounded-none md:rounded-l-lg md:order-1"
             src={s3}
             alt=""
           />
 
           <img
-            className="w-full df zz rounded-t-lg dffp  object-cover -ml-8  md:h-auto md:w-96 md:rounded-none md:rounded-l-lg md:order-1"
+            className="w-96 df zz rounded-t-lg dffp cgh object-cover -ml-24  md:h-auto md:w-96 md:rounded-none md:rounded-l-lg md:order-1"
             src={s2}
             alt=""
           />
           <img
-            className="w-full rounded-t-lg object-cover md:h-auto md:w-64 md:rounded-none md:rounded-l-lg md:order-1 as"
+            className="w-96  rounded-t-lg object-cover md:w-96 md:rounded-none md:rounded-l-lg md:order-1 as"
             src={s1}
             alt=""
           />
@@ -172,17 +173,17 @@ Note: The images used for this section is for reference purpose only</h6>
     alt=""
   /> */}
             <img
-              className="w-full ml-96 gghh fdr rounded-t-lg object-cover  md:h-auto md:w-64 md:rounded-none md:rounded-l-lg md:order-3"
+              className="w-full ml-96 gghh fdr -mt-10 mb-8  rounded-t-lg object-cover  md:h-196 md:w-64 md:rounded-none md:rounded-l-lg md:order-3"
               src={b2}
               alt=""
             />
             <img
-              className="w-56 m-8 h-64 ml-24 fdr -mt-2 rounded-t-lg object-cover  md:w-56 md:rounded-none md:rounded-l-lg md:order-3"
+              className="w-56 m-8 h-64 ml-24 fdr -mt-8 rounded-t-lg object-cover  md:w-56 md:rounded-none md:rounded-l-lg md:order-3"
               src={b3}
               alt=""
             />
              <img
-              className="w-96 m-8 h-48 fdr mt-64 -ml-64 rounded-t-lg object-cover  md:w-96 md:rounded-none md:rounded-l-lg md:order-3"
+              className="w-96 m-8 h-48 ser fdr mt-64 -mb-4  -ml-64  rounded-t-lg object-cover  md:w-96 md:rounded-none md:rounded-l-lg md:order-3"
               src={b4}
               alt=""
             />
