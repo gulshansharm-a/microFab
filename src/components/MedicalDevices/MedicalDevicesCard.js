@@ -66,11 +66,13 @@ export default function MedicalDevicesCard({ img, heading, content }) {
         <h3 className="text-[16px] font-semibold">{heading}</h3>
         {showContent ? (
           <div className="bg-primary rounded-full text-white p-2">
-            <Icon icon="majesticons:arrow-down" />
+            {/* <Icon icon="majesticons:arrow-down" /> */}
+            <Icon icon="ic:baseline-minus" />
           </div>
         ) : (
           <div className="bg-primary rounded-full text-white p-2">
-            <Icon icon="majesticons:arrow-right" className="" />
+            {/* <Icon icon="majesticons:arrow-right" className="" /> */}
+            <Icon icon="ic:baseline-plus" />
           </div>
         )}
       </div>
