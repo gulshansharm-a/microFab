@@ -72,7 +72,10 @@ const Header = () => {
       }
     >
       <nav className="relative mx-10 md:mx-8 lg:mx-14 xl:mx-22 flex flex-row items-center justify-between">
-        <a href="/" className="font-bold md:text-[18px] lg:text-[20px] text-[18px]">
+        <a
+          href="/"
+          className="font-bold md:text-[18px] lg:text-[20px] text-[18px]"
+        >
           <img
             src={isMenuOpen ? logo1 : logo1}
             alt="logo"
@@ -231,7 +234,11 @@ const Header = () => {
                   isApplicationDropdownOpen ? "font-bold" : ""
                 }`}
               >
-                <Link to="/Applications" onClick={toggleMenu}>
+                <Link
+                  to="/Applications"
+                  onClick={toggleMenu}
+                  onMouseEnter={toggleApplicationDropdown}
+                >
                   Applications
                 </Link>
                 {isApplicationDropdownOpen ? (
@@ -239,19 +246,18 @@ const Header = () => {
                     src={ExpandLess}
                     alt="Expand Less"
                     className="ml-2 w-4 h-4"
-                    onClick={toggleApplicationDropdown}
                   />
                 ) : (
                   <img
                     src={ExpandMore}
                     alt="Expand More"
                     className="ml-2 w-4 h-4"
-                    onClick={toggleApplicationDropdown}
+                    onMouseEnter={toggleApplicationDropdown}
                   />
                 )}
               </div>
               {isApplicationDropdownOpen && (
-                <div className="dropdown-menu absolute mt-2 bg-white border border-gray-300 p-4 rounded-lg shadow-md w-[855px] xl:left-[10%] -left-[80%] transform -translate-x-1/2">
+                <div onMouseLeave={toggleApplicationDropdown} className="dropdown-menu absolute mt-2 bg-white border border-gray-300 p-4 rounded-lg shadow-md w-[855px] xl:left-[10%] -left-[80%] transform -translate-x-1/2">
                   <div className="flex flex-row gap-0">
                     <Link to="/pharmaceutical">
                       <Card
@@ -571,7 +577,7 @@ const Header = () => {
                       </Link>
                     </div>
                     <div className="flex flex-row gap-[16px]">
-                    <Link to="/dairy">
+                      <Link to="/dairy">
                         <Card
                           content="Dairy Industry"
                           img={img8}
