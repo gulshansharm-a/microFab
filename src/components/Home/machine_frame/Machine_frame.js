@@ -19,11 +19,10 @@ const Machine_Frame = () => {
   return (
     <div className="font-['ClashDisplay'] w-full h-[700px] md:w-[97%] md:h-full md:mt-[80px] mt-[50px] md:rounded-[20px] bg-gradient-to-r from-[#e1e1e1] to-[#8ca7ab] md:m-4 mb-0 overflow-clip">
       <div className="relative w-full h-full z-0">
-        
         <div className="absolute md:top-[50%] md:left-[38%] z-10 top-[44%] left-[4%]">
           <div className="font-['ClashDisplay'] rounded-b-[16px] rounded-tr-[16px] bg-[#8AA6AA] md:bg-[#8AA6AA] md:h-[40px] h-[40px] w-[200px] md:w-[180px] p-[10px] md:p-[10px]">
             <p className="custom-font text-white md:text-[12px] text-[11px] flex justify-center place-items-center">
-            Product Solutions
+              Product Solutions
             </p>
           </div>
         </div>
@@ -44,18 +43,17 @@ const Machine_Frame = () => {
         <div className="md:hidden block relative overflow-hidden h-[200px]">
           <p className="flex flex-col-reverse pb-10 font-extrabold w-[400px] h-[200px] absolute left-[12px] top-[52px] text-white text-[35px] md:leading-[79px] tracking-tight text-left">
             {textArray.map((text, index) => (
-              <span
-                key={index}
-                className={`highlight-text ${
-                  currentWordIndex === index ? "animate-fall" : ""
-                }`}
-                style={{
-                  visibility: currentWordIndex >= index ? "visible" : "hidden",
-                  marginBottom: index === textArray.length - 1 ? 0 : "0px", // Adjust the margin as needed
-                }}
-              >
-                {text}
-              </span>
+              // <span
+              //   key={index}
+              //   className={`highlight-text ${
+              //     currentWordIndex === index ? "animate-fall" : ""
+              //   }`}
+              //   style={{
+              //     visibility: currentWordIndex >= index ? "visible" : "hidden",
+              //     marginBottom: index === textArray.length - 1 ? 0 : "0px", // Adjust the margin as needed
+              //   }}
+              // >
+              <span>{text}</span>
             ))}
           </p>
         </div>

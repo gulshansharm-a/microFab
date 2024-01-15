@@ -76,7 +76,7 @@ export default function Footer() {
 
             <div className=" md:hidden md:h-[w-[30%]] md:w-[10%] w-[h-[90%]] h-[2px] bg-white md:mt-0 md:mb-0 mt-[22px] mb-[15px]"></div>
             {/* vertical line */}
-            <div className="w-[1px] h-[w-[30%]] bg-white"></div>
+            <div className="w-[1px] flex md:flex-row flex-row h-[w-[30%]] bg-white"></div>
             {/* <div className="w-[100%] md:w-[40%] md:text-[18px] md:flex flex-col justify-between">
               <div className="md:flex md:flex-row justify-between flex flex-row">
                 <div className="">
@@ -125,10 +125,22 @@ export default function Footer() {
             {/* <img src={facebook} alt="facebook logo"></img> */}
             <div className="md:ml-10">
               <Icon
-                icon="mdi:linkedin"
+                icon="mdi:instagram"
                 className="border-2 border-white text-white rounded-full h-10 p-2 w-10"
               />
             </div>
+            <span className="">
+              <Icon
+                icon="mingcute:youtube-line"
+                className="border-2 border-white text-white rounded-full h-10 p-2 w-10"
+              />
+            </span>
+            <span className="">
+              <Icon
+                icon="ic:baseline-facebook"
+                className="border-2 border-white text-white rounded-full h-10 p-2 w-10"
+              />
+            </span>
           </div>
 
           <div>

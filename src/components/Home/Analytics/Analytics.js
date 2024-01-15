@@ -13,7 +13,7 @@ export default function Analytics() {
       </p>
       <div className="w-full flex flex-col md:justify-start ">
         {/* top */}
-        <div className="md:w-[80%] w-[80%] flex md:flex-row flex-col md:justify-between gap-10">
+        <div className=" md:w-[80%] w-[80%] flex md:flex-row flex-col md:justify-between gap-10">
           <div>
             <h1 className="md:text-[80px] text-[50px] flex flex-row font-[1000]">
               <CountUp end={200} duration={7} separator="," /> {/* Counting animation for 200 */}
